@@ -4,10 +4,34 @@ import { categoryImage, categoryCount, getCategory } from "@/lib/catalog";
 import { waLink } from "@/lib/site";
 import { ArrowIcon, WhatsAppIcon } from "./icons";
 
+function cardCategoryLabel(product: Product, cat: Category | undefined): string {
+  if (product.sub) return product.sub;
+  if (!cat) return "";
+  const short: Record<string, string> = {
+    "high-security-safes": "High Security",
+    "fire-resistant-safes": "Fire Rated",
+    "vault-doors-vault-rooms": "Vault Doors",
+    "cash-handling-solutions": "Cash Handling",
+    "concealed-camouflage-safes": "Concealed Safes",
+    "luxury-safes-watch-storage": "Luxury Safes",
+    "home-safes": "Home Safes",
+    "smart-safes": "Smart Safes",
+    "hotel-safes": "Hotel Safes",
+    "responsible-firearm-storage": "Firearm Storage",
+    "cash-boxes-key-cabinets": "Key & Cash Boxes",
+  };
+  if (short[cat.slug]) return short[cat.slug];
+  const amp = cat.name.indexOf(" & ");
+  if (amp > 0) return cat.name.slice(0, amp);
+  return cat.name;
+}
+
 export function ProductCard({ product }: { product: Product }) {
   const cat = getCategory(product.category);
+  const categoryLabel = cardCategoryLabel(product, cat);
+
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft">
       <Link href={`/product/${product.slug}`} className="relative block aspect-square overflow-hidden bg-surface">
         {product.image ? (
           /* eslint-disable-next-line @next/next/no-img-element */
@@ -15,43 +39,51 @@ export function ProductCard({ product }: { product: Product }) {
             src={product.image}
             alt={product.name}
             loading="lazy"
-            className="h-full w-full object-contain p-5 transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-contain p-3 transition-transform duration-500 group-hover:scale-105 sm:p-5"
           />
         ) : (
-          <span className="flex h-full w-full items-center justify-center text-[12.5px] font-semibold text-muted">
+          <span className="flex h-full w-full items-center justify-center px-3 text-center text-[11px] font-semibold leading-snug text-muted sm:text-[12.5px]">
             Photo on request
           </span>
         )}
-        {cat && (
-          <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-brand backdrop-blur">
-            {cat.name}
+        {categoryLabel && (
+          <span className="absolute left-2 top-2 hidden max-w-[calc(100%-1rem)] truncate rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-brand backdrop-blur sm:inline-block">
+            {categoryLabel}
           </span>
         )}
       </Link>
-      <div className="flex flex-1 flex-col p-4">
-        <h3 className="text-[15px] font-semibold leading-snug text-ink">
+      <div className="flex flex-1 flex-col p-3 sm:p-4">
+        {categoryLabel && (
+          <p className="mb-1.5 text-center text-[10px] font-bold uppercase leading-snug tracking-wide text-brand sm:hidden">
+            {categoryLabel}
+          </p>
+        )}
+        <h3 className="text-center text-[13px] font-semibold leading-snug text-ink sm:text-left sm:text-[15px]">
           <Link href={`/product/${product.slug}`} className="hover:text-brand">
             {product.name}
           </Link>
         </h3>
         {product.desc && (
-          <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-muted">{product.desc}</p>
+          <p className="mt-1.5 hidden text-center text-[12px] leading-relaxed text-muted sm:block sm:text-left sm:text-[13px] md:line-clamp-2">
+            {product.desc}
+          </p>
         )}
-        <div className="mt-4 flex items-center gap-2 pt-3">
+        <div className="mt-auto flex flex-col gap-2 pt-3 sm:flex-row sm:items-center sm:gap-2">
           <Link
             href={`/product/${product.slug}`}
-            className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-full border border-line px-3 py-2 text-[13px] font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
+            className="inline-flex w-full items-center justify-center gap-1 rounded-full border border-line px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors hover:border-brand hover:text-brand sm:flex-1 sm:px-3 sm:text-[13px]"
           >
-            View Details <ArrowIcon width={15} height={15} />
+            View Details <ArrowIcon width={14} height={14} className="sm:h-[15px] sm:w-[15px]" />
           </Link>
           <a
             href={waLink(`Hi Salvado, I'm interested in the ${product.name}. Can you share the price?`)}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`WhatsApp about ${product.name}`}
-            className="inline-flex items-center justify-center rounded-full border border-line bg-white px-3 py-2 transition-colors hover:border-brand"
+            className="inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-line bg-white px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors hover:border-brand sm:w-auto sm:px-3"
           >
-            <WhatsAppIcon width={17} height={17} />
+            <WhatsAppIcon width={16} height={16} className="sm:h-[17px] sm:w-[17px]" />
+            <span className="sm:hidden">WhatsApp</span>
           </a>
         </div>
       </div>
@@ -89,7 +121,7 @@ export function CategoryCard({ category, premium = false }: { category: Category
       </Link>
       <div className="p-5">
         <p className="text-[14px] leading-relaxed text-ink-2">{category.short}</p>
-        <div className="mt-4 flex flex-wrap items-center gap-2">
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2 sm:justify-start">
           <Link
             href={`/category/${category.slug}`}
             className="inline-flex items-center gap-1.5 rounded-full border border-brand bg-brand px-4 py-2 text-[13px] font-semibold !text-white transition-colors hover:bg-brand-dark [&_svg]:stroke-white"

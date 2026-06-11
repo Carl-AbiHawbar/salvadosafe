@@ -92,7 +92,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
             />
           </Reveal>
           {items.length > 0 ? (
-            <div className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+            <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
               {items.map((p, i) => (
                 <Reveal key={p.slug} delay={(i % 4) * 50}>
                   <ProductCard product={p} />

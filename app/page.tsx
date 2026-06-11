@@ -103,7 +103,7 @@ export default function HomePage() {
               text={pages.home.selectedSection.text}
             />
           </Reveal>
-          <div className="mt-14 grid grid-cols-2 gap-5 lg:grid-cols-5">
+          <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-5">
             {selectedProducts.map((p, i) => (
               <Reveal key={p.slug} delay={i * 50}>
                 <ProductCard product={p} />
@@ -169,7 +169,7 @@ export default function HomePage() {
                 Open in Google Maps
               </CTA>
               <CTA href="/contact" variant="ghost">
-                Speak With Our Team
+                Contact Our Consultant
               </CTA>
             </div>
           </Reveal>
