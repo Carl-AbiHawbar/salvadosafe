@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product) return { title: "Product" };
   return {
     title: product.name,
-    description: product.desc || `${product.name} — premium security solution from Salvado Safe in Lebanon.`,
+    description: product.desc || `${product.name}, premium security solution from Salvado Safe in Lebanon.`,
   };
 }
 
@@ -67,7 +67,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const faqs = [
     product.isProject
       ? { q: `How does a ${product.name} project work?`, a: "These are project-based solutions. Salvado provides private consultation, site assessment, technical planning, and professional installation tailored to your space and security requirements." }
-      : { q: `Is the ${product.name} available?`, a: "Yes — contact Salvado for current availability, pricing, and lead time. We can also advise on suitable alternatives." },
+      : { q: `Is the ${product.name} available?`, a: "Yes, contact Salvado for current availability, pricing, and lead time. We can also advise on suitable alternatives." },
     { q: "Can you deliver and install it?", a: "Yes. Salvado provides professional delivery and European-standard installation based on product specifications and site conditions." },
     { q: "Do you offer after-sales support?", a: "Yes. We provide technical support, lock assistance, maintenance guidance, and service coordination after purchase." },
     ...(category ? category.faqs.slice(0, 1) : []),
@@ -286,7 +286,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <h3 className="mt-4 font-display text-xl font-bold text-ink">Delivery, Installation &amp; After-Sales</h3>
             <p className="mt-3 text-[14.5px] leading-relaxed text-ink-2">
               Salvado provides careful delivery, European-standard installation, and anchoring based on the product and
-              your site conditions — followed by dedicated after-sales technical support, lock assistance, and
+              your site conditions, followed by dedicated after-sales technical support, lock assistance, and
               maintenance guidance.
             </p>
             <div className="mt-5">

@@ -23,13 +23,22 @@ export default function HomePage() {
 
       {/* Proof strip */}
       <section className="border-b border-line bg-ink">
-        <div className="container-x flex flex-wrap items-center justify-center gap-x-10 gap-y-3 py-5 text-center text-[13.5px] font-semibold text-white/85">
-          {pages.home.proofStrip.map((item, i) => (
-            <span key={item} className="contents">
-              {i > 0 && <span className="text-brand">•</span>}
-              <span>{item}</span>
-            </span>
-          ))}
+        <div className="container-x py-5">
+          {/* Mobile: stacked, centered, no bullets */}
+          <div className="flex flex-col items-center gap-3 text-center text-[13.5px] font-semibold text-white/85 md:hidden">
+            {pages.home.proofStrip.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
+          </div>
+          {/* Desktop: inline with bullets */}
+          <div className="hidden flex-wrap items-center justify-center gap-x-10 gap-y-3 text-center text-[13.5px] font-semibold text-white/85 md:flex">
+            {pages.home.proofStrip.map((item, i) => (
+              <span key={item} className="contents">
+                {i > 0 && <span className="text-brand">•</span>}
+                <span>{item}</span>
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -47,8 +56,8 @@ export default function HomePage() {
             {pages.home.whySalvado.points.map((p, i) => {
               const Icon = getIcon(p.icon);
               return (
-              <Reveal key={p.title} delay={i * 80} className="rounded-2xl border border-line bg-white p-7 shadow-card transition-shadow hover:shadow-soft">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand">
+              <Reveal key={p.title} delay={i * 80} className="rounded-2xl border border-line bg-white p-7 text-center shadow-card transition-shadow hover:shadow-soft md:text-left">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand md:mx-0">
                   <Icon />
                 </div>
                 <h3 className="mt-5 text-[16px] font-bold text-ink">{p.title}</h3>

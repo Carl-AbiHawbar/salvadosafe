@@ -44,7 +44,7 @@ export function TrustStrip({ items = defaultTrust }: { items?: { icon: typeof Tr
     <section className="border-y border-line bg-surface">
       <div className="container-x grid gap-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((t, i) => (
-          <Reveal key={t.title} delay={i * 80} className="flex flex-col items-start gap-3">
+          <Reveal key={t.title} delay={i * 80} className="flex flex-col items-center gap-3 text-center md:items-start md:text-left">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand">
               <t.icon />
             </div>

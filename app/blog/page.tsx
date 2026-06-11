@@ -28,7 +28,7 @@ export default function BlogPage() {
             </h1>
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
               Practical guides to help you choose, install, and care for safes, vault doors, and secure storage. Full
-              articles are on the way — meanwhile, our team is always available to answer your questions directly.
+              articles are on the way. Meanwhile, our team is always available to answer your questions directly.
             </p>
           </Reveal>
         </div>
@@ -53,7 +53,7 @@ export default function BlogPage() {
 
       <FinalCTA
         title="Have a Question Now?"
-        text="Don't wait for an article — message our team on WhatsApp and we'll guide you directly."
+        text="Don't wait for an article, message our team on WhatsApp and we'll guide you directly."
         waMessage="Hi Salvado, I have a question about choosing a safe."
       />
     </>

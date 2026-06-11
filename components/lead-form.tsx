@@ -86,7 +86,7 @@ export function LeadForm({
 
       {sent && (
         <p className="mt-4 text-[13.5px] text-emerald-700">
-          WhatsApp is opening with your details — just press send to reach our team. You can also call us directly at {site.phones.landline.label}.
+          WhatsApp is opening with your details, just press send to reach our team. You can also call us directly at {site.phones.landline.label}.
         </p>
       )}
     </form>

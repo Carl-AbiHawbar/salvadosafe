@@ -8,7 +8,7 @@ import { getFeaturedCategories, getSecondaryCategories, getProduct, getProducts,
 import { ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Products — Premium Safes, Vault Doors & Security Solutions",
+  title: "Products, Premium Safes, Vault Doors & Security Solutions",
   description:
     "Explore Salvado's range of high-security safes, fire-rated safes, vault doors, secure rooms, camouflage safes, luxury safes, and cash-handling solutions in Lebanon.",
 };
@@ -157,7 +157,7 @@ export default function ProductsPage() {
         eyebrow="Not sure what to choose?"
         title="Need Help Choosing the Right Safe or Security Solution?"
         text="Contact Salvado with your requirements, location, and intended use. Our team can recommend suitable options based on security level, size, product type, and installation conditions."
-        waMessage="Hi Salvado, I'm not sure which safe to choose — can you help?"
+        waMessage="Hi Salvado, I'm not sure which safe to choose, can you help?"
       />
     </>
   );

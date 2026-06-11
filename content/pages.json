@@ -2,7 +2,7 @@
   "heroSlides": [
     {
       "img": "/images/brand/c84dfdaf90cd428f56b6cafe.jpg",
-      "title": "Salvado — A Name You Can Trust in Security",
+      "title": "Salvado, A Name You Can Trust in Security",
       "sub": "Premium safes, vault doors, and secure storage solutions for homes, businesses, and institutions across Lebanon."
     },
     {
@@ -13,7 +13,7 @@
     {
       "img": "/images/brand/81b4439950502d0e2237beec.jpg",
       "title": "The Pinnacle of Security & Quality",
-      "sub": "From high-security safes to vault rooms — explore Lebanon's widest safe showroom."
+      "sub": "From high-security safes to vault rooms, explore Lebanon's widest safe showroom."
     },
     {
       "img": "/images/brand/406286567de28867e45029df.jpg",
@@ -23,7 +23,7 @@
   ],
   "reviews": [
     { "name": "Abdo Sebaali", "when": "1 month ago", "text": "Best place to buy a safe!", "color": "bg-slate-600" },
-    { "name": "Assaad Nader", "when": "1 month ago", "text": "We asked for a safety box at 11am and by 3pm it was fixed at our home — rapid and professional service.", "color": "bg-indigo-600" },
+    { "name": "Assaad Nader", "when": "1 month ago", "text": "We asked for a safety box at 11am and by 3pm it was fixed at our home, rapid and professional service.", "color": "bg-indigo-600" },
     { "name": "Robert Frayha", "when": "1 month ago", "text": "Great product, great service. Best choice.", "color": "bg-rose-600" },
     { "name": "Christine Soulaj", "when": "1 month ago", "text": "Excellent and fast service, safe is very high quality, made in Spain.", "color": "bg-emerald-600" },
     { "name": "Marine Bou Chaaya", "when": "1 month ago", "text": "Great product and quality.", "color": "bg-amber-600" },
@@ -46,16 +46,16 @@
       "title": "Why Homes, Businesses & Institutions Trust Salvado",
       "text": "Banks, jewelers, institutions, villas, and private clients rely on Salvado for certified protection, professional installation, discretion, and dependable after-sales support.",
       "points": [
-        { "icon": "shield", "title": "Specialized Security Experts", "text": "A dedicated specialist focused exclusively on safes, vault doors, secure rooms, and protection — not a general retailer." },
+        { "icon": "shield", "title": "Specialized Security Experts", "text": "A dedicated specialist focused exclusively on safes, vault doors, secure rooms, and protection, not a general retailer." },
         { "icon": "check", "title": "Certified & High-Quality Products", "text": "Tested, certified, high-security and fire-rated safes alongside premium European security solutions." },
-        { "icon": "tools", "title": "Trained Technical Team", "text": "Consultation, delivery, installation, anchoring, maintenance, lock service, and technical support — handled in-house." },
+        { "icon": "tools", "title": "Trained Technical Team", "text": "Consultation, delivery, installation, anchoring, maintenance, lock service, and technical support, handled in-house." },
         { "icon": "headset", "title": "Premium After-Sales Support", "text": "Long-term support, service coordination, and lock assistance well after your purchase or installation." }
       ]
     },
     "catalogSection": {
       "eyebrow": "Our Catalogue",
       "title": "Explore Our Security Solutions",
-      "text": "Browse Salvado's premium range — from high-security and fire-rated safes to vault doors, luxury safes, and cash-handling solutions."
+      "text": "Browse Salvado's premium range, from high-security and fire-rated safes to vault doors, luxury safes, and cash-handling solutions."
     },
     "selectedSection": {
       "eyebrow": "Selected Solutions",
@@ -66,7 +66,7 @@
     "servicesSection": {
       "eyebrow": "Technical Services",
       "title": "Professional Safe & Vault Services",
-      "text": "Salvado supports clients before, during, and after the sale — consultation, delivery, installation, repair, maintenance, relocation, and after-sales support.",
+      "text": "Salvado supports clients before, during, and after the sale, consultation, delivery, installation, repair, maintenance, relocation, and after-sales support.",
       "cards": [
         { "img": "/images/brand/vdi.png", "title": "Vault Door Installation", "text": "End-to-end vault door delivery and professional installation, handled by our expert team." },
         { "img": "/images/brand/maint.png", "title": "Safe Repair & Maintenance", "text": "Lock replacement, digital upgrades, combination changes, and preventative servicing." },
@@ -77,7 +77,7 @@
     "showroom": {
       "eyebrow": "Visit Us",
       "title": "Visit the Salvado Showroom",
-      "text": "Browse the widest range of safes and security products live in our showroom. Compare high-security safes, fire-rated safes, vault doors, luxury safes, and watch storage — and receive professional guidance before you decide.",
+      "text": "Browse the widest range of safes and security products live in our showroom. Compare high-security safes, fire-rated safes, vault doors, luxury safes, and watch storage, and receive professional guidance before you decide.",
       "image": "/images/brand/frontimg.webp",
       "features": [
         "High-security safe displays",
@@ -110,7 +110,7 @@
     ],
     "sectors": ["Banks", "Jewelers", "Institutions", "International Companies", "Agencies", "Villas & Private Clients", "Offices & Businesses"],
     "leadPoints": [
-      { "icon": "shield", "title": "Specialized in Safes & Security", "text": "A dedicated security specialist focused exclusively on protection and secure storage — safes, vault doors, secure rooms, installation, maintenance, and technical support." },
+      { "icon": "shield", "title": "Specialized in Safes & Security", "text": "A dedicated security specialist focused exclusively on protection and secure storage, safes, vault doors, secure rooms, installation, maintenance, and technical support." },
       { "icon": "check", "title": "Certified & High-Quality Products", "text": "Tested and certified security products, high-security safes, fire-rated safes, vault doors, and premium European security solutions." },
       { "icon": "star", "title": "Full Transparency With Clients", "text": "Clear guidance on product category, security level, fire rating, installation requirements, warranty, and after-sales support." },
       { "icon": "tools", "title": "Trained Technical Team", "text": "Trained to handle consultation, delivery, installation, anchoring, maintenance, lock service, and technical support." },
@@ -127,7 +127,7 @@
     "overview": {
       "eyebrow": "What We Do",
       "title": "Our Services",
-      "text": "Salvado supports clients before, during, and after the sale — with serious, technical expertise."
+      "text": "Salvado supports clients before, during, and after the sale, with serious, technical expertise."
     },
     "items": [
       { "id": "consultation", "title": "Security Consultation, Delivery & Installation", "text": "Site assessment, product recommendation, discreet delivery, professional installation, and technical follow-up after installation.", "cta": "Request Consultation", "icon": "shield" },

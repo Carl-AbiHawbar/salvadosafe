@@ -9,7 +9,7 @@ import { ShieldIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "About Salvado",
   description:
-    "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions — with the widest safe showroom in Lebanon and a trained technical team.",
+    "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions, with the widest safe showroom in Lebanon and a trained technical team.",
 };
 
 export default function AboutPage() {
@@ -116,8 +116,8 @@ export default function AboutPage() {
             {about.leadPoints.map((p, i) => {
               const Icon = getIcon(p.icon);
               return (
-              <Reveal key={p.title} delay={i * 60} className="rounded-2xl border border-line bg-white p-7 shadow-card transition-shadow hover:shadow-soft">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand">
+              <Reveal key={p.title} delay={i * 60} className="rounded-2xl border border-line bg-white p-7 text-center shadow-card transition-shadow hover:shadow-soft md:text-left">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand md:mx-0">
                   <Icon />
                 </div>
                 <h3 className="mt-5 text-[16px] font-bold text-ink">{p.title}</h3>
@@ -138,7 +138,7 @@ export default function AboutPage() {
               More Than a Safe Supplier
             </h2>
             <p className="mt-5 text-[15.5px] leading-relaxed text-white/70">
-              Salvado supports clients before, during, and after the purchase — product recommendation, site assessment,
+              Salvado supports clients before, during, and after the purchase, product recommendation, site assessment,
               delivery, installation, anchoring, safe relocation, lock service, maintenance, vault door installation,
               secure room solutions, and after-sales technical support. This technical capability is what separates
               Salvado from ordinary sellers and makes the company a trusted security partner for residential,

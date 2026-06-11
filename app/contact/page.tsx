@@ -5,7 +5,7 @@ import { site, waLink, telLink } from "@/lib/site";
 import { PhoneIcon, WhatsAppIcon, PinIcon, QuoteIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Contact Salvado — Request a Quote",
+  title: "Contact Salvado, Request a Quote",
   description:
     "Contact Salvado Safe in Zalka, Lebanon. Request a quote, ask about a product, or arrange a showroom visit. Call, WhatsApp, or send us your requirements.",
 };

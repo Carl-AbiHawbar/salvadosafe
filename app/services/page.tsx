@@ -59,8 +59,8 @@ export default function ServicesPage() {
               const Icon = getIcon(s.icon);
               return (
               <Reveal key={s.id} delay={i * 60} className="scroll-mt-28" >
-                <div id={s.id} className="flex h-full flex-col rounded-2xl border border-line bg-white p-7 shadow-card transition-shadow hover:shadow-soft">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand">
+                <div id={s.id} className="flex h-full flex-col rounded-2xl border border-line bg-white p-7 text-center shadow-card transition-shadow hover:shadow-soft md:text-left">
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand md:mx-0">
                     <Icon />
                   </div>
                   <h3 className="mt-5 text-[17px] font-bold text-ink">{s.title}</h3>
@@ -87,8 +87,8 @@ export default function ServicesPage() {
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {content.whyPoints.map((p, i) => (
-              <Reveal key={p.title} delay={i * 70} className="rounded-2xl border border-line bg-white p-7 shadow-card">
-                <CheckIcon className="text-brand" />
+              <Reveal key={p.title} delay={i * 70} className="rounded-2xl border border-line bg-white p-7 text-center shadow-card md:text-left">
+                <CheckIcon className="mx-auto text-brand md:mx-0" />
                 <h3 className="mt-4 text-[16px] font-bold text-ink">{p.title}</h3>
                 <p className="mt-2 text-[14px] leading-relaxed text-muted">{p.text}</p>
               </Reveal>
