@@ -8,14 +8,14 @@ import { FAQ } from "@/components/faq";
 import { WhatsAppButton, QuoteButton, CallButton } from "@/components/cta";
 import { FinalCTA } from "@/components/sections";
 import {
-  categories,
+  getCategories,
   getCategory,
   productsInCategory,
   categoryImage,
-  categories as allCategories,
+  categorySubs,
 } from "@/lib/catalog";
 export function generateStaticParams() {
-  return categories.map((c) => ({ slug: c.slug }));
+  return getCategories().map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -34,7 +34,8 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   if (!category) notFound();
 
   const items = productsInCategory(slug);
-  const related = allCategories.filter((c) => c.slug !== slug).slice(0, 4);
+  const subs = categorySubs(slug);
+  const related = getCategories().filter((c) => c.slug !== slug).slice(0, 4);
 
   return (
     <>
@@ -59,9 +60,9 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
             </p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">{category.name}</h1>
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">{category.intro}</p>
-            {category.subs.length > 0 && (
+            {subs.length > 0 && (
               <div className="mt-6 flex flex-wrap gap-2">
-                {category.subs.map((s) => (
+                {subs.map((s) => (
                   <span key={s} className="rounded-full border border-white/20 bg-white/5 px-3.5 py-1.5 text-[12.5px] font-medium text-white/80">
                     {s}
                   </span>
@@ -69,9 +70,9 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               </div>
             )}
             <div className="mt-8 flex flex-wrap gap-3">
-              <WhatsAppButton label="WhatsApp for Price" message={`Hi Salvado, I'm interested in ${category.name}.`} />
-              <QuoteButton />
-              <CallButton variant="dark" />
+              <WhatsAppButton label="WhatsApp for Price" message={`Hi Salvado, I'm interested in ${category.name}.`} variant="outlineLight" />
+              <QuoteButton variant="primaryLight" />
+              <CallButton variant="ghostLight" />
             </div>
           </Reveal>
         </div>

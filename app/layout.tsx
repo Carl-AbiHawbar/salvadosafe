@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { Floating } from "@/components/floating";
+import { SiteShell } from "@/components/site-shell";
+import { SiteProvider } from "@/components/site-provider";
+import { getFeaturedCategories, getSecondaryCategories } from "@/lib/catalog";
+import { getSite } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -44,13 +45,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const site = getSite();
+  const featuredCategories = getFeaturedCategories();
+  const secondaryCategories = getSecondaryCategories();
+
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} h-full`}>
       <body className="flex min-h-full flex-col bg-white">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <Floating />
+        <SiteProvider site={site}>
+          <SiteShell featuredCategories={featuredCategories} secondaryCategories={secondaryCategories}>
+            {children}
+          </SiteShell>
+        </SiteProvider>
       </body>
     </html>
   );

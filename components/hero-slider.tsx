@@ -1,92 +1,130 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { WhatsAppButton } from "./cta";
 import { CTA } from "./cta";
-import { ArrowIcon } from "./icons";
+import { ArrowIcon, ChevronDown } from "./icons";
+import type { HeroSlide } from "@/lib/content";
 
-const slides = [
-  {
-    img: "/images/brand/c84dfdaf90cd428f56b6cafe.jpg",
-    title: "Salvado — A Name You Can Trust in Security",
-    sub: "Premium safes, vault doors, and secure storage solutions for homes, businesses, and institutions across Lebanon.",
-  },
-  {
-    img: "/images/brand/c6c71578def71511416d0707.jpg",
-    title: "Bespoke, High-Security, Personalized Protection",
-    sub: "Certified products, European-standard installation, and dedicated after-sales technical support.",
-  },
-  {
-    img: "/images/brand/81b4439950502d0e2237beec.jpg",
-    title: "The Pinnacle of Security & Quality",
-    sub: "From high-security safes to vault rooms — explore Lebanon's widest safe showroom.",
-  },
-  {
-    img: "/images/brand/406286567de28867e45029df.jpg",
-    title: "Accurate, Efficient, Reliable Cash Solutions",
-    sub: "Money counters and cash-handling solutions for businesses that move cash with confidence.",
-  },
-];
+const SWIPE_THRESHOLD = 50;
 
-export function HeroSlider() {
+export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
   const [active, setActive] = useState(0);
+  const [dragOffset, setDragOffset] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const containerRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
-    const id = setInterval(() => setActive((a) => (a + 1) % slides.length), 6000);
-    return () => clearInterval(id);
+  const goTo = useCallback((index: number) => {
+    setActive((index + slides.length) % slides.length);
+    setDragOffset(0);
   }, []);
 
-  return (
-    <section className="relative h-[88vh] min-h-[560px] w-full overflow-hidden">
-      {slides.map((s, i) => (
-        <div
-          key={i}
-          className="absolute inset-0 transition-opacity duration-1000"
-          style={{ opacity: i === active ? 1 : 0 }}
-          aria-hidden={i !== active}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={s.img} alt={s.title} className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25" />
-        </div>
-      ))}
+  const next = useCallback(() => goTo(active + 1), [active, goTo]);
+  const prev = useCallback(() => goTo(active - 1), [active, goTo]);
 
-      <div className="container-x relative flex h-full items-center">
-        <div className="max-w-2xl">
-          {slides.map((s, i) => (
-            <div
-              key={i}
-              className="transition-all duration-700"
-              style={{
-                opacity: i === active ? 1 : 0,
-                transform: i === active ? "none" : "translateY(20px)",
-                position: i === active ? "relative" : "absolute",
-                pointerEvents: i === active ? "auto" : "none",
-              }}
-            >
-              {i === active && (
-                <>
-                  <span className="mb-4 inline-block rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">
-                    Lebanon&apos;s Widest Safe Showroom
-                  </span>
-                  <h1 className="font-display text-4xl font-bold leading-[1.08] text-white drop-shadow md:text-6xl">
-                    {s.title}
-                  </h1>
-                  <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/85 md:text-[17px]">
-                    {s.sub}
-                  </p>
-                  <div className="mt-8 flex flex-wrap items-center gap-3">
-                    <CTA href="/products" variant="primary">
-                      Explore Solutions <ArrowIcon width={17} height={17} />
-                    </CTA>
-                    <WhatsAppButton label="WhatsApp Salvado" message="Hi Salvado, I'd like a recommendation." />
-                  </div>
-                </>
-              )}
+  // Auto-advance (pause while dragging)
+  useEffect(() => {
+    if (isDragging) return;
+    const id = setInterval(() => setActive((a) => (a + 1) % slides.length), 6000);
+    return () => clearInterval(id);
+  }, [isDragging]);
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    setIsDragging(true);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (!touchStart.current) return;
+    const dx = e.touches[0].clientX - touchStart.current.x;
+    const dy = e.touches[0].clientY - touchStart.current.y;
+    if (Math.abs(dy) > Math.abs(dx)) return; // vertical scroll
+    setDragOffset(dx);
+  };
+
+  const onTouchEnd = () => {
+    if (Math.abs(dragOffset) > SWIPE_THRESHOLD) {
+      if (dragOffset < 0) next();
+      else prev();
+    } else {
+      setDragOffset(0);
+    }
+    touchStart.current = null;
+    setIsDragging(false);
+  };
+
+  const trackTransform = `translateX(calc(${-active * 100}% + ${dragOffset}px))`;
+
+  return (
+    <section
+      ref={containerRef}
+      className="relative h-[88vh] min-h-[560px] w-full overflow-hidden select-none"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
+      {/* Swipeable slide track */}
+      <div
+        className="flex h-full transition-transform duration-500 ease-out"
+        style={{
+          transform: trackTransform,
+          transitionDuration: isDragging ? "0ms" : "500ms",
+        }}
+      >
+        {slides.map((s, i) => (
+          <div key={i} className="relative h-full min-w-full shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={s.img} alt="" className="h-full w-full object-cover" draggable={false} />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/35" />
+          </div>
+        ))}
+      </div>
+
+      {/* Content overlay */}
+      <div className="pointer-events-none absolute inset-0 flex items-center">
+        <div className="container-x pointer-events-auto">
+          <div className="max-w-2xl">
+            <span className="mb-4 inline-block rounded-full border border-white/30 bg-black/25 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">
+              Lebanon&apos;s Widest Safe Showroom
+            </span>
+            <h1 className="font-display text-4xl font-bold leading-[1.08] text-white drop-shadow-lg md:text-6xl">
+              {slides[active].title}
+            </h1>
+            <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/90 md:text-[17px]">
+              {slides[active].sub}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <CTA href="/products" variant="primaryLight">
+                Explore Solutions <ArrowIcon width={17} height={17} />
+              </CTA>
+              <WhatsAppButton
+                label="WhatsApp Salvado"
+                message="Hi Salvado, I'd like a recommendation."
+                variant="outlineLight"
+              />
             </div>
-          ))}
+          </div>
         </div>
       </div>
+
+      {/* Prev / next arrows */}
+      <button
+        type="button"
+        aria-label="Previous slide"
+        onClick={prev}
+        className="absolute left-3 top-1/2 z-10 hidden -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white backdrop-blur transition-colors hover:bg-black/50 md:flex"
+      >
+        <ChevronDown className="rotate-90" width={20} height={20} />
+      </button>
+      <button
+        type="button"
+        aria-label="Next slide"
+        onClick={next}
+        className="absolute right-3 top-1/2 z-10 hidden -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white backdrop-blur transition-colors hover:bg-black/50 md:flex"
+      >
+        <ChevronDown className="-rotate-90" width={20} height={20} />
+      </button>
 
       {/* Dots */}
       <div className="absolute bottom-7 left-1/2 z-10 flex -translate-x-1/2 gap-2.5">
@@ -94,13 +132,18 @@ export function HeroSlider() {
           <button
             key={i}
             aria-label={`Go to slide ${i + 1}`}
-            onClick={() => setActive(i)}
+            onClick={() => goTo(i)}
             className={`h-2 rounded-full transition-all duration-300 ${
               i === active ? "w-8 bg-brand" : "w-2 bg-white/50 hover:bg-white/80"
             }`}
           />
         ))}
       </div>
+
+      {/* Swipe hint (mobile) */}
+      <p className="absolute bottom-16 left-1/2 z-10 -translate-x-1/2 text-[11px] font-medium uppercase tracking-wider text-white/50 md:hidden">
+        Swipe to browse
+      </p>
     </section>
   );
 }

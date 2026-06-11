@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { SectionHeading, FinalCTA } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { CTA, CallButton, MapButton } from "@/components/cta";
-import { ShieldIcon, CheckIcon, ToolsIcon, HeadsetIcon, StarIcon } from "@/components/icons";
+import { getPagesContent } from "@/lib/content";
+import { getIcon } from "@/lib/icon-map";
+import { ShieldIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "About Salvado",
@@ -10,48 +12,30 @@ export const metadata: Metadata = {
     "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions — with the widest safe showroom in Lebanon and a trained technical team.",
 };
 
-const sectors = ["Banks", "Jewelers", "Institutions", "International Companies", "Agencies", "Villas & Private Clients", "Offices & Businesses"];
-
-const leadPoints = [
-  { icon: ShieldIcon, title: "Specialized in Safes & Security", text: "A dedicated security specialist focused exclusively on protection and secure storage — safes, vault doors, secure rooms, installation, maintenance, and technical support." },
-  { icon: CheckIcon, title: "Certified & High-Quality Products", text: "Tested and certified security products, high-security safes, fire-rated safes, vault doors, and premium European security solutions." },
-  { icon: StarIcon, title: "Full Transparency With Clients", text: "Clear guidance on product category, security level, fire rating, installation requirements, warranty, and after-sales support." },
-  { icon: ToolsIcon, title: "Trained Technical Team", text: "Trained to handle consultation, delivery, installation, anchoring, maintenance, lock service, and technical support." },
-  { icon: HeadsetIcon, title: "Market Leadership in Lebanon", text: "Rated number one in Lebanon and recognized for its showroom, product range, technical expertise, service quality, and after-sales support." },
-];
-
-const stats = [
-  { value: "40+", label: "Years of Trust" },
-  { value: "30,000+", label: "Clients Served" },
-  { value: "#1", label: "Rated in Lebanon" },
-  { value: "143+", label: "Products in Showroom" },
-];
-
 export default function AboutPage() {
+  const about = getPagesContent().about;
+
   return (
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-ink">
         <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/brand/c6c71578def71511416d0707.jpg" alt="" className="h-full w-full object-cover opacity-30" />
+          <img src={about.hero.image} alt="" className="h-full w-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
         </div>
         <div className="container-x relative py-24 md:py-32">
           <Reveal className="max-w-2xl">
-            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">About Salvado</p>
+            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{about.hero.eyebrow}</p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">
-              Lebanon&apos;s Reference Point for Security &amp; Secure Storage
+              {about.hero.title}
             </h1>
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
-              Salvado is Lebanon&apos;s leading name in safes, vault doors, secure rooms, and professional security
-              solutions. With the widest safe showroom in Lebanon, certified products, a trained technical team, and a
-              reputation built on transparency and service, Salvado is the reference point for clients who expect the
-              highest level of security, quality, and support.
+              {about.hero.text}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <MapButton variant="primary" />
-              <CTA href="/contact" variant="dark">Speak With Our Team</CTA>
+              <MapButton variant="primaryLight" />
+              <CTA href="/contact" variant="ghostLight">Speak With Our Team</CTA>
             </div>
           </Reveal>
         </div>
@@ -60,7 +44,7 @@ export default function AboutPage() {
       {/* Stats */}
       <section className="border-b border-line bg-white">
         <div className="container-x grid grid-cols-2 gap-6 py-12 md:grid-cols-4">
-          {stats.map((s, i) => (
+          {about.stats.map((s, i) => (
             <Reveal key={s.label} delay={i * 70} className="text-center">
               <p className="font-display text-4xl font-bold text-brand md:text-5xl">{s.value}</p>
               <p className="mt-1 text-[13.5px] font-medium text-muted">{s.label}</p>
@@ -108,7 +92,7 @@ export default function AboutPage() {
             />
           </Reveal>
           <div className="mt-12 flex flex-wrap justify-center gap-3">
-            {sectors.map((s, i) => (
+            {about.sectors.map((s, i) => (
               <Reveal key={s} delay={i * 40}>
                 <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-5 py-2.5 text-[14px] font-semibold text-ink-2 shadow-card">
                   <ShieldIcon width={16} height={16} className="text-brand" /> {s}
@@ -129,15 +113,18 @@ export default function AboutPage() {
             />
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {leadPoints.map((p, i) => (
+            {about.leadPoints.map((p, i) => {
+              const Icon = getIcon(p.icon);
+              return (
               <Reveal key={p.title} delay={i * 60} className="rounded-2xl border border-line bg-white p-7 shadow-card transition-shadow hover:shadow-soft">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand">
-                  <p.icon />
+                  <Icon />
                 </div>
                 <h3 className="mt-5 text-[16px] font-bold text-ink">{p.title}</h3>
                 <p className="mt-2 text-[14px] leading-relaxed text-muted">{p.text}</p>
               </Reveal>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

@@ -1,31 +1,24 @@
-export const site = {
-  name: "Salvado Safe",
-  shortName: "Salvado",
-  tagline: "Safety Is Our Goal",
-  email: "info@salvadosafe.com",
-  location: "Zalka, Lebanon",
-  address: "Salvado Safes, Zalka 690, Zalka, Lebanon",
-  hours: {
-    weekdays: "Mon – Fri: 9:30 – 17:30",
-    saturday: "Sat: 9:30 – 14:00",
-  },
-  phones: {
-    landline: { label: "01 899 212", tel: "+96101899212" },
-    whatsapp: { label: "70 273 313", tel: "+96170273313", wa: "96170273313" },
-    mobile: { label: "03 273 313", tel: "+96103273313" },
-  },
-  socials: {
-    instagram: "https://www.instagram.com/salvadosafes/",
-    facebook: "https://www.facebook.com/profile.php?id=100070034868049",
-  },
-  maps: "https://www.google.com/maps/search/?api=1&query=Salvado+safes+Zalka",
-  mapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d827.8677614399436!2d35.5736093!3d33.9032743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3deb65fc926b%3A0x1d9d1207a7cd0bfc!2sSalvado%20safes!5e0!3m2!1sen!2slb!4v1772729611133!5m2!1sen!2slb",
-};
+import defaultSite from "@/content/site.json";
+import type { SiteConfig } from "./content";
+
+export type { SiteConfig };
+
+export function getSite(): SiteConfig {
+  if (typeof window !== "undefined") {
+    return defaultSite as SiteConfig;
+  }
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { readJson } = require("./storage") as typeof import("./storage");
+  return readJson<SiteConfig>("site.json");
+}
 
 export function waLink(message?: string) {
-  const base = `https://wa.me/${site.phones.whatsapp.wa}`;
+  const s = getSite();
+  const base = `https://wa.me/${s.phones.whatsapp.wa}`;
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
 
 export const telLink = (tel: string) => `tel:${tel}`;
+
+/** Static defaults for client bundles; prefer getSite() on the server */
+export const site = defaultSite as SiteConfig;

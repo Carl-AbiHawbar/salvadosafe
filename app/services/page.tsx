@@ -4,7 +4,9 @@ import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { LeadForm } from "@/components/lead-form";
 import { WhatsAppButton, QuoteButton, CallButton, CTA } from "@/components/cta";
-import { ShieldIcon, ToolsIcon, HeadsetIcon, TruckIcon, CheckIcon } from "@/components/icons";
+import { getPagesContent } from "@/lib/content";
+import { getIcon } from "@/lib/icon-map";
+import { CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Professional Safe & Vault Services",
@@ -12,54 +14,31 @@ export const metadata: Metadata = {
     "Salvado provides technical services for safes, vault doors, vault rooms, installation, maintenance, relocation, safe opening, and after-sales support for residential, commercial, and institutional clients.",
 };
 
-const services = [
-  { id: "consultation", title: "Security Consultation, Delivery & Installation", text: "Site assessment, product recommendation, discreet delivery, professional installation, and technical follow-up after installation.", cta: "Request Consultation", icon: ShieldIcon },
-  { id: "locksmith", title: "Master Locksmith Services", text: "Locked out of your safe? Our technicians provide professional safe opening and lock service for verified owners, with careful methods to reduce unnecessary damage whenever possible.", cta: "Request Safe Opening", icon: ToolsIcon },
-  { id: "maintenance", title: "Safe Repair & Maintenance", text: "Lock replacement, digital lock upgrades, combination changes, troubleshooting, and preventative servicing to keep safes operating correctly.", cta: "Request Maintenance", icon: ToolsIcon },
-  { id: "vault", title: "Vault Doors & Vault Rooms", text: "High-security vault doors and complete vault room systems for bank-level, institutional, commercial, and private security requirements.", cta: "View Vault Services", icon: ShieldIcon },
-  { id: "relocation", title: "Safe Relocation", text: "Professional relocation of safes with proper handling, transport planning, and setup at the new location.", cta: "Request Relocation", icon: TruckIcon },
-  { id: "support", title: "After-Sales Technical Support", text: "Specialized technical assistance for Salvado clients, including lock guidance, service coordination, maintenance follow-up, and product support after purchase or installation.", cta: "Contact Technical Support", icon: HeadsetIcon },
-];
-
-const whyPoints = [
-  { title: "Certified & Trained Team", text: "Services handled by Salvado's trained technical team with decades of experience in safes, locks, vault doors, installation, and security products." },
-  { title: "European-Standard Installation", text: "Installations carried out according to product specifications, site conditions, and European security norms where applicable." },
-  { title: "Support Before & After Purchase", text: "From consultation and product selection to installation, maintenance, relocation, and after-sales support." },
-  { title: "Trusted Across Sectors", text: "We work with homeowners, businesses, jewelers, banks, institutions, offices, villas, and private clients with demanding requirements." },
-];
-
-const faqs = [
-  { q: "Can Salvado install safes and vault doors?", a: "Yes. Salvado provides professional delivery and installation based on product specifications, site conditions, and access requirements." },
-  { q: "Can Salvado open a locked safe?", a: "Yes. Salvado provides safe opening and lock service for verified owners using professional methods designed to reduce unnecessary damage whenever possible." },
-  { q: "Can Salvado repair or replace a safe lock?", a: "Yes. Salvado handles lock replacement, digital lock upgrades, combination changes, troubleshooting, and maintenance depending on the model." },
-  { q: "Can Salvado relocate a safe?", a: "Yes. Salvado can relocate safes with proper handling, transport planning, and setup at the new location." },
-  { q: "Does Salvado provide after-sales support?", a: "Yes. Salvado provides technical support, service coordination, maintenance guidance, and lock-related assistance after purchase or installation." },
-];
-
 export default function ServicesPage() {
+  const content = getPagesContent().services;
+
   return (
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-ink">
         <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/brand/vdi.png" alt="" className="h-full w-full object-cover opacity-25" />
+          <img src={content.hero.image} alt="" className="h-full w-full object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
         </div>
         <div className="container-x relative py-24 md:py-32">
           <Reveal className="max-w-2xl">
-            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Technical Services</p>
+            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{content.hero.eyebrow}</p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">
-              Professional Safe &amp; Vault Services
+              {content.hero.title}
             </h1>
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
-              Salvado provides technical services for safes, vault doors, vault rooms, installation, maintenance,
-              relocation, safe opening, and after-sales support for residential, commercial, and institutional clients.
+              {content.hero.text}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <CTA href="#request" variant="primary">Request a Service</CTA>
-              <WhatsAppButton label="WhatsApp Salvado" message="Hi Salvado, I'd like to request a service." />
-              <CallButton variant="dark" />
+              <CTA href="#request" variant="primaryLight">Request a Service</CTA>
+              <WhatsAppButton label="WhatsApp Salvado" message="Hi Salvado, I'd like to request a service." variant="outlineLight" />
+              <CallButton variant="ghostLight" />
             </div>
           </Reveal>
         </div>
@@ -70,17 +49,19 @@ export default function ServicesPage() {
         <div className="container-x py-20 md:py-24">
           <Reveal>
             <SectionHeading
-              eyebrow="What We Do"
-              title="Our Services"
-              text="Salvado supports clients before, during, and after the sale — with serious, technical expertise."
+              eyebrow={content.overview.eyebrow}
+              title={content.overview.title}
+              text={content.overview.text}
             />
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s, i) => (
+            {content.items.map((s, i) => {
+              const Icon = getIcon(s.icon);
+              return (
               <Reveal key={s.id} delay={i * 60} className="scroll-mt-28" >
                 <div id={s.id} className="flex h-full flex-col rounded-2xl border border-line bg-white p-7 shadow-card transition-shadow hover:shadow-soft">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand">
-                    <s.icon />
+                    <Icon />
                   </div>
                   <h3 className="mt-5 text-[17px] font-bold text-ink">{s.title}</h3>
                   <p className="mt-2 flex-1 text-[14px] leading-relaxed text-muted">{s.text}</p>
@@ -89,7 +70,8 @@ export default function ServicesPage() {
                   </div>
                 </div>
               </Reveal>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -104,7 +86,7 @@ export default function ServicesPage() {
             />
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {whyPoints.map((p, i) => (
+            {content.whyPoints.map((p, i) => (
               <Reveal key={p.title} delay={i * 70} className="rounded-2xl border border-line bg-white p-7 shadow-card">
                 <CheckIcon className="text-brand" />
                 <h3 className="mt-4 text-[16px] font-bold text-ink">{p.title}</h3>
@@ -148,7 +130,7 @@ export default function ServicesPage() {
             <SectionHeading eyebrow="FAQ" title="Service Questions" />
           </Reveal>
           <div className="mt-12">
-            <FAQ items={faqs} />
+            <FAQ items={content.faqs} />
           </div>
         </div>
       </section>

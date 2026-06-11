@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { categories } from "@/lib/catalog";
+import { getCategories } from "@/lib/catalog";
 
 export const metadata: Metadata = { title: "Sitemap" };
 
@@ -32,7 +32,7 @@ export default function SitemapPage() {
           <div>
             <h2 className="mb-4 text-[13px] font-bold uppercase tracking-wider text-muted">Product Categories</h2>
             <ul className="space-y-2.5">
-              {categories.map((c) => (
+              {getCategories().map((c) => (
                 <li key={c.slug}>
                   <Link href={`/category/${c.slug}`} className="text-[15px] text-ink-2 hover:text-brand">{c.name}</Link>
                 </li>

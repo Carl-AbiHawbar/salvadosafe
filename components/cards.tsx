@@ -9,13 +9,19 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft">
       <Link href={`/product/${product.slug}`} className="relative block aspect-square overflow-hidden bg-surface">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={product.image}
-          alt={product.name}
-          loading="lazy"
-          className="h-full w-full object-contain p-5 transition-transform duration-500 group-hover:scale-105"
-        />
+        {product.image ? (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={product.image}
+            alt={product.name}
+            loading="lazy"
+            className="h-full w-full object-contain p-5 transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <span className="flex h-full w-full items-center justify-center text-[12.5px] font-semibold text-muted">
+            Photo on request
+          </span>
+        )}
         {cat && (
           <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-brand backdrop-blur">
             {cat.name}
@@ -43,7 +49,7 @@ export function ProductCard({ product }: { product: Product }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`WhatsApp about ${product.name}`}
-            className="inline-flex items-center justify-center rounded-full bg-wa px-3 py-2 text-white transition-transform hover:scale-105"
+            className="inline-flex items-center justify-center rounded-full border border-line bg-white px-3 py-2 transition-colors hover:border-brand"
           >
             <WhatsAppIcon width={17} height={17} />
           </a>
@@ -86,7 +92,7 @@ export function CategoryCard({ category, premium = false }: { category: Category
         <div className="mt-4 flex flex-wrap items-center gap-2">
           <Link
             href={`/category/${category.slug}`}
-            className="inline-flex items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-brand-dark"
+            className="inline-flex items-center gap-1.5 rounded-full border border-brand bg-brand px-4 py-2 text-[13px] font-semibold !text-white transition-colors hover:bg-brand-dark [&_svg]:stroke-white"
           >
             View Category <ArrowIcon width={15} height={15} />
           </Link>
@@ -94,7 +100,7 @@ export function CategoryCard({ category, premium = false }: { category: Category
             href={waLink(`Hi Salvado, I'd like a recommendation for ${category.name}.`)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full border border-line px-4 py-2 text-[13px] font-semibold text-ink transition-colors hover:border-wa hover:text-wa"
+            className="inline-flex items-center gap-1.5 rounded-full border border-line px-4 py-2 text-[13px] font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
           >
             <WhatsAppIcon width={15} height={15} /> Recommendation
           </a>

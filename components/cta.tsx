@@ -2,17 +2,34 @@ import Link from "next/link";
 import { site, waLink, telLink } from "@/lib/site";
 import { WhatsAppIcon, PhoneIcon, QuoteIcon, PinIcon, ArrowIcon } from "./icons";
 
-type Variant = "wa" | "primary" | "outline" | "ghost" | "dark";
+type Variant =
+  | "wa"
+  | "primary"
+  | "primaryLight"
+  | "outline"
+  | "outlineLight"
+  | "ghost"
+  | "ghostLight"
+  | "dark";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 text-[14px] px-6 py-3 active:scale-[0.98]";
+  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 text-[14px] px-6 py-3 active:scale-[0.98] [&_svg]:shrink-0";
 
 const variants: Record<Variant, string> = {
-  wa: "bg-wa text-white hover:brightness-105 shadow-[0_8px_20px_rgba(37,211,102,0.25)]",
-  primary: "bg-brand text-white hover:bg-brand-dark shadow-[0_8px_20px_rgba(184,13,13,0.22)]",
+  wa: "border border-line bg-white text-ink hover:border-brand hover:bg-brand-soft shadow-sm",
+  /* Solid red — white backgrounds (header, cards) */
+  primary:
+    "border border-brand bg-brand !text-white hover:bg-brand-dark shadow-[0_8px_20px_rgba(184,13,13,0.22)] [&_svg]:stroke-white",
+  /* Transparent red — dark heroes & dark sections */
+  primaryLight:
+    "border border-brand/90 bg-brand/10 !text-white backdrop-blur-sm hover:bg-brand/25 [&_svg]:stroke-white",
   outline: "border border-brand/70 text-brand bg-white hover:bg-brand-soft",
+  outlineLight:
+    "border border-white/40 bg-white/10 !text-white backdrop-blur hover:bg-white/20 [&_svg]:stroke-white",
   ghost: "border border-line text-ink bg-white hover:border-ink/30",
-  dark: "bg-ink text-white hover:bg-black",
+  ghostLight:
+    "border border-white/35 bg-white/10 !text-white backdrop-blur hover:bg-white/20 [&_svg]:stroke-white",
+  dark: "bg-ink !text-white hover:bg-black [&_svg]:stroke-white",
 };
 
 export function CTA({
@@ -54,14 +71,24 @@ export function WhatsAppButton({
   variant?: Variant;
   className?: string;
 }) {
+  const iconOnDark =
+    variant === "outlineLight" || variant === "ghostLight" || variant === "primaryLight";
   return (
     <CTA href={waLink(message)} external variant={variant} className={className}>
-      <WhatsAppIcon /> {label}
+      <WhatsAppIcon className={iconOnDark ? "brightness-0 invert" : ""} /> {label}
     </CTA>
   );
 }
 
-export function QuoteButton({ label = "Request a Quote", variant = "primary", className = "" }: { label?: string; variant?: Variant; className?: string }) {
+export function QuoteButton({
+  label = "Request a Quote",
+  variant = "primary",
+  className = "",
+}: {
+  label?: string;
+  variant?: Variant;
+  className?: string;
+}) {
   return (
     <CTA href="/contact" variant={variant} className={className}>
       <QuoteIcon /> {label}
@@ -69,7 +96,15 @@ export function QuoteButton({ label = "Request a Quote", variant = "primary", cl
   );
 }
 
-export function CallButton({ label = "Call the Showroom", variant = "ghost", className = "" }: { label?: string; variant?: Variant; className?: string }) {
+export function CallButton({
+  label = "Call the Showroom",
+  variant = "ghost",
+  className = "",
+}: {
+  label?: string;
+  variant?: Variant;
+  className?: string;
+}) {
   return (
     <CTA href={telLink(site.phones.landline.tel)} external variant={variant} className={className}>
       <PhoneIcon /> {label}
@@ -77,7 +112,15 @@ export function CallButton({ label = "Call the Showroom", variant = "ghost", cla
   );
 }
 
-export function MapButton({ label = "Visit the Showroom", variant = "ghost", className = "" }: { label?: string; variant?: Variant; className?: string }) {
+export function MapButton({
+  label = "Visit the Showroom",
+  variant = "ghost",
+  className = "",
+}: {
+  label?: string;
+  variant?: Variant;
+  className?: string;
+}) {
   return (
     <CTA href={site.maps} external variant={variant} className={className}>
       <PinIcon /> {label}
@@ -85,9 +128,20 @@ export function MapButton({ label = "Visit the Showroom", variant = "ghost", cla
   );
 }
 
-export function TextLink({ href, children, className = "" }: { href: string; children: React.ReactNode; className?: string }) {
+export function TextLink({
+  href,
+  children,
+  className = "",
+}: {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <Link href={href} className={`inline-flex items-center gap-1.5 text-[14px] font-semibold text-brand link-underline ${className}`}>
+    <Link
+      href={href}
+      className={`inline-flex items-center gap-1.5 text-[14px] font-semibold text-brand link-underline ${className}`}
+    >
       {children} <ArrowIcon width={16} height={16} />
     </Link>
   );

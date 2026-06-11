@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { site } from "@/lib/site";
+import { useSite } from "./site-provider";
 import { WhatsAppIcon } from "./icons";
 
 const inputCls =
@@ -14,6 +14,7 @@ export function LeadForm({
   variant?: "contact" | "service";
   className?: string;
 }) {
+  const site = useSite();
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -78,9 +79,9 @@ export function LeadForm({
 
       <button
         type="submit"
-        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-wa px-6 py-3.5 text-[15px] font-semibold text-white transition-all hover:brightness-105 active:scale-[0.99] sm:w-auto"
+        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full border border-line bg-white px-6 py-3.5 text-[15px] font-semibold text-ink transition-all hover:border-brand hover:bg-brand-soft active:scale-[0.99] sm:w-auto"
       >
-        <WhatsAppIcon /> {variant === "service" ? "Submit Service Request" : "Send via WhatsApp"}
+        <WhatsAppIcon width={20} height={20} /> {variant === "service" ? "Submit Service Request" : "Send via WhatsApp"}
       </button>
 
       {sent && (

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { site, waLink, telLink } from "@/lib/site";
-import { featuredCategories } from "@/lib/catalog";
+import { getSite, waLink, telLink } from "@/lib/site";
+import type { Category } from "@/lib/catalog";
 import { WhatsAppIcon, PinIcon, ShieldIcon, StarIcon, TruckIcon, CheckIcon } from "./icons";
 
 const services = [
@@ -19,7 +19,8 @@ const trust = [
   { icon: TruckIcon, label: "European-Standard Installation" },
 ];
 
-export function Footer() {
+export function Footer({ featuredCategories }: { featuredCategories: Category[] }) {
+  const site = getSite();
   return (
     <footer className="mt-auto border-t border-line bg-ink text-white">
       {/* Trust strip */}
@@ -99,8 +100,8 @@ export function Footer() {
             </li>
           </ul>
           <div className="mt-5 flex flex-wrap gap-2">
-            <a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-wa px-4 py-2 text-[13px] font-semibold text-white hover:brightness-105">
-              <WhatsAppIcon width={15} height={15} /> WhatsApp Salvado
+            <a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-4 py-2 text-[13px] font-semibold text-white hover:border-white hover:bg-white/10">
+              <WhatsAppIcon width={15} height={15} className="brightness-0 invert" /> WhatsApp Salvado
             </a>
             <a href={site.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-[13px] font-semibold hover:border-white">
               <PinIcon width={15} height={15} /> Google Maps

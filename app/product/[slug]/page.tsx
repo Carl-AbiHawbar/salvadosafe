@@ -6,11 +6,11 @@ import { FAQ } from "@/components/faq";
 import { ProductCard } from "@/components/cards";
 import { SectionHeading, FinalCTA } from "@/components/sections";
 import { WhatsAppButton, QuoteButton, CallButton, CTA } from "@/components/cta";
-import { products, getProduct, getCategory, similarProducts } from "@/lib/catalog";
+import { getProducts, getProduct, getCategory, similarProducts, type Product } from "@/lib/catalog";
 import { CheckIcon, TruckIcon, ShieldIcon, ToolsIcon, HeadsetIcon } from "@/components/icons";
 
 export function generateStaticParams() {
-  return products.map((p) => ({ slug: p.slug }));
+  return getProducts().map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -30,6 +30,24 @@ const quickTrust = [
   { icon: HeadsetIcon, label: "After-Sales Support" },
 ];
 
+const SPEC_LABELS: { key: keyof Product["specs"]; label: string }[] = [
+  { key: "external", label: "External Size (H × W × D mm)" },
+  { key: "internal", label: "Internal Size (H × W × D mm)" },
+  { key: "weight", label: "Weight" },
+  { key: "volume", label: "Volume / Capacity" },
+  { key: "shelves", label: "Shelves / Drawers" },
+  { key: "bolts", label: "Locking Bolts" },
+  { key: "lock", label: "Lock / Access" },
+  { key: "fireRating", label: "Fire Rating" },
+  { key: "grade", label: "Security Grade / Certification" },
+  { key: "warranty", label: "Warranty" },
+];
+
+function formatSpec(key: string, value: string): string {
+  if (key === "weight" && /^[\d.,-]+$/.test(value)) return `${value} kg`;
+  return value;
+}
+
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const product = getProduct(slug);
@@ -38,17 +56,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const category = getCategory(product.category);
   const similar = similarProducts(product, 6);
 
-  const specs = [
-    { label: "Category", value: category?.name ?? "—" },
-    { label: "Series / Type", value: product.sub ?? "—" },
-    { label: "Dimensions", value: "Available on request" },
-    { label: "Weight", value: "Available on request" },
-    { label: "Lock Type", value: "Available on request" },
-    { label: "Warranty", value: "Per manufacturer terms" },
-  ];
+  // Hide empty fields — only show confirmed specs
+  const specRows = SPEC_LABELS.filter(({ key }) => product.specs[key]).map(({ key, label }) => ({
+    label,
+    value: formatSpec(key, product.specs[key] as string),
+  }));
+
+  const gallery = product.gallery && product.gallery.length > 1 ? product.gallery : null;
 
   const faqs = [
-    { q: `Is the ${product.name} available?`, a: "Yes — contact Salvado for current availability, pricing, and lead time. We can also advise on suitable alternatives." },
+    product.isProject
+      ? { q: `How does a ${product.name} project work?`, a: "These are project-based solutions. Salvado provides private consultation, site assessment, technical planning, and professional installation tailored to your space and security requirements." }
+      : { q: `Is the ${product.name} available?`, a: "Yes — contact Salvado for current availability, pricing, and lead time. We can also advise on suitable alternatives." },
     { q: "Can you deliver and install it?", a: "Yes. Salvado provides professional delivery and European-standard installation based on product specifications and site conditions." },
     { q: "Do you offer after-sales support?", a: "Yes. We provide technical support, lock assistance, maintenance guidance, and service coordination after purchase." },
     ...(category ? category.faqs.slice(0, 1) : []),
@@ -78,35 +97,82 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className="container-x grid items-start gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-line bg-surface">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={product.image} alt={product.name} className="aspect-square w-full object-contain p-8" />
+              {product.image ? (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img src={product.image} alt={product.name} className="aspect-square w-full object-contain p-8" />
+              ) : (
+                <div className="flex aspect-square w-full flex-col items-center justify-center gap-3 text-muted">
+                  <ShieldIcon width={40} height={40} className="text-line" />
+                  <span className="text-[14px] font-semibold">Photos available on request</span>
+                </div>
+              )}
             </div>
+            {gallery && (
+              <div className="mt-3 flex flex-wrap gap-2.5">
+                {gallery.map((img) => (
+                  <div key={img} className="h-20 w-20 overflow-hidden rounded-xl border border-line bg-surface">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={img} alt={product.name} loading="lazy" className="h-full w-full object-contain p-1.5" />
+                  </div>
+                ))}
+              </div>
+            )}
           </Reveal>
 
           <Reveal delay={80} className="md:sticky md:top-24">
-            {category && (
-              <Link
-                href={`/category/${category.slug}`}
-                className="inline-block rounded-full bg-brand-soft px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-brand"
-              >
-                {category.name}
-              </Link>
-            )}
+            <div className="flex flex-wrap gap-2">
+              {category && (
+                <Link
+                  href={`/category/${category.slug}`}
+                  className="inline-block rounded-full bg-brand-soft px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-brand"
+                >
+                  {category.name}
+                </Link>
+              )}
+              {product.sub && (
+                <span className="inline-block rounded-full border border-line px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-muted">
+                  {product.sub}
+                </span>
+              )}
+            </div>
             <h1 className="mt-4 font-display text-3xl font-bold leading-tight text-ink md:text-[44px]">{product.name}</h1>
-            {product.sub && <p className="mt-2 text-[14px] font-medium text-muted">{product.sub}</p>}
 
             {product.desc && (
               <p className="mt-5 text-[15.5px] leading-relaxed text-ink-2">{product.desc}</p>
             )}
 
+            {product.colors && (
+              <div className="mt-5">
+                <p className="text-[13px] font-semibold text-muted">Available Colors</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {product.colors.map((c) => (
+                    <span key={c} className="rounded-full border border-line bg-white px-4 py-1.5 text-[13px] font-semibold text-ink-2">
+                      {c}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="mt-6 rounded-2xl border border-line bg-surface px-5 py-4">
-              <p className="text-[13px] text-muted">Pricing</p>
-              <p className="text-[20px] font-bold text-ink">Call / WhatsApp for Price</p>
+              <p className="text-[13px] text-muted">{product.isProject ? "Project-Based Solution" : "Pricing"}</p>
+              <p className="text-[20px] font-bold text-ink">
+                {product.isProject ? "Custom Quotation by Project" : "Call / WhatsApp for Price"}
+              </p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <WhatsAppButton label="WhatsApp for Price" message={`Hi Salvado, I'm interested in the ${product.name}. Can you share the price and availability?`} />
-              <QuoteButton label="Request a Quote" />
+              {product.isProject ? (
+                <>
+                  <WhatsAppButton label="Request Private Consultation" message={`Hi Salvado, I'd like a private consultation about ${product.name}.`} />
+                  <QuoteButton label="Request a Quote" />
+                </>
+              ) : (
+                <>
+                  <WhatsAppButton label="WhatsApp for Price" message={`Hi Salvado, I'm interested in the ${product.name}. Can you share the price and availability?`} />
+                  <QuoteButton label="Request a Quote" />
+                </>
+              )}
               <CallButton />
             </div>
 
@@ -145,42 +211,52 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         </section>
       )}
 
-      {/* Best for + specs */}
+      {/* Specs + features */}
       <section className="bg-white">
         <div className="container-x grid gap-12 py-20 md:grid-cols-2">
           <Reveal>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Best For</p>
-            <h2 className="font-display text-3xl font-bold text-ink">Recommended Use</h2>
-            <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
-              {category?.protect ?? "Suitable for homes, businesses, and institutions with serious security requirements."}
-            </p>
-            <ul className="mt-6 space-y-3">
-              {["Certified, professional-grade protection", "Suited to residential, commercial & institutional use", "Backed by delivery, installation & after-sales support"].map((f) => (
-                <li key={f} className="flex items-start gap-2.5 text-[14.5px] text-ink-2">
-                  <CheckIcon width={18} height={18} className="mt-0.5 shrink-0 text-brand" /> {f}
-                </li>
-              ))}
-            </ul>
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Specifications</p>
+            <h2 className="font-display text-3xl font-bold text-ink">Technical Details</h2>
+            {specRows.length > 0 ? (
+              <div className="mt-5 overflow-hidden rounded-2xl border border-line">
+                <table className="w-full text-[14px]">
+                  <tbody>
+                    {specRows.map((s, i) => (
+                      <tr key={s.label} className={i % 2 ? "bg-surface" : "bg-white"}>
+                        <td className="w-1/2 px-5 py-3.5 align-top font-semibold text-ink-2">{s.label}</td>
+                        <td className="px-5 py-3.5 text-ink">{s.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              <p className="mt-5 text-[14.5px] leading-relaxed text-ink-2">
+                Specifications for this solution are confirmed per project. Contact our team for technical details.
+              </p>
+            )}
           </Reveal>
 
           <Reveal delay={80}>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Specifications</p>
-            <h2 className="font-display text-3xl font-bold text-ink">Technical Details</h2>
-            <div className="mt-5 overflow-hidden rounded-2xl border border-line">
-              <table className="w-full text-[14px]">
-                <tbody>
-                  {specs.map((s, i) => (
-                    <tr key={s.label} className={i % 2 ? "bg-surface" : "bg-white"}>
-                      <td className="w-1/2 px-5 py-3.5 font-semibold text-ink-2">{s.label}</td>
-                      <td className="px-5 py-3.5 text-ink">{s.value}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="mt-3 text-[13px] text-muted">
-              Full specifications, brochures, and technical sheets are available on request.
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
+              {product.features.length > 0 ? "Main Features" : "Best For"}
             </p>
+            <h2 className="font-display text-3xl font-bold text-ink">
+              {product.features.length > 0 ? "What This Model Offers" : "Recommended Use"}
+            </h2>
+            {product.features.length > 0 ? (
+              <ul className="mt-5 space-y-3">
+                {product.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-[14.5px] leading-relaxed text-ink-2">
+                    <CheckIcon width={18} height={18} className="mt-0.5 shrink-0 text-brand" /> {f}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-5 text-[15px] leading-relaxed text-ink-2">
+                {category?.protect ?? "Suitable for homes, businesses, and institutions with serious security requirements."}
+              </p>
+            )}
           </Reveal>
         </div>
       </section>
@@ -194,9 +270,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </div>
             <h3 className="mt-4 font-display text-xl font-bold text-ink">Security Details &amp; Documents</h3>
             <p className="mt-3 text-[14.5px] leading-relaxed text-ink-2">
-              Security grade, fire rating, certifications, and technical documents vary by model. Contact Salvado to
-              confirm the certified specifications for this product and to request the relevant brochure or technical
-              sheet.
+              {product.specs.grade
+                ? `This model carries: ${product.specs.grade}. Contact Salvado to request the relevant brochure or technical sheet.`
+                : "Certifications and technical documents vary by model. Contact Salvado to confirm the specifications for this product and request the relevant brochure or technical sheet."}
             </p>
             <div className="mt-5">
               <WhatsAppButton variant="outline" label="Request Documents" message={`Hi Salvado, can you send the documents for the ${product.name}?`} />

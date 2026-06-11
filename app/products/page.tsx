@@ -4,7 +4,7 @@ import { TrustStrip, SectionHeading, FinalCTA } from "@/components/sections";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { WhatsAppButton, QuoteButton, MapButton } from "@/components/cta";
-import { featuredCategories, secondaryCategories, getProduct, products, totalProducts } from "@/lib/catalog";
+import { getFeaturedCategories, getSecondaryCategories, getProduct, getProducts, getTotalProducts } from "@/lib/catalog";
 import { ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -22,11 +22,12 @@ const protectCards = [
   { title: "Discreet Storage", text: "For concealed storage in homes, offices, and private spaces.", slug: "concealed-camouflage-safes", cta: "View Concealed Safes" },
 ];
 
-const selectedSlugs = ["grade-v-high-security-safe", "sa2601", "gs-10", "s59e", "slx-29"];
+// Confirmed selection: Grade V, 2-hour fire-rated, vault door, luxury safe, money counter
+const selectedSlugs = ["ak-8le", "s-59", "vault-doors", "custom-luxury-safe", "plus-p30-money-counter"];
 
 export default function ProductsPage() {
   const selected = selectedSlugs.map((s) => getProduct(s)).filter(Boolean);
-  const fallback = products.slice(0, 5);
+  const fallback = getProducts().slice(0, 5);
   const selectedProducts = (selected.length ? selected : fallback) as NonNullable<ReturnType<typeof getProduct>>[];
 
   return (
@@ -50,9 +51,9 @@ export default function ProductsPage() {
               clients.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <WhatsAppButton label="WhatsApp for Recommendation" message="Hi Salvado, I'd like a product recommendation." />
-              <QuoteButton />
-              <MapButton variant="dark" />
+              <WhatsAppButton label="WhatsApp for Recommendation" message="Hi Salvado, I'd like a product recommendation." variant="outlineLight" />
+              <QuoteButton variant="primaryLight" />
+              <MapButton variant="ghostLight" />
             </div>
           </Reveal>
         </div>
@@ -94,13 +95,13 @@ export default function ProductsPage() {
         <div className="container-x py-20 md:py-24">
           <Reveal>
             <SectionHeading
-              eyebrow={`${totalProducts} Products`}
+              eyebrow={`${getTotalProducts()} Products`}
               title="Browse Product Categories"
               text="View Salvado's main product categories, compare available options, and contact our team for pricing, availability, and technical guidance."
             />
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredCategories.map((c, i) => (
+            {getFeaturedCategories().map((c, i) => (
               <Reveal key={c.slug} delay={i * 50}>
                 <CategoryCard category={c} premium />
               </Reveal>
@@ -112,7 +113,7 @@ export default function ProductsPage() {
               More Categories
             </p>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {secondaryCategories.map((c, i) => (
+              {getSecondaryCategories().map((c, i) => (
                 <Reveal key={c.slug} delay={i * 40}>
                   <Link
                     href={`/category/${c.slug}`}

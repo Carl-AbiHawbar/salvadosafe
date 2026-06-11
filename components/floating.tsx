@@ -2,10 +2,12 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { site, waLink, telLink } from "@/lib/site";
+import { useSite } from "./site-provider";
+import { waLink, telLink } from "@/lib/site";
 import { WhatsAppIcon, PhoneIcon, QuoteIcon } from "./icons";
 
 export function Floating() {
+  const site = useSite();
   const [showTop, setShowTop] = useState(false);
 
   useEffect(() => {
@@ -16,16 +18,15 @@ export function Floating() {
 
   return (
     <>
-      {/* WhatsApp FAB (desktop + above mobile bar) */}
+      {/* WhatsApp FAB — outline icon, no green fill */}
       <a
         href={waLink("Hi Salvado, I have a question.")}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-20 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-wa text-white shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition-transform hover:scale-110 md:bottom-6 md:right-6"
+        className="fixed bottom-20 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-white text-ink shadow-soft transition-transform hover:scale-110 hover:border-brand md:bottom-6 md:right-6"
       >
         <WhatsAppIcon width={28} height={28} />
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-wa opacity-20" />
       </a>
 
       {/* Scroll to top */}
@@ -47,7 +48,7 @@ export function Floating() {
           <PhoneIcon width={18} height={18} className="text-brand" /> Call
         </a>
         <a href={waLink()} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-0.5 border-x border-line py-2.5 text-[11px] font-semibold text-ink">
-          <WhatsAppIcon width={18} height={18} className="text-wa" /> WhatsApp
+          <WhatsAppIcon width={18} height={18} /> WhatsApp
         </a>
         <Link href="/contact" className="flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold text-ink">
           <QuoteIcon width={18} height={18} className="text-brand" /> Request Quote

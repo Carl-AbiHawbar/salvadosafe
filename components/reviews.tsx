@@ -2,17 +2,17 @@
 
 import { useRef } from "react";
 import { StarIcon } from "./icons";
+import type { Review } from "@/lib/content";
 
-const reviews = [
-  { name: "Abdo Sebaali", when: "1 month ago", text: "Best place to buy a safe!", color: "bg-slate-600" },
-  { name: "Assaad Nader", when: "1 month ago", text: "We asked for a safety box at 11am and by 3pm it was fixed at our home — rapid and professional service.", color: "bg-indigo-600" },
-  { name: "Robert Frayha", when: "1 month ago", text: "Great product, great service. Best choice.", color: "bg-rose-600" },
-  { name: "Christine Soulaj", when: "1 month ago", text: "Excellent and fast service, safe is very high quality, made in Spain.", color: "bg-emerald-600" },
-  { name: "Marine Bou Chaaya", when: "1 month ago", text: "Great product and quality.", color: "bg-amber-600" },
-  { name: "Sysy Fitness", when: "1 month ago", text: "Highly recommended, team are so friendly and professional.", color: "bg-teal-600" },
-];
-
-export function ReviewsCarousel() {
+export function ReviewsCarousel({
+  reviews,
+  ratingLabel,
+  reviewCount,
+}: {
+  reviews: Review[];
+  ratingLabel: string;
+  reviewCount: string;
+}) {
   const trackRef = useRef<HTMLDivElement>(null);
 
   const scroll = (dir: number) => {
@@ -24,14 +24,14 @@ export function ReviewsCarousel() {
   return (
     <div className="relative">
       <div className="mb-8 flex flex-col items-center text-center">
-        <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-emerald-600">Excellent</p>
+        <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-emerald-600">{ratingLabel}</p>
         <div className="mt-1 flex text-amber-400">
           {Array.from({ length: 5 }).map((_, i) => (
             <StarIcon key={i} width={20} height={20} />
           ))}
         </div>
         <p className="mt-2 text-[14px] text-ink-2">
-          Based on <strong className="text-ink">158 reviews</strong> on{" "}
+          Based on <strong className="text-ink">{reviewCount}</strong> on{" "}
           <span className="font-semibold">
             <span className="text-[#4285F4]">G</span>
             <span className="text-[#EA4335]">o</span>

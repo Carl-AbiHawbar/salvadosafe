@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { site, waLink, telLink } from "@/lib/site";
-import { featuredCategories, secondaryCategories } from "@/lib/catalog";
+import { useSite } from "./site-provider";
+import type { Category } from "@/lib/catalog";
+import { SiteSearch } from "./site-search";
 import { WhatsAppIcon, PhoneIcon, PinIcon, ChevronDown, MenuIcon, CloseIcon, ArrowIcon, QuoteIcon } from "./icons";
+import { waLink, telLink } from "@/lib/site";
 
 const services = [
   { label: "Consultation, Delivery & Installation", href: "/services#consultation" },
@@ -25,7 +27,14 @@ const mainNav = [
   { label: "Contact", href: "/contact" },
 ];
 
-export function Header() {
+export function Header({
+  featuredCategories,
+  secondaryCategories,
+}: {
+  featuredCategories: Category[];
+  secondaryCategories: Category[];
+}) {
+  const site = useSite();
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -54,7 +63,7 @@ export function Header() {
               <PhoneIcon width={13} height={13} /> {site.phones.landline.label}
             </a>
             <a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-white/80">
-              <WhatsAppIcon width={13} height={13} /> {site.phones.whatsapp.label}
+              <WhatsAppIcon width={13} height={13} className="brightness-0 invert" /> {site.phones.whatsapp.label}
             </a>
           </div>
           <div className="flex items-center gap-5">
@@ -150,21 +159,13 @@ export function Header() {
 
           {/* Right actions */}
           <div className="flex items-center gap-2">
+            <SiteSearch />
             <Link
               href="/contact"
-              className="hidden items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-[13.5px] font-semibold text-white transition-colors hover:bg-brand-dark md:inline-flex"
+              className="hidden items-center gap-2 rounded-full border border-brand bg-brand px-5 py-2.5 text-[13.5px] font-semibold !text-white transition-colors hover:bg-brand-dark md:inline-flex [&_svg]:stroke-white"
             >
               <QuoteIcon width={16} height={16} /> Request a Quote
             </Link>
-            <a
-              href={waLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp Salvado"
-              className="inline-flex items-center justify-center rounded-full bg-wa p-2.5 text-white md:hidden"
-            >
-              <WhatsAppIcon width={20} height={20} />
-            </a>
           </div>
         </div>
       </header>
@@ -182,6 +183,9 @@ export function Header() {
               </button>
             </div>
             <nav className="p-3">
+              <div className="mb-3 px-3">
+                <SiteSearch className="w-full justify-center" />
+              </div>
               <Link href="/" className="block rounded-lg px-3 py-3 text-[15px] font-semibold text-ink hover:bg-surface">Home</Link>
 
               <MobileGroup label="Products" open={expanded === "products"} onToggle={() => setExpanded(expanded === "products" ? null : "products")}>
@@ -201,7 +205,7 @@ export function Header() {
               <Link href="/about" className="block rounded-lg px-3 py-3 text-[15px] font-semibold text-ink hover:bg-surface">About</Link>
               <Link href="/contact" className="block rounded-lg px-3 py-3 text-[15px] font-semibold text-ink hover:bg-surface">Contact</Link>
 
-              <Link href="/contact" className="mt-3 flex items-center justify-center gap-2 rounded-full bg-brand px-5 py-3 text-[14px] font-semibold text-white">
+              <Link href="/contact" className="mt-3 flex items-center justify-center gap-2 rounded-full border border-brand bg-brand px-5 py-3 text-[14px] font-semibold !text-white [&_svg]:stroke-white">
                 <QuoteIcon width={16} height={16} /> Request a Quote
               </Link>
             </nav>
