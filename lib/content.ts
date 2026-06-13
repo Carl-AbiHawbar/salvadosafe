@@ -53,7 +53,7 @@ export type PagesContent = {
     hero: { eyebrow: string; title: string; text: string; image: string };
     overview: { eyebrow: string; title: string; text: string };
     items: ServiceItem[];
-    whyPoints: { title: string; text: string }[];
+    whyPoints: IconPoint[];
     faqs: Faq[];
   };
 };

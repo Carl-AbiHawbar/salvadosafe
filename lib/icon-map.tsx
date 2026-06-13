@@ -5,6 +5,9 @@ import {
   HeadsetIcon,
   StarIcon,
   TruckIcon,
+  FlagIcon,
+  AwardIcon,
+  UsersIcon,
 } from "@/components/icons";
 
 export const iconMap = {
@@ -14,6 +17,9 @@ export const iconMap = {
   headset: HeadsetIcon,
   star: StarIcon,
   truck: TruckIcon,
+  flag: FlagIcon,
+  award: AwardIcon,
+  users: UsersIcon,
 } as const;
 
 export type IconKey = keyof typeof iconMap;

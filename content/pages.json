@@ -138,10 +138,10 @@
       { "id": "support", "title": "After-Sales Technical Support", "text": "Specialized technical assistance for Salvado clients, including lock guidance, service coordination, maintenance follow-up, and product support after purchase or installation.", "cta": "Contact Technical Support", "icon": "headset" }
     ],
     "whyPoints": [
-      { "title": "Certified & Trained Team", "text": "Services handled by Salvado's trained technical team with decades of experience in safes, locks, vault doors, installation, and security products." },
-      { "title": "European-Standard Installation", "text": "Installations carried out according to product specifications, site conditions, and European security norms where applicable." },
-      { "title": "Support Before & After Purchase", "text": "From consultation and product selection to installation, maintenance, relocation, and after-sales support." },
-      { "title": "Trusted Across Sectors", "text": "We work with homeowners, businesses, jewelers, banks, institutions, offices, villas, and private clients with demanding requirements." }
+      { "icon": "award", "title": "Certified & Trained Team", "text": "Services handled by Salvado's trained technical team with decades of experience in safes, locks, vault doors, installation, and security products." },
+      { "icon": "flag", "title": "European-Standard Installation", "text": "Installations carried out according to product specifications, site conditions, and European security norms where applicable." },
+      { "icon": "headset", "title": "Support Before & After Purchase", "text": "From consultation and product selection to installation, maintenance, relocation, and after-sales support." },
+      { "icon": "users", "title": "Trusted Across Sectors", "text": "We work with homeowners, businesses, jewelers, banks, institutions, offices, villas, and private clients with demanding requirements." }
     ],
     "faqs": [
       { "q": "Can Salvado install safes and vault doors?", "a": "Yes. Salvado provides professional delivery and installation based on product specifications, site conditions, and access requirements." },

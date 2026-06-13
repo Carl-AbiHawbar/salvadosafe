@@ -1,1352 +1,5 @@
 [
   {
-    "slug": "at-1le",
-    "name": "AT-1LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "350 x 440 x 350",
-      "internal": "250 x 340 x 230",
-      "weight": "100",
-      "volume": "20 L",
-      "shelves": "1",
-      "bolts": "8",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-2le",
-    "name": "AT-2LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "500 x 550 x 440",
-      "internal": "400 x 450 x 320",
-      "weight": "180",
-      "volume": "58 L",
-      "shelves": "2",
-      "bolts": "8",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-3le",
-    "name": "AT-3LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "650 x 550 x 440",
-      "internal": "550 x 450 x 320",
-      "weight": "220",
-      "volume": "79 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-4le",
-    "name": "AT-4LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "800 x 550 x 440",
-      "internal": "700 x 450 x 320",
-      "weight": "265",
-      "volume": "101 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-5le",
-    "name": "AT-5LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "950 x 550 x 440",
-      "internal": "850 x 450 x 320",
-      "weight": "300",
-      "volume": "122 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-6le",
-    "name": "AT-6LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1100 x 550 x 440",
-      "internal": "1000 x 450 x 320",
-      "weight": "345",
-      "volume": "144 L",
-      "shelves": "4",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-7le",
-    "name": "AT-7LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1250 x 550 x 440",
-      "internal": "1150 x 450 x 320",
-      "weight": "380",
-      "volume": "166 L",
-      "shelves": "5",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-8le",
-    "name": "AT-8LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1400 x 650 x 540",
-      "internal": "1300 x 550 x 420",
-      "weight": "535",
-      "volume": "300 L",
-      "shelves": "5",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-9le",
-    "name": "AT-9LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1550 x 800 x 640",
-      "internal": "1450 x 700 x 520",
-      "weight": "720",
-      "volume": "535 L",
-      "shelves": "6",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-10le",
-    "name": "AT-10LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1400 x 450 x 440",
-      "internal": "1300 x 350 x 320",
-      "weight": "365",
-      "volume": "146 L",
-      "shelves": "5",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-11le",
-    "name": "AT-11LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1550 x 550 x 440",
-      "internal": "1450 x 450 x 320",
-      "weight": "460",
-      "volume": "209 L",
-      "shelves": "6",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "at-12le",
-    "name": "AT-12LE",
-    "sub": "Grade I",
-    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1550 x 650 x 440",
-      "internal": "1450 x 550 x 320",
-      "weight": "520",
-      "volume": "255 L",
-      "shelves": "6",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade I",
-      "warranty": "5 years"
-    },
-    "features": [
-      "12 mm thick steel door",
-      "50 mm thick body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "height-adjustable shelves except AT-1",
-      "RAL Design 000 25 00"
-    ]
-  },
-  {
-    "slug": "am-1le",
-    "name": "AM-1LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "350 x 440 x 350",
-      "internal": "250 x 340 x 195",
-      "weight": "115",
-      "volume": "17 L",
-      "shelves": "1",
-      "bolts": "8",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-2le",
-    "name": "AM-2LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "500 x 450 x 450",
-      "internal": "400 x 350 x 295",
-      "weight": "190",
-      "volume": "41 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-25le",
-    "name": "AM-25LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "500 x 550 x 550",
-      "internal": "400 x 450 x 395",
-      "weight": "250",
-      "volume": "71 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-3le",
-    "name": "AM-3LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "650 x 550 x 550",
-      "internal": "550 x 450 x 395",
-      "weight": "305",
-      "volume": "98 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-4le",
-    "name": "AM-4LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "800 x 550 x 550",
-      "internal": "700 x 450 x 395",
-      "weight": "360",
-      "volume": "124 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-5le",
-    "name": "AM-5LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "950 x 550 x 550",
-      "internal": "850 x 450 x 395",
-      "weight": "410",
-      "volume": "151 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-6le",
-    "name": "AM-6LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1100 x 550 x 550",
-      "internal": "1000 x 450 x 395",
-      "weight": "465",
-      "volume": "178 L",
-      "shelves": "4",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-65le",
-    "name": "AM-65LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1100 x 700 x 550",
-      "internal": "1000 x 600 x 395",
-      "weight": "550",
-      "volume": "237 L",
-      "shelves": "4",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-7le",
-    "name": "AM-7LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1250 x 550 x 550",
-      "internal": "1150 x 450 x 395",
-      "weight": "520",
-      "volume": "204 L",
-      "shelves": "5",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-75le",
-    "name": "AM-75LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1250 x 700 x 550",
-      "internal": "1150 x 600 x 395",
-      "weight": "610",
-      "volume": "273 L",
-      "shelves": "5",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-8le",
-    "name": "AM-8LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1400 x 650 x 650",
-      "internal": "1300 x 550 x 495",
-      "weight": "715",
-      "volume": "354 L",
-      "shelves": "5",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-9le",
-    "name": "AM-9LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1550 x 800 x 750",
-      "internal": "1450 x 700 x 595",
-      "weight": "980",
-      "volume": "604 L",
-      "shelves": "6",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "am-10le",
-    "name": "AM-10LE",
-    "sub": "Grade II",
-    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
-    "image": "/images/products/Untitled-design-6.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1700 x 800 x 650",
-      "internal": "1600 x 700 x 495",
-      "weight": "970",
-      "volume": "554 L",
-      "shelves": "6",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade II",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent fire seal",
-      "tip-proof height-adjustable shelves except AM-1",
-      "RAL Design 000 35 00"
-    ]
-  },
-  {
-    "slug": "ar-1le",
-    "name": "AR-1LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "350 x 440 x 350",
-      "internal": "250 x 340 x 180",
-      "weight": "130",
-      "volume": "15 L",
-      "shelves": "1",
-      "bolts": "8",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-2le",
-    "name": "AR-2LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "500 x 450 x 450",
-      "internal": "400 x 350 x 295",
-      "weight": "210",
-      "volume": "41 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-3le",
-    "name": "AR-3LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "650 x 550 x 550",
-      "internal": "550 x 450 x 395",
-      "weight": "340",
-      "volume": "98 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-4le",
-    "name": "AR-4LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "800 x 550 x 550",
-      "internal": "700 x 450 x 395",
-      "weight": "400",
-      "volume": "124 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-5le",
-    "name": "AR-5LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "950 x 550 x 550",
-      "internal": "850 x 450 x 395",
-      "weight": "460",
-      "volume": "151 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-6le",
-    "name": "AR-6LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1100 x 550 x 550",
-      "internal": "1000 x 450 x 395",
-      "weight": "520",
-      "volume": "178 L",
-      "shelves": "4",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-7le",
-    "name": "AR-7LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1250 x 550 x 550",
-      "internal": "1150 x 450 x 395",
-      "weight": "580",
-      "volume": "204 L",
-      "shelves": "5",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-8le",
-    "name": "AR-8LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1400 x 650 x 650",
-      "internal": "1300 x 550 x 495",
-      "weight": "790",
-      "volume": "354 L",
-      "shelves": "5",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ar-9le",
-    "name": "AR-9LE",
-    "sub": "Grade III",
-    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1550 x 800 x 750",
-      "internal": "1450 x 700 x 595",
-      "weight": "1080",
-      "volume": "604 L",
-      "shelves": "6",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade III",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-12 anchor 50 kN included",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves except AR-1",
-      "RAL Design 000 50 00"
-    ]
-  },
-  {
-    "slug": "ap-2le",
-    "name": "AP-2LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "500 x 450 x 450",
-      "internal": "400 x 350 x 395",
-      "weight": "210",
-      "volume": "41 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
-    "slug": "ap-3le",
-    "name": "AP-3LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "650 x 550 x 550",
-      "internal": "550 x 450 x 395",
-      "weight": "340",
-      "volume": "98 L",
-      "shelves": "2",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
-    "slug": "ap-4le",
-    "name": "AP-4LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "800 x 550 x 550",
-      "internal": "700 x 450 x 395",
-      "weight": "405",
-      "volume": "124 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
-    "slug": "ap-5le",
-    "name": "AP-5LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "950 x 550 x 550",
-      "internal": "850 x 450 x 395",
-      "weight": "465",
-      "volume": "151 L",
-      "shelves": "3",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
-    "slug": "ap-6le",
-    "name": "AP-6LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1100 x 550 x 550",
-      "internal": "1000 x 450 x 395",
-      "weight": "530",
-      "volume": "178 L",
-      "shelves": "4",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
-    "slug": "ap-7le",
-    "name": "AP-7LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1250 x 550 x 550",
-      "internal": "1150 x 450 x 395",
-      "weight": "600",
-      "volume": "204 L",
-      "shelves": "5",
-      "bolts": "12",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
-    "slug": "ap-8le",
-    "name": "AP-8LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1400 x 650 x 650",
-      "internal": "1300 x 550 x 495",
-      "weight": "815",
-      "volume": "354 L",
-      "shelves": "5",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
-    "slug": "ap-9le",
-    "name": "AP-9LE",
-    "sub": "Grade IV",
-    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
-    "image": "/images/products/AP5E-FRONT.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1550 x 800 x 750",
-      "internal": "1450 x 700 x 595",
-      "weight": "1120",
-      "volume": "604 L",
-      "shelves": "6",
-      "bolts": "16",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade IV",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "floor and wall anchoring",
-      "drill-proof armour plating",
-      "advanced re-locking system in case of attack",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 65 00"
-    ]
-  },
-  {
     "slug": "ak-2le",
     "name": "AK-2LE",
     "sub": "Grade V",
@@ -1377,7 +30,7 @@
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent gasket",
       "tip-proof height-adjustable shelves",
-      "RAL Design 000 80 00"
+      "RAL Design 000 80 00."
     ]
   },
   {
@@ -1411,7 +64,7 @@
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent gasket",
       "tip-proof height-adjustable shelves",
-      "RAL Design 000 80 00"
+      "RAL Design 000 80 00."
     ]
   },
   {
@@ -1445,41 +98,7 @@
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent gasket",
       "tip-proof height-adjustable shelves",
-      "RAL Design 000 80 00"
-    ]
-  },
-  {
-    "slug": "ak-65le",
-    "name": "AK-65LE",
-    "sub": "Grade V",
-    "desc": "AK Series Grade V safe made in Spain for risk environments such as banks, jewellery stores, security companies and establishments with large volumes of cash or high-value goods.",
-    "image": "/images/products/safe-1.jpg",
-    "category": "high-security-safes",
-    "categories": [
-      "high-security-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1100 x 700 x 550",
-      "internal": "1000 x 600 x 390",
-      "weight": "764",
-      "volume": "234 L",
-      "shelves": "4",
-      "bolts": "18",
-      "lock": "High-security lock configuration depending on model",
-      "grade": "UNE EN-1143-1:2019 Grade V",
-      "warranty": "5 years"
-    },
-    "features": [
-      "50 mm thick door and body",
-      "M-16 anchor 100 kN included",
-      "height-adjustable hinges",
-      "anti-drill shielding",
-      "armour against thermal lance",
-      "advanced re-locking system in case of attack",
-      "passive fire protection with intumescent gasket",
-      "tip-proof height-adjustable shelves",
-      "RAL Design 000 80 00"
+      "RAL Design 000 80 00."
     ]
   },
   {
@@ -1513,7 +132,1388 @@
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent gasket",
       "tip-proof height-adjustable shelves",
-      "RAL Design 000 80 00"
+      "RAL Design 000 80 00."
+    ]
+  },
+  {
+    "slug": "ak-65le",
+    "name": "AK-65LE",
+    "sub": "Grade V",
+    "desc": "AK Series Grade V safe made in Spain for risk environments such as banks, jewellery stores, security companies and establishments with large volumes of cash or high-value goods.",
+    "image": "/images/products/safe-1.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1100 x 700 x 550",
+      "internal": "1000 x 600 x 390",
+      "weight": "764",
+      "volume": "234 L",
+      "shelves": "4",
+      "bolts": "18",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade V",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "height-adjustable hinges",
+      "anti-drill shielding",
+      "armour against thermal lance",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent gasket",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 80 00."
+    ]
+  },
+  {
+    "slug": "am-1le",
+    "name": "AM-1LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "350 x 440 x 350",
+      "internal": "250 x 340 x 195",
+      "weight": "115",
+      "volume": "17 L",
+      "shelves": "1",
+      "bolts": "8",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-2le",
+    "name": "AM-2LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "500 x 450 x 450",
+      "internal": "400 x 350 x 295",
+      "weight": "190",
+      "volume": "41 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-3le",
+    "name": "AM-3LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "650 x 550 x 550",
+      "internal": "550 x 450 x 395",
+      "weight": "305",
+      "volume": "98 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-4le",
+    "name": "AM-4LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "800 x 550 x 550",
+      "internal": "700 x 450 x 395",
+      "weight": "360",
+      "volume": "124 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-5le",
+    "name": "AM-5LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "950 x 550 x 550",
+      "internal": "850 x 450 x 395",
+      "weight": "410",
+      "volume": "151 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-6le",
+    "name": "AM-6LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1100 x 550 x 550",
+      "internal": "1000 x 450 x 395",
+      "weight": "465",
+      "volume": "178 L",
+      "shelves": "4",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-7le",
+    "name": "AM-7LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1250 x 550 x 550",
+      "internal": "1150 x 450 x 395",
+      "weight": "520",
+      "volume": "204 L",
+      "shelves": "5",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-8le",
+    "name": "AM-8LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1400 x 650 x 650",
+      "internal": "1300 x 550 x 495",
+      "weight": "715",
+      "volume": "354 L",
+      "shelves": "5",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-9le",
+    "name": "AM-9LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1550 x 800 x 750",
+      "internal": "1450 x 700 x 595",
+      "weight": "980",
+      "volume": "604 L",
+      "shelves": "6",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-10le",
+    "name": "AM-10LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1700 x 800 x 650",
+      "internal": "1600 x 700 x 495",
+      "weight": "970",
+      "volume": "554 L",
+      "shelves": "6",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-25le",
+    "name": "AM-25LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "500 x 550 x 550",
+      "internal": "400 x 450 x 395",
+      "weight": "250",
+      "volume": "71 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-65le",
+    "name": "AM-65LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1100 x 700 x 550",
+      "internal": "1000 x 600 x 395",
+      "weight": "550",
+      "volume": "237 L",
+      "shelves": "4",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "am-75le",
+    "name": "AM-75LE",
+    "sub": "Grade II",
+    "desc": "Certified Grade II safe made in Spain for homes, offices, clinics, shops and businesses needing reliable certified protection for cash, documents, jewellery and valuables.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1250 x 700 x 550",
+      "internal": "1150 x 600 x 395",
+      "weight": "610",
+      "volume": "273 L",
+      "shelves": "5",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade II",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "tip-proof height-adjustable shelves except AM-1",
+      "RAL Design 000 35 00."
+    ]
+  },
+  {
+    "slug": "ap-2le",
+    "name": "AP-2LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "500 x 450 x 450",
+      "internal": "400 x 350 x 395",
+      "weight": "210",
+      "volume": "41 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ap-3le",
+    "name": "AP-3LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "650 x 550 x 550",
+      "internal": "550 x 450 x 395",
+      "weight": "340",
+      "volume": "98 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ap-4le",
+    "name": "AP-4LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "800 x 550 x 550",
+      "internal": "700 x 450 x 395",
+      "weight": "405",
+      "volume": "124 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ap-5le",
+    "name": "AP-5LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "950 x 550 x 550",
+      "internal": "850 x 450 x 395",
+      "weight": "465",
+      "volume": "151 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ap-6le",
+    "name": "AP-6LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1100 x 550 x 550",
+      "internal": "1000 x 450 x 395",
+      "weight": "530",
+      "volume": "178 L",
+      "shelves": "4",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ap-7le",
+    "name": "AP-7LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1250 x 550 x 550",
+      "internal": "1150 x 450 x 395",
+      "weight": "600",
+      "volume": "204 L",
+      "shelves": "5",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ap-8le",
+    "name": "AP-8LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1400 x 650 x 650",
+      "internal": "1300 x 550 x 495",
+      "weight": "815",
+      "volume": "354 L",
+      "shelves": "5",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ap-9le",
+    "name": "AP-9LE",
+    "sub": "Grade IV",
+    "desc": "Certified Grade IV safe made in Spain for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies and financial institutions.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1550 x 800 x 750",
+      "internal": "1450 x 700 x 595",
+      "weight": "1120",
+      "volume": "604 L",
+      "shelves": "6",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade IV",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-16 anchor 100 kN included",
+      "floor and wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "RAL Design 000 65 00."
+    ]
+  },
+  {
+    "slug": "ar-1le",
+    "name": "AR-1LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "350 x 440 x 350",
+      "internal": "250 x 340 x 180",
+      "weight": "130",
+      "volume": "15 L",
+      "shelves": "1",
+      "bolts": "8",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-2le",
+    "name": "AR-2LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "500 x 450 x 450",
+      "internal": "400 x 350 x 295",
+      "weight": "210",
+      "volume": "41 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-3le",
+    "name": "AR-3LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "650 x 550 x 550",
+      "internal": "550 x 450 x 395",
+      "weight": "340",
+      "volume": "98 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-4le",
+    "name": "AR-4LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "800 x 550 x 550",
+      "internal": "700 x 450 x 395",
+      "weight": "400",
+      "volume": "124 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-5le",
+    "name": "AR-5LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "950 x 550 x 550",
+      "internal": "850 x 450 x 395",
+      "weight": "460",
+      "volume": "151 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-6le",
+    "name": "AR-6LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1100 x 550 x 550",
+      "internal": "1000 x 450 x 395",
+      "weight": "520",
+      "volume": "178 L",
+      "shelves": "4",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-7le",
+    "name": "AR-7LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1250 x 550 x 550",
+      "internal": "1150 x 450 x 395",
+      "weight": "580",
+      "volume": "204 L",
+      "shelves": "5",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-8le",
+    "name": "AR-8LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1400 x 650 x 650",
+      "internal": "1300 x 550 x 495",
+      "weight": "790",
+      "volume": "354 L",
+      "shelves": "5",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "ar-9le",
+    "name": "AR-9LE",
+    "sub": "Grade III",
+    "desc": "Certified Grade III safe made in Spain for stronger protection against burglary, suitable for businesses, offices, jewellery, cash, important documents and high-value personal items.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1550 x 800 x 750",
+      "internal": "1450 x 700 x 595",
+      "weight": "1080",
+      "volume": "604 L",
+      "shelves": "6",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade III",
+      "warranty": "5 years"
+    },
+    "features": [
+      "50 mm thick door and body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves except AR-1",
+      "RAL Design 000 50 00."
+    ]
+  },
+  {
+    "slug": "at-1le",
+    "name": "AT-1LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "350 x 440 x 350",
+      "internal": "250 x 340 x 230",
+      "weight": "100",
+      "volume": "20 L",
+      "shelves": "1",
+      "bolts": "8",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-2le",
+    "name": "AT-2LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "500 x 550 x 440",
+      "internal": "400 x 450 x 320",
+      "weight": "180",
+      "volume": "58 L",
+      "shelves": "2",
+      "bolts": "8",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-3le",
+    "name": "AT-3LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "650 x 550 x 440",
+      "internal": "550 x 450 x 320",
+      "weight": "220",
+      "volume": "79 L",
+      "shelves": "2",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-4le",
+    "name": "AT-4LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "800 x 550 x 440",
+      "internal": "700 x 450 x 320",
+      "weight": "265",
+      "volume": "101 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-5le",
+    "name": "AT-5LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "950 x 550 x 440",
+      "internal": "850 x 450 x 320",
+      "weight": "300",
+      "volume": "122 L",
+      "shelves": "3",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-6le",
+    "name": "AT-6LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1100 x 550 x 440",
+      "internal": "1000 x 450 x 320",
+      "weight": "345",
+      "volume": "144 L",
+      "shelves": "4",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-7le",
+    "name": "AT-7LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1250 x 550 x 440",
+      "internal": "1150 x 450 x 320",
+      "weight": "380",
+      "volume": "166 L",
+      "shelves": "5",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-8le",
+    "name": "AT-8LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1400 x 650 x 540",
+      "internal": "1300 x 550 x 420",
+      "weight": "535",
+      "volume": "300 L",
+      "shelves": "5",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-9le",
+    "name": "AT-9LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1550 x 800 x 640",
+      "internal": "1450 x 700 x 520",
+      "weight": "720",
+      "volume": "535 L",
+      "shelves": "6",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-10le",
+    "name": "AT-10LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1400 x 450 x 440",
+      "internal": "1300 x 350 x 320",
+      "weight": "365",
+      "volume": "146 L",
+      "shelves": "5",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-11le",
+    "name": "AT-11LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1550 x 550 x 440",
+      "internal": "1450 x 450 x 320",
+      "weight": "460",
+      "volume": "209 L",
+      "shelves": "6",
+      "bolts": "12",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
+    ]
+  },
+  {
+    "slug": "at-12le",
+    "name": "AT-12LE",
+    "sub": "Grade I",
+    "desc": "Certified Grade I safe made in Spain for everyday certified security in homes or offices, suitable for personal valuables, documents, cash and important items.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "category": "high-security-safes",
+    "categories": [
+      "high-security-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1550 x 650 x 440",
+      "internal": "1450 x 550 x 320",
+      "weight": "520",
+      "volume": "255 L",
+      "shelves": "6",
+      "bolts": "16",
+      "lock": "High-security lock configuration depending on model",
+      "grade": "UNE EN-1143-1:2019 Grade I",
+      "warranty": "5 years"
+    },
+    "features": [
+      "12 mm thick steel door",
+      "50 mm thick body",
+      "M-12 anchor 50 kN included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection with intumescent fire seal",
+      "height-adjustable shelves except AT-1",
+      "RAL Design 000 25 00."
     ]
   },
   {
@@ -1542,8 +1542,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Upper internal organizer drawer"
+      "5-year warranty. Upper internal organizer drawer"
     ]
   },
   {
@@ -1572,8 +1571,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Upper internal organizer drawer"
+      "5-year warranty. Upper internal organizer drawer"
     ]
   },
   {
@@ -1591,6 +1589,7 @@
       "external": "450 x 500 x 430",
       "internal": "330 x 400 x 275",
       "weight": "70",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1602,7 +1601,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty"
+      "5-year warranty."
     ]
   },
   {
@@ -1631,8 +1630,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Upper internal organizer drawer"
+      "5-year warranty. Upper internal organizer drawer"
     ]
   },
   {
@@ -1650,6 +1648,7 @@
       "external": "505 x 420 x 480",
       "internal": "365 x 300 x 320",
       "weight": "85",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1661,8 +1660,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Internal drawer",
+      "5-year warranty. Internal drawer",
       "no stainless steel handle"
     ]
   },
@@ -1681,6 +1679,7 @@
       "external": "560 x 420 x 480",
       "internal": "360 x 310 x 310",
       "weight": "90",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1692,8 +1691,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door"
     ]
@@ -1713,6 +1711,7 @@
       "external": "590 x 420 x 480",
       "internal": "390 x 310 x 310",
       "weight": "95",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1724,8 +1723,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door"
     ]
@@ -1745,6 +1743,7 @@
       "external": "615 x 480 x 500",
       "internal": "410 x 360 x 330",
       "weight": "110",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1756,8 +1755,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -1778,6 +1776,7 @@
       "external": "650 x 480 x 500",
       "internal": "440 x 360 x 330",
       "weight": "130",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1789,8 +1788,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -1811,6 +1809,7 @@
       "external": "760 x 555 x 500",
       "internal": "560 x 430 x 330",
       "weight": "150",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1822,8 +1821,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -1844,6 +1842,7 @@
       "external": "860 x 600 x 500",
       "internal": "660 x 480 x 330",
       "weight": "170",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1855,8 +1854,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -1877,6 +1875,7 @@
       "external": "1000 x 600 x 500",
       "internal": "800 x 475 x 330",
       "weight": "210",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1888,8 +1887,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -1910,6 +1908,7 @@
       "external": "1200 x 625 x 560",
       "internal": "985 x 490 x 390",
       "weight": "270",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1921,8 +1920,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -1943,6 +1941,7 @@
       "external": "1375 x 690 x 615",
       "internal": "1160 x 570 x 445",
       "weight": "380",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1954,8 +1953,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -1976,6 +1974,7 @@
       "external": "1575 x 690 x 620",
       "internal": "1360 x 570 x 450",
       "weight": "475",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -1987,8 +1986,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -2009,6 +2007,7 @@
       "external": "1665 x 750 x 620",
       "internal": "1440 x 610 x 450",
       "weight": "520",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -2020,8 +2019,7 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
@@ -2042,6 +2040,7 @@
       "external": "1700 x 1140 x 720",
       "internal": "1370 x 1020 x 510",
       "weight": "720",
+      "shelves": "Height-adjustable heavy-duty metal shelves",
       "lock": "Code + key opening",
       "fireRating": "2 hours at 1010°C",
       "warranty": "5 years"
@@ -2053,11 +2052,196 @@
       "code + key opening",
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
-      "5-year warranty",
-      "Stainless steel handle",
+      "5-year warranty. Stainless steel handle",
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
+    ]
+  },
+  {
+    "slug": "sa1601e",
+    "name": "SA1601E",
+    "sub": "SA1600 Series",
+    "desc": "Compact 30-minute fire-rated safe with digital password access and backup keys for documents, passports, cash and small valuables.",
+    "image": "/images/products/SA1601E.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "300 x 381 x 300",
+      "weight": "22",
+      "lock": "Digital password + emergency keys",
+      "fireRating": "30 minutes"
+    },
+    "features": [
+      "30-minute fire rating",
+      "LED light indicators",
+      "digital password protection",
+      "3-6 digit password",
+      "2 backup keys",
+      "strong square and circle hinges",
+      "electronic keypad",
+      "emergency key access",
+      "compact home/office design. Body: 2 mm",
+      "Door: 2 mm."
+    ]
+  },
+  {
+    "slug": "sa1602e",
+    "name": "SA1602E",
+    "sub": "SA1600 Series",
+    "desc": "Compact 30-minute fire-rated safe with digital password access and backup keys for documents, passports, cash and small valuables.",
+    "image": "/images/products/SA1602E2.png.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "420 x 381 x 300",
+      "weight": "27",
+      "lock": "Digital password + emergency keys",
+      "fireRating": "30 minutes"
+    },
+    "features": [
+      "30-minute fire rating",
+      "LED light indicators",
+      "digital password protection",
+      "3-6 digit password",
+      "2 backup keys",
+      "strong square and circle hinges",
+      "electronic keypad",
+      "emergency key access",
+      "compact home/office design. Body: 2 mm",
+      "Door: 2 mm."
+    ]
+  },
+  {
+    "slug": "sa1603e",
+    "name": "SA1603E",
+    "sub": "SA1600 Series",
+    "desc": "Compact 30-minute fire-rated safe with digital password access and backup keys for documents, passports, cash and small valuables.",
+    "image": "/images/products/SA1603E1.png.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "480 x 400 x 360",
+      "weight": "36",
+      "lock": "Digital password + emergency keys",
+      "fireRating": "30 minutes"
+    },
+    "features": [
+      "30-minute fire rating",
+      "LED light indicators",
+      "digital password protection",
+      "3-6 digit password",
+      "2 backup keys",
+      "strong square and circle hinges",
+      "electronic keypad",
+      "emergency key access",
+      "compact home/office design. Body: 2 mm",
+      "Door: 2 mm."
+    ]
+  },
+  {
+    "slug": "sa2601",
+    "name": "SA2601",
+    "sub": "SA2600 Series",
+    "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
+    "image": "/images/products/WhatsApp-Image-2026-02-14-at-12.37.06-1.jpeg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "350 x 450 x 350",
+      "weight": "46",
+      "shelves": "1 adjustable shelf",
+      "lock": "Fingerprint + digital code + 2 emergency keys",
+      "fireRating": "30 minutes"
+    },
+    "features": [
+      "30-minute fire rating",
+      "heavy-duty construction",
+      "4 mm body",
+      "8 mm door",
+      "hidden hinges",
+      "large strong locking bolts",
+      "digital keypad access",
+      "3-6 digit password",
+      "fingerprint access for at least 30 fingerprints",
+      "emergency key opening with 2 emergency keys",
+      "adjustable shelf."
+    ]
+  },
+  {
+    "slug": "sa2602",
+    "name": "SA2602",
+    "sub": "SA2600 Series",
+    "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
+    "image": "/images/products/2.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "550 x 450 x 350",
+      "weight": "64",
+      "shelves": "1 adjustable shelf",
+      "lock": "Fingerprint + digital code + 2 emergency keys",
+      "fireRating": "30 minutes"
+    },
+    "features": [
+      "30-minute fire rating",
+      "heavy-duty construction",
+      "4 mm body",
+      "8 mm door",
+      "hidden hinges",
+      "large strong locking bolts",
+      "digital keypad access",
+      "3-6 digit password",
+      "fingerprint access for at least 30 fingerprints",
+      "emergency key opening with 2 emergency keys",
+      "adjustable shelf."
+    ]
+  },
+  {
+    "slug": "sa2603",
+    "name": "SA2603",
+    "sub": "SA2600 Series",
+    "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
+    "image": "/images/products/2-1.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "750 x 450 x 350",
+      "weight": "83",
+      "shelves": "2 adjustable shelves",
+      "lock": "Fingerprint + digital code + 2 emergency keys",
+      "fireRating": "30 minutes"
+    },
+    "features": [
+      "30-minute fire rating",
+      "heavy-duty construction",
+      "4 mm body",
+      "8 mm door",
+      "hidden hinges",
+      "large strong locking bolts",
+      "digital keypad access",
+      "3-6 digit password",
+      "fingerprint access for at least 30 fingerprints",
+      "emergency key opening with 2 emergency keys",
+      "adjustable shelf."
     ]
   },
   {
@@ -2093,7 +2277,7 @@
       "drawers in all models",
       "high-end finishing",
       "special colors",
-      "user-friendly design"
+      "user-friendly design."
     ]
   },
   {
@@ -2129,7 +2313,7 @@
       "drawers in all models",
       "high-end finishing",
       "special colors",
-      "user-friendly design"
+      "user-friendly design."
     ]
   },
   {
@@ -2165,7 +2349,7 @@
       "drawers in all models",
       "high-end finishing",
       "special colors",
-      "user-friendly design"
+      "user-friendly design."
     ]
   },
   {
@@ -2201,196 +2385,32 @@
       "drawers in all models",
       "high-end finishing",
       "special colors",
-      "user-friendly design"
+      "user-friendly design."
     ]
   },
   {
-    "slug": "sa1601e",
-    "name": "SA1601E",
-    "sub": "SA1600 Series",
-    "desc": "Compact 30-minute fire-rated safe with digital password access and backup keys for documents, passports, cash and small valuables.",
-    "image": "/images/products/SA1601E.jpg",
-    "category": "fire-resistant-safes",
+    "slug": "prefabricated-vault-rooms",
+    "name": "Prefabricated Vault Rooms",
+    "sub": "Project-Based Solution",
+    "desc": "Prefabricated vault room solutions for selected projects requiring certified protection and professional installation.",
+    "image": "/images/products/Salvado-safes-in-Lebanon-vault-door-1.jpg",
+    "category": "vault-doors-vault-rooms",
     "categories": [
-      "fire-resistant-safes"
+      "vault-doors-vault-rooms"
     ],
-    "isProject": false,
+    "isProject": true,
     "specs": {
-      "external": "300 x 381 x 300",
-      "weight": "22",
-      "lock": "Digital password + emergency keys",
-      "fireRating": "30 minutes"
+      "external": "Custom by project",
+      "internal": "Custom by project",
+      "lock": "Custom lock/access control options",
+      "fireRating": "Depending on selected solution",
+      "grade": "Up to Grade XIII KB",
+      "warranty": "Minimum 5 years depending on product"
     },
     "features": [
-      "30-minute fire rating",
-      "LED light indicators",
-      "digital password protection",
-      "3-6 digit password",
-      "2 backup keys",
-      "strong square and circle hinges",
-      "electronic keypad",
-      "emergency key access",
-      "compact home/office design",
-      "Body: 2 mm",
-      "Door: 2 mm"
-    ]
-  },
-  {
-    "slug": "sa1602e",
-    "name": "SA1602E",
-    "sub": "SA1600 Series",
-    "desc": "Compact 30-minute fire-rated safe with digital password access and backup keys for documents, passports, cash and small valuables.",
-    "image": "/images/products/SA1602E2.png.jpg",
-    "category": "fire-resistant-safes",
-    "categories": [
-      "fire-resistant-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "420 x 381 x 300",
-      "weight": "27",
-      "lock": "Digital password + emergency keys",
-      "fireRating": "30 minutes"
-    },
-    "features": [
-      "30-minute fire rating",
-      "LED light indicators",
-      "digital password protection",
-      "3-6 digit password",
-      "2 backup keys",
-      "strong square and circle hinges",
-      "electronic keypad",
-      "emergency key access",
-      "compact home/office design",
-      "Body: 2 mm",
-      "Door: 2 mm"
-    ]
-  },
-  {
-    "slug": "sa1603e",
-    "name": "SA1603E",
-    "sub": "SA1600 Series",
-    "desc": "Compact 30-minute fire-rated safe with digital password access and backup keys for documents, passports, cash and small valuables.",
-    "image": "/images/products/SA1603E1.png.jpg",
-    "category": "fire-resistant-safes",
-    "categories": [
-      "fire-resistant-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "480 x 400 x 360",
-      "weight": "36",
-      "lock": "Digital password + emergency keys",
-      "fireRating": "30 minutes"
-    },
-    "features": [
-      "30-minute fire rating",
-      "LED light indicators",
-      "digital password protection",
-      "3-6 digit password",
-      "2 backup keys",
-      "strong square and circle hinges",
-      "electronic keypad",
-      "emergency key access",
-      "compact home/office design",
-      "Body: 2 mm",
-      "Door: 2 mm"
-    ]
-  },
-  {
-    "slug": "sa2601",
-    "name": "SA2601",
-    "sub": "SA2600 Series",
-    "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
-    "image": "/images/products/WhatsApp-Image-2026-02-14-at-12.37.06-1.jpeg",
-    "category": "fire-resistant-safes",
-    "categories": [
-      "fire-resistant-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "350 x 450 x 350",
-      "weight": "46",
-      "shelves": "1 adjustable shelf",
-      "lock": "Fingerprint + digital code + 2 emergency keys",
-      "fireRating": "30 minutes"
-    },
-    "features": [
-      "30-minute fire rating",
-      "heavy-duty construction",
-      "4 mm body",
-      "8 mm door",
-      "hidden hinges",
-      "large strong locking bolts",
-      "digital keypad access",
-      "3-6 digit password",
-      "fingerprint access for at least 30 fingerprints",
-      "emergency key opening with 2 emergency keys",
-      "adjustable shelf"
-    ]
-  },
-  {
-    "slug": "sa2602",
-    "name": "SA2602",
-    "sub": "SA2600 Series",
-    "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
-    "image": "/images/products/2.jpg",
-    "category": "fire-resistant-safes",
-    "categories": [
-      "fire-resistant-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "550 x 450 x 350",
-      "weight": "64",
-      "shelves": "1 adjustable shelf",
-      "lock": "Fingerprint + digital code + 2 emergency keys",
-      "fireRating": "30 minutes"
-    },
-    "features": [
-      "30-minute fire rating",
-      "heavy-duty construction",
-      "4 mm body",
-      "8 mm door",
-      "hidden hinges",
-      "large strong locking bolts",
-      "digital keypad access",
-      "3-6 digit password",
-      "fingerprint access for at least 30 fingerprints",
-      "emergency key opening with 2 emergency keys",
-      "adjustable shelf"
-    ]
-  },
-  {
-    "slug": "sa2603",
-    "name": "SA2603",
-    "sub": "SA2600 Series",
-    "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
-    "image": "/images/products/2-1.jpg",
-    "category": "fire-resistant-safes",
-    "categories": [
-      "fire-resistant-safes"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "750 x 450 x 350",
-      "weight": "83",
-      "shelves": "2 adjustable shelves",
-      "lock": "Fingerprint + digital code + 2 emergency keys",
-      "fireRating": "30 minutes"
-    },
-    "features": [
-      "30-minute fire rating",
-      "heavy-duty construction",
-      "4 mm body",
-      "8 mm door",
-      "hidden hinges",
-      "large strong locking bolts",
-      "digital keypad access",
-      "3-6 digit password",
-      "fingerprint access for at least 30 fingerprints",
-      "emergency key opening with 2 emergency keys",
-      "adjustable shelf"
+      "Project-based specification",
+      "private consultation",
+      "professional delivery and installation."
     ]
   },
   {
@@ -2415,7 +2435,7 @@
     "features": [
       "Custom project-based solution",
       "professional delivery and installation",
-      "technical consultation by Salvado"
+      "technical consultation by Salvado."
     ]
   },
   {
@@ -2441,32 +2461,219 @@
       "Site assessment",
       "technical planning",
       "European-standard project execution",
-      "after-sales technical support"
+      "after-sales technical support."
     ]
   },
   {
-    "slug": "prefabricated-vault-rooms",
-    "name": "Prefabricated Vault Rooms",
-    "sub": "Project-Based Solution",
-    "desc": "Prefabricated vault room solutions for selected projects requiring certified protection and professional installation.",
-    "image": "/images/products/Salvado-safes-in-Lebanon-vault-door-1.jpg",
-    "category": "vault-doors-vault-rooms",
+    "slug": "dep800l",
+    "name": "DEP800L",
+    "sub": "Deposit / Drop Safes",
+    "desc": "Professional deposit safe made in Spain for cash and valuable deposits without opening the main door.",
+    "image": null,
+    "category": "cash-handling-solutions",
     "categories": [
-      "vault-doors-vault-rooms"
+      "cash-handling-solutions"
     ],
-    "isProject": true,
+    "isProject": false,
     "specs": {
-      "external": "Custom by project",
-      "internal": "Custom by project",
-      "lock": "Custom lock/access control options",
-      "fireRating": "Depending on selected solution",
-      "grade": "Up to Grade XIII KB",
-      "warranty": "Minimum 5 years depending on product"
+      "external": "600 x 455 x 370",
+      "internal": "235 x 450 x 315",
+      "weight": "58",
+      "volume": "33 L",
+      "bolts": "5",
+      "lock": "Certified key lock"
     },
     "features": [
-      "Project-based specification",
-      "private consultation",
-      "professional delivery and installation"
+      "8 mm steel door and frame",
+      "3 mm steel body",
+      "Ø20 mm revolving bolts",
+      "swivelling anti-fishing drawer",
+      "floor anchoring holes."
+    ]
+  },
+  {
+    "slug": "ds-45",
+    "name": "DS-45",
+    "sub": "Deposit / Drop Safes",
+    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
+    "image": "/images/products/DS-45-OPEN.jpg",
+    "category": "cash-handling-solutions",
+    "categories": [
+      "cash-handling-solutions"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "440 x 355 x 375",
+      "internal": "430 x 345 x 350",
+      "weight": "50",
+      "lock": "Digital + Handle"
+    },
+    "features": [
+      "Front deposit drawer",
+      "anti-fishing deposit design",
+      "reinforced steel construction",
+      "active and fixed bolts",
+      "locking in two directions to deter prying",
+      "suitable for daily cash drops and envelope deposits."
+    ]
+  },
+  {
+    "slug": "ds-68",
+    "name": "DS-68",
+    "sub": "Deposit / Drop Safes",
+    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
+    "image": "/images/products/DS-68-2.jpg",
+    "category": "cash-handling-solutions",
+    "categories": [
+      "cash-handling-solutions"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "675 x 400 x 400",
+      "internal": "660 x 390 x 370",
+      "weight": "120",
+      "lock": "3 Keys + Handle"
+    },
+    "features": [
+      "Front deposit drawer",
+      "anti-fishing deposit design",
+      "reinforced steel construction",
+      "active and fixed bolts",
+      "locking in two directions to deter prying",
+      "suitable for daily cash drops and envelope deposits."
+    ]
+  },
+  {
+    "slug": "ds-70",
+    "name": "DS-70",
+    "sub": "Deposit / Drop Safes",
+    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
+    "image": "/images/products/DS-70-1.jpg",
+    "category": "cash-handling-solutions",
+    "categories": [
+      "cash-handling-solutions"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "695 x 500 x 500",
+      "internal": "680 x 490 x 470",
+      "weight": "150",
+      "lock": "Digital + Handle"
+    },
+    "features": [
+      "Front deposit drawer",
+      "anti-fishing deposit design",
+      "reinforced steel construction",
+      "active and fixed bolts",
+      "locking in two directions to deter prying",
+      "suitable for daily cash drops and envelope deposits."
+    ]
+  },
+  {
+    "slug": "ds-90",
+    "name": "DS-90",
+    "sub": "Deposit / Drop Safes",
+    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
+    "image": "/images/products/DS-70-1.jpg",
+    "category": "cash-handling-solutions",
+    "categories": [
+      "cash-handling-solutions"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "900 x 500 x 500",
+      "internal": "885 x 490 x 470",
+      "weight": "170",
+      "lock": "Digital + Handle"
+    },
+    "features": [
+      "Front deposit drawer",
+      "anti-fishing deposit design",
+      "reinforced steel construction",
+      "active and fixed bolts",
+      "locking in two directions to deter prying",
+      "suitable for daily cash drops and envelope deposits."
+    ]
+  },
+  {
+    "slug": "ds-110",
+    "name": "DS-110",
+    "sub": "Deposit / Drop Safes",
+    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
+    "image": "/images/products/DS-70.jpg",
+    "category": "cash-handling-solutions",
+    "categories": [
+      "cash-handling-solutions"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1100 x 500 x 500",
+      "internal": "1085 x 490 x 470",
+      "weight": "190",
+      "lock": "Digital + Handle"
+    },
+    "features": [
+      "Front deposit drawer",
+      "anti-fishing deposit design",
+      "reinforced steel construction",
+      "active and fixed bolts",
+      "locking in two directions to deter prying",
+      "suitable for daily cash drops and envelope deposits."
+    ]
+  },
+  {
+    "slug": "ds-130",
+    "name": "DS-130",
+    "sub": "Deposit / Drop Safes",
+    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
+    "image": "/images/products/DS-70.jpg",
+    "category": "cash-handling-solutions",
+    "categories": [
+      "cash-handling-solutions"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1300 x 500 x 500",
+      "internal": "1285 x 490 x 470",
+      "weight": "210",
+      "lock": "Digital + Handle"
+    },
+    "features": [
+      "Front deposit drawer",
+      "anti-fishing deposit design",
+      "reinforced steel construction",
+      "active and fixed bolts",
+      "locking in two directions to deter prying",
+      "suitable for daily cash drops and envelope deposits."
+    ]
+  },
+  {
+    "slug": "plus-p30-money-counter",
+    "name": "PLUS P30 Money Counter",
+    "sub": "Money Counters",
+    "desc": "Compact two-pocket currency discriminator with value counting, sorting, counterfeit detection and touchscreen display.",
+    "image": "/images/products/WhatsApp-Image-2023-12-27-at-09.57.00-1.jpeg",
+    "category": "cash-handling-solutions",
+    "categories": [
+      "cash-handling-solutions"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "266 x 304 x 281",
+      "weight": "9",
+      "volume": "Hopper 500 notes; stacker 200 notes",
+      "lock": "Counterfeit detection / value counting",
+      "warranty": "1 year + support available"
+    },
+    "features": [
+      "Two-pocket discriminator",
+      "4.3-inch touchscreen LCD",
+      "mixed value counting",
+      "denomination/face/orientation sorting",
+      "UV/FL/MG/MT/IR authentication",
+      "USB/RS-232C",
+      "optional customer display/printer",
+      "1000-1500 notes/min."
     ]
   },
   {
@@ -2500,219 +2707,7 @@
       "batch by quantity/amount",
       "bill sorting",
       "USB updates",
-      "dust-proof cover"
-    ]
-  },
-  {
-    "slug": "plus-p30-money-counter",
-    "name": "PLUS P30 Money Counter",
-    "sub": "Money Counters",
-    "desc": "Compact two-pocket currency discriminator with value counting, sorting, counterfeit detection and touchscreen display.",
-    "image": "/images/products/WhatsApp-Image-2023-12-27-at-09.57.00-1.jpeg",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "266 x 304 x 281",
-      "weight": "9",
-      "volume": "Hopper 500 notes; stacker 200 notes",
-      "lock": "Counterfeit detection / value counting",
-      "warranty": "1 year + support available"
-    },
-    "features": [
-      "Two-pocket discriminator",
-      "4.3-inch touchscreen LCD",
-      "mixed value counting",
-      "denomination/face/orientation sorting",
-      "UV/FL/MG/MT/IR authentication",
-      "USB/RS-232C",
-      "optional customer display/printer",
-      "1000-1500 notes/min"
-    ]
-  },
-  {
-    "slug": "ds-45",
-    "name": "DS-45",
-    "sub": "Deposit / Drop Safes",
-    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
-    "image": "/images/products/DS-45-OPEN.jpg",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "440 x 355 x 375",
-      "internal": "430 x 345 x 350",
-      "weight": "50",
-      "lock": "Digital + Handle"
-    },
-    "features": [
-      "Front deposit drawer",
-      "anti-fishing deposit design",
-      "reinforced steel construction",
-      "active and fixed bolts",
-      "locking in two directions to deter prying",
-      "suitable for daily cash drops and envelope deposits"
-    ]
-  },
-  {
-    "slug": "ds-68",
-    "name": "DS-68",
-    "sub": "Deposit / Drop Safes",
-    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
-    "image": "/images/products/DS-68-2.jpg",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "675 x 400 x 400",
-      "internal": "660 x 390 x 370",
-      "weight": "120",
-      "lock": "3 Keys + Handle"
-    },
-    "features": [
-      "Front deposit drawer",
-      "anti-fishing deposit design",
-      "reinforced steel construction",
-      "active and fixed bolts",
-      "locking in two directions to deter prying",
-      "suitable for daily cash drops and envelope deposits"
-    ]
-  },
-  {
-    "slug": "ds-70",
-    "name": "DS-70",
-    "sub": "Deposit / Drop Safes",
-    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
-    "image": "/images/products/DS-70-1.jpg",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "695 x 500 x 500",
-      "internal": "680 x 490 x 470",
-      "weight": "150",
-      "lock": "Digital + Handle"
-    },
-    "features": [
-      "Front deposit drawer",
-      "anti-fishing deposit design",
-      "reinforced steel construction",
-      "active and fixed bolts",
-      "locking in two directions to deter prying",
-      "suitable for daily cash drops and envelope deposits"
-    ]
-  },
-  {
-    "slug": "ds-90",
-    "name": "DS-90",
-    "sub": "Deposit / Drop Safes",
-    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
-    "image": "/images/products/DS-70-1.jpg",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "900 x 500 x 500",
-      "internal": "885 x 490 x 470",
-      "weight": "170",
-      "lock": "Digital + Handle"
-    },
-    "features": [
-      "Front deposit drawer",
-      "anti-fishing deposit design",
-      "reinforced steel construction",
-      "active and fixed bolts",
-      "locking in two directions to deter prying",
-      "suitable for daily cash drops and envelope deposits"
-    ]
-  },
-  {
-    "slug": "ds-110",
-    "name": "DS-110",
-    "sub": "Deposit / Drop Safes",
-    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
-    "image": "/images/products/DS-70.jpg",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1100 x 500 x 500",
-      "internal": "1085 x 490 x 470",
-      "weight": "190",
-      "lock": "Digital + Handle"
-    },
-    "features": [
-      "Front deposit drawer",
-      "anti-fishing deposit design",
-      "reinforced steel construction",
-      "active and fixed bolts",
-      "locking in two directions to deter prying",
-      "suitable for daily cash drops and envelope deposits"
-    ]
-  },
-  {
-    "slug": "ds-130",
-    "name": "DS-130",
-    "sub": "Deposit / Drop Safes",
-    "desc": "Drop safe for controlled daily cash deposits in shops, restaurants, offices, pharmacies, supermarkets and cashier areas.",
-    "image": "/images/products/DS-70.jpg",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "1300 x 500 x 500",
-      "internal": "1285 x 490 x 470",
-      "weight": "210",
-      "lock": "Digital + Handle"
-    },
-    "features": [
-      "Front deposit drawer",
-      "anti-fishing deposit design",
-      "reinforced steel construction",
-      "active and fixed bolts",
-      "locking in two directions to deter prying",
-      "suitable for daily cash drops and envelope deposits"
-    ]
-  },
-  {
-    "slug": "dep800l",
-    "name": "DEP800L",
-    "sub": "Deposit / Drop Safes",
-    "desc": "Professional deposit safe made in Spain for cash and valuable deposits without opening the main door.",
-    "image": null,
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "600 x 455 x 370",
-      "internal": "235 x 450 x 315",
-      "weight": "58",
-      "volume": "33 L",
-      "bolts": "5",
-      "lock": "Certified key lock"
-    },
-    "features": [
-      "8 mm steel door and frame",
-      "3 mm steel body",
-      "Ø20 mm revolving bolts",
-      "swivelling anti-fishing drawer",
-      "floor anchoring holes"
+      "dust-proof cover."
     ]
   },
   {
@@ -2742,7 +2737,7 @@
       "upper locking drawer",
       "note classifier",
       "tilting cash-transfer system",
-      "floor anchoring holes"
+      "floor anchoring holes."
     ]
   },
   {
@@ -2770,7 +2765,7 @@
       "8 mm steel door and frame",
       "1.5 mm steel body",
       "Ø20 mm revolving bolts",
-      "discreet wall installation"
+      "discreet wall installation."
     ]
   },
   {
@@ -2798,7 +2793,7 @@
       "8 mm steel door and frame",
       "1.5 mm steel body",
       "Ø20 mm revolving bolts",
-      "discreet wall installation"
+      "discreet wall installation."
     ]
   },
   {
@@ -2826,7 +2821,7 @@
       "8 mm steel door and frame",
       "1.5 mm steel body",
       "Ø20 mm revolving bolts",
-      "discreet wall installation"
+      "discreet wall installation."
     ]
   },
   {
@@ -2855,7 +2850,7 @@
       "1.5 mm steel body",
       "drill-proof armour plating",
       "Ø25 mm revolving bolts",
-      "discreet wall installation"
+      "discreet wall installation."
     ]
   },
   {
@@ -2884,7 +2879,7 @@
       "1.5 mm steel body",
       "drill-proof armour plating",
       "Ø25 mm revolving bolts",
-      "discreet wall installation"
+      "discreet wall installation."
     ]
   },
   {
@@ -2915,7 +2910,7 @@
       "drill-proof armour plating",
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent seal",
-      "height-adjustable shelves"
+      "height-adjustable shelves."
     ]
   },
   {
@@ -2946,7 +2941,7 @@
       "drill-proof armour plating",
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent seal",
-      "height-adjustable shelves"
+      "height-adjustable shelves."
     ]
   },
   {
@@ -2977,7 +2972,7 @@
       "drill-proof armour plating",
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent seal",
-      "height-adjustable shelves"
+      "height-adjustable shelves."
     ]
   },
   {
@@ -3008,7 +3003,7 @@
       "drill-proof armour plating",
       "advanced re-locking system in case of attack",
       "passive fire protection with intumescent seal",
-      "height-adjustable shelves"
+      "height-adjustable shelves."
     ]
   },
   {
@@ -3034,7 +3029,7 @@
     "features": [
       "Double plug-socket cover",
       "magnetic cover attachment",
-      "1 mm stainless steel construction"
+      "1 mm stainless steel construction."
     ]
   },
   {
@@ -3062,7 +3057,7 @@
       "2.5 mm steel body",
       "10 mm top cover",
       "external cover",
-      "steel frame for concrete"
+      "steel frame for concrete."
     ]
   },
   {
@@ -3090,7 +3085,41 @@
       "2.5 mm steel body",
       "10 mm top cover",
       "external cover",
-      "steel frame for concrete"
+      "steel frame for concrete."
+    ]
+  },
+  {
+    "slug": "boxy-single-watch-winder",
+    "name": "Boxy Single Watch Winder",
+    "sub": "Boxy",
+    "desc": "Compact single-watch winder with modular brick-style design, available in multiple colors.",
+    "image": "/images/products/Boxy-Black-Leather-1.png",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "110 x 98 x 130",
+      "weight": "0.65-0.75",
+      "volume": "1 watch",
+      "lock": "Automatic watch winder"
+    },
+    "features": [
+      "Stackable design",
+      "multiple units can connect from same power source depending on setup",
+      "practical entry-level winder option."
+    ],
+    "gallery": [
+      "/images/products/Boxy-Black-Leather-1.png",
+      "/images/products/Boxy-Blue-1.jpg",
+      "/images/products/Boxy-Brown-Leather-1.png",
+      "/images/products/Boxy-Carbon-Fiber-2.png",
+      "/images/products/Boxy-Green-2.png",
+      "/images/products/Boxy-Orange-2.png",
+      "/images/products/Boxy-Red-2.png",
+      "/images/products/Boxy-White-2.png",
+      "/images/products/Boxy-Yellow-2.png"
     ]
   },
   {
@@ -3120,185 +3149,7 @@
       "watch winding",
       "LED lighting",
       "USB/power",
-      "soft-close drawers"
-    ]
-  },
-  {
-    "slug": "boxy-single-watch-winder",
-    "name": "Boxy Single Watch Winder",
-    "sub": "Boxy",
-    "desc": "Compact single-watch winder with modular brick-style design, available in multiple colors.",
-    "image": "/images/products/Boxy-Black-Leather-1.png",
-    "gallery": [
-      "/images/products/Boxy-Black-Leather-1.png",
-      "/images/products/Boxy-Blue-1.jpg",
-      "/images/products/Boxy-Brown-Leather-1.png",
-      "/images/products/Boxy-Carbon-Fiber-2.png",
-      "/images/products/Boxy-Green-2.png",
-      "/images/products/Boxy-Orange-2.png",
-      "/images/products/Boxy-Red-2.png",
-      "/images/products/Boxy-White-2.png",
-      "/images/products/Boxy-Yellow-2.png"
-    ],
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "110 x 98 x 130",
-      "weight": "0.65-0.75",
-      "volume": "1 watch",
-      "lock": "Automatic watch winder"
-    },
-    "features": [
-      "Stackable design",
-      "multiple units can connect from same power source depending on setup",
-      "practical entry-level winder option"
-    ]
-  },
-  {
-    "slug": "startbox-white-with-black-movement",
-    "name": "Startbox White with Black Movement",
-    "sub": "Swiss Kubik Startbox",
-    "desc": "Swiss-made single-watch winder with simple operation, battery power and compact cube design.",
-    "image": "/images/products/1-watch-winder-swisskubik-startbox-plastic-whitemovementblack-3.webp",
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "110 x 110 x 110",
-      "volume": "1 watch",
-      "lock": "Battery-powered automatic watch winder",
-      "warranty": "3-year guarantee"
-    },
-    "features": [
-      "1,600 rotations/day",
-      "800 clockwise + 800 anti-clockwise",
-      "2 LR14 / 1.5V C batteries",
-      "no programming needed",
-      "made in Switzerland"
-    ]
-  },
-  {
-    "slug": "startbox-black-with-white-movement",
-    "name": "Startbox Black with White Movement",
-    "sub": "Swiss Kubik Startbox",
-    "desc": "Swiss-made single-watch winder with simple operation, battery power and compact cube design.",
-    "image": "/images/products/1-watch-winder-swisskubik-startbox-plastic-blackmovementwhite-3.webp",
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "110 x 110 x 110",
-      "volume": "1 watch",
-      "lock": "Battery-powered automatic watch winder",
-      "warranty": "3-year guarantee"
-    },
-    "features": [
-      "1,600 rotations/day",
-      "800 clockwise + 800 anti-clockwise",
-      "2 LR14 / 1.5V C batteries",
-      "no programming needed",
-      "made in Switzerland"
-    ]
-  },
-  {
-    "slug": "startbox-black",
-    "name": "Startbox Black",
-    "sub": "Swiss Kubik Startbox",
-    "desc": "Swiss-made single-watch winder with simple operation, battery power and compact cube design.",
-    "image": "/images/products/1-watch-winder-swisskubik-startbox-plastic-black-3.webp",
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "110 x 110 x 110",
-      "volume": "1 watch",
-      "lock": "Battery-powered automatic watch winder",
-      "warranty": "3-year guarantee"
-    },
-    "features": [
-      "1,600 rotations/day",
-      "800 clockwise + 800 anti-clockwise",
-      "2 LR14 / 1.5V C batteries",
-      "no programming needed",
-      "made in Switzerland"
-    ]
-  },
-  {
-    "slug": "masterbox-silver-aluminium",
-    "name": "Masterbox Silver Aluminium",
-    "sub": "Swiss Kubik Masterbox",
-    "desc": "Premium Swiss-made programmable watch winder with advanced rotation control, compact modular design and high-end finishing.",
-    "image": "/images/products/1-watch-winder-swisskubik-masterbox-aluminium-brushed-3.webp",
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "100 x 100 x 100 per module",
-      "volume": "1 watch",
-      "lock": "Programmable automatic watch winder",
-      "warranty": "3-year guarantee"
-    },
-    "features": [
-      "Standard 1,600 rotations/day",
-      "programmable via Bluetooth/mobile app and USB-C",
-      "made in Switzerland"
-    ]
-  },
-  {
-    "slug": "masterbox-black-aluminium",
-    "name": "Masterbox Black Aluminium",
-    "sub": "Swiss Kubik Masterbox",
-    "desc": "Premium Swiss-made programmable watch winder with advanced rotation control, compact modular design and high-end finishing.",
-    "image": "/images/products/1-watch-winder-swisskubik-masterbox-aluminium-black-3.webp",
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "100 x 100 x 100 per module",
-      "volume": "1 watch",
-      "lock": "Programmable automatic watch winder",
-      "warranty": "3-year guarantee"
-    },
-    "features": [
-      "Standard 1,600 rotations/day",
-      "programmable via Bluetooth/mobile app and USB-C",
-      "made in Switzerland"
-    ]
-  },
-  {
-    "slug": "masterbox-carbon-fibre",
-    "name": "Masterbox Carbon Fibre",
-    "sub": "Swiss Kubik Masterbox",
-    "desc": "Premium Swiss-made programmable watch winder with advanced rotation control, compact modular design and high-end finishing.",
-    "image": "/images/products/1-watch-winder-swisskubik-masterbox-carbon-black-3.webp",
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "100 x 100 x 100 per module",
-      "volume": "1 watch",
-      "lock": "Programmable automatic watch winder",
-      "warranty": "3-year guarantee"
-    },
-    "features": [
-      "Standard 1,600 rotations/day",
-      "programmable via Bluetooth/mobile app and USB-C",
-      "made in Switzerland"
+      "soft-close drawers."
     ]
   },
   {
@@ -3321,32 +3172,168 @@
     "features": [
       "Standard 1,600 rotations/day per module",
       "programmable via Bluetooth/mobile app and USB-C",
-      "made in Switzerland"
+      "made in Switzerland."
     ]
   },
   {
-    "slug": "rotor-one-black-on-black",
-    "name": "Rotor One Black on Black",
-    "sub": "Scatola del Tempo Rotor One",
-    "desc": "Italian luxury single-watch winder with compact leather design, battery operation and refined presentation.",
-    "image": "/images/products/1_-_Rotore_One_1280x1280px_Face_Black_4__54127.webp",
+    "slug": "masterbox-black-aluminium",
+    "name": "Masterbox Black Aluminium",
+    "sub": "Swiss Kubik Masterbox",
+    "desc": "Premium Swiss-made programmable watch winder with advanced rotation control, compact modular design and high-end finishing.",
+    "image": "/images/products/1-watch-winder-swisskubik-masterbox-aluminium-black-3.webp",
     "category": "luxury-safes-watch-storage",
     "categories": [
       "luxury-safes-watch-storage"
     ],
     "isProject": false,
     "specs": {
-      "external": "115 x 100 x 100",
-      "weight": "0.73",
+      "external": "100 x 100 x 100 per module",
       "volume": "1 watch",
-      "lock": "Battery-powered automatic watch winder",
+      "lock": "Programmable automatic watch winder",
+      "warranty": "3-year guarantee"
+    },
+    "features": [
+      "Standard 1,600 rotations/day",
+      "programmable via Bluetooth/mobile app and USB-C",
+      "made in Switzerland."
+    ]
+  },
+  {
+    "slug": "masterbox-carbon-fibre",
+    "name": "Masterbox Carbon Fibre",
+    "sub": "Swiss Kubik Masterbox",
+    "desc": "Premium Swiss-made programmable watch winder with advanced rotation control, compact modular design and high-end finishing.",
+    "image": "/images/products/1-watch-winder-swisskubik-masterbox-carbon-black-3.webp",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "100 x 100 x 100 per module",
+      "volume": "1 watch",
+      "lock": "Programmable automatic watch winder",
+      "warranty": "3-year guarantee"
+    },
+    "features": [
+      "Standard 1,600 rotations/day",
+      "programmable via Bluetooth/mobile app and USB-C",
+      "made in Switzerland."
+    ]
+  },
+  {
+    "slug": "masterbox-silver-aluminium",
+    "name": "Masterbox Silver Aluminium",
+    "sub": "Swiss Kubik Masterbox",
+    "desc": "Premium Swiss-made programmable watch winder with advanced rotation control, compact modular design and high-end finishing.",
+    "image": "/images/products/1-watch-winder-swisskubik-masterbox-aluminium-brushed-3.webp",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "100 x 100 x 100 per module",
+      "volume": "1 watch",
+      "lock": "Programmable automatic watch winder",
+      "warranty": "3-year guarantee"
+    },
+    "features": [
+      "Standard 1,600 rotations/day",
+      "programmable via Bluetooth/mobile app and USB-C",
+      "made in Switzerland."
+    ]
+  },
+  {
+    "slug": "pochette-4-black-tiffany-blue",
+    "name": "Pochette 4 Black / Tiffany Blue",
+    "sub": "Scatola del Tempo Pochette 4",
+    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
+    "image": "/images/products/220510_Pochette_Noir-Bleu_Closed__31708.jpeg",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "190 x 220 x 75",
+      "weight": "0.28",
+      "volume": "4 watches",
+      "lock": "Watch storage roll",
       "warranty": "3-year international warranty"
     },
     "features": [
-      "1,600 rotations/day",
-      "2 LR14 / 1.5V C batteries",
-      "Toledo leather finish depending on model",
-      "made in Italy"
+      "Toledo leather",
+      "made in Italy."
+    ]
+  },
+  {
+    "slug": "pochette-4-blue-off-white",
+    "name": "Pochette 4 Blue / Off-White",
+    "sub": "Scatola del Tempo Pochette 4",
+    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
+    "image": "/images/products/220510_Pochette_Bleu-Blanc_Closed__72135.jpeg",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "190 x 220 x 75",
+      "weight": "0.28",
+      "volume": "4 watches",
+      "lock": "Watch storage roll",
+      "warranty": "3-year international warranty"
+    },
+    "features": [
+      "Toledo leather",
+      "made in Italy."
+    ]
+  },
+  {
+    "slug": "pochette-4-grey-green",
+    "name": "Pochette 4 Grey / Green",
+    "sub": "Scatola del Tempo Pochette 4",
+    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
+    "image": "/images/products/220510_Pochette_Gris-Vert_Open__22199.jpeg",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "190 x 220 x 75",
+      "weight": "0.28",
+      "volume": "4 watches",
+      "lock": "Watch storage roll",
+      "warranty": "3-year international warranty"
+    },
+    "features": [
+      "Toledo leather",
+      "made in Italy."
+    ]
+  },
+  {
+    "slug": "pochette-4-grey-orange",
+    "name": "Pochette 4 Grey / Orange",
+    "sub": "Scatola del Tempo Pochette 4",
+    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
+    "image": "/images/products/220510_Pochette_Gris-Orange_Closed__93227.jpeg",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "190 x 220 x 75",
+      "weight": "0.28",
+      "volume": "4 watches",
+      "lock": "Watch storage roll",
+      "warranty": "3-year international warranty"
+    },
+    "features": [
+      "Toledo leather",
+      "made in Italy."
     ]
   },
   {
@@ -3371,7 +3358,32 @@
       "1,600 rotations/day",
       "2 LR14 / 1.5V C batteries",
       "Toledo leather finish depending on model",
-      "made in Italy"
+      "made in Italy."
+    ]
+  },
+  {
+    "slug": "rotor-one-black-on-black",
+    "name": "Rotor One Black on Black",
+    "sub": "Scatola del Tempo Rotor One",
+    "desc": "Italian luxury single-watch winder with compact leather design, battery operation and refined presentation.",
+    "image": "/images/products/1_-_Rotore_One_1280x1280px_Face_Black_4__54127.webp",
+    "category": "luxury-safes-watch-storage",
+    "categories": [
+      "luxury-safes-watch-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "115 x 100 x 100",
+      "weight": "0.73",
+      "volume": "1 watch",
+      "lock": "Battery-powered automatic watch winder",
+      "warranty": "3-year international warranty"
+    },
+    "features": [
+      "1,600 rotations/day",
+      "2 LR14 / 1.5V C batteries",
+      "Toledo leather finish depending on model",
+      "made in Italy."
     ]
   },
   {
@@ -3396,7 +3408,7 @@
       "1,600 rotations/day",
       "2 LR14 / 1.5V C batteries",
       "Toledo leather finish depending on model",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3421,7 +3433,7 @@
       "1,600 rotations/day",
       "2 LR14 / 1.5V C batteries",
       "Toledo leather finish depending on model",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3446,7 +3458,7 @@
       "1,600 rotations/day",
       "2 LR14 / 1.5V C batteries",
       "Toledo leather finish depending on model",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3471,99 +3483,82 @@
       "1,600 rotations/day",
       "2 LR14 / 1.5V C batteries",
       "Toledo leather finish depending on model",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
-    "slug": "pochette-4-black-tiffany-blue",
-    "name": "Pochette 4 Black / Tiffany Blue",
-    "sub": "Scatola del Tempo Pochette 4",
-    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
-    "image": "/images/products/220510_Pochette_Noir-Bleu_Closed__31708.jpeg",
+    "slug": "startbox-black",
+    "name": "Startbox Black",
+    "sub": "Swiss Kubik Startbox",
+    "desc": "Swiss-made single-watch winder with simple operation, battery power and compact cube design.",
+    "image": "/images/products/1-watch-winder-swisskubik-startbox-plastic-black-3.webp",
     "category": "luxury-safes-watch-storage",
     "categories": [
       "luxury-safes-watch-storage"
     ],
     "isProject": false,
     "specs": {
-      "external": "190 x 220 x 75",
-      "weight": "0.28000000000000003",
-      "volume": "4 watches",
-      "lock": "Watch storage roll",
-      "warranty": "3-year international warranty"
+      "external": "110 x 110 x 110",
+      "volume": "1 watch",
+      "lock": "Battery-powered automatic watch winder",
+      "warranty": "3-year guarantee"
     },
     "features": [
-      "Toledo leather",
-      "made in Italy"
+      "1,600 rotations/day",
+      "800 clockwise + 800 anti-clockwise",
+      "2 LR14 / 1.5V C batteries",
+      "no programming needed",
+      "made in Switzerland."
     ]
   },
   {
-    "slug": "pochette-4-blue-off-white",
-    "name": "Pochette 4 Blue / Off-White",
-    "sub": "Scatola del Tempo Pochette 4",
-    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
-    "image": "/images/products/220510_Pochette_Bleu-Blanc_Closed__72135.jpeg",
+    "slug": "startbox-black-with-white-movement",
+    "name": "Startbox Black with White Movement",
+    "sub": "Swiss Kubik Startbox",
+    "desc": "Swiss-made single-watch winder with simple operation, battery power and compact cube design.",
+    "image": "/images/products/1-watch-winder-swisskubik-startbox-plastic-blackmovementwhite-3.webp",
     "category": "luxury-safes-watch-storage",
     "categories": [
       "luxury-safes-watch-storage"
     ],
     "isProject": false,
     "specs": {
-      "external": "190 x 220 x 75",
-      "weight": "0.28000000000000003",
-      "volume": "4 watches",
-      "lock": "Watch storage roll",
-      "warranty": "3-year international warranty"
+      "external": "110 x 110 x 110",
+      "volume": "1 watch",
+      "lock": "Battery-powered automatic watch winder",
+      "warranty": "3-year guarantee"
     },
     "features": [
-      "Toledo leather",
-      "made in Italy"
+      "1,600 rotations/day",
+      "800 clockwise + 800 anti-clockwise",
+      "2 LR14 / 1.5V C batteries",
+      "no programming needed",
+      "made in Switzerland."
     ]
   },
   {
-    "slug": "pochette-4-grey-green",
-    "name": "Pochette 4 Grey / Green",
-    "sub": "Scatola del Tempo Pochette 4",
-    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
-    "image": "/images/products/220510_Pochette_Gris-Vert_Open__22199.jpeg",
+    "slug": "startbox-white-with-black-movement",
+    "name": "Startbox White with Black Movement",
+    "sub": "Swiss Kubik Startbox",
+    "desc": "Swiss-made single-watch winder with simple operation, battery power and compact cube design.",
+    "image": "/images/products/1-watch-winder-swisskubik-startbox-plastic-whitemovementblack-3.webp",
     "category": "luxury-safes-watch-storage",
     "categories": [
       "luxury-safes-watch-storage"
     ],
     "isProject": false,
     "specs": {
-      "external": "190 x 220 x 75",
-      "weight": "0.28000000000000003",
-      "volume": "4 watches",
-      "lock": "Watch storage roll",
-      "warranty": "3-year international warranty"
+      "external": "110 x 110 x 110",
+      "volume": "1 watch",
+      "lock": "Battery-powered automatic watch winder",
+      "warranty": "3-year guarantee"
     },
     "features": [
-      "Toledo leather",
-      "made in Italy"
-    ]
-  },
-  {
-    "slug": "pochette-4-grey-orange",
-    "name": "Pochette 4 Grey / Orange",
-    "sub": "Scatola del Tempo Pochette 4",
-    "desc": "Italian leather watch roll for carrying up to 4 watches, designed for travel, storage and refined protection.",
-    "image": "/images/products/220510_Pochette_Gris-Orange_Closed__93227.jpeg",
-    "category": "luxury-safes-watch-storage",
-    "categories": [
-      "luxury-safes-watch-storage"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "190 x 220 x 75",
-      "weight": "0.28000000000000003",
-      "volume": "4 watches",
-      "lock": "Watch storage roll",
-      "warranty": "3-year international warranty"
-    },
-    "features": [
-      "Toledo leather",
-      "made in Italy"
+      "1,600 rotations/day",
+      "800 clockwise + 800 anti-clockwise",
+      "2 LR14 / 1.5V C batteries",
+      "no programming needed",
+      "made in Switzerland."
     ]
   },
   {
@@ -3579,7 +3574,7 @@
     "isProject": false,
     "specs": {
       "external": "85 x 300 x 140",
-      "weight": "0.97499999999999998",
+      "weight": "0.975",
       "volume": "4 watches",
       "lock": "Watch storage box",
       "warranty": "3-year international warranty"
@@ -3587,7 +3582,7 @@
     "features": [
       "Toledo leather",
       "individual compartments",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3603,7 +3598,7 @@
     "isProject": false,
     "specs": {
       "external": "85 x 300 x 140",
-      "weight": "0.97499999999999998",
+      "weight": "0.975",
       "volume": "4 watches",
       "lock": "Watch storage box",
       "warranty": "3-year international warranty"
@@ -3611,7 +3606,7 @@
     "features": [
       "Toledo leather",
       "individual compartments",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3627,7 +3622,7 @@
     "isProject": false,
     "specs": {
       "external": "85 x 300 x 140",
-      "weight": "0.97499999999999998",
+      "weight": "0.975",
       "volume": "4 watches",
       "lock": "Watch storage box",
       "warranty": "3-year international warranty"
@@ -3635,7 +3630,7 @@
     "features": [
       "Toledo leather",
       "individual compartments",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3658,7 +3653,7 @@
     },
     "features": [
       "Toledo leather",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3681,7 +3676,7 @@
     },
     "features": [
       "Toledo leather",
-      "made in Italy"
+      "made in Italy."
     ]
   },
   {
@@ -3704,89 +3699,7 @@
     },
     "features": [
       "Toledo leather",
-      "made in Italy"
-    ]
-  },
-  {
-    "slug": "sa-20",
-    "name": "SA-20",
-    "sub": "Daily-Use Home Safes",
-    "desc": "Practical electronic safe for daily home and office storage, suitable for passports, small cash, jewellery, documents, watches and personal valuables.",
-    "image": "/images/products/Salvado-safes-in-Lebanon-SA-20-b.jpg",
-    "gallery": [
-      "/images/products/Salvado-safes-in-Lebanon-SA-20-b.jpg",
-      "/images/products/Salvado-safes-in-Lebanon-SA-20-red.jpg",
-      "/images/products/Salvado-safes-in-Lebanon-sa-20-w.jpg",
-      "/images/products/Salvado-safes-in-Lebanon-SA-20-g.jpg"
-    ],
-    "category": "home-safes",
-    "categories": [
-      "home-safes"
-    ],
-    "isProject": false,
-    "colors": [
-      "Blue",
-      "Red",
-      "Grey",
-      "White"
-    ],
-    "specs": {
-      "external": "200 x 310 x 200",
-      "internal": "197 x 307 x 140",
-      "weight": "5",
-      "lock": "Electronic code + 2 emergency keys",
-      "warranty": "2 years"
-    },
-    "features": [
-      "Interior LED light",
-      "protective floor carpet",
-      "pre-drilled holes for installation",
-      "installation bolts included",
-      "4 AA batteries included",
-      "2 emergency keys",
-      "2-year warranty",
-      "designed for daily use and basic storage"
-    ]
-  },
-  {
-    "slug": "sa-25",
-    "name": "SA-25",
-    "sub": "Daily-Use Home Safes",
-    "desc": "Practical electronic safe for daily home and office storage, suitable for passports, small cash, jewellery, documents, watches and personal valuables.",
-    "image": "/images/products/Salvado-safes-in-LebanonSA-25-B.jpg",
-    "gallery": [
-      "/images/products/Salvado-safes-in-LebanonSA-25-B.jpg",
-      "/images/products/Salvado-safes-in-LebanonSA-25-r.jpg",
-      "/images/products/Salvado-safes-in-LebanonSA-25-w.jpg",
-      "/images/products/Salvado-safes-in-Lebanon-SA-25-G.jpg"
-    ],
-    "category": "home-safes",
-    "categories": [
-      "home-safes"
-    ],
-    "isProject": false,
-    "colors": [
-      "Blue",
-      "Red",
-      "Grey",
-      "White"
-    ],
-    "specs": {
-      "external": "250 x 350 x 250",
-      "internal": "248 x 348 x 190",
-      "weight": "7",
-      "lock": "Electronic code + 2 emergency keys",
-      "warranty": "2 years"
-    },
-    "features": [
-      "Interior LED light",
-      "protective floor carpet",
-      "pre-drilled holes for installation",
-      "installation bolts included",
-      "4 AA batteries included",
-      "2 emergency keys",
-      "2-year warranty",
-      "designed for daily use and basic storage"
+      "made in Italy."
     ]
   },
   {
@@ -3805,19 +3718,16 @@
       "external": "230 x 405 x 335",
       "internal": "226 x 401 x 275",
       "weight": "12",
-      "lock": "Electronic code + 2 emergency keys",
+      "lock": "Electronic safe with LCD screen + external battery box",
       "warranty": "2 years"
     },
     "features": [
       "Interior LED light",
-      "protective floor carpet",
-      "pre-drilled holes for installation",
-      "installation bolts included",
-      "4 AA batteries included",
-      "2 emergency keys",
-      "2-year warranty",
-      "designed for daily use and basic storage",
-      "LCD screen + external battery box"
+      "carpet",
+      "pre-drilled holes",
+      "bolts included",
+      "4 AA batteries",
+      "2 emergency keys."
     ]
   },
   {
@@ -3835,7 +3745,7 @@
       "external": "250 x 350 x 250",
       "internal": "248 x 348 x 190",
       "weight": "7",
-      "shelves": "1 shelf",
+      "shelves": "1 shelf; LCD screen + external battery box.",
       "lock": "Electronic code + 2 emergency keys",
       "warranty": "2 years"
     },
@@ -3847,9 +3757,128 @@
       "4 AA batteries included",
       "2 emergency keys",
       "2-year warranty",
-      "designed for daily use and basic storage",
-      "1 shelf",
-      "LCD screen + external battery box"
+      "designed for daily use and basic storage. 1 shelf",
+      "LCD screen + external battery box."
+    ]
+  },
+  {
+    "slug": "sa-20",
+    "name": "SA-20",
+    "sub": "Daily-Use Home Safes",
+    "desc": "Practical electronic safe for daily home and office storage, suitable for passports, small cash, jewellery, documents, watches and personal valuables.",
+    "image": "/images/products/Salvado-safes-in-Lebanon-SA-20-b.jpg",
+    "category": "home-safes",
+    "categories": [
+      "home-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "200 x 310 x 200",
+      "internal": "197 x 307 x 140",
+      "weight": "5",
+      "lock": "Electronic code + 2 emergency keys",
+      "warranty": "2 years"
+    },
+    "features": [
+      "Interior LED light",
+      "protective floor carpet",
+      "pre-drilled holes for installation",
+      "installation bolts included",
+      "4 AA batteries included",
+      "2 emergency keys",
+      "2-year warranty",
+      "designed for daily use and basic storage. One product page with color options."
+    ],
+    "colors": [
+      "Blue",
+      "Red",
+      "Grey",
+      "White"
+    ],
+    "gallery": [
+      "/images/products/Salvado-safes-in-Lebanon-SA-20-b.jpg",
+      "/images/products/Salvado-safes-in-Lebanon-SA-20-red.jpg",
+      "/images/products/Salvado-safes-in-Lebanon-sa-20-w.jpg",
+      "/images/products/Salvado-safes-in-Lebanon-SA-20-g.jpg"
+    ]
+  },
+  {
+    "slug": "sa-25",
+    "name": "SA-25",
+    "sub": "Daily-Use Home Safes",
+    "desc": "Practical electronic safe for daily home and office storage, suitable for passports, small cash, jewellery, documents, watches and personal valuables.",
+    "image": "/images/products/Salvado-safes-in-LebanonSA-25-B.jpg",
+    "category": "home-safes",
+    "categories": [
+      "home-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "250 x 350 x 250",
+      "internal": "248 x 348 x 190",
+      "weight": "7",
+      "lock": "Electronic code + 2 emergency keys",
+      "warranty": "2 years"
+    },
+    "features": [
+      "Interior LED light",
+      "protective floor carpet",
+      "pre-drilled holes for installation",
+      "installation bolts included",
+      "4 AA batteries included",
+      "2 emergency keys",
+      "2-year warranty",
+      "designed for daily use and basic storage. One product page with color options."
+    ],
+    "colors": [
+      "Blue",
+      "Red",
+      "Grey",
+      "White"
+    ],
+    "gallery": [
+      "/images/products/Salvado-safes-in-LebanonSA-25-B.jpg",
+      "/images/products/Salvado-safes-in-LebanonSA-25-r.jpg",
+      "/images/products/Salvado-safes-in-LebanonSA-25-w.jpg",
+      "/images/products/Salvado-safes-in-Lebanon-SA-25-G.jpg"
+    ]
+  },
+  {
+    "slug": "se-25",
+    "name": "SE-25",
+    "sub": "Daily-Use Home Safes",
+    "desc": "Practical electronic safe for daily home and office storage, suitable for passports, small cash, jewellery, documents, watches and personal valuables.",
+    "image": "/images/products/SE-25-CLOSE.jpg",
+    "category": "home-safes",
+    "categories": [
+      "home-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "250 x 350 x 250",
+      "internal": "248 x 348 x 190",
+      "weight": "8",
+      "shelves": "1 shelf; LCD display; 3-8 digit personal code; green/red indicator lights; door 4 mm; body 1.5 mm steel.",
+      "lock": "Electronic code + 2 emergency keys",
+      "warranty": "2 years"
+    },
+    "features": [
+      "Interior LED light",
+      "protective floor carpet",
+      "pre-drilled holes for installation",
+      "installation bolts included",
+      "4 AA batteries included",
+      "2 emergency keys",
+      "2-year warranty",
+      "designed for daily use and basic storage. 1 shelf",
+      "LCD display",
+      "3-8 digit personal code",
+      "green/red indicator lights",
+      "door 4 mm",
+      "body 1.5 mm steel."
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -3867,7 +3896,7 @@
       "external": "300 x 380 x 300",
       "internal": "296 x 376 x 240",
       "weight": "13",
-      "shelves": "1 shelf",
+      "shelves": "1 shelf; LCD screen + external battery box.",
       "lock": "Electronic code + 2 emergency keys",
       "warranty": "2 years"
     },
@@ -3879,9 +3908,8 @@
       "4 AA batteries included",
       "2 emergency keys",
       "2-year warranty",
-      "designed for daily use and basic storage",
-      "1 shelf",
-      "LCD screen + external battery box"
+      "designed for daily use and basic storage. 1 shelf",
+      "LCD screen + external battery box."
     ]
   },
   {
@@ -3899,7 +3927,7 @@
       "external": "500 x 350 x 310",
       "internal": "496 x 346 x 250",
       "weight": "18",
-      "shelves": "1 shelf",
+      "shelves": "1 shelf; LCD screen + external battery box.",
       "lock": "Electronic code + 2 emergency keys",
       "warranty": "2 years"
     },
@@ -3911,48 +3939,8 @@
       "4 AA batteries included",
       "2 emergency keys",
       "2-year warranty",
-      "designed for daily use and basic storage",
-      "1 shelf",
-      "LCD screen + external battery box"
-    ]
-  },
-  {
-    "slug": "se-25",
-    "name": "SE-25",
-    "sub": "Daily-Use Home Safes",
-    "desc": "Practical electronic safe for daily home and office storage, suitable for passports, small cash, jewellery, documents, watches and personal valuables.",
-    "image": "/images/products/SE-25-CLOSE.jpg",
-    "category": "home-safes",
-    "categories": [
-      "home-safes"
-    ],
-    "isProject": false,
-    "colors": [
-      "Black"
-    ],
-    "specs": {
-      "external": "250 x 350 x 250",
-      "internal": "248 x 348 x 190",
-      "weight": "8",
-      "shelves": "1 shelf",
-      "lock": "Electronic code + 2 emergency keys",
-      "warranty": "2 years"
-    },
-    "features": [
-      "Interior LED light",
-      "protective floor carpet",
-      "pre-drilled holes for installation",
-      "installation bolts included",
-      "4 AA batteries included",
-      "2 emergency keys",
-      "2-year warranty",
-      "designed for daily use and basic storage",
-      "1 shelf",
-      "LCD display",
-      "3-8 digit personal code",
-      "green/red indicator lights",
-      "door 4 mm",
-      "body 1.5 mm steel"
+      "designed for daily use and basic storage. 1 shelf",
+      "LCD screen + external battery box."
     ]
   },
   {
@@ -3984,44 +3972,306 @@
       "fixings included",
       "4 AA batteries",
       "door 4 mm",
-      "body 1.5 mm"
+      "body 1.5 mm."
     ]
   },
   {
-    "slug": "rifle-safes",
-    "name": "Rifle Safes",
-    "sub": "Safety-Focused Storage Category",
-    "desc": "Secure storage solutions for licensed owners, focused on responsible storage and controlled access.",
+    "slug": "gs-5",
+    "name": "GS-5",
+    "sub": "Rifle Safes",
+    "desc": "Entry-level rifle safe for responsible storage of up to 5 rifles, with fingerprint/code access and three-way locking bolts.",
+    "image": "/images/products/GS-5-CLOSE.jpg",
+    "category": "responsible-firearm-storage",
+    "categories": [
+      "responsible-firearm-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1450 x 350 x 340",
+      "weight": "50.5",
+      "volume": "Up to 5 rifles",
+      "bolts": "5 bolts, 20 mm",
+      "lock": "Fingerprint / digital code / emergency key; 2 emergency keys included",
+      "grade": "California DOJ approved/certified",
+      "warranty": "3 years"
+    },
+    "features": [
+      "Fingerprint or 6-8 digit code opening",
+      "three-way locking bolts",
+      "5 rifle holders",
+      "pre-drilled holes at bottom and back",
+      "fixings included."
+    ]
+  },
+  {
+    "slug": "gs-10",
+    "name": "GS-10",
+    "sub": "Rifle Safes",
+    "desc": "Fire-resistant rifle safe for responsible firearm storage, with organized interior, 3-way locking system and controlled access.",
+    "image": "/images/products/GS-10-CLOSE.jpg",
+    "category": "responsible-firearm-storage",
+    "categories": [
+      "responsible-firearm-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1400 x 457 x 381",
+      "weight": "92",
+      "volume": "Up to 10 rifles",
+      "shelves": "1 shelf",
+      "bolts": "18 mm",
+      "lock": "Mechanical or electronic lock options; 2 emergency keys included",
+      "fireRating": "40 min / 1400°F",
+      "grade": "California DOJ approved/certified",
+      "warranty": "3 years"
+    },
+    "features": [
+      "14-gauge steel body",
+      "robotic welded construction",
+      "external welded solid steel strap hinges",
+      "fireboard protection",
+      "heat-expanding door stripping",
+      "3-way locking system",
+      "drill-resistant hardplate",
+      "relocker mechanism",
+      "anti-pry tabs",
+      "alarm if tampered with",
+      "pre-drilled for anchor kit",
+      "door organizer."
+    ]
+  },
+  {
+    "slug": "gs-14",
+    "name": "GS-14",
+    "sub": "Rifle Safes",
+    "desc": "Fire-resistant rifle safe for licensed owners needing controlled storage for up to 14 rifles.",
+    "image": "/images/products/GS-14-CLOSE.jpg",
+    "category": "responsible-firearm-storage",
+    "categories": [
+      "responsible-firearm-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1400 x 508 x 432",
+      "weight": "103",
+      "volume": "Up to 14 rifles",
+      "shelves": "1 shelf",
+      "bolts": "18 mm",
+      "lock": "Mechanical or electronic lock options; 2 emergency keys included",
+      "fireRating": "40 min / 1400°F",
+      "grade": "California DOJ approved/certified",
+      "warranty": "3 years"
+    },
+    "features": [
+      "14-gauge steel body",
+      "robotic welded construction",
+      "external welded solid steel strap hinges",
+      "fireboard protection",
+      "heat-expanding door stripping",
+      "3-way locking system",
+      "drill-resistant hardplate",
+      "relocker mechanism",
+      "anti-pry tabs",
+      "alarm if tampered with",
+      "pre-drilled for anchor kit",
+      "door organizer."
+    ]
+  },
+  {
+    "slug": "gs-24",
+    "name": "GS-24",
+    "sub": "Rifle Safes",
+    "desc": "Larger fire-resistant rifle safe with 4 shelves and organized storage for firearms and accessories.",
+    "image": "/images/products/GS-24-CLOSE.jpg",
+    "category": "responsible-firearm-storage",
+    "categories": [
+      "responsible-firearm-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1500 x 660 x 508",
+      "weight": "151",
+      "volume": "Up to 24 rifles",
+      "shelves": "4 shelves",
+      "bolts": "25.4 mm",
+      "lock": "Mechanical or electronic lock options; 2 emergency keys included",
+      "fireRating": "40 min / 1400°F",
+      "grade": "California DOJ approved/certified",
+      "warranty": "3 years"
+    },
+    "features": [
+      "14-gauge steel body",
+      "robotic welded construction",
+      "external welded solid steel strap hinges",
+      "fireboard protection",
+      "heat-expanding door stripping",
+      "3-way locking system",
+      "drill-resistant hardplate",
+      "relocker mechanism",
+      "anti-pry tabs",
+      "alarm if tampered with",
+      "pre-drilled for anchor kit",
+      "door organizer."
+    ]
+  },
+  {
+    "slug": "gs-30",
+    "name": "GS-30",
+    "sub": "Rifle Safes",
+    "desc": "Fire-resistant rifle safe for higher-capacity responsible storage, with reinforced locking and anti-pry protection.",
     "image": "/images/products/GS-30-CLOSE.jpg",
     "category": "responsible-firearm-storage",
     "categories": [
       "responsible-firearm-storage"
     ],
-    "isProject": true,
+    "isProject": false,
     "specs": {
-      "lock": "Controlled-access storage options",
-      "grade": "California DOJ approval where applicable",
+      "external": "1500 x 711 x 508",
+      "weight": "175",
+      "volume": "Up to 30 rifles",
+      "shelves": "4 shelves",
+      "bolts": "25.4 mm",
+      "lock": "Mechanical or electronic lock options; 2 emergency keys included",
+      "fireRating": "40 min / 1400°F",
+      "grade": "California DOJ approved/certified",
       "warranty": "3 years"
     },
-    "features": []
+    "features": [
+      "14-gauge steel body",
+      "robotic welded construction",
+      "external welded solid steel strap hinges",
+      "fireboard protection",
+      "heat-expanding door stripping",
+      "3-way locking system",
+      "drill-resistant hardplate",
+      "relocker mechanism",
+      "anti-pry tabs",
+      "alarm if tampered with",
+      "pre-drilled for anchor kit",
+      "door organizer."
+    ]
   },
   {
-    "slug": "pistol-safes",
-    "name": "Pistol Safes",
-    "sub": "Safety-Focused Storage Category",
-    "desc": "Compact responsible storage solutions for licensed owners, focused on controlled access and safe storage.",
+    "slug": "gs-36",
+    "name": "GS-36",
+    "sub": "Rifle Safes",
+    "desc": "Large fire-resistant rifle safe for responsible high-capacity firearm storage with organized internal layout.",
+    "image": "/images/products/GS-36-CLOSE.jpg",
+    "category": "responsible-firearm-storage",
+    "categories": [
+      "responsible-firearm-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1500 x 838 x 508",
+      "weight": "191",
+      "volume": "Up to 36 rifles",
+      "shelves": "4 shelves",
+      "bolts": "25.4 mm",
+      "lock": "Mechanical or electronic lock options; 2 emergency keys included",
+      "fireRating": "40 min / 1400°F",
+      "grade": "California DOJ approved/certified",
+      "warranty": "3 years"
+    },
+    "features": [
+      "14-gauge steel body",
+      "robotic welded construction",
+      "external welded solid steel strap hinges",
+      "fireboard protection",
+      "heat-expanding door stripping",
+      "3-way locking system",
+      "drill-resistant hardplate",
+      "relocker mechanism",
+      "anti-pry tabs",
+      "alarm if tampered with",
+      "pre-drilled for anchor kit",
+      "door organizer."
+    ]
+  },
+  {
+    "slug": "ps",
+    "name": "PS",
+    "sub": "Pistol Safes",
+    "desc": "Quick-access biometric pistol safe for responsible storage of 1-2 pistols or small valuables.",
     "image": "/images/products/pistol-open.jpg",
     "category": "responsible-firearm-storage",
     "categories": [
       "responsible-firearm-storage"
     ],
-    "isProject": true,
+    "isProject": false,
     "specs": {
-      "lock": "Controlled-access storage options",
-      "grade": "California DOJ approval where applicable",
+      "external": "95 x 375 x 280",
+      "internal": "70 x 360 x 190",
+      "weight": "6",
+      "volume": "1-2 pistols",
+      "lock": "Ultra-fast fingerprint / digital code / emergency key; 2 emergency keys included",
+      "grade": "California DOJ approved/certified",
       "warranty": "3 years"
     },
-    "features": []
+    "features": [
+      "500 DPI semiconductor fingerprint sensor",
+      "match speed under 1 second",
+      "stores up to 50 fingerprints",
+      "pry-resistant door",
+      "dual-layer steel housing",
+      "3 mm door",
+      "1.2 mm body."
+    ]
+  },
+  {
+    "slug": "ps2",
+    "name": "PS2",
+    "sub": "Pistol Safes",
+    "desc": "Drawer-style pistol safe with ultra-fast fingerprint access, digital code and emergency key opening for responsible private storage.",
+    "image": "/images/products/pistol-open.jpg",
+    "category": "responsible-firearm-storage",
+    "categories": [
+      "responsible-firearm-storage"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "300 x 90 x 256",
+      "weight": "5.5",
+      "volume": "1 pistol",
+      "lock": "Ultra-fast fingerprint / digital code / emergency key; 2 emergency keys included",
+      "grade": "California DOJ approved/certified",
+      "warranty": "3 years"
+    },
+    "features": [
+      "Fingerprint access",
+      "digital code",
+      "3-6 digit password",
+      "at least 30 fingerprints",
+      "4 AA batteries",
+      "mute function",
+      "multilayer stainless steel",
+      "1.5 mm body",
+      "1.5 mm door."
+    ]
+  },
+  {
+    "slug": "cbu",
+    "name": "CBU",
+    "sub": "Cash Box",
+    "desc": "Heavy-duty cash box made in Spain for cash collection points, counters, offices, shops and transport needs.",
+    "image": "/images/products/caxbox-close.jpg",
+    "category": "cash-boxes-key-cabinets",
+    "categories": [
+      "cash-boxes-key-cabinets"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "250 x 160 x 290",
+      "internal": "235 x 125 x 250",
+      "weight": "7",
+      "volume": "7 L",
+      "lock": "Key lock"
+    },
+    "features": [
+      "Heavy-duty steel construction",
+      "ergonomic handle",
+      "attachment bolts for secure positioning."
+    ]
   },
   {
     "slug": "kp50",
@@ -4048,7 +4298,7 @@
       "1.5 mm steel body",
       "floor/wall anchoring holes",
       "key hooks and numbered key rings",
-      "premium alternative to regular key boxes"
+      "premium alternative to regular key boxes."
     ]
   },
   {
@@ -4076,31 +4326,7 @@
       "1.5 mm steel body",
       "floor/wall anchoring holes",
       "key hooks and numbered key rings",
-      "premium alternative to regular key boxes"
-    ]
-  },
-  {
-    "slug": "cbu",
-    "name": "CBU",
-    "sub": "Cash Box",
-    "desc": "Heavy-duty cash box made in Spain for cash collection points, counters, offices, shops and transport needs.",
-    "image": "/images/products/caxbox-close.jpg",
-    "category": "cash-boxes-key-cabinets",
-    "categories": [
-      "cash-boxes-key-cabinets"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "250 x 160 x 290",
-      "internal": "235 x 125 x 250",
-      "weight": "7",
-      "volume": "7 L",
-      "lock": "Key lock"
-    },
-    "features": [
-      "Heavy-duty steel construction",
-      "ergonomic handle",
-      "attachment bolts for secure positioning"
+      "premium alternative to regular key boxes."
     ]
   },
   {
@@ -4127,8 +4353,7 @@
       "6 mm steel door and frame",
       "2 mm steel body",
       "Ø20 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   },
   {
@@ -4155,8 +4380,7 @@
       "6 mm steel door and frame",
       "2 mm steel body",
       "Ø20 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   },
   {
@@ -4183,8 +4407,7 @@
       "6 mm steel door and frame",
       "2 mm steel body",
       "Ø20 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   },
   {
@@ -4211,8 +4434,7 @@
       "8 mm steel door and frame",
       "3 mm steel body",
       "Ø20 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   },
   {
@@ -4239,7 +4461,7 @@
       "8 mm steel door and frame",
       "3 mm steel body",
       "Ø20 mm revolving bolts",
-      "floor and wall anchoring holes"
+      "floor and wall anchoring holes. No Bluetooth/app mention for key-lock-only model."
     ]
   },
   {
@@ -4266,8 +4488,7 @@
       "8 mm steel door and frame",
       "3 mm steel body",
       "Ø20 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   },
   {
@@ -4295,8 +4516,7 @@
       "double steel body construction",
       "drill-proof armour plating",
       "Ø25 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   },
   {
@@ -4324,8 +4544,7 @@
       "double steel body construction",
       "drill-proof armour plating",
       "Ø25 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   },
   {
@@ -4353,8 +4572,7 @@
       "double steel body construction",
       "drill-proof armour plating",
       "Ø25 mm revolving bolts",
-      "floor and wall anchoring holes",
-      "Ocluc Bluetooth app/audit log support for electronic models"
+      "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ]
   }
 ]
