@@ -59,7 +59,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
   return (
     <section
       ref={containerRef}
-      className="relative h-[88vh] min-h-[560px] w-full overflow-hidden select-none"
+      className="relative h-[72svh] min-h-[420px] max-h-[620px] w-full overflow-hidden select-none md:h-[88vh] md:min-h-[560px] md:max-h-none"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -73,9 +73,13 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         }}
       >
         {slides.map((s, i) => (
-          <div key={i} className="relative h-full min-w-full shrink-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={s.img} alt="" className="h-full w-full object-cover" draggable={false} />
+          <div
+            key={i}
+            className="relative h-full min-w-full shrink-0 overflow-hidden bg-ink bg-cover bg-center md:bg-center"
+            style={{ backgroundImage: `url(${s.img})` }}
+            role="img"
+            aria-label={s.title}
+          >
             <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/35" />
           </div>
         ))}

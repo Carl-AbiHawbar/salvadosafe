@@ -3,6 +3,7 @@ import Link from "next/link";
 const sections = [
   { slug: "hero", title: "Hero Slides", desc: "Homepage banner carousel" },
   { slug: "reviews", title: "Google Reviews", desc: "Review cards on homepage" },
+  { slug: "instagram", title: "Instagram Posts", desc: "Instagram carousel under reviews" },
   { slug: "home", title: "Homepage Sections", desc: "Proof strip, why Salvado, services, showroom, CTA" },
   { slug: "about", title: "About Page", desc: "Hero, stats, sectors, leadership" },
   { slug: "services", title: "Services Page", desc: "Hero, service cards, FAQs" },

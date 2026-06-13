@@ -3,6 +3,7 @@ import { readJson } from "./storage";
 
 export type HeroSlide = { img: string; title: string; sub: string };
 export type Review = { name: string; when: string; text: string; color: string };
+export type InstagramPost = { image: string; caption: string; href: string; alt?: string };
 export type IconPoint = { icon: string; title: string; text: string };
 export type Stat = { value: string; label: string };
 export type Faq = { q: string; a: string };
@@ -18,6 +19,8 @@ export type PagesContent = {
   heroSlides: HeroSlide[];
   reviews: Review[];
   reviewsMeta: { ratingLabel: string; reviewCount: string };
+  instagramMeta: { handle: string; title: string; subtitle: string };
+  instagramPosts: InstagramPost[];
   home: {
     proofStrip: string[];
     whySalvado: {

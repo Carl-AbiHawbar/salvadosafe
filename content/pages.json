@@ -33,6 +33,61 @@
     "ratingLabel": "Excellent",
     "reviewCount": "158 reviews"
   },
+  "instagramMeta": {
+    "handle": "@salvadosafes",
+    "title": "Salvado on Instagram",
+    "subtitle": "Showroom highlights, certified safes, vault installations, and behind-the-scenes from Lebanon's safe specialists."
+  },
+  "instagramPosts": [
+    {
+      "image": "/images/brand/frontimg.webp",
+      "caption": "Visit Lebanon's widest safe showroom in Zalka.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Salvado showroom"
+    },
+    {
+      "image": "/images/brand/c84dfdaf90cd428f56b6cafe.jpg",
+      "caption": "Premium safes and security solutions you can trust.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Salvado high-security safes"
+    },
+    {
+      "image": "/images/brand/c6c71578def71511416d0707.jpg",
+      "caption": "Bespoke high-security protection for homes and businesses.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Custom security solutions"
+    },
+    {
+      "image": "/images/brand/81b4439950502d0e2237beec.jpg",
+      "caption": "Certified products with European-standard installation.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Certified safes"
+    },
+    {
+      "image": "/images/products/AR-2E-ILUX-CLOSED.jpg",
+      "caption": "Luxury safes and watch storage for discerning clients.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Luxury safe"
+    },
+    {
+      "image": "/images/brand/vdi.png",
+      "caption": "Professional vault door delivery and installation.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Vault door installation"
+    },
+    {
+      "image": "/images/products/GS-30-CLOSE.jpg",
+      "caption": "Responsible firearm storage solutions.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Gun safe"
+    },
+    {
+      "image": "/images/brand/406286567de28867e45029df.jpg",
+      "caption": "Cash-handling solutions for businesses across Lebanon.",
+      "href": "https://www.instagram.com/salvadosafes/",
+      "alt": "Money counter"
+    }
+  ],
   "home": {
     "proofStrip": [
       "30,000+ Clients Served",

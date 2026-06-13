@@ -92,6 +92,29 @@ export default function AdminPageSection({ params }: { params: Promise<{ section
         </>
       )}
 
+      {section === "instagram" && (
+        <>
+          <AdminCard title="Instagram header" className="mt-6">
+            <div className="grid gap-4 md:grid-cols-2">
+              <AdminInput label="Handle" value={pages.instagramMeta.handle} onChange={(v) => setPages({ ...pages, instagramMeta: { ...pages.instagramMeta, handle: v } })} />
+              <AdminInput label="Title" value={pages.instagramMeta.title} onChange={(v) => setPages({ ...pages, instagramMeta: { ...pages.instagramMeta, title: v } })} />
+              <AdminInput label="Subtitle" value={pages.instagramMeta.subtitle} onChange={(v) => setPages({ ...pages, instagramMeta: { ...pages.instagramMeta, subtitle: v } })} rows={2} className="md:col-span-2" />
+            </div>
+          </AdminCard>
+          {pages.instagramPosts.map((post, i) => (
+            <AdminCard key={i} title={`Post ${i + 1}`} className="mt-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <AdminInput label="Image URL" value={post.image} onChange={(v) => { const instagramPosts = [...pages.instagramPosts]; instagramPosts[i] = { ...post, image: v }; setPages({ ...pages, instagramPosts }); }} />
+                <AdminInput label="Post link" value={post.href} onChange={(v) => { const instagramPosts = [...pages.instagramPosts]; instagramPosts[i] = { ...post, href: v }; setPages({ ...pages, instagramPosts }); }} />
+                <AdminInput label="Caption" value={post.caption} onChange={(v) => { const instagramPosts = [...pages.instagramPosts]; instagramPosts[i] = { ...post, caption: v }; setPages({ ...pages, instagramPosts }); }} rows={2} className="md:col-span-2" />
+                <AdminInput label="Alt text" value={post.alt || ""} onChange={(v) => { const instagramPosts = [...pages.instagramPosts]; instagramPosts[i] = { ...post, alt: v }; setPages({ ...pages, instagramPosts }); }} />
+              </div>
+            </AdminCard>
+          ))}
+          <SaveBar onSave={() => save(pages)} saving={saving} message={msg} />
+        </>
+      )}
+
       {(section === "home" || section === "about" || section === "services") && (
         <>
           <AdminCard title="Raw JSON editor" className="mt-6">
@@ -122,7 +145,7 @@ export default function AdminPageSection({ params }: { params: Promise<{ section
         </>
       )}
 
-      {!["hero", "reviews", "home", "about", "services"].includes(section) && (
+      {!["hero", "reviews", "instagram", "home", "about", "services"].includes(section) && (
         <p className="mt-6 text-white/60">Unknown section.</p>
       )}
     </div>

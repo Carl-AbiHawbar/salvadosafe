@@ -14,6 +14,7 @@ export default function AdminDashboard() {
     { href: "/admin/categories", title: "Categories", desc: `${categoryCount} categories with FAQs & guides` },
     { href: "/admin/pages/hero", title: "Hero Slides", desc: `${pages.heroSlides.length} homepage banner slides` },
     { href: "/admin/pages/reviews", title: "Google Reviews", desc: `${pages.reviews.length} review cards` },
+    { href: "/admin/pages/instagram", title: "Instagram Posts", desc: `${pages.instagramPosts.length} carousel posts` },
     { href: "/admin/pages/home", title: "Homepage", desc: "Proof strip, why Salvado, services, showroom" },
     { href: "/admin/pages/about", title: "About Page", desc: "Hero, stats, sectors, leadership points" },
     { href: "/admin/pages/services", title: "Services Page", desc: "Service cards, why choose, FAQs" },

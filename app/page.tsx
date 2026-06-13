@@ -2,17 +2,20 @@ import Link from "next/link";
 import { HeroSlider } from "@/components/hero-slider";
 import { TrustStrip, SectionHeading, FinalCTA } from "@/components/sections";
 import { ReviewsCarousel } from "@/components/reviews";
+import { InstagramCarousel } from "@/components/instagram-carousel";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { CTA, TextLink } from "@/components/cta";
 import { getFeaturedCategories, getProduct, getProducts } from "@/lib/catalog";
 import { getPagesContent } from "@/lib/content";
+import { getSite } from "@/lib/site";
 import { ShieldIcon, CheckIcon, ArrowIcon } from "@/components/icons";
 
 import { getIcon } from "@/lib/icon-map";
 
 export default function HomePage() {
   const pages = getPagesContent();
+  const site = getSite();
   const selected = pages.home.selectedSection.slugs.map((s) => getProduct(s)).filter(Boolean);
   const fallback = getProducts().slice(0, 5);
   const selectedProducts = (selected.length ? selected : fallback) as NonNullable<ReturnType<typeof getProduct>>[];
@@ -190,6 +193,15 @@ export default function HomePage() {
             ratingLabel={pages.reviewsMeta.ratingLabel}
             reviewCount={pages.reviewsMeta.reviewCount}
           />
+          <div className="mt-16 border-t border-line pt-16 md:mt-20 md:pt-20">
+            <InstagramCarousel
+              posts={pages.instagramPosts}
+              handle={pages.instagramMeta.handle}
+              title={pages.instagramMeta.title}
+              subtitle={pages.instagramMeta.subtitle}
+              profileUrl={site.socials.instagram}
+            />
+          </div>
         </div>
       </section>
 
