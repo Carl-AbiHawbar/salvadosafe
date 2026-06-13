@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useSite } from "./site-provider";
-import { WhatsAppIcon } from "./icons";
 
 const inputCls =
   "w-full rounded-xl border border-line bg-white px-4 py-3 text-[14.5px] text-ink outline-none transition-colors placeholder:text-muted focus:border-brand focus:ring-2 focus:ring-brand/15";
@@ -16,24 +15,45 @@ export function LeadForm({
 }) {
   const site = useSite();
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setError("");
+    setLoading(true);
+
     const form = e.currentTarget;
     const data = new FormData(form);
-    const lines: string[] = [];
-    lines.push(`New ${variant === "service" ? "service request" : "inquiry"} from the website:`);
-    lines.push("");
-    lines.push(`Name: ${data.get("name") || "-"}`);
-    lines.push(`Phone / WhatsApp: ${data.get("phone") || "-"}`);
-    if (variant === "service") lines.push(`Service needed: ${data.get("service") || "-"}`);
-    if (data.get("product")) lines.push(`Product / model: ${data.get("product")}`);
-    if (data.get("location")) lines.push(`Location: ${data.get("location")}`);
-    lines.push(`Message: ${data.get("message") || "-"}`);
+    const payload = {
+      variant,
+      name: String(data.get("name") || ""),
+      phone: String(data.get("phone") || ""),
+      service: data.get("service") ? String(data.get("service")) : undefined,
+      product: data.get("product") ? String(data.get("product")) : undefined,
+      location: data.get("location") ? String(data.get("location")) : undefined,
+      message: data.get("message") ? String(data.get("message")) : undefined,
+    };
 
-    const url = `https://wa.me/${site.phones.whatsapp.wa}?text=${encodeURIComponent(lines.join("\n"))}`;
-    window.open(url, "_blank", "noopener,noreferrer");
-    setSent(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = (await res.json()) as { ok?: boolean; error?: string };
+
+      if (!res.ok) {
+        throw new Error(json.error || "Unable to send your message.");
+      }
+
+      setSent(true);
+      form.reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unable to send your message.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -79,14 +99,21 @@ export function LeadForm({
 
       <button
         type="submit"
-        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full border border-line bg-white px-6 py-3.5 text-[15px] font-semibold text-ink transition-all hover:border-brand hover:bg-brand-soft active:scale-[0.99] sm:w-auto"
+        disabled={loading}
+        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 text-[15px] font-semibold text-white transition-all hover:bg-brand-dark active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
-        <WhatsAppIcon width={20} height={20} /> {variant === "service" ? "Submit Service Request" : "Send via WhatsApp"}
+        {loading ? "Sending..." : variant === "service" ? "Submit Service Request" : "Send Message"}
       </button>
 
       {sent && (
         <p className="mt-4 text-[13.5px] text-emerald-700">
-          WhatsApp is opening with your details, just press send to reach our team. You can also call us directly at {site.phones.landline.label}.
+          Thank you, your message was sent to our team. We&apos;ll reply on WhatsApp or by phone shortly. You can also reach us at {site.phones.landline.label}.
+        </p>
+      )}
+
+      {error && (
+        <p className="mt-4 text-[13.5px] text-brand">
+          {error} Call us at {site.phones.landline.label} or WhatsApp {site.phones.whatsapp.label}.
         </p>
       )}
     </form>

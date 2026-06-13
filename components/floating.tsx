@@ -24,9 +24,9 @@ export function Floating() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-20 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-white text-ink shadow-soft transition-transform hover:scale-110 hover:border-brand md:bottom-6 md:right-6"
+        className="fixed bottom-20 right-4 z-40 flex h-14 w-14 items-center justify-center overflow-visible rounded-full border border-line bg-white p-3 text-ink shadow-soft transition-transform hover:scale-110 hover:border-brand md:bottom-6 md:right-6"
       >
-        <WhatsAppIcon width={28} height={28} />
+        <WhatsAppIcon width={22} height={22} className="max-h-full max-w-full scale-100" />
       </a>
 
       {/* Scroll to top */}

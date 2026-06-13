@@ -132,7 +132,7 @@ export default function HomePage() {
               <Reveal key={s.title} delay={i * 70} className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
                 <div className="aspect-[4/3] overflow-hidden bg-white/5">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={s.img} alt={s.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={s.img} alt={s.title} loading="lazy" className="h-full w-full object-contain p-4 transition-transform duration-700 group-hover:scale-[1.03] sm:p-6" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-[16px] font-bold text-white">{s.title}</h3>

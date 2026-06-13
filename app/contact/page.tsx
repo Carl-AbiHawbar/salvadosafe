@@ -62,18 +62,19 @@ export default function ContactPage() {
 
       {/* Form + details */}
       <section className="bg-surface">
-        <div className="container-x grid items-start gap-12 py-20 md:grid-cols-2 md:py-24">
+        <div className="container-x grid items-start gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal>
             <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Send a Message</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
-              Tell Us What You Need
+              Tell Us How We Can Help
             </h2>
             <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
-              Fill in the form and we&apos;ll reply on WhatsApp with a recommendation and pricing. Prefer to talk now?
-              Call us at {site.phones.landline.label} or message {site.phones.whatsapp.label} on WhatsApp.
+              Drop your details in the form, and we&apos;ll shoot over a tailored recommendation and pricing on WhatsApp.
+              If you&apos;d rather talk right now, we&apos;re just a phone call away at {site.phones.landline.label} or a
+              WhatsApp message at {site.phones.whatsapp.label}.
             </p>
 
-            <div className="mt-7 rounded-2xl border border-line bg-white p-6">
+            <div className="mt-5 rounded-2xl border border-line bg-white p-6">
               <h3 className="text-[15px] font-bold text-ink">Showroom Hours</h3>
               <ul className="mt-3 space-y-1.5 text-[14px] text-ink-2">
                 <li>{site.hours.weekdays}</li>

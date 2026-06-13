@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { WhatsAppButton } from "./cta";
 import { CTA } from "./cta";
 import { ArrowIcon, ChevronDown } from "./icons";
@@ -22,13 +22,6 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
 
   const next = useCallback(() => goTo(active + 1), [active, goTo]);
   const prev = useCallback(() => goTo(active - 1), [active, goTo]);
-
-  // Auto-advance (pause while dragging)
-  useEffect(() => {
-    if (isDragging) return;
-    const id = setInterval(() => setActive((a) => (a + 1) % slides.length), 6000);
-    return () => clearInterval(id);
-  }, [isDragging]);
 
   const onTouchStart = (e: React.TouchEvent) => {
     touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
@@ -117,7 +110,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="absolute left-3 top-1/2 z-10 hidden -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white backdrop-blur transition-colors hover:bg-black/50 md:flex"
+        className="absolute left-3 top-1/2 z-10 flex -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-2.5 text-white backdrop-blur transition-colors hover:bg-black/50 md:p-3"
       >
         <ChevronDown className="rotate-90" width={20} height={20} />
       </button>
@@ -125,7 +118,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="absolute right-3 top-1/2 z-10 hidden -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white backdrop-blur transition-colors hover:bg-black/50 md:flex"
+        className="absolute right-3 top-1/2 z-10 flex -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-2.5 text-white backdrop-blur transition-colors hover:bg-black/50 md:p-3"
       >
         <ChevronDown className="-rotate-90" width={20} height={20} />
       </button>

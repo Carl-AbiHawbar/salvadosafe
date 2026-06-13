@@ -19,8 +19,8 @@ export function WhatsAppIcon({ size = 20, width, height, className = "", style, 
       alt=""
       width={w}
       height={h}
-      className={`inline-block shrink-0 object-contain ${className}`}
-      style={style}
+      className={`inline-block shrink-0 object-contain object-center ${className}`}
+      style={{ maxWidth: "100%", maxHeight: "100%", ...style }}
       {...props}
     />
   );

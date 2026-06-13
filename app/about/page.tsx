@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { SectionHeading, FinalCTA } from "@/components/sections";
+import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
-import { CTA, CallButton, MapButton } from "@/components/cta";
+import { CountUp } from "@/components/count-up";
+import { CTA, CallButton, MapButton, WhatsAppButton, QuoteButton } from "@/components/cta";
 import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { ShieldIcon } from "@/components/icons";
@@ -24,7 +25,7 @@ export default function AboutPage() {
           <img src={about.hero.image} alt="" className="h-full w-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
         </div>
-        <div className="container-x relative py-24 md:py-32">
+        <div className="container-x relative py-16 md:py-24">
           <Reveal className="max-w-2xl">
             <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{about.hero.eyebrow}</p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">
@@ -43,11 +44,14 @@ export default function AboutPage() {
 
       {/* Stats */}
       <section className="border-b border-line bg-white">
-        <div className="container-x grid grid-cols-2 gap-6 py-12 md:grid-cols-4">
+        <div className="container-x grid grid-cols-2 gap-4 py-8 sm:gap-6 md:grid-cols-4 md:py-10">
           {about.stats.map((s, i) => (
             <Reveal key={s.label} delay={i * 70} className="text-center">
-              <p className="font-display text-4xl font-bold text-brand md:text-5xl">{s.value}</p>
-              <p className="mt-1 text-[13.5px] font-medium text-muted">{s.label}</p>
+              <CountUp
+                value={s.value}
+                className="font-display text-3xl font-bold text-brand sm:text-4xl md:text-5xl"
+              />
+              <p className="mt-1 text-[12.5px] font-medium text-muted sm:text-[13.5px]">{s.label}</p>
             </Reveal>
           ))}
         </div>
@@ -55,7 +59,7 @@ export default function AboutPage() {
 
       {/* Showroom */}
       <section className="bg-white">
-        <div className="container-x grid items-center gap-12 py-20 md:grid-cols-2 md:py-24">
+        <div className="container-x grid items-center gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-line shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -82,8 +86,8 @@ export default function AboutPage() {
       </section>
 
       {/* Who trusts Salvado */}
-      <section className="bg-surface">
-        <div className="container-x py-20 md:py-24">
+      <section className="overflow-hidden bg-surface">
+        <div className="container-x py-12 md:py-16">
           <Reveal>
             <SectionHeading
               eyebrow="Trusted Clients"
@@ -91,13 +95,14 @@ export default function AboutPage() {
               text="Salvado serves clients with serious security requirements who need certified protection, professional installation, discretion, and dependable after-sales support."
             />
           </Reveal>
-          <div className="mt-12 flex flex-wrap justify-center gap-3">
-            {about.sectors.map((s, i) => (
-              <Reveal key={s} delay={i * 40}>
-                <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-5 py-2.5 text-[14px] font-semibold text-ink-2 shadow-card">
-                  <ShieldIcon width={16} height={16} className="text-brand" /> {s}
-                </span>
-              </Reveal>
+          <div className="mt-8 flex flex-wrap justify-center gap-2.5 sm:gap-3">
+            {about.sectors.map((s) => (
+              <span
+                key={s}
+                className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-[13px] font-semibold text-ink-2 shadow-card sm:px-5 sm:py-2.5 sm:text-[14px]"
+              >
+                <ShieldIcon width={16} height={16} className="shrink-0 text-brand" /> {s}
+              </span>
             ))}
           </div>
         </div>
@@ -105,33 +110,37 @@ export default function AboutPage() {
 
       {/* Why Salvado leads */}
       <section className="bg-white">
-        <div className="container-x py-20 md:py-24">
+        <div className="container-x py-12 md:py-16">
           <Reveal>
             <SectionHeading
               eyebrow="Why We Lead"
               title="A Trusted Name Built on Quality, Transparency & Specialization"
             />
           </Reveal>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-4 sm:gap-5 md:mt-10">
             {about.leadPoints.map((p, i) => {
               const Icon = getIcon(p.icon);
               return (
-              <Reveal key={p.title} delay={i * 60} className="rounded-2xl border border-line bg-white p-7 text-center shadow-card transition-shadow hover:shadow-soft md:text-left">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand md:mx-0">
-                  <Icon />
-                </div>
-                <h3 className="mt-5 text-[16px] font-bold text-ink">{p.title}</h3>
-                <p className="mt-2 text-[14px] leading-relaxed text-muted">{p.text}</p>
-              </Reveal>
+                <Reveal
+                  key={p.title}
+                  delay={i * 60}
+                  className="w-full rounded-2xl border border-line bg-white p-6 text-center shadow-card transition-shadow hover:shadow-soft sm:w-[calc(50%-10px)] sm:p-7 md:text-left lg:w-[calc(33.333%-14px)] lg:max-w-sm"
+                >
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-brand md:mx-0">
+                    <Icon />
+                  </div>
+                  <h3 className="mt-5 text-[16px] font-bold text-ink">{p.title}</h3>
+                  <p className="mt-2 text-[14px] leading-relaxed text-muted">{p.text}</p>
+                </Reveal>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* Technical capability */}
+      {/* Technical capability + CTA */}
       <section className="bg-ink">
-        <div className="container-x py-20 md:py-24">
+        <div className="container-x py-12 md:py-16">
           <Reveal className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">More Than a Supplier</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-white md:text-[40px]">
@@ -145,15 +154,23 @@ export default function AboutPage() {
               commercial, institutional, and private clients.
             </p>
           </Reveal>
+
+          <Reveal delay={80} className="mx-auto mt-10 max-w-3xl text-center md:mt-12">
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Visit or speak with our team</p>
+            <h2 className="font-display text-3xl font-bold leading-tight text-white md:text-[42px]">
+              Visit Salvado or Speak With Our Team
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-relaxed text-white/70">
+              For showroom visits, product guidance, security consultation, delivery, installation, or after-sales support, contact Salvado directly.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <WhatsAppButton message="Hi Salvado, I'd like to learn more about your company." label="WhatsApp Salvado" variant="ghostLight" />
+              <QuoteButton variant="primaryLight" />
+              <CallButton variant="ghostLight" />
+            </div>
+          </Reveal>
         </div>
       </section>
-
-      <FinalCTA
-        eyebrow="Visit or speak with our team"
-        title="Visit Salvado or Speak With Our Team"
-        text="For showroom visits, product guidance, security consultation, delivery, installation, or after-sales support, contact Salvado directly."
-        waMessage="Hi Salvado, I'd like to learn more about your company."
-      />
     </>
   );
 }
