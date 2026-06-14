@@ -2,7 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import { WhatsAppButton } from "./cta";
-import { CTA } from "./cta";
+import { CTA, CtaGroup } from "./cta";
 import { ArrowIcon, ChevronDown } from "./icons";
 import type { HeroSlide } from "@/lib/content";
 
@@ -15,10 +15,16 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const containerRef = useRef<HTMLElement>(null);
 
-  const goTo = useCallback((index: number) => {
-    setActive((index + slides.length) % slides.length);
-    setDragOffset(0);
-  }, []);
+  const goTo = useCallback(
+    (index: number) => {
+      setActive((index + slides.length) % slides.length);
+      setDragOffset(0);
+    },
+    [slides.length]
+  );
+
+  const navBtnCls =
+    "flex shrink-0 items-center justify-center rounded-full p-1.5 text-white transition-colors hover:bg-white/10 active:scale-95 md:rounded-full md:border md:border-white/25 md:bg-black/40 md:p-3 md:backdrop-blur md:hover:bg-black/55";
 
   const next = useCallback(() => goTo(active + 1), [active, goTo]);
   const prev = useCallback(() => goTo(active - 1), [active, goTo]);
@@ -79,9 +85,9 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
       </div>
 
       {/* Content overlay */}
-      <div className="pointer-events-none absolute inset-0 flex items-center">
+      <div className="pointer-events-none absolute inset-0 flex items-center pb-20 md:pb-0">
         <div className="container-x pointer-events-auto">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl pr-1 md:pr-0">
             <span className="mb-4 inline-block rounded-full border border-white/30 bg-black/25 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">
               Lebanon&apos;s Widest Safe Showroom
             </span>
@@ -91,26 +97,51 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/90 md:text-[17px]">
               {slides[active].sub}
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <CtaGroup className="mt-6 md:mt-8">
               <CTA href="/products" variant="primaryLight">
-                Explore Solutions <ArrowIcon width={17} height={17} />
+                Explore Solutions <ArrowIcon width={14} height={14} className="md:h-[17px] md:w-[17px]" />
               </CTA>
               <WhatsAppButton
                 label="WhatsApp Salvado"
+                shortLabel="WhatsApp"
                 message="Hi Salvado, I'd like a recommendation."
                 variant="outlineLight"
               />
-            </div>
+            </CtaGroup>
           </div>
         </div>
       </div>
 
-      {/* Prev / next arrows */}
+      {/* Mobile: compact bottom control pill — prev, dots, next in one row */}
+      <div className="absolute inset-x-0 bottom-3 z-10 flex justify-center px-4 md:hidden">
+        <div className="inline-flex items-center gap-1 rounded-full border border-white/20 bg-black/50 px-1.5 py-1 backdrop-blur-sm">
+          <button type="button" aria-label="Previous slide" onClick={prev} className={navBtnCls}>
+            <ChevronDown className="rotate-90" width={16} height={16} />
+          </button>
+          <div className="flex items-center gap-1.5 px-1">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                aria-label={`Go to slide ${i + 1}`}
+                onClick={() => goTo(i)}
+                className={`rounded-full transition-all duration-300 ${
+                  i === active ? "h-1.5 w-5 bg-brand" : "h-1.5 w-1.5 bg-white/45"
+                }`}
+              />
+            ))}
+          </div>
+          <button type="button" aria-label="Next slide" onClick={next} className={navBtnCls}>
+            <ChevronDown className="-rotate-90" width={16} height={16} />
+          </button>
+        </div>
+      </div>
+
+      {/* Desktop: side arrows + bottom dots */}
       <button
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="absolute left-3 top-1/2 z-10 flex -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-2.5 text-white backdrop-blur transition-colors hover:bg-black/50 md:p-3"
+        className={`${navBtnCls} absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 md:flex`}
       >
         <ChevronDown className="rotate-90" width={20} height={20} />
       </button>
@@ -118,13 +149,11 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="absolute right-3 top-1/2 z-10 flex -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-2.5 text-white backdrop-blur transition-colors hover:bg-black/50 md:p-3"
+        className={`${navBtnCls} absolute right-4 top-1/2 z-10 hidden -translate-y-1/2 md:flex`}
       >
         <ChevronDown className="-rotate-90" width={20} height={20} />
       </button>
-
-      {/* Dots */}
-      <div className="absolute bottom-7 left-1/2 z-10 flex -translate-x-1/2 gap-2.5">
+      <div className="absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 gap-2.5 md:flex">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -136,11 +165,6 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
           />
         ))}
       </div>
-
-      {/* Swipe hint (mobile) */}
-      <p className="absolute bottom-16 left-1/2 z-10 -translate-x-1/2 text-[11px] font-medium uppercase tracking-wider text-white/50 md:hidden">
-        Swipe to browse
-      </p>
     </section>
   );
 }

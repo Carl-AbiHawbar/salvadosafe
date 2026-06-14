@@ -43,15 +43,26 @@ export function Floating() {
       </button>
 
       {/* Sticky mobile bottom bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 grid grid-cols-3 border-t border-line bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.06)] md:hidden">
-        <a href={telLink(site.phones.landline.tel)} className="flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold text-ink">
-          <PhoneIcon width={18} height={18} className="text-brand" /> Call
+      <div className="fixed bottom-0 left-0 right-0 z-40 flex border-t border-line bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.06)] md:hidden">
+        <a
+          href={telLink(site.phones.landline.tel)}
+          className="flex flex-1 flex-row items-center justify-center gap-1 border-r border-line py-2 text-[10px] font-semibold text-ink"
+        >
+          <PhoneIcon width={15} height={15} className="text-brand" /> Call
         </a>
-        <a href={waLink()} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-0.5 border-x border-line py-2.5 text-[11px] font-semibold text-ink">
-          <WhatsAppIcon width={18} height={18} /> WhatsApp
+        <a
+          href={waLink()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-1 flex-row items-center justify-center gap-1 border-r border-line py-2 text-[10px] font-semibold text-ink"
+        >
+          <WhatsAppIcon width={15} height={15} /> WhatsApp
         </a>
-        <Link href="/contact" className="flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold text-ink">
-          <QuoteIcon width={18} height={18} className="text-brand" /> Request Quote
+        <Link
+          href="/contact"
+          className="flex flex-1 flex-row items-center justify-center gap-1 py-2 text-[10px] font-semibold text-ink"
+        >
+          <QuoteIcon width={15} height={15} className="text-brand" /> Quote
         </Link>
       </div>
     </>

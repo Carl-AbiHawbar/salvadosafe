@@ -5,9 +5,9 @@ import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { ProductCard } from "@/components/cards";
 import { SectionHeading, FinalCTA } from "@/components/sections";
-import { WhatsAppButton, QuoteButton, CallButton, CTA } from "@/components/cta";
+import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
 import { getProducts, getProduct, getCategory, similarProducts, type Product } from "@/lib/catalog";
-import { CheckIcon, TruckIcon, ShieldIcon, ToolsIcon, HeadsetIcon } from "@/components/icons";
+import { CheckIcon } from "@/components/icons";
 
 export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
@@ -22,13 +22,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: product.desc || `${product.name}, premium security solution from Salvado Safe in Lebanon.`,
   };
 }
-
-const quickTrust = [
-  { icon: TruckIcon, label: "Professional Delivery" },
-  { icon: ShieldIcon, label: "European-Standard Install" },
-  { icon: ToolsIcon, label: "Up to 5-Year Warranty" },
-  { icon: HeadsetIcon, label: "After-Sales Support" },
-];
 
 const SPEC_LABELS: { key: keyof Product["specs"]; label: string }[] = [
   { key: "external", label: "External Size (H × W × D mm)" },
@@ -161,10 +154,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </p>
             </div>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <CtaGroup className="mt-6">
               {product.isProject ? (
                 <>
-                  <WhatsAppButton label="Request Private Consultation" message={`Hi Salvado, I'd like a private consultation about ${product.name}.`} />
+                  <WhatsAppButton label="Request Private Consultation" shortLabel="Consult" message={`Hi Salvado, I'd like a private consultation about ${product.name}.`} />
                   <QuoteButton label="Request a Quote" />
                 </>
               ) : (
@@ -173,17 +166,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   <QuoteButton label="Request a Quote" />
                 </>
               )}
-              <CallButton />
-            </div>
-
-            {/* Quick trust strip */}
-            <div className="mt-7 grid grid-cols-2 gap-3 border-t border-line pt-6">
-              {quickTrust.map((t) => (
-                <div key={t.label} className="flex items-center gap-2.5 text-[13px] text-ink-2">
-                  <t.icon width={18} height={18} className="shrink-0 text-brand" /> {t.label}
-                </div>
-              ))}
-            </div>
+              <CallButton variant="ghost" />
+            </CtaGroup>
           </Reveal>
         </div>
       </section>

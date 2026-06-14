@@ -1,5 +1,5 @@
 import { Reveal } from "./reveal";
-import { WhatsAppButton, QuoteButton, CallButton } from "./cta";
+import { WhatsAppButton, QuoteButton, CallButton, CtaGroup } from "./cta";
 import { TruckIcon, ShieldIcon, ToolsIcon, HeadsetIcon } from "./icons";
 
 export function SectionHeading({
@@ -75,11 +75,11 @@ export function FinalCTA({
           <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{eyebrow}</p>
           <h2 className="font-display text-3xl font-bold leading-tight text-white md:text-[42px]">{title}</h2>
           <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-relaxed text-white/70">{text}</p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <WhatsAppButton message={waMessage} label="WhatsApp Salvado" variant="ghostLight" />
+          <CtaGroup center className="mt-8">
+            <WhatsAppButton message={waMessage} label="WhatsApp Salvado" shortLabel="WhatsApp" variant="ghostLight" />
             <QuoteButton variant="primaryLight" />
             <CallButton variant="ghostLight" />
-          </div>
+          </CtaGroup>
         </Reveal>
       </div>
     </section>

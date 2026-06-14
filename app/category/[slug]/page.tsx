@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { TrustStrip, SectionHeading } from "@/components/sections";
+import { SectionHeading } from "@/components/sections";
 import { ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
-import { WhatsAppButton, QuoteButton, CallButton } from "@/components/cta";
+import { WhatsAppButton, QuoteButton, CallButton, CtaGroup } from "@/components/cta";
 import { FinalCTA } from "@/components/sections";
 import {
   getCategories,
@@ -69,16 +69,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
                 ))}
               </div>
             )}
-            <div className="mt-8 flex flex-wrap gap-3">
+            <CtaGroup className="mt-8">
               <WhatsAppButton label="WhatsApp for Price" message={`Hi Salvado, I'm interested in ${category.name}.`} variant="outlineLight" />
               <QuoteButton variant="primaryLight" />
               <CallButton variant="ghostLight" />
-            </div>
+            </CtaGroup>
           </Reveal>
         </div>
       </section>
-
-      <TrustStrip />
 
       {/* Product grid */}
       <section className="bg-white">
@@ -104,10 +102,10 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               <p className="text-[15px] text-ink-2">
                 Products in this category are available on request. Contact us for current options and pricing.
               </p>
-              <div className="mt-6 flex justify-center gap-3">
+              <CtaGroup className="mt-6 justify-center">
                 <WhatsAppButton label="WhatsApp for Options" message={`Hi Salvado, what options do you have for ${category.name}?`} />
                 <QuoteButton />
-              </div>
+              </CtaGroup>
             </div>
           )}
         </div>

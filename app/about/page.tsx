@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
-import { CTA, CallButton, MapButton, WhatsAppButton, QuoteButton } from "@/components/cta";
+import { CTA, CallButton, MapButton, WhatsAppButton, QuoteButton, CtaGroup } from "@/components/cta";
 import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { ShieldIcon } from "@/components/icons";
@@ -34,10 +34,10 @@ export default function AboutPage() {
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
               {about.hero.text}
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <CtaGroup className="mt-8">
               <MapButton variant="primaryLight" />
               <CTA href="/contact" variant="ghostLight">Speak With Our Team</CTA>
-            </div>
+            </CtaGroup>
           </Reveal>
         </div>
       </section>
@@ -77,10 +77,10 @@ export default function AboutPage() {
               solutions, our showroom allows clients to compare models, inspect quality, and receive professional
               guidance before making a decision.
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <MapButton label="Open in Google Maps" variant="primary" />
+            <CtaGroup className="mt-7">
+              <MapButton label="Open in Google Maps" shortLabel="Maps" variant="primary" />
               <CallButton />
-            </div>
+            </CtaGroup>
           </Reveal>
         </div>
       </section>
@@ -163,11 +163,11 @@ export default function AboutPage() {
             <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-relaxed text-white/70">
               For showroom visits, product guidance, security consultation, delivery, installation, or after-sales support, contact Salvado directly.
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <WhatsAppButton message="Hi Salvado, I'd like to learn more about your company." label="WhatsApp Salvado" variant="ghostLight" />
+            <CtaGroup center className="mt-8">
+              <WhatsAppButton message="Hi Salvado, I'd like to learn more about your company." label="WhatsApp Salvado" shortLabel="WhatsApp" variant="ghostLight" />
               <QuoteButton variant="primaryLight" />
               <CallButton variant="ghostLight" />
-            </div>
+            </CtaGroup>
           </Reveal>
         </div>
       </section>

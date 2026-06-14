@@ -3,7 +3,7 @@ import { SectionHeading, FinalCTA } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { LeadForm } from "@/components/lead-form";
-import { WhatsAppButton, QuoteButton, CallButton, CTA } from "@/components/cta";
+import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
 import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { CheckIcon } from "@/components/icons";
@@ -35,11 +35,15 @@ export default function ServicesPage() {
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
               {content.hero.text}
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <CTA href="#request" variant="primaryLight">Request a Service</CTA>
-              <WhatsAppButton label="WhatsApp Salvado" message="Hi Salvado, I'd like to request a service." variant="outlineLight" />
+            <CtaGroup className="mt-8">
+              <CTA href="#request" variant="primaryLight">
+                <span className="md:hidden">Request</span>
+                <span className="hidden md:inline">Request a Service</span>
+              </CTA>
+              <WhatsAppButton label="WhatsApp Salvado" shortLabel="WhatsApp" message="Hi Salvado, I'd like to request a service." variant="outlineLight" />
+              <QuoteButton variant="primaryLight" />
               <CallButton variant="ghostLight" />
-            </div>
+            </CtaGroup>
           </Reveal>
         </div>
       </section>

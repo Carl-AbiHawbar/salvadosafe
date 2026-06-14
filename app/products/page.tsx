@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { TrustStrip, SectionHeading, FinalCTA } from "@/components/sections";
+import { SectionHeading, FinalCTA } from "@/components/sections";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
-import { WhatsAppButton, QuoteButton, MapButton } from "@/components/cta";
+import { WhatsAppButton, QuoteButton, MapButton, CtaGroup } from "@/components/cta";
 import { getFeaturedCategories, getSecondaryCategories, getProduct, getProducts, getTotalProducts } from "@/lib/catalog";
 import { ArrowIcon } from "@/components/icons";
 
@@ -50,16 +50,14 @@ export default function ProductsPage() {
               safes, luxury safes, and cash-handling solutions for homes, businesses, hotels, institutions, and private
               clients.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <WhatsAppButton label="WhatsApp for Recommendation" message="Hi Salvado, I'd like a product recommendation." variant="outlineLight" />
+            <CtaGroup className="mt-8">
+              <WhatsAppButton label="WhatsApp for Recommendation" shortLabel="WhatsApp" message="Hi Salvado, I'd like a product recommendation." variant="outlineLight" />
               <QuoteButton variant="primaryLight" />
-              <MapButton variant="ghostLight" />
-            </div>
+              <MapButton variant="ghostLight" shortLabel="Visit" label="Visit the Showroom" />
+            </CtaGroup>
           </Reveal>
         </div>
       </section>
-
-      <TrustStrip />
 
       {/* Choose what to protect */}
       <section className="bg-white">
