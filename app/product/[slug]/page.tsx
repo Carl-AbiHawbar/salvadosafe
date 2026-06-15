@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/cards";
 import { SectionHeading, FinalCTA } from "@/components/sections";
 import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
 import { getProducts, getProduct, getCategory, similarProducts, type Product } from "@/lib/catalog";
-import { CheckIcon } from "@/components/icons";
+import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 
 export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));

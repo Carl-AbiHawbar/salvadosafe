@@ -11,30 +11,32 @@ function revalidateAll() {
   revalidatePath("/about");
   revalidatePath("/services");
   revalidatePath("/contact");
-  for (const p of ALLOWED) {
-    void p;
-  }
 }
 
-export async function GET(_: Request, { params }: { params: Promise<{ file: string }> }) {
+function resolveFile(request: Request): ContentFile | null {
+  const file = new URL(request.url).searchParams.get("file");
+  if (!file) return null;
+  const name = `${file}.json` as ContentFile;
+  return ALLOWED.includes(name) ? name : null;
+}
+
+export async function GET(request: Request) {
   if (!(await isAuthenticated())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  const { file } = await params;
-  const name = `${file}.json` as ContentFile;
-  if (!ALLOWED.includes(name)) {
+  const name = resolveFile(request);
+  if (!name) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
   return NextResponse.json(readJson(name));
 }
 
-export async function PUT(request: Request, { params }: { params: Promise<{ file: string }> }) {
+export async function PUT(request: Request) {
   if (!(await isAuthenticated())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  const { file } = await params;
-  const name = `${file}.json` as ContentFile;
-  if (!ALLOWED.includes(name)) {
+  const name = resolveFile(request);
+  if (!name) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
   const data = await request.json();
