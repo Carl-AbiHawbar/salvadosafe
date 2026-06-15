@@ -8,7 +8,7 @@ import { Reveal } from "@/components/reveal";
 import { CTA, TextLink } from "@/components/cta";
 import { getFeaturedCategories, getProduct, getProducts } from "@/lib/catalog";
 import { getPagesContent } from "@/lib/content";
-import { getSite } from "@/lib/site";
+import { getSite } from "@/lib/site-server";
 import { ShieldIcon, CheckIcon, ArrowIcon } from "@/components/icons";
 
 import { getIcon } from "@/lib/icon-map";

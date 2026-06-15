@@ -3,22 +3,16 @@ import type { SiteConfig } from "./content";
 
 export type { SiteConfig };
 
+/** Client-safe site config (bundled JSON). Use SiteProvider / useSite() in client components. */
+export const site = defaultSite as SiteConfig;
+
 export function getSite(): SiteConfig {
-  if (typeof window !== "undefined") {
-    return defaultSite as SiteConfig;
-  }
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { readJson } = require("./storage") as typeof import("./storage");
-  return readJson<SiteConfig>("site.json");
+  return site;
 }
 
 export function waLink(message?: string) {
-  const s = getSite();
-  const base = `https://wa.me/${s.phones.whatsapp.wa}`;
+  const base = `https://wa.me/${site.phones.whatsapp.wa}`;
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
 
 export const telLink = (tel: string) => `tel:${tel}`;
-
-/** Static defaults for client bundles; prefer getSite() on the server */
-export const site = defaultSite as SiteConfig;

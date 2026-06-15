@@ -4,7 +4,7 @@ import "./globals.css";
 import { SiteShell } from "@/components/site-shell";
 import { SiteProvider } from "@/components/site-provider";
 import { getFeaturedCategories, getSecondaryCategories } from "@/lib/catalog";
-import { getSite } from "@/lib/site";
+import { getSite } from "@/lib/site-server";
 
 const inter = Inter({
   variable: "--font-inter",

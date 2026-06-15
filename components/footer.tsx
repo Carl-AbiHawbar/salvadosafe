@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import { getSite, waLink, telLink } from "@/lib/site";
+import { useSite } from "./site-provider";
+import { waLink, telLink } from "@/lib/site";
 import type { Category } from "@/lib/catalog";
 import { WhatsAppIcon, PinIcon, ShieldIcon, StarIcon, TruckIcon, CheckIcon } from "./icons";
 
@@ -20,7 +23,7 @@ const trust = [
 ];
 
 export function Footer({ featuredCategories }: { featuredCategories: Category[] }) {
-  const site = getSite();
+  const site = useSite();
   return (
     <footer className="mt-auto border-t border-line bg-ink text-white">
       {/* Trust strip */}
