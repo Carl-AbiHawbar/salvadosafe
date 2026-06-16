@@ -30,6 +30,16 @@ export type Product = {
   features: string[];
 };
 
+const HIGH_SECURITY_CATEGORY = "high-security-safes";
+
+export function isPublicProduct(p: Product): boolean {
+  if (p.category !== HIGH_SECURITY_CATEGORY) return true;
+  if (p.sub && (HIGH_SECURITY_GRADE_SUBS as readonly string[]).includes(p.sub)) return false;
+  return true;
+}
+
+export const HIGH_SECURITY_GRADE_SUBS = ["Grade I", "Grade II", "Grade III", "Grade IV", "Grade V"] as const;
+
 export type Category = {
   slug: string;
   name: string;
@@ -44,6 +54,7 @@ export type Category = {
 };
 
 export const getProducts = cache((): Product[] => readJson<Product[]>("products.json"));
+export const getPublicProducts = cache((): Product[] => getProducts().filter(isPublicProduct));
 export const getCategories = cache((): Category[] => readJson<Category[]>("categories.json"));
 
 export function getCategory(slug: string): Category | undefined {
@@ -51,7 +62,7 @@ export function getCategory(slug: string): Category | undefined {
 }
 
 export function productsInCategory(slug: string): Product[] {
-  return getProducts().filter((p) => p.categories.includes(slug) || p.category === slug);
+  return getPublicProducts().filter((p) => p.categories.includes(slug) || p.category === slug);
 }
 
 export function categoryImage(c: Category): string {
@@ -61,11 +72,13 @@ export function categoryImage(c: Category): string {
 }
 
 export function categoryCount(slug: string): number {
+  if (slug === HIGH_SECURITY_CATEGORY) return HIGH_SECURITY_GRADE_SUBS.length;
   return productsInCategory(slug).length;
 }
 
 export function categorySubs(slug: string): string[] {
   if (slug === "smart-safes") return [];
+  if (slug === HIGH_SECURITY_CATEGORY) return [...HIGH_SECURITY_GRADE_SUBS];
   const subs: string[] = [];
   for (const p of productsInCategory(slug)) {
     if (p.sub && !subs.includes(p.sub)) subs.push(p.sub);
@@ -78,7 +91,7 @@ export function getProduct(slug: string): Product | undefined {
 }
 
 export function similarProducts(p: Product, limit = 6): Product[] {
-  return getProducts()
+  return getPublicProducts()
     .filter((x) => x.slug !== p.slug && x.category === p.category)
     .slice(0, limit);
 }
@@ -92,5 +105,5 @@ export function getSecondaryCategories(): Category[] {
 }
 
 export function getTotalProducts(): number {
-  return getProducts().length;
+  return getPublicProducts().length + HIGH_SECURITY_GRADE_SUBS.length;
 }

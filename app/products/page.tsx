@@ -4,7 +4,9 @@ import { SectionHeading, FinalCTA } from "@/components/sections";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { WhatsAppButton, QuoteButton, MapButton, CtaGroup } from "@/components/cta";
-import { getFeaturedCategories, getSecondaryCategories, getProduct, getProducts, getTotalProducts } from "@/lib/catalog";
+import { getFeaturedCategories, getSecondaryCategories, getProduct, getPublicProducts, getTotalProducts } from "@/lib/catalog";
+import { getGrades } from "@/lib/grades";
+import { GradeCard } from "@/components/grade-card";
 import { ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -22,13 +24,14 @@ const protectCards = [
   { title: "Discreet Storage", text: "For concealed storage in homes, offices, and private spaces.", slug: "concealed-camouflage-safes", cta: "View Concealed Safes" },
 ];
 
-// Confirmed selection: Grade V, 2-hour fire-rated, vault door, luxury safe, money counter
-const selectedSlugs = ["ak-8le", "s-59", "vault-doors", "custom-luxury-safe", "plus-p30-money-counter"];
+// Confirmed selection: Grade V page, 2-hour fire-rated, vault door, luxury safe, money counter
+const selectedSlugs = ["s-59", "vault-doors", "custom-luxury-safe", "plus-p30-money-counter"];
 
 export default function ProductsPage() {
   const selected = selectedSlugs.map((s) => getProduct(s)).filter(Boolean);
-  const fallback = getProducts().slice(0, 5);
+  const fallback = getPublicProducts().slice(0, 4);
   const selectedProducts = (selected.length ? selected : fallback) as NonNullable<ReturnType<typeof getProduct>>[];
+  const featuredGrade = getGrades().find((g) => g.slug === "grade-v");
 
   return (
     <>
@@ -141,8 +144,13 @@ export default function ProductsPage() {
             />
           </Reveal>
           <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-5">
+            {featuredGrade && (
+              <Reveal delay={0}>
+                <GradeCard grade={featuredGrade} />
+              </Reveal>
+            )}
             {selectedProducts.map((p, i) => (
-              <Reveal key={p.slug} delay={i * 50}>
+              <Reveal key={p.slug} delay={(i + 1) * 50}>
                 <ProductCard product={p} />
               </Reveal>
             ))}

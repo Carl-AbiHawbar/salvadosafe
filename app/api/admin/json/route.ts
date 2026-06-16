@@ -3,7 +3,7 @@ import { revalidatePath } from "next/cache";
 import { isAuthenticated } from "@/lib/auth";
 import { readJson, writeJson, type ContentFile } from "@/lib/storage";
 
-const ALLOWED: ContentFile[] = ["site.json", "categories.json", "products.json", "pages.json"];
+const ALLOWED: ContentFile[] = ["site.json", "categories.json", "products.json", "pages.json", "grades.json"];
 
 function revalidateAll() {
   revalidatePath("/", "layout");

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { ProductCard } from "@/components/cards";
 import { SectionHeading, FinalCTA } from "@/components/sections";
 import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
-import { getProducts, getProduct, getCategory, similarProducts, type Product } from "@/lib/catalog";
+import { getPublicProducts, getProduct, getCategory, similarProducts, isPublicProduct, type Product } from "@/lib/catalog";
+import { gradeForProductSub } from "@/lib/grades";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 
 export function generateStaticParams() {
-  return getProducts().map((p) => ({ slug: p.slug }));
+  return getPublicProducts().map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -45,6 +46,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
+
+  if (!isPublicProduct(product)) {
+    const grade = gradeForProductSub(product.sub);
+    if (grade) redirect(`/grade/${grade.slug}`);
+    notFound();
+  }
 
   const category = getCategory(product.category);
   const similar = similarProducts(product, 6);

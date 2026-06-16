@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const XLSX_PATH =
   process.argv[2] ||
-  "c:/Users/carla/Downloads/Salvado_Product_Data_Handover_FINAL_VERIFIED.xlsx";
+  "c:/Users/carla/Downloads/Salvado_Product_Data_Handover_FINAL_VERIFIED (2).xlsx";
 const OUT_PATH = path.join(ROOT, "content/products.json");
 const OLD_PATH = path.join(ROOT, "content/products.json");
 

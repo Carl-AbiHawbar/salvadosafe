@@ -4,7 +4,7 @@ import path from "path";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
-export type ContentFile = "site.json" | "categories.json" | "products.json" | "pages.json";
+export type ContentFile = "site.json" | "categories.json" | "products.json" | "pages.json" | "grades.json";
 
 export function readJson<T>(file: ContentFile): T {
   const filePath = path.join(CONTENT_DIR, file);

@@ -1,0 +1,1153 @@
+[
+  {
+    "slug": "grade-i",
+    "grade": "Grade I",
+    "h1": "Grade I High-Security Safes",
+    "series": "AT Series",
+    "seoFocus": "Grade 1 safe in Lebanon; certified Grade I safe; high-security safe Grade I",
+    "desc": "Created for certified everyday security, the Grade I safe protects personal valuables, documents, cash, and important items at home or in the office. Made in Spain, it is the entry level of certified high-security safes, offering trusted protection with professional quality.",
+    "technicalFeatures": [
+      "UNE EN-1143-1 Grade I",
+      "12 mm steel door",
+      "50 mm body",
+      "M-12 50kN anchoring included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "passive fire protection by intumescent seal",
+      "height-adjustable shelves except AT-1",
+      "color RAL Design 000 25 00."
+    ],
+    "cta": "WhatsApp for Grade I / Request Quote / Ask Salvado for the right size",
+    "developerNote": "Use one hero image/representative Grade I photo if individual model photos are not available.",
+    "image": "/images/products/AT3LE-FRONT.jpg",
+    "models": [
+      {
+        "name": "AT-1LE",
+        "specs": {
+          "external": "350 x 440 x 350",
+          "internal": "250 x 340 x 230",
+          "weight": "100",
+          "volume": "20 L",
+          "shelves": "1",
+          "bolts": "8",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-2LE",
+        "specs": {
+          "external": "500 x 550 x 440",
+          "internal": "400 x 450 x 320",
+          "weight": "180",
+          "volume": "58 L",
+          "shelves": "2",
+          "bolts": "8",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-3LE",
+        "specs": {
+          "external": "650 x 550 x 440",
+          "internal": "550 x 450 x 320",
+          "weight": "220",
+          "volume": "79 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-4LE",
+        "specs": {
+          "external": "800 x 550 x 440",
+          "internal": "700 x 450 x 320",
+          "weight": "265",
+          "volume": "101 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-5LE",
+        "specs": {
+          "external": "950 x 550 x 440",
+          "internal": "850 x 450 x 320",
+          "weight": "300",
+          "volume": "122 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-6LE",
+        "specs": {
+          "external": "1100 x 550 x 440",
+          "internal": "1000 x 450 x 320",
+          "weight": "345",
+          "volume": "144 L",
+          "shelves": "4",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-7LE",
+        "specs": {
+          "external": "1250 x 550 x 440",
+          "internal": "1150 x 450 x 320",
+          "weight": "380",
+          "volume": "166 L",
+          "shelves": "5",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-8LE",
+        "specs": {
+          "external": "1400 x 650 x 540",
+          "internal": "1300 x 550 x 420",
+          "weight": "535",
+          "volume": "300 L",
+          "shelves": "5",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-9LE",
+        "specs": {
+          "external": "1550 x 800 x 640",
+          "internal": "1450 x 700 x 520",
+          "weight": "720",
+          "volume": "535 L",
+          "shelves": "6",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-10LE",
+        "specs": {
+          "external": "1400 x 450 x 440",
+          "internal": "1300 x 350 x 320",
+          "weight": "365",
+          "volume": "146 L",
+          "shelves": "5",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-11LE",
+        "specs": {
+          "external": "1550 x 550 x 440",
+          "internal": "1450 x 450 x 320",
+          "weight": "460",
+          "volume": "209 L",
+          "shelves": "6",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      },
+      {
+        "name": "AT-12LE",
+        "specs": {
+          "external": "1550 x 650 x 440",
+          "internal": "1450 x 550 x 320",
+          "weight": "520",
+          "volume": "255 L",
+          "shelves": "6",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "12 mm thick steel door",
+          "50 mm thick body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent fire seal",
+          "height-adjustable shelves except AT-1",
+          "RAL Design 000 25 00."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "grade-ii",
+    "grade": "Grade II",
+    "h1": "Grade II High-Security Safes",
+    "series": "AM Series",
+    "seoFocus": "Grade 2 safe in Lebanon; certified Grade II safe; high-security safe Grade II",
+    "desc": "Built for reliable certified protection, the Grade II safe is ideal for homes, offices, clinics, shops, and businesses that need to secure cash, documents, jewellery, and valuables. Made in Spain, it offers a strong balance between security, practicality, and everyday use.",
+    "technicalFeatures": [
+      "UNE EN-1143-1 Grade II",
+      "50 mm thick door and body",
+      "M-12 50kN anchoring included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "height-adjustable shelves except AM-1"
+    ],
+    "cta": "WhatsApp for Grade II / Request Quote / Ask Salvado for the right size",
+    "developerNote": "Only include confirmed models. AM-10LE included; do not include AM-45/AM-85/AM-95 unless later confirmed.",
+    "image": "/images/products/Untitled-design-6.jpg",
+    "models": [
+      {
+        "name": "AM-1LE",
+        "specs": {
+          "external": "350 x 440 x 350",
+          "internal": "250 x 340 x 195",
+          "weight": "115",
+          "volume": "17 L",
+          "shelves": "1",
+          "bolts": "8",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-2LE",
+        "specs": {
+          "external": "500 x 450 x 450",
+          "internal": "400 x 350 x 295",
+          "weight": "190",
+          "volume": "41 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-25LE",
+        "specs": {
+          "external": "500 x 550 x 550",
+          "internal": "400 x 450 x 395",
+          "weight": "250",
+          "volume": "71 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-3LE",
+        "specs": {
+          "external": "650 x 550 x 550",
+          "internal": "550 x 450 x 395",
+          "weight": "305",
+          "volume": "98 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-4LE",
+        "specs": {
+          "external": "800 x 550 x 550",
+          "internal": "700 x 450 x 395",
+          "weight": "360",
+          "volume": "124 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-5LE",
+        "specs": {
+          "external": "950 x 550 x 550",
+          "internal": "850 x 450 x 395",
+          "weight": "410",
+          "volume": "151 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-6LE",
+        "specs": {
+          "external": "1100 x 550 x 550",
+          "internal": "1000 x 450 x 395",
+          "weight": "465",
+          "volume": "178 L",
+          "shelves": "4",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-65LE",
+        "specs": {
+          "external": "1100 x 700 x 550",
+          "internal": "1000 x 600 x 395",
+          "weight": "550",
+          "volume": "237 L",
+          "shelves": "4",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-7LE",
+        "specs": {
+          "external": "1250 x 550 x 550",
+          "internal": "1150 x 450 x 395",
+          "weight": "520",
+          "volume": "204 L",
+          "shelves": "5",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-75LE",
+        "specs": {
+          "external": "1250 x 700 x 550",
+          "internal": "1150 x 600 x 395",
+          "weight": "610",
+          "volume": "273 L",
+          "shelves": "5",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-8LE",
+        "specs": {
+          "external": "1400 x 650 x 650",
+          "internal": "1300 x 550 x 495",
+          "weight": "715",
+          "volume": "354 L",
+          "shelves": "5",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-9LE",
+        "specs": {
+          "external": "1550 x 800 x 750",
+          "internal": "1450 x 700 x 595",
+          "weight": "980",
+          "volume": "604 L",
+          "shelves": "6",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      },
+      {
+        "name": "AM-10LE",
+        "specs": {
+          "external": "1700 x 800 x 650",
+          "internal": "1600 x 700 x 495",
+          "weight": "970",
+          "volume": "554 L",
+          "shelves": "6",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AM-1",
+          "RAL Design 000 35 00."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "grade-iii",
+    "grade": "Grade III",
+    "h1": "Grade III High-Security Safes",
+    "series": "AR Series",
+    "seoFocus": "Grade 3 safe in Lebanon; certified Grade III safe; high-security safe Grade III",
+    "desc": "Designed for strong protection against burglary, the Grade III safe is suitable for businesses, offices, jewellery, cash, important documents, and high-value personal items. Made in Spain and certified for serious security needs, it offers a higher level of resistance for clients who want trusted protection without moving into the highest-risk categories.",
+    "technicalFeatures": [
+      "UNE EN-1143-1 Grade III",
+      "50 mm thick door and body",
+      "M-12 50kN anchoring included",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "revolving bolts",
+      "tip-proof height-adjustable shelves except AR-1",
+      "color RAL Design 000 50 00."
+    ],
+    "cta": "WhatsApp for Grade III / Request Quote / Ask Salvado for the right size",
+    "developerNote": "AR-1LE corrected: internal 250 x 340 x 180 mm, 130 kg, 15 L.",
+    "image": "/images/products/AR2LE-FRONT.jpg",
+    "models": [
+      {
+        "name": "AR-1LE",
+        "specs": {
+          "external": "350 x 440 x 350",
+          "internal": "250 x 340 x 180",
+          "weight": "130",
+          "volume": "15 L",
+          "shelves": "1",
+          "bolts": "8",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-2LE",
+        "specs": {
+          "external": "500 x 450 x 450",
+          "internal": "400 x 350 x 295",
+          "weight": "210",
+          "volume": "41 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-3LE",
+        "specs": {
+          "external": "650 x 550 x 550",
+          "internal": "550 x 450 x 395",
+          "weight": "340",
+          "volume": "98 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-4LE",
+        "specs": {
+          "external": "800 x 550 x 550",
+          "internal": "700 x 450 x 395",
+          "weight": "400",
+          "volume": "124 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-5LE",
+        "specs": {
+          "external": "950 x 550 x 550",
+          "internal": "850 x 450 x 395",
+          "weight": "460",
+          "volume": "151 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-6LE",
+        "specs": {
+          "external": "1100 x 550 x 550",
+          "internal": "1000 x 450 x 395",
+          "weight": "520",
+          "volume": "178 L",
+          "shelves": "4",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-7LE",
+        "specs": {
+          "external": "1250 x 550 x 550",
+          "internal": "1150 x 450 x 395",
+          "weight": "580",
+          "volume": "204 L",
+          "shelves": "5",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-8LE",
+        "specs": {
+          "external": "1400 x 650 x 650",
+          "internal": "1300 x 550 x 495",
+          "weight": "790",
+          "volume": "354 L",
+          "shelves": "5",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      },
+      {
+        "name": "AR-9LE",
+        "specs": {
+          "external": "1550 x 800 x 750",
+          "internal": "1450 x 700 x 595",
+          "weight": "1080",
+          "volume": "604 L",
+          "shelves": "6",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-12 anchor 50 kN included",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves except AR-1",
+          "RAL Design 000 50 00."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "grade-iv",
+    "grade": "Grade IV",
+    "h1": "Grade IV High-Security Safes",
+    "series": "AP Series",
+    "seoFocus": "Grade 4 safe in Lebanon; certified Grade IV safe; high-security safe Grade IV",
+    "desc": "A certified Grade IV safe made in Spain, designed for high-value protection in homes, businesses, jewellery stores, exchange offices, embassies, and financial institutions. Built for serious burglary resistance, reliable performance, and professional use, with expert delivery and installation by Salvado across Lebanon.",
+    "technicalFeatures": [
+      "UNE EN-1143-1 Grade IV",
+      "50 mm thick door and body",
+      "M-16 100kN anchoring included",
+      "floor/wall anchoring",
+      "drill-proof armour plating",
+      "advanced re-locking system in case of attack",
+      "tip-proof height-adjustable shelves",
+      "color RAL Design 000 65 00."
+    ],
+    "cta": "WhatsApp for Grade IV / Request Quote / Ask Salvado for the right size",
+    "developerNote": "Use Grade IV page for AP Series table.",
+    "image": "/images/products/AP5E-FRONT.jpg",
+    "models": [
+      {
+        "name": "AP-2LE",
+        "specs": {
+          "external": "500 x 450 x 450",
+          "internal": "400 x 350 x 395",
+          "weight": "210",
+          "volume": "41 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      },
+      {
+        "name": "AP-3LE",
+        "specs": {
+          "external": "650 x 550 x 550",
+          "internal": "550 x 450 x 395",
+          "weight": "340",
+          "volume": "98 L",
+          "shelves": "2",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      },
+      {
+        "name": "AP-4LE",
+        "specs": {
+          "external": "800 x 550 x 550",
+          "internal": "700 x 450 x 395",
+          "weight": "405",
+          "volume": "124 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      },
+      {
+        "name": "AP-5LE",
+        "specs": {
+          "external": "950 x 550 x 550",
+          "internal": "850 x 450 x 395",
+          "weight": "465",
+          "volume": "151 L",
+          "shelves": "3",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      },
+      {
+        "name": "AP-6LE",
+        "specs": {
+          "external": "1100 x 550 x 550",
+          "internal": "1000 x 450 x 395",
+          "weight": "530",
+          "volume": "178 L",
+          "shelves": "4",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      },
+      {
+        "name": "AP-7LE",
+        "specs": {
+          "external": "1250 x 550 x 550",
+          "internal": "1150 x 450 x 395",
+          "weight": "600",
+          "volume": "204 L",
+          "shelves": "5",
+          "bolts": "12",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      },
+      {
+        "name": "AP-8LE",
+        "specs": {
+          "external": "1400 x 650 x 650",
+          "internal": "1300 x 550 x 495",
+          "weight": "815",
+          "volume": "354 L",
+          "shelves": "5",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      },
+      {
+        "name": "AP-9LE",
+        "specs": {
+          "external": "1550 x 800 x 750",
+          "internal": "1450 x 700 x 595",
+          "weight": "1120",
+          "volume": "604 L",
+          "shelves": "6",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "floor and wall anchoring",
+          "drill-proof armour plating",
+          "advanced re-locking system in case of attack",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 65 00."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "grade-v",
+    "grade": "Grade V",
+    "h1": "Grade V High-Security Safes",
+    "series": "AK Series",
+    "seoFocus": "Grade 5 safe in Lebanon; certified Grade V safe; high-security safe Grade V",
+    "desc": "AK Series Grade V safes according to UNE EN-1143-1:2019. This classification corresponds to a high level of resistance, making them ideal for risk environments such as banks, jewelry stores, security companies and establishments with large volumes of cash or high-value goods.",
+    "technicalFeatures": [
+      "UNE EN-1143-1 Grade V",
+      "50 mm thick door and body",
+      "M-16 100kN ground anchor included",
+      "height-adjustable hinges",
+      "anti-drill shielding",
+      "armour against thermal lance",
+      "advanced re-locking system in case of attack",
+      "passive fire protection by intumescent door gasket",
+      "stainless-steel square bolts",
+      "tip-proof height-adjustable shelves",
+      "color RAL Design 000 80 00."
+    ],
+    "cta": "WhatsApp for Grade V / Request Quote / Ask Salvado for the right size",
+    "developerNote": "Grade V should feel premium and technical; one representative AK photo is enough if individual size photos are not available.",
+    "image": "/images/products/safe-1.jpg",
+    "models": [
+      {
+        "name": "AK-2LE",
+        "specs": {
+          "external": "500 x 450 x 450",
+          "internal": "400 x 350 x 290",
+          "weight": "260",
+          "volume": "41 L",
+          "shelves": "2",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "height-adjustable hinges",
+          "anti-drill shielding",
+          "armour against thermal lance",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent gasket",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 80 00."
+        ]
+      },
+      {
+        "name": "AK-3LE",
+        "specs": {
+          "external": "650 x 550 x 550",
+          "internal": "550 x 450 x 390",
+          "weight": "424",
+          "volume": "97 L",
+          "shelves": "2",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "height-adjustable hinges",
+          "anti-drill shielding",
+          "armour against thermal lance",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent gasket",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 80 00."
+        ]
+      },
+      {
+        "name": "AK-4LE",
+        "specs": {
+          "external": "800 x 550 x 550",
+          "internal": "700 x 450 x 390",
+          "weight": "499",
+          "volume": "123 L",
+          "shelves": "3",
+          "bolts": "16",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "height-adjustable hinges",
+          "anti-drill shielding",
+          "armour against thermal lance",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent gasket",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 80 00."
+        ]
+      },
+      {
+        "name": "AK-65LE",
+        "specs": {
+          "external": "1100 x 700 x 550",
+          "internal": "1000 x 600 x 390",
+          "weight": "764",
+          "volume": "234 L",
+          "shelves": "4",
+          "bolts": "18",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "height-adjustable hinges",
+          "anti-drill shielding",
+          "armour against thermal lance",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent gasket",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 80 00."
+        ]
+      },
+      {
+        "name": "AK-8LE",
+        "specs": {
+          "external": "1400 x 650 x 650",
+          "internal": "1300 x 550 x 490",
+          "weight": "987",
+          "volume": "350 L",
+          "shelves": "5",
+          "bolts": "18",
+          "lock": "High-security lock configuration depending on model",
+          "warranty": "5 years"
+        },
+        "features": [
+          "50 mm thick door and body",
+          "M-16 anchor 100 kN included",
+          "height-adjustable hinges",
+          "anti-drill shielding",
+          "armour against thermal lance",
+          "advanced re-locking system in case of attack",
+          "passive fire protection with intumescent gasket",
+          "tip-proof height-adjustable shelves",
+          "RAL Design 000 80 00."
+        ]
+      }
+    ]
+  }
+]

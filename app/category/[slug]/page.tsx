@@ -14,6 +14,8 @@ import {
   categoryImage,
   categorySubs,
 } from "@/lib/catalog";
+import { getGrades } from "@/lib/grades";
+import { GradeCard } from "@/components/grade-card";
 export function generateStaticParams() {
   return getCategories().map((c) => ({ slug: c.slug }));
 }
@@ -36,6 +38,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   const items = productsInCategory(slug);
   const subs = categorySubs(slug);
   const related = getCategories().filter((c) => c.slug !== slug).slice(0, 4);
+  const isHighSecurity = slug === "high-security-safes";
+  const grades = isHighSecurity ? getGrades() : [];
+  const heroCountLabel = isHighSecurity
+    ? `${grades.length} Certified Grade Levels`
+    : `${items.length} Products Available`;
 
   return (
     <>
@@ -56,7 +63,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               <span className="text-white/85">{category.name}</span>
             </nav>
             <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
-              {items.length} Products Available
+              {heroCountLabel}
             </p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">{category.name}</h1>
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">{category.intro}</p>
@@ -84,12 +91,24 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
           <Reveal>
             <SectionHeading
               align="left"
-              eyebrow="The Collection"
-              title={`${category.name}`}
-              text={`Browse available ${category.name.toLowerCase()}. Contact our team for pricing, availability, and technical guidance.`}
+              eyebrow={isHighSecurity ? "Certified Grades" : "The Collection"}
+              title={isHighSecurity ? "Choose Your Security Grade" : category.name}
+              text={
+                isHighSecurity
+                  ? "Each grade offers a certified level of burglary resistance. Open a grade page to compare all available sizes in one table — no separate page per model size."
+                  : `Browse available ${category.name.toLowerCase()}. Contact our team for pricing, availability, and technical guidance.`
+              }
             />
           </Reveal>
-          {items.length > 0 ? (
+          {isHighSecurity ? (
+            <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5">
+              {grades.map((g, i) => (
+                <Reveal key={g.slug} delay={(i % 5) * 50}>
+                  <GradeCard grade={g} />
+                </Reveal>
+              ))}
+            </div>
+          ) : items.length > 0 ? (
             <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
               {items.map((p, i) => (
                 <Reveal key={p.slug} delay={(i % 4) * 50}>

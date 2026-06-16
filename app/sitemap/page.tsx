@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getCategories } from "@/lib/catalog";
+import { getGrades } from "@/lib/grades";
 
 export const metadata: Metadata = { title: "Sitemap" };
 
@@ -35,6 +36,16 @@ export default function SitemapPage() {
               {getCategories().map((c) => (
                 <li key={c.slug}>
                   <Link href={`/category/${c.slug}`} className="text-[15px] text-ink-2 hover:text-brand">{c.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-4 text-[13px] font-bold uppercase tracking-wider text-muted">High-Security Grades</h2>
+            <ul className="space-y-2.5">
+              {getGrades().map((g) => (
+                <li key={g.slug}>
+                  <Link href={`/grade/${g.slug}`} className="text-[15px] text-ink-2 hover:text-brand">{g.h1}</Link>
                 </li>
               ))}
             </ul>
