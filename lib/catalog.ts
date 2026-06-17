@@ -1,34 +1,8 @@
 import "server-only";
 import { cache } from "react";
 import { readJson } from "./storage";
-
-export type ProductSpecs = {
-  external?: string;
-  internal?: string;
-  weight?: string;
-  volume?: string;
-  shelves?: string;
-  bolts?: string;
-  lock?: string;
-  fireRating?: string;
-  grade?: string;
-  warranty?: string;
-};
-
-export type Product = {
-  slug: string;
-  name: string;
-  desc: string;
-  image: string | null;
-  gallery?: string[];
-  category: string;
-  categories: string[];
-  sub: string | null;
-  isProject: boolean;
-  colors?: string[];
-  specs: ProductSpecs;
-  features: string[];
-};
+export type { Product, ProductSpecs, Category } from "./catalog-types";
+import type { Product, Category } from "./catalog-types";
 
 const HIGH_SECURITY_CATEGORY = "high-security-safes";
 
@@ -39,19 +13,6 @@ export function isPublicProduct(p: Product): boolean {
 }
 
 export const HIGH_SECURITY_GRADE_SUBS = ["Grade I", "Grade II", "Grade III", "Grade IV", "Grade V"] as const;
-
-export type Category = {
-  slug: string;
-  name: string;
-  short: string;
-  intro: string;
-  protect: string;
-  image?: string;
-  subs: string[];
-  featured: boolean;
-  buyingGuide: { title: string; body: string }[];
-  faqs: { q: string; a: string }[];
-};
 
 export const getProducts = cache((): Product[] => readJson<Product[]>("products.json"));
 export const getPublicProducts = cache((): Product[] => getProducts().filter(isPublicProduct));

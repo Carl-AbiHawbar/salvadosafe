@@ -5,17 +5,17 @@ import { SectionHeading } from "@/components/sections";
 import { ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
-import { WhatsAppButton, QuoteButton, CallButton, CtaGroup } from "@/components/cta";
+import { WhatsAppButton, QuoteButton, CtaGroup } from "@/components/cta";
 import { FinalCTA } from "@/components/sections";
 import {
   getCategories,
   getCategory,
   productsInCategory,
   categoryImage,
-  categorySubs,
 } from "@/lib/catalog";
 import { getGrades } from "@/lib/grades";
 import { GradeCard } from "@/components/grade-card";
+import { ProductBanner } from "@/components/product-banner";
 export function generateStaticParams() {
   return getCategories().map((c) => ({ slug: c.slug }));
 }
@@ -36,54 +36,26 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   if (!category) notFound();
 
   const items = productsInCategory(slug);
-  const subs = categorySubs(slug);
   const related = getCategories().filter((c) => c.slug !== slug).slice(0, 4);
   const isHighSecurity = slug === "high-security-safes";
   const grades = isHighSecurity ? getGrades() : [];
-  const heroCountLabel = isHighSecurity
-    ? `${grades.length} Certified Grade Levels`
-    : `${items.length} Products Available`;
 
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-ink">
-        <div className="absolute inset-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={categoryImage(category)} alt="" className="h-full w-full object-cover opacity-30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
-        </div>
-        <div className="container-x relative py-20 md:py-28">
-          <Reveal className="max-w-2xl">
-            <nav className="mb-5 flex items-center gap-2 text-[13px] text-white/55">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span>/</span>
-              <Link href="/products" className="hover:text-white">Products</Link>
-              <span>/</span>
-              <span className="text-white/85">{category.name}</span>
-            </nav>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
-              {heroCountLabel}
-            </p>
-            <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">{category.name}</h1>
-            <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">{category.intro}</p>
-            {subs.length > 0 && (
-              <div className="mt-6 flex flex-wrap gap-2">
-                {subs.map((s) => (
-                  <span key={s} className="rounded-full border border-white/20 bg-white/5 px-3.5 py-1.5 text-[12.5px] font-medium text-white/80">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            )}
-            <CtaGroup className="mt-8">
-              <WhatsAppButton label="WhatsApp for Price" message={`Hi Salvado, I'm interested in ${category.name}.`} variant="outlineLight" />
-              <QuoteButton variant="primaryLight" />
-              <CallButton variant="ghostLight" />
-            </CtaGroup>
-          </Reveal>
-        </div>
-      </section>
+      <ProductBanner
+        eyebrow={isHighSecurity ? "Certified High-Security Safes" : "Premium Security Solutions"}
+        title={category.name}
+        subtitle={category.intro}
+        breadcrumb={
+          <nav className="flex flex-wrap items-center gap-2 text-[12px] text-white/55 sm:text-[13px]">
+            <Link href="/" className="hover:text-white">Home</Link>
+            <span>/</span>
+            <Link href="/products" className="hover:text-white">Products</Link>
+            <span>/</span>
+            <span className="text-white/85">{category.name}</span>
+          </nav>
+        }
+      />
 
       {/* Product grid */}
       <section className="bg-white">
@@ -95,7 +67,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               title={isHighSecurity ? "Choose Your Security Grade" : category.name}
               text={
                 isHighSecurity
-                  ? "Each grade offers a certified level of burglary resistance. Open a grade page to compare all available sizes in one table — no separate page per model size."
+                  ? "Each grade offers a certified level of burglary resistance. Open a grade page to compare all available sizes in one table."
                   : `Browse available ${category.name.toLowerCase()}. Contact our team for pricing, availability, and technical guidance.`
               }
             />

@@ -1,4 +1,4 @@
-import type { GradeModel } from "@/lib/grades";
+import type { GradeModel } from "@/lib/grade-types";
 
 function formatWeight(value: string): string {
   return /^[\d.,-]+$/.test(value) ? `${value} kg` : value;

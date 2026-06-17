@@ -1,27 +1,8 @@
 import "server-only";
 import { cache } from "react";
 import { readJson } from "./storage";
-import type { ProductSpecs } from "./catalog";
-
-export type GradeModel = {
-  name: string;
-  specs: ProductSpecs;
-  features: string[];
-};
-
-export type Grade = {
-  slug: string;
-  grade: string;
-  h1: string;
-  series: string;
-  seoFocus: string;
-  desc: string;
-  technicalFeatures: string[];
-  cta: string;
-  developerNote: string;
-  image: string;
-  models: GradeModel[];
-};
+export type { Grade, GradeModel } from "./grade-types";
+import type { Grade } from "./grade-types";
 
 export const HIGH_SECURITY_GRADES = ["Grade I", "Grade II", "Grade III", "Grade IV", "Grade V"] as const;
 

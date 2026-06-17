@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Grade } from "@/lib/grades";
+import type { Grade } from "@/lib/grade-types";
 import { waLink } from "@/lib/site";
 import { ArrowIcon, WhatsAppIcon } from "./icons";
 
@@ -10,7 +10,7 @@ export function GradeCard({ grade }: { grade: Grade }) {
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft">
       <Link href={href} className="absolute inset-0 z-[1] rounded-2xl" aria-label={`View ${grade.h1}`} />
-      <div className="relative z-[2] block aspect-square overflow-hidden bg-surface">
+      <div className="pointer-events-none relative z-[2] block aspect-square overflow-hidden bg-surface">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={grade.image}
@@ -22,7 +22,7 @@ export function GradeCard({ grade }: { grade: Grade }) {
           {grade.series}
         </span>
       </div>
-      <div className="relative z-[2] flex flex-1 flex-col p-3 sm:p-4">
+      <div className="pointer-events-none relative z-[2] flex flex-1 flex-col p-3 sm:p-4">
         <p className="mb-1.5 text-center text-[10px] font-bold uppercase leading-snug tracking-wide text-brand sm:text-left">
           {grade.series}
         </p>
@@ -44,9 +44,9 @@ export function GradeCard({ grade }: { grade: Grade }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`WhatsApp about ${grade.grade}`}
-            className="relative z-[3] inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-line bg-white px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors hover:border-brand sm:w-auto sm:px-3"
+            className="pointer-events-auto relative z-[3] inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-line bg-white px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors hover:border-brand sm:w-auto sm:px-3"
           >
-            <WhatsAppIcon width={16} height={16} className="sm:h-[17px] sm:w-[17px]" />
+            <WhatsAppIcon width={16} height={16} className="sm:h-[18px] sm:w-[18px]" />
             <span className="sm:hidden">WhatsApp</span>
           </a>
         </div>

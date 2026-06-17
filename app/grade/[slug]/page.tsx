@@ -6,6 +6,7 @@ import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { GradeCard } from "@/components/grade-card";
 import { GradeSpecTable } from "@/components/grade-spec-table";
+import { ProductBanner } from "@/components/product-banner";
 import { WhatsAppButton, QuoteButton, CallButton, CtaGroup } from "@/components/cta";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 import { getCategory } from "@/lib/catalog";
@@ -52,21 +53,26 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
 
   return (
     <>
-      <div className="border-b border-line bg-surface">
-        <div className="container-x flex flex-wrap items-center gap-2 py-3 text-[13px] text-muted">
-          <Link href="/" className="hover:text-brand">Home</Link>
-          <span>/</span>
-          <Link href="/products" className="hover:text-brand">Products</Link>
-          {category && (
-            <>
-              <span>/</span>
-              <Link href={`/category/${category.slug}`} className="hover:text-brand">{category.name}</Link>
-            </>
-          )}
-          <span>/</span>
-          <span className="font-semibold text-ink-2">{grade.grade}</span>
-        </div>
-      </div>
+      <ProductBanner
+        eyebrow={grade.series}
+        title={grade.h1}
+        subtitle={grade.desc}
+        breadcrumb={
+          <nav className="flex flex-wrap items-center gap-2 text-[12px] text-white/55 sm:text-[13px]">
+            <Link href="/" className="hover:text-white">Home</Link>
+            <span>/</span>
+            <Link href="/products" className="hover:text-white">Products</Link>
+            {category && (
+              <>
+                <span>/</span>
+                <Link href={`/category/${category.slug}`} className="hover:text-white">{category.name}</Link>
+              </>
+            )}
+            <span>/</span>
+            <span className="text-white/85">{grade.grade}</span>
+          </nav>
+        }
+      />
 
       <section className="bg-white">
         <div className="container-x grid items-start gap-10 py-12 md:grid-cols-2 md:py-16">
@@ -91,8 +97,6 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
                 {grade.series}
               </span>
             </div>
-            <h1 className="mt-4 font-display text-3xl font-bold leading-tight text-ink md:text-[44px]">{grade.h1}</h1>
-            <p className="mt-5 text-[15.5px] leading-relaxed text-ink-2">{grade.desc}</p>
 
             <div className="mt-6 rounded-2xl border border-line bg-surface px-5 py-4">
               <p className="text-[13px] text-muted">Available sizes</p>

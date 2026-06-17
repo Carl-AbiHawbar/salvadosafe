@@ -38,10 +38,12 @@ export function Header({
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [desktopMega, setDesktopMega] = useState<string | null>(null);
 
   useEffect(() => {
     setMobileOpen(false);
     setExpanded(null);
+    setDesktopMega(null);
   }, [pathname]);
 
   useEffect(() => {
@@ -98,9 +100,15 @@ export function Header({
           {/* Desktop nav */}
           <nav className="hidden items-center gap-1 md:flex">
             {mainNav.map((item) => (
-              <div key={item.label} className="group relative">
+              <div
+                key={item.label}
+                className="relative"
+                onMouseEnter={() => item.mega && setDesktopMega(item.mega)}
+                onMouseLeave={() => setDesktopMega(null)}
+              >
                 <Link
                   href={item.href}
+                  onClick={() => setDesktopMega(null)}
                   className={`inline-flex items-center gap-1 rounded-lg px-3 py-2 text-[14px] font-semibold transition-colors ${
                     isActive(item.href) ? "text-brand" : "text-ink-2 hover:text-ink"
                   }`}
@@ -110,13 +118,24 @@ export function Header({
                 </Link>
 
                 {item.mega === "products" && (
-                  <div className="invisible absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                  <div
+                    className={`absolute left-1/2 top-full z-50 w-[640px] -translate-x-1/2 pt-3 transition-all duration-200 ${
+                      desktopMega === "products"
+                        ? "visible opacity-100"
+                        : "invisible pointer-events-none opacity-0"
+                    }`}
+                  >
                     <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-soft">
                       <div className="grid grid-cols-2 gap-x-6 gap-y-1 p-6">
                         <div>
                           <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-muted">Main Categories</p>
                           {featuredCategories.map((c) => (
-                            <Link key={c.slug} href={`/category/${c.slug}`} className="block rounded-lg px-3 py-2 text-[14px] font-medium text-ink-2 hover:bg-brand-soft hover:text-brand">
+                            <Link
+                              key={c.slug}
+                              href={`/category/${c.slug}`}
+                              onClick={() => setDesktopMega(null)}
+                              className="block rounded-lg px-3 py-2 text-[14px] font-medium text-ink-2 hover:bg-brand-soft hover:text-brand"
+                            >
                               {c.name}
                             </Link>
                           ))}
@@ -124,13 +143,22 @@ export function Header({
                         <div>
                           <p className="mb-2 text-[11px] font-bold uppercase tracking-wider text-muted">More Categories</p>
                           {secondaryCategories.map((c) => (
-                            <Link key={c.slug} href={`/category/${c.slug}`} className="block rounded-lg px-3 py-2 text-[14px] font-medium text-ink-2 hover:bg-brand-soft hover:text-brand">
+                            <Link
+                              key={c.slug}
+                              href={`/category/${c.slug}`}
+                              onClick={() => setDesktopMega(null)}
+                              className="block rounded-lg px-3 py-2 text-[14px] font-medium text-ink-2 hover:bg-brand-soft hover:text-brand"
+                            >
                               {c.name}
                             </Link>
                           ))}
                         </div>
                       </div>
-                      <Link href="/products" className="flex items-center justify-between border-t border-line bg-surface px-6 py-3.5 text-[14px] font-semibold text-brand hover:bg-brand-soft">
+                      <Link
+                        href="/products"
+                        onClick={() => setDesktopMega(null)}
+                        className="flex items-center justify-between border-t border-line bg-surface px-6 py-3.5 text-[14px] font-semibold text-brand hover:bg-brand-soft"
+                      >
                         View All Products <ArrowIcon width={16} height={16} />
                       </Link>
                     </div>
@@ -138,16 +166,31 @@ export function Header({
                 )}
 
                 {item.mega === "services" && (
-                  <div className="invisible absolute left-1/2 top-full z-50 w-[340px] -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                  <div
+                    className={`absolute left-1/2 top-full z-50 w-[340px] -translate-x-1/2 pt-3 transition-all duration-200 ${
+                      desktopMega === "services"
+                        ? "visible opacity-100"
+                        : "invisible pointer-events-none opacity-0"
+                    }`}
+                  >
                     <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-soft">
                       <div className="p-3">
                         {services.map((s) => (
-                          <Link key={s.label} href={s.href} className="block rounded-lg px-3 py-2.5 text-[14px] font-medium text-ink-2 hover:bg-brand-soft hover:text-brand">
+                          <Link
+                            key={s.label}
+                            href={s.href}
+                            onClick={() => setDesktopMega(null)}
+                            className="block rounded-lg px-3 py-2.5 text-[14px] font-medium text-ink-2 hover:bg-brand-soft hover:text-brand"
+                          >
                             {s.label}
                           </Link>
                         ))}
                       </div>
-                      <Link href="/contact" className="flex items-center justify-between border-t border-line bg-surface px-6 py-3.5 text-[14px] font-semibold text-brand hover:bg-brand-soft">
+                      <Link
+                        href="/contact"
+                        onClick={() => setDesktopMega(null)}
+                        className="flex items-center justify-between border-t border-line bg-surface px-6 py-3.5 text-[14px] font-semibold text-brand hover:bg-brand-soft"
+                      >
                         Request a Service <ArrowIcon width={16} height={16} />
                       </Link>
                     </div>
@@ -189,15 +232,15 @@ export function Header({
               <Link href="/" className="block rounded-lg px-3 py-3 text-[15px] font-semibold text-ink hover:bg-surface">Home</Link>
 
               <MobileGroup label="Products" open={expanded === "products"} onToggle={() => setExpanded(expanded === "products" ? null : "products")}>
-                <Link href="/products" className="block rounded-md px-3 py-2 text-[14px] font-semibold text-brand">View All Products</Link>
+                <Link href="/products" onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2 text-[14px] font-semibold text-brand">View All Products</Link>
                 {[...featuredCategories, ...secondaryCategories].map((c) => (
-                  <Link key={c.slug} href={`/category/${c.slug}`} className="block rounded-md px-3 py-2 text-[14px] text-ink-2 hover:text-brand">{c.name}</Link>
+                  <Link key={c.slug} href={`/category/${c.slug}`} onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2 text-[14px] text-ink-2 hover:text-brand">{c.name}</Link>
                 ))}
               </MobileGroup>
 
               <MobileGroup label="Services" open={expanded === "services"} onToggle={() => setExpanded(expanded === "services" ? null : "services")}>
                 {services.map((s) => (
-                  <Link key={s.label} href={s.href} className="block rounded-md px-3 py-2 text-[14px] text-ink-2 hover:text-brand">{s.label}</Link>
+                  <Link key={s.label} href={s.href} onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2 text-[14px] text-ink-2 hover:text-brand">{s.label}</Link>
                 ))}
               </MobileGroup>
 

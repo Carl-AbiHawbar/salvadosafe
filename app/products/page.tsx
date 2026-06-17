@@ -3,10 +3,11 @@ import Link from "next/link";
 import { SectionHeading, FinalCTA } from "@/components/sections";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
-import { WhatsAppButton, QuoteButton, MapButton, CtaGroup } from "@/components/cta";
-import { getFeaturedCategories, getSecondaryCategories, getProduct, getPublicProducts, getTotalProducts } from "@/lib/catalog";
+import { getFeaturedCategories, getSecondaryCategories, getProduct, getPublicProducts, getTotalProducts, getCategories, categoryCount, categorySubs } from "@/lib/catalog";
 import { getGrades } from "@/lib/grades";
 import { GradeCard } from "@/components/grade-card";
+import { ProductBanner } from "@/components/product-banner";
+import { ProductCatalog } from "@/components/product-catalog";
 import { ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -32,35 +33,34 @@ export default function ProductsPage() {
   const fallback = getPublicProducts().slice(0, 4);
   const selectedProducts = (selected.length ? selected : fallback) as NonNullable<ReturnType<typeof getProduct>>[];
   const featuredGrade = getGrades().find((g) => g.slug === "grade-v");
+  const publicProducts = getPublicProducts();
+  const catalogCategories = getCategories().map((c) => ({
+    slug: c.slug,
+    name: c.name,
+    count: categoryCount(c.slug),
+    subs: categorySubs(c.slug).map((label) => ({
+      label,
+      count:
+        c.slug === "high-security-safes"
+          ? 1
+          : publicProducts.filter((p) => p.category === c.slug && p.sub === label).length,
+    })),
+  }));
 
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-ink">
-        <div className="absolute inset-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/brand/81b4439950502d0e2237beec.jpg" alt="" className="h-full w-full object-cover opacity-30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
-        </div>
-        <div className="container-x relative py-24 md:py-32">
-          <Reveal className="max-w-2xl">
-            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Premium Security Catalogue</p>
-            <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">
-              A Premium Collection of Safes, Vault Doors &amp; Security Solutions in Lebanon
-            </h1>
-            <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
-              Explore Salvado&apos;s range of high-security safes, fire-rated safes, vault doors, secure rooms, camouflage
-              safes, luxury safes, and cash-handling solutions for homes, businesses, hotels, institutions, and private
-              clients.
-            </p>
-            <CtaGroup className="mt-8">
-              <WhatsAppButton label="WhatsApp for Recommendation" shortLabel="WhatsApp" message="Hi Salvado, I'd like a product recommendation." variant="outlineLight" />
-              <QuoteButton variant="primaryLight" />
-              <MapButton variant="ghostLight" shortLabel="Visit" label="Visit the Showroom" />
-            </CtaGroup>
-          </Reveal>
-        </div>
-      </section>
+      <ProductBanner
+        eyebrow="Premium Security Solutions"
+        title="Our Safes"
+        subtitle="Grade-certified, professionally installed security for home and business."
+      />
+
+      <ProductCatalog
+        products={publicProducts}
+        grades={getGrades()}
+        categories={catalogCategories}
+        totalCount={getTotalProducts()}
+      />
 
       {/* Choose what to protect */}
       <section className="bg-white">
