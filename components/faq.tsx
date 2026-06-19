@@ -10,7 +10,7 @@ export function FAQ({ items }: { items: { q: string; a: string }[] }) {
       {items.map((item, i) => {
         const isOpen = open === i;
         return (
-          <div key={i}>
+          <div key={item.q || `faq-${i}`}>
             <button
               type="button"
               onClick={() => setOpen(isOpen ? null : i)}

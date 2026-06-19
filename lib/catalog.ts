@@ -61,6 +61,11 @@ export function getFeaturedCategories(): Category[] {
   return getCategories().filter((c) => c.featured);
 }
 
+export function getCategoriesBySlugs(slugs: string[]): Category[] {
+  const bySlug = new Map(getCategories().map((c) => [c.slug, c]));
+  return slugs.map((slug) => bySlug.get(slug)).filter((c): c is Category => Boolean(c));
+}
+
 export function getSecondaryCategories(): Category[] {
   return getCategories().filter((c) => !c.featured);
 }

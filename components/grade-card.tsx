@@ -35,7 +35,7 @@ export function GradeCard({ grade }: { grade: Grade }) {
         <p className="mt-2 text-center text-[11px] font-medium text-muted sm:text-left">
           {modelCount} sizes in comparison table
         </p>
-        <div className="relative z-[3] mt-auto flex flex-col gap-2 pt-3 sm:flex-row sm:items-center sm:gap-2">
+        <div className="pointer-events-none relative z-[3] mt-auto flex flex-col gap-2 pt-3 sm:flex-row sm:items-center sm:gap-2">
           <span className="inline-flex w-full items-center justify-center gap-1 rounded-full border border-line px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors group-hover:border-brand group-hover:text-brand sm:flex-1 sm:px-3 sm:text-[13px]">
             View Grade <ArrowIcon width={14} height={14} className="sm:h-[15px] sm:w-[15px]" />
           </span>

@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { HeroSlider } from "@/components/hero-slider";
+import { ShowroomCarousel } from "@/components/showroom-carousel";
 import { TrustStrip, SectionHeading, FinalCTA } from "@/components/sections";
 import { ReviewsCarousel } from "@/components/reviews";
 import { InstagramCarousel } from "@/components/instagram-carousel";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { CTA, TextLink } from "@/components/cta";
-import { getFeaturedCategories, getProduct, getProducts } from "@/lib/catalog";
+import { getCategoriesBySlugs, getProduct, getProducts } from "@/lib/catalog";
 import { getPagesContent } from "@/lib/content";
 import { getSite } from "@/lib/site-server";
 import { ShieldIcon, CheckIcon, ArrowIcon } from "@/components/icons";
@@ -15,6 +16,7 @@ import { getIcon } from "@/lib/icon-map";
 
 export default function HomePage() {
   const pages = getPagesContent();
+  const catalogCategories = getCategoriesBySlugs(pages.home.catalogSection.slugs);
   const site = getSite();
   const selected = pages.home.selectedSection.slugs.map((s) => getProduct(s)).filter(Boolean);
   const fallback = getProducts().slice(0, 5);
@@ -87,11 +89,93 @@ export default function HomePage() {
             </CTA>
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {getFeaturedCategories().map((c, i) => (
+            {catalogCategories.map((c, i) => (
               <Reveal key={c.slug} delay={i * 60}>
                 <CategoryCard category={c} />
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Showroom */}
+      <section className="bg-white">
+        <div className="container-x py-24 md:py-28">
+          <Reveal className="max-w-3xl">
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{pages.home.showroom.eyebrow}</p>
+            <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
+              {pages.home.showroom.title}
+            </h2>
+            <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2 md:text-[16px]">
+              {pages.home.showroom.text}
+            </p>
+          </Reveal>
+
+          <Reveal className="mt-10 md:mt-12">
+            <ShowroomCarousel images={pages.home.showroom.images} />
+          </Reveal>
+
+          <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16">
+            <Reveal delay={80}>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {pages.home.showroom.features.map((f) => (
+                  <li key={f} className="flex items-center gap-2.5 text-[14px] text-ink-2 md:text-[15px]">
+                    <CheckIcon width={16} height={16} className="shrink-0 text-brand" /> {f}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+            <Reveal delay={120} className="flex flex-wrap gap-3 lg:justify-end">
+              <CTA href="https://www.google.com/maps/search/?api=1&query=Salvado+safes+Zalka" external variant="primary">
+                Open in Google Maps
+              </CTA>
+              <CTA href="/contact" variant="ghost">
+                Contact Our Consultant
+              </CTA>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional services */}
+      <section className="bg-ink">
+        <div className="container-x py-24 md:py-28">
+          <Reveal>
+            <SectionHeading
+              light
+              eyebrow={pages.home.servicesSection.eyebrow}
+              title={pages.home.servicesSection.title}
+              text={pages.home.servicesSection.text}
+            />
+          </Reveal>
+          <div className="mt-16 grid gap-8 sm:grid-cols-2">
+            {pages.home.servicesSection.cards.map((s, i) => (
+              <Reveal
+                key={s.title}
+                delay={i * 70}
+                className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.45)]"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden bg-white/5 sm:aspect-[5/3]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={s.img}
+                    alt={s.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
+                </div>
+                <div className="p-7 md:p-8">
+                  <h3 className="text-[17px] font-bold text-white md:text-[18px]">{s.title}</h3>
+                  <p className="mt-2.5 text-[14px] leading-relaxed text-white/70 md:text-[15px]">{s.text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <CTA href="/services" variant="primaryLight">
+              View All Services <ArrowIcon width={16} height={16} />
+            </CTA>
           </div>
         </div>
       </section>
@@ -113,75 +197,6 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Professional services */}
-      <section className="bg-ink">
-        <div className="container-x py-20 md:py-24">
-          <Reveal>
-            <SectionHeading
-              light
-              eyebrow={pages.home.servicesSection.eyebrow}
-              title={pages.home.servicesSection.title}
-              text={pages.home.servicesSection.text}
-            />
-          </Reveal>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {pages.home.servicesSection.cards.map((s, i) => (
-              <Reveal key={s.title} delay={i * 70} className="group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
-                <div className="aspect-[4/3] overflow-hidden bg-white/5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={s.img} alt={s.title} loading="lazy" className="h-full w-full object-contain p-4 transition-transform duration-700 group-hover:scale-[1.03] sm:p-6" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-[16px] font-bold text-white">{s.title}</h3>
-                  <p className="mt-2 text-[13.5px] leading-relaxed text-white/65">{s.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <CTA href="/services" variant="primaryLight">
-              View All Services <ArrowIcon width={16} height={16} />
-            </CTA>
-          </div>
-        </div>
-      </section>
-
-      {/* Showroom */}
-      <section className="bg-white">
-        <div className="container-x grid items-center gap-12 py-20 md:grid-cols-2 md:py-24">
-          <Reveal className="order-2 md:order-1">
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{pages.home.showroom.eyebrow}</p>
-            <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
-              {pages.home.showroom.title}
-            </h2>
-            <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
-              {pages.home.showroom.text}
-            </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {pages.home.showroom.features.map((f) => (
-                <li key={f} className="flex items-center gap-2.5 text-[14px] text-ink-2">
-                  <CheckIcon width={16} height={16} className="shrink-0 text-brand" /> {f}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <CTA href="https://www.google.com/maps/search/?api=1&query=Salvado+safes+Zalka" external variant="primary">
-                Open in Google Maps
-              </CTA>
-              <CTA href="/contact" variant="ghost">
-                Contact Our Consultant
-              </CTA>
-            </div>
-          </Reveal>
-          <Reveal className="order-1 md:order-2">
-            <div className="overflow-hidden rounded-3xl border border-line shadow-soft">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={pages.home.showroom.image} alt="Salvado showroom" className="h-full w-full object-cover" />
-            </div>
-          </Reveal>
         </div>
       </section>
 

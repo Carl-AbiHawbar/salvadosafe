@@ -11,6 +11,8 @@ export type ProductSpecs = {
   warranty?: string;
 };
 
+export type FaqItem = { q: string; a: string };
+
 export type Product = {
   slug: string;
   name: string;
@@ -24,6 +26,8 @@ export type Product = {
   colors?: string[];
   specs: ProductSpecs;
   features: string[];
+  /** Product-specific FAQs. When set, shown instead of category FAQs. */
+  faqs?: FaqItem[];
 };
 
 export type Category = {
@@ -36,7 +40,7 @@ export type Category = {
   subs: string[];
   featured: boolean;
   buyingGuide: { title: string; body: string }[];
-  faqs: { q: string; a: string }[];
+  faqs: FaqItem[];
 };
 
 const CATEGORY_SHORT: Record<string, string> = {
@@ -62,4 +66,28 @@ export function productCategoryLabel(product: Product, categoryName?: string): s
     return categoryName;
   }
   return "";
+}
+
+/** Primary image first, then gallery URLs without duplicates. */
+export function productImages(product: Pick<Product, "image" | "gallery">): string[] {
+  const images: string[] = [];
+  if (product.image) images.push(product.image);
+  for (const src of product.gallery ?? []) {
+    if (!images.includes(src)) images.push(src);
+  }
+  return images;
+}
+
+/**
+ * Product page FAQs: use product-specific entries when provided,
+ * otherwise fall back to the parent category FAQs.
+ */
+export function resolveProductFaqs(
+  product: Pick<Product, "faqs">,
+  category?: Pick<Category, "faqs"> | null
+): FaqItem[] {
+  const valid = (items: FaqItem[]) => items.filter((f) => f.q.trim() && f.a.trim());
+  if (product.faqs && product.faqs.length > 0) return valid(product.faqs);
+  if (category?.faqs?.length) return valid(category.faqs);
+  return [];
 }

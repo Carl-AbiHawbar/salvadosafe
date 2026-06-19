@@ -17,6 +17,7 @@ const emptyProduct = (): Product => ({
   isProject: false,
   specs: {},
   features: [],
+  faqs: [],
 });
 
 function ProductEditor({ initial, isNew }: { initial: Product; isNew?: boolean }) {
@@ -142,6 +143,50 @@ function ProductEditor({ initial, isNew }: { initial: Product; isNew?: boolean }
             onChange={(v) => setProduct({ ...product, colors: v.split("\n").map((s) => s.trim()).filter(Boolean) })}
             rows={3}
           />
+        </AdminCard>
+
+        <AdminCard title="FAQs (optional)" className="lg:col-span-2">
+          <p className="mb-4 text-[13px] leading-relaxed text-white/55">
+            Add product-specific questions here. When set, these replace the category FAQs on the product page.
+            Leave empty to use the category&apos;s FAQ list instead.
+          </p>
+          {(product.faqs || []).map((item, i) => (
+            <div key={i} className="mb-4 rounded-xl border border-white/5 p-4">
+              <AdminInput
+                label="Question"
+                value={item.q}
+                onChange={(v) => {
+                  const faqs = [...(product.faqs || [])];
+                  faqs[i] = { ...item, q: v };
+                  setProduct({ ...product, faqs });
+                }}
+              />
+              <AdminInput
+                label="Answer"
+                value={item.a}
+                onChange={(v) => {
+                  const faqs = [...(product.faqs || [])];
+                  faqs[i] = { ...item, a: v };
+                  setProduct({ ...product, faqs });
+                }}
+                rows={3}
+              />
+              <button
+                type="button"
+                onClick={() => setProduct({ ...product, faqs: (product.faqs || []).filter((_, j) => j !== i) })}
+                className="mt-2 text-[13px] font-semibold text-red-300 hover:text-red-200"
+              >
+                Remove FAQ
+              </button>
+            </div>
+          ))}
+          <button
+            type="button"
+            onClick={() => setProduct({ ...product, faqs: [...(product.faqs || []), { q: "", a: "" }] })}
+            className="rounded-full border border-white/20 px-4 py-2 text-[13px] font-semibold text-white/80 hover:border-white/40 hover:text-white"
+          >
+            Add FAQ
+          </button>
         </AdminCard>
       </div>
 

@@ -6,7 +6,9 @@ import { FAQ } from "@/components/faq";
 import { ProductCard } from "@/components/cards";
 import { SectionHeading, FinalCTA } from "@/components/sections";
 import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
+import { ProductGallery } from "@/components/product-gallery";
 import { getPublicProducts, getProduct, getCategory, similarProducts, isPublicProduct, type Product } from "@/lib/catalog";
+import { productImages, resolveProductFaqs } from "@/lib/catalog-types";
 import { gradeForProductSub } from "@/lib/grades";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 
@@ -62,16 +64,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     value: formatSpec(key, product.specs[key] as string),
   }));
 
-  const gallery = product.gallery && product.gallery.length > 1 ? product.gallery : null;
-
-  const faqs = [
-    product.isProject
-      ? { q: `How does a ${product.name} project work?`, a: "These are project-based solutions. Salvado provides private consultation, site assessment, technical planning, and professional installation tailored to your space and security requirements." }
-      : { q: `Is the ${product.name} available?`, a: "Yes, contact Salvado for current availability, pricing, and lead time. We can also advise on suitable alternatives." },
-    { q: "Can you deliver and install it?", a: "Yes. Salvado provides professional delivery and European-standard installation based on product specifications and site conditions." },
-    { q: "Do you offer after-sales support?", a: "Yes. We provide technical support, lock assistance, maintenance guidance, and service coordination after purchase." },
-    ...(category ? category.faqs.slice(0, 1) : []),
-  ];
+  const images = productImages(product);
+  const faqs = resolveProductFaqs(product, category);
 
   return (
     <>
@@ -96,27 +90,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="bg-white">
         <div className="container-x grid items-start gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-line bg-surface">
-              {product.image ? (
-                /* eslint-disable-next-line @next/next/no-img-element */
-                <img src={product.image} alt={product.name} className="aspect-square w-full object-contain p-8" />
-              ) : (
-                <div className="flex aspect-square w-full flex-col items-center justify-center gap-3 text-muted">
-                  <ShieldIcon width={40} height={40} className="text-line" />
-                  <span className="text-[14px] font-semibold">Photos available on request</span>
-                </div>
-              )}
-            </div>
-            {gallery && (
-              <div className="mt-3 flex flex-wrap gap-2.5">
-                {gallery.map((img) => (
-                  <div key={img} className="h-20 w-20 overflow-hidden rounded-xl border border-line bg-surface">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={img} alt={product.name} loading="lazy" className="h-full w-full object-contain p-1.5" />
-                  </div>
-                ))}
-              </div>
-            )}
+            <ProductGallery images={images} alt={product.name} />
           </Reveal>
 
           <Reveal delay={80} className="md:sticky md:top-24">
@@ -288,16 +262,26 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* FAQ */}
-      <section className="bg-white">
-        <div className="container-x py-20">
-          <Reveal>
-            <SectionHeading eyebrow="FAQ" title="Product Questions" />
-          </Reveal>
-          <div className="mt-12">
-            <FAQ items={faqs} />
+      {faqs.length > 0 && (
+        <section className="bg-white">
+          <div className="container-x py-20">
+            <Reveal>
+              <SectionHeading
+                eyebrow="FAQ"
+                title="Product Questions"
+                text={
+                  product.faqs?.length
+                    ? `Common questions about the ${product.name}.`
+                    : `Common questions about ${category?.name ?? "this type of solution"}.`
+                }
+              />
+            </Reveal>
+            <div className="mt-12">
+              <FAQ items={faqs} />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <FinalCTA
         eyebrow="Ask about this product"

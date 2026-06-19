@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SectionHeading, FinalCTA } from "@/components/sections";
+import { SectionHeading, TrustStrip, FinalCTA } from "@/components/sections";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { getFeaturedCategories, getSecondaryCategories, getProduct, getPublicProducts, getTotalProducts, getCategories, categoryCount, categorySubs } from "@/lib/catalog";
@@ -8,6 +8,8 @@ import { getGrades } from "@/lib/grades";
 import { GradeCard } from "@/components/grade-card";
 import { ProductBanner } from "@/components/product-banner";
 import { ProductCatalog } from "@/components/product-catalog";
+import { CatalogShortcut } from "@/components/catalog-shortcut";
+import { CTA } from "@/components/cta";
 import { ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -49,18 +51,16 @@ export default function ProductsPage() {
 
   return (
     <>
+      <CatalogShortcut />
+
       <ProductBanner
         eyebrow="Premium Security Solutions"
-        title="Our Safes"
-        subtitle="Grade-certified, professionally installed security for home and business."
+        title="Safes & Security Solutions in Lebanon"
+        subtitle="Explore Salvado's range of high-security safes, fire-resistant safes, vault doors, smart safes, luxury safes, hotel safes, gun safes, money counters, and secure storage solutions — for homes, businesses, hotels, institutions, and private clients."
+        catalogLink={{ label: "View all products", href: "#full-catalog" }}
       />
 
-      <ProductCatalog
-        products={publicProducts}
-        grades={getGrades()}
-        categories={catalogCategories}
-        totalCount={getTotalProducts()}
-      />
+      <TrustStrip />
 
       {/* Choose what to protect */}
       <section className="bg-white">
@@ -94,12 +94,16 @@ export default function ProductsPage() {
       {/* Browse categories */}
       <section className="bg-surface">
         <div className="container-x py-20 md:py-24">
-          <Reveal>
+          <Reveal className="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-end sm:text-left">
             <SectionHeading
+              align="left"
               eyebrow={`${getTotalProducts()} Products`}
               title="Browse Product Categories"
               text="View Salvado's main product categories, compare available options, and contact our team for pricing, availability, and technical guidance."
             />
+            <CTA href="#full-catalog" variant="outline" className="shrink-0">
+              View all products <ArrowIcon width={16} height={16} />
+            </CTA>
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {getFeaturedCategories().map((c, i) => (
@@ -155,6 +159,26 @@ export default function ProductsPage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Full catalogue */}
+      <section id="full-catalog" className="scroll-mt-24 border-t border-line bg-surface">
+        <div className="container-x py-16 md:py-20">
+          <Reveal className="mb-10 max-w-2xl">
+            <SectionHeading
+              align="left"
+              eyebrow="Full Catalogue"
+              title="Browse All Products"
+              text="Filter by category, series, or model. Already know what you need? Search in the hero or jump straight in below."
+            />
+          </Reveal>
+          <ProductCatalog
+            products={publicProducts}
+            grades={getGrades()}
+            categories={catalogCategories}
+            totalCount={getTotalProducts()}
+          />
         </div>
       </section>
 

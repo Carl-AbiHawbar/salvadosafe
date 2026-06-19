@@ -16,7 +16,7 @@ const services = [
 ];
 
 const trust = [
-  { icon: StarIcon, label: "30,000+ Clients" },
+  { icon: StarIcon, label: "40,000+ Clients" },
   { icon: ShieldIcon, label: "40+ Years" },
   { icon: CheckIcon, label: "Top Rated Support" },
   { icon: TruckIcon, label: "European-Standard Installation" },

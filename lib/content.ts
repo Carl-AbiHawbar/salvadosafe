@@ -2,6 +2,7 @@ import "server-only";
 import { cache } from "react";
 import { readJson } from "./storage";
 
+export type ShowroomImage = { src: string; alt: string; caption?: string };
 export type HeroSlide = { img: string; title: string; sub: string };
 export type Review = { name: string; when: string; text: string; color: string };
 export type InstagramPost = { image: string; caption: string; href: string; alt?: string };
@@ -30,7 +31,7 @@ export type PagesContent = {
       text: string;
       points: IconPoint[];
     };
-    catalogSection: { eyebrow: string; title: string; text: string };
+    catalogSection: { eyebrow: string; title: string; text: string; slugs: string[] };
     selectedSection: { eyebrow: string; title: string; text: string; slugs: string[] };
     servicesSection: {
       eyebrow: string;
@@ -42,7 +43,7 @@ export type PagesContent = {
       eyebrow: string;
       title: string;
       text: string;
-      image: string;
+      images: ShowroomImage[];
       features: string[];
     };
     finalCta: { eyebrow: string; title: string; text: string; waMessage: string };

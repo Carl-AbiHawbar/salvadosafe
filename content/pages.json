@@ -13,7 +13,7 @@
     {
       "img": "/images/brand/81b4439950502d0e2237beec.jpg",
       "title": "The Pinnacle of Security & Quality",
-      "sub": "From high-security safes to vault rooms, explore Lebanon's widest safe showroom."
+      "sub": "From high-security safes to vault rooms, explore Lebanon's leading safe showroom."
     },
     {
       "img": "/images/brand/406286567de28867e45029df.jpg",
@@ -41,7 +41,7 @@
   "instagramPosts": [
     {
       "image": "/images/brand/frontimg.webp",
-      "caption": "Visit Lebanon's widest safe showroom in Zalka.",
+      "caption": "Visit Lebanon's leading safe showroom in Zalka.",
       "href": "https://www.instagram.com/salvadosafes/",
       "alt": "Salvado showroom"
     },
@@ -90,9 +90,9 @@
   ],
   "home": {
     "proofStrip": [
-      "30,000+ Clients Served",
+      "40,000+ Clients Served",
       "40+ Years of Trust",
-      "Lebanon's Widest Safe Showroom",
+      "Lebanon's Leading Safe Showroom",
       "European-Standard Installation",
       "Top-Rated Support"
     ],
@@ -110,7 +110,15 @@
     "catalogSection": {
       "eyebrow": "Our Catalogue",
       "title": "Explore Our Security Solutions",
-      "text": "Browse Salvado's premium range, from high-security and fire-rated safes to vault doors, luxury safes, and cash-handling solutions."
+      "text": "Browse Salvado's premium range, from high-security and fire-rated safes to vault doors, luxury safes, and cash-handling solutions.",
+      "slugs": [
+        "high-security-safes",
+        "fire-resistant-safes",
+        "vault-doors-vault-rooms",
+        "luxury-safes-watch-storage",
+        "concealed-camouflage-safes",
+        "cash-handling-solutions"
+      ]
     },
     "selectedSection": {
       "eyebrow": "Selected Solutions",
@@ -133,7 +141,33 @@
       "eyebrow": "Visit Us",
       "title": "Visit the Salvado Showroom",
       "text": "Browse the widest range of safes and security products live in our showroom. Compare high-security safes, fire-rated safes, vault doors, luxury safes, and watch storage, and receive professional guidance before you decide.",
-      "image": "/images/brand/frontimg.webp",
+      "images": [
+        {
+          "src": "/images/brand/frontimg.webp",
+          "alt": "Salvado showroom interior in Zalka",
+          "caption": "Walk through Lebanon's leading safe showroom and compare models in person."
+        },
+        {
+          "src": "/images/brand/c84dfdaf90cd428f56b6cafe.jpg",
+          "alt": "High-security safe display at Salvado",
+          "caption": "Certified high-security safes on display across the showroom floor."
+        },
+        {
+          "src": "/images/brand/c6c71578def71511416d0707.jpg",
+          "alt": "Luxury safe and watch storage at Salvado",
+          "caption": "Luxury safes and watch storage solutions for discerning clients."
+        },
+        {
+          "src": "/images/brand/406286567de28867e45029df.jpg",
+          "alt": "Cash-handling solutions at Salvado showroom",
+          "caption": "Cash-handling and business security solutions ready to view on site."
+        },
+        {
+          "src": "/images/brand/vdi.png",
+          "alt": "Vault door display at Salvado",
+          "caption": "Vault doors and high-security installations you can see and discuss with our team."
+        }
+      ],
       "features": [
         "High-security safe displays",
         "Fire-resistant safe displays",
@@ -159,7 +193,7 @@
     },
     "stats": [
       { "value": "40+", "label": "Years of Trust" },
-      { "value": "30,000+", "label": "Clients Served" },
+      { "value": "40,000+", "label": "Clients Served" },
       { "value": "#1", "label": "Rated in Lebanon" },
       { "value": "145+", "label": "Products in Showroom" }
     ],

@@ -76,7 +76,7 @@ export function ProductBannerSearch({ className = "" }: { className?: string }) 
           e.preventDefault();
           setOpen(true);
         }}
-        className="flex items-center gap-2 rounded-full border border-white/20 bg-black/25 p-1.5 pl-3.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm sm:pl-4"
+        className="flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] p-1.5 pl-3.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md sm:pl-4"
       >
         <SearchIcon width={18} height={18} className="shrink-0 text-white/55" />
         <input

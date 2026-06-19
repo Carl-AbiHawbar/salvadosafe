@@ -89,7 +89,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         <div className="container-x pointer-events-auto">
           <div className="max-w-2xl pr-1 md:pr-0">
             <span className="mb-4 inline-block rounded-full border border-white/30 bg-black/25 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">
-              Lebanon&apos;s Widest Safe Showroom
+              Lebanon&apos;s Leading Safe Showroom
             </span>
             <h1 className="font-display text-4xl font-bold leading-[1.08] text-white drop-shadow-lg md:text-6xl">
               {slides[active].title}
