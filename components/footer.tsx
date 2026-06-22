@@ -7,10 +7,10 @@ import type { Category } from "@/lib/catalog";
 import { WhatsAppIcon, PinIcon, ShieldIcon, StarIcon, TruckIcon, CheckIcon } from "./icons";
 
 const services = [
-  { label: "Consultation, Delivery & Installation", href: "/services#consultation" },
+  { label: "Consultation, Delivery and Installation", href: "/services#consultation" },
   { label: "Master Locksmith Services", href: "/services#locksmith" },
-  { label: "Safe Repair & Maintenance", href: "/services#maintenance" },
-  { label: "Vault Doors & Vault Rooms", href: "/services#vault" },
+  { label: "Safe Repair and Maintenance", href: "/services#maintenance" },
+  { label: "Vault Doors and Vault Rooms", href: "/services#vault" },
   { label: "Safe Relocation", href: "/services#relocation" },
   { label: "After-Sales Technical Support", href: "/services#support" },
 ];
@@ -25,7 +25,7 @@ const trust = [
 export function Footer({ featuredCategories }: { featuredCategories: Category[] }) {
   const site = useSite();
   return (
-    <footer className="mt-auto border-t border-line bg-ink text-white">
+    <footer className="mt-auto border-t border-line bg-ink pb-14 text-white md:pb-0">
       {/* Trust strip */}
       <div className="border-b border-white/10">
         <div className="container-x grid grid-cols-2 gap-4 py-7 md:grid-cols-4">
@@ -119,7 +119,7 @@ export function Footer({ featuredCategories }: { featuredCategories: Category[] 
           <span>© 2026 Salvado Safe. All rights reserved.</span>
           <div className="flex items-center gap-5">
             <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white">Terms &amp; Conditions</Link>
+            <Link href="/terms" className="hover:text-white">Terms and Conditions</Link>
             <Link href="/sitemap" className="hover:text-white">Sitemap</Link>
           </div>
         </div>

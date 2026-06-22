@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Terms & Conditions" };
+export const metadata: Metadata = { title: "Terms and Conditions" };
 
 export default function TermsPage() {
   return (
     <div className="container-x py-20 md:py-24">
       <div className="mx-auto max-w-3xl">
-        <h1 className="font-display text-4xl font-bold text-ink">Terms &amp; Conditions</h1>
+        <h1 className="font-display text-4xl font-bold text-ink">Terms and Conditions</h1>
         <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-ink-2">
           <p>
             Welcome to {site.name}. By using this website, you agree to the following terms. Product availability,
             specifications, pricing, and warranty terms are confirmed directly with our team.
           </p>
-          <h2 className="font-display text-xl font-bold text-ink">Products & Pricing</h2>
+          <h2 className="font-display text-xl font-bold text-ink">Products and Pricing</h2>
           <p>
             Prices are provided on request via call, WhatsApp, or quote. Specifications and certifications vary by model
             and are confirmed by our team before purchase.

@@ -123,7 +123,7 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
             <SectionHeading
               align="left"
               eyebrow="Size Comparison"
-              title={`${grade.series} Model & Size Table`}
+              title={`${grade.series} Model and Size Table`}
               text={`Compare external dimensions, internal capacity, weight, and configuration across all confirmed ${grade.grade} models. Contact Salvado for pricing and availability on the size that fits your space.`}
             />
           </Reveal>
@@ -171,7 +171,7 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand">
               <ShieldIcon />
             </div>
-            <h3 className="mt-4 font-display text-xl font-bold text-ink">Security Details &amp; Documents</h3>
+            <h3 className="mt-4 font-display text-xl font-bold text-ink">Security Details and Documents</h3>
             <p className="mt-3 text-[14.5px] leading-relaxed text-ink-2">
               {grade.grade} safes are certified under UNE EN-1143-1. Contact Salvado to request the relevant brochure,
               technical sheet, or certification details for {grade.series}.
@@ -189,7 +189,7 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand">
               <TruckIcon />
             </div>
-            <h3 className="mt-4 font-display text-xl font-bold text-ink">Delivery, Installation &amp; After-Sales</h3>
+            <h3 className="mt-4 font-display text-xl font-bold text-ink">Delivery, Installation and After-Sales</h3>
             <p className="mt-3 text-[14.5px] leading-relaxed text-ink-2">
               Salvado provides careful delivery, European-standard installation, and anchoring based on the model and
               your site conditions, followed by dedicated after-sales technical support.

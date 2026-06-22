@@ -9,7 +9,7 @@ import { getIcon } from "@/lib/icon-map";
 import { CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Professional Safe & Vault Services",
+  title: "Professional Safe and Vault Services",
   description:
     "Salvado provides technical services for safes, vault doors, vault rooms, installation, maintenance, relocation, safe opening, and after-sales support for residential, commercial, and institutional clients.",
 };

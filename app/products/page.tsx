@@ -13,14 +13,14 @@ import { CTA } from "@/components/cta";
 import { ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Products, Premium Safes, Vault Doors & Security Solutions",
+  title: "Products, Premium Safes, Vault Doors and Security Solutions",
   description:
     "Explore Salvado's range of high-security safes, fire-rated safes, vault doors, secure rooms, camouflage safes, luxury safes, and cash-handling solutions in Lebanon.",
 };
 
 const protectCards = [
-  { title: "Jewelry & Watches", text: "For watches, jewelry, collectibles, and private valuables.", slug: "luxury-safes-watch-storage", cta: "View Luxury Solutions" },
-  { title: "Documents & Files", text: "For contracts, passports, records, cash, and important documents requiring fire protection.", slug: "fire-resistant-safes", cta: "View Fire-Resistant Safes" },
+  { title: "Jewelry and Watches", text: "For watches, jewelry, collectibles, and private valuables.", slug: "luxury-safes-watch-storage", cta: "View Luxury Solutions" },
+  { title: "Documents and Files", text: "For contracts, passports, records, cash, and important documents requiring fire protection.", slug: "fire-resistant-safes", cta: "View Fire-Resistant Safes" },
   { title: "High-Value Assets", text: "For serious protection needs in homes, businesses, jewelers, institutions, and private offices.", slug: "high-security-safes", cta: "View High-Security Safes" },
   { title: "Secure Rooms", text: "For vault doors, private rooms, institutional storage, and high-security projects.", slug: "vault-doors-vault-rooms", cta: "View Vault Solutions" },
   { title: "Cash Handling", text: "For retailers, offices, exchange businesses, and companies handling cash.", slug: "cash-handling-solutions", cta: "View Cash Handling" },
@@ -55,7 +55,7 @@ export default function ProductsPage() {
 
       <ProductBanner
         eyebrow="Premium Security Solutions"
-        title="Safes & Security Solutions in Lebanon"
+        title="Safes and Security Solutions in Lebanon"
         subtitle="Explore Salvado's range of high-security safes, fire-resistant safes, vault doors, smart safes, luxury safes, hotel safes, gun safes, money counters, and secure storage solutions — for homes, businesses, hotels, institutions, and private clients."
         catalogLink={{ label: "View all products", href: "#full-catalog" }}
       />

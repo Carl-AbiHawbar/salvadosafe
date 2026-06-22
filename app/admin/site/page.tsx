@@ -47,7 +47,7 @@ export default function AdminSitePage() {
           </div>
         </AdminCard>
 
-        <AdminCard title="Phones & hours">
+        <AdminCard title="Phones and hours">
           <div className="space-y-4">
             <AdminInput label="Landline label" value={data.phones.landline.label} onChange={(v) => setData({ ...data, phones: { ...data.phones, landline: { ...data.phones.landline, label: v } } })} />
             <AdminInput label="Landline tel" value={data.phones.landline.tel} onChange={(v) => setData({ ...data, phones: { ...data.phones, landline: { ...data.phones.landline, tel: v } } })} />
@@ -61,7 +61,7 @@ export default function AdminSitePage() {
           </div>
         </AdminCard>
 
-        <AdminCard title="Social & maps" className="lg:col-span-2">
+        <AdminCard title="Social and maps" className="lg:col-span-2">
           <div className="grid gap-4 md:grid-cols-2">
             <AdminInput label="Instagram URL" value={data.socials.instagram} onChange={(v) => setData({ ...data, socials: { ...data.socials, instagram: v } })} />
             <AdminInput label="Facebook URL" value={data.socials.facebook} onChange={(v) => setData({ ...data, socials: { ...data.socials, facebook: v } })} />

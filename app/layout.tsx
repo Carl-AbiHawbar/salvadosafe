@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://salvadosafe.com"),
   title: {
-    default: "Salvado Safe Lebanon | Premium Safes, Vaults & Security Solutions",
+    default: "Salvado Safe Lebanon | Premium Safes, Vaults and Security Solutions",
     template: "%s | Salvado Safe",
   },
   description:
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "security safe Lebanon", "home safe Lebanon", "luxury safes Lebanon", "Salvado Safe",
   ],
   openGraph: {
-    title: "Salvado Safe Lebanon | High-Security Safes & Vault Solutions",
+    title: "Salvado Safe Lebanon | High-Security Safes and Vault Solutions",
     description:
       "Protect what matters most with Salvado Safe. Premium certified safes, vaults, and security solutions in Lebanon.",
     type: "website",

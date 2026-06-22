@@ -114,7 +114,7 @@ export default function AboutPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Why We Lead"
-              title="A Trusted Name Built on Quality, Transparency & Specialization"
+              title="A Trusted Name Built on Quality, Transparency and Specialization"
             />
           </Reveal>
           <div className="mt-8 flex flex-wrap justify-center gap-4 sm:gap-5 md:mt-10">

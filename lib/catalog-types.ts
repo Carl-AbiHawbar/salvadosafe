@@ -54,13 +54,15 @@ const CATEGORY_SHORT: Record<string, string> = {
   "smart-safes": "Smart Safes",
   "hotel-safes": "Hotel Safes",
   "responsible-firearm-storage": "Firearm Storage",
-  "cash-boxes-key-cabinets": "Key & Cash Boxes",
+  "cash-boxes-key-cabinets": "Key and Cash Boxes",
 };
 
 export function productCategoryLabel(product: Product, categoryName?: string): string {
   if (product.sub) return product.sub;
   if (CATEGORY_SHORT[product.category]) return CATEGORY_SHORT[product.category];
   if (categoryName) {
+    const andIdx = categoryName.indexOf(" and ");
+    if (andIdx > 0) return categoryName.slice(0, andIdx);
     const amp = categoryName.indexOf(" & ");
     if (amp > 0) return categoryName.slice(0, amp);
     return categoryName;

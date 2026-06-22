@@ -3,7 +3,7 @@ import { SectionHeading, FinalCTA } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
-  title: "Blog & Security Guides",
+  title: "Blog and Security Guides",
   description: "Guides and answers on choosing safes, vault doors, fire ratings, security grades, and secure storage from Salvado Safe in Lebanon.",
 };
 
@@ -11,9 +11,9 @@ const topics = [
   { title: "How to Choose the Right Safe", text: "Understand security grades, fire ratings, size, and lock types before you buy." },
   { title: "Fire Ratings Explained", text: "What fire-resistant safes protect, and how long their ratings last." },
   { title: "Security Grades I–V", text: "What each certified grade means and which fits your needs." },
-  { title: "Vault Doors & Secure Rooms", text: "Planning a vault project for a villa, jeweler, or institution." },
+  { title: "Vault Doors and Secure Rooms", text: "Planning a vault project for a villa, jeweler, or institution." },
   { title: "Caring for Your Safe", text: "Maintenance, lock service, and keeping your safe working correctly." },
-  { title: "Watch Winders & Luxury Storage", text: "Keeping automatic watches wound and collectibles secure." },
+  { title: "Watch Winders and Luxury Storage", text: "Keeping automatic watches wound and collectibles secure." },
 ];
 
 export default function BlogPage() {
@@ -22,7 +22,7 @@ export default function BlogPage() {
       <section className="bg-ink">
         <div className="container-x py-20 md:py-24">
           <Reveal className="max-w-2xl">
-            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Guides & Insights</p>
+            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Guides and Insights</p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">
               Salvado Security Guides
             </h1>

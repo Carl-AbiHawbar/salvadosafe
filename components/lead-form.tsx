@@ -72,10 +72,10 @@ export function LeadForm({
             <label className="mb-1.5 block text-[13px] font-semibold text-ink-2">Service needed</label>
             <select name="service" className={inputCls} defaultValue="">
               <option value="" disabled>Select a service</option>
-              <option>Consultation, Delivery &amp; Installation</option>
+              <option>Consultation, Delivery and Installation</option>
               <option>Master Locksmith / Safe Opening</option>
-              <option>Safe Repair &amp; Maintenance</option>
-              <option>Vault Doors &amp; Vault Rooms</option>
+              <option>Safe Repair and Maintenance</option>
+              <option>Vault Doors and Vault Rooms</option>
               <option>Safe Relocation</option>
               <option>After-Sales Technical Support</option>
             </select>

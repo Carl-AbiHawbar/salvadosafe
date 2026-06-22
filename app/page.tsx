@@ -7,7 +7,9 @@ import { InstagramCarousel } from "@/components/instagram-carousel";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { CTA, TextLink } from "@/components/cta";
-import { getCategoriesBySlugs, getProduct, getProducts } from "@/lib/catalog";
+import { getCategoriesBySlugs, getProduct } from "@/lib/catalog";
+import { getGrade } from "@/lib/grades";
+import { GradeCard } from "@/components/grade-card";
 import { getPagesContent } from "@/lib/content";
 import { getSite } from "@/lib/site-server";
 import { ShieldIcon, CheckIcon, ArrowIcon } from "@/components/icons";
@@ -18,9 +20,17 @@ export default function HomePage() {
   const pages = getPagesContent();
   const catalogCategories = getCategoriesBySlugs(pages.home.catalogSection.slugs);
   const site = getSite();
-  const selected = pages.home.selectedSection.slugs.map((s) => getProduct(s)).filter(Boolean);
-  const fallback = getProducts().slice(0, 5);
-  const selectedProducts = (selected.length ? selected : fallback) as NonNullable<ReturnType<typeof getProduct>>[];
+  type SelectedItem =
+    | { kind: "grade"; grade: NonNullable<ReturnType<typeof getGrade>> }
+    | { kind: "product"; product: NonNullable<ReturnType<typeof getProduct>> };
+
+  const selectedItems: SelectedItem[] = pages.home.selectedSection.slugs.flatMap((slug): SelectedItem[] => {
+    const grade = getGrade(slug);
+    if (grade) return [{ kind: "grade", grade }];
+    const product = getProduct(slug);
+    if (product) return [{ kind: "product", product }];
+    return [];
+  });
 
   return (
     <>
@@ -28,19 +38,19 @@ export default function HomePage() {
 
       {/* Proof strip */}
       <section className="border-b border-line bg-ink">
-        <div className="container-x py-5">
-          {/* Mobile: stacked, centered, no bullets */}
-          <div className="flex flex-col items-center gap-3 text-center text-[13.5px] font-semibold text-white/85 md:hidden">
+        <div className="container-x py-4 md:py-3">
+          {/* Mobile: stacked */}
+          <div className="flex flex-col items-center gap-2 text-center text-[12px] font-semibold leading-snug text-white/85 md:hidden">
             {pages.home.proofStrip.map((item) => (
-              <span key={item}>{item}</span>
+              <span key={item} className="whitespace-nowrap">{item}</span>
             ))}
           </div>
-          {/* Desktop: inline with bullets */}
-          <div className="hidden flex-wrap items-center justify-center gap-x-10 gap-y-3 text-center text-[13.5px] font-semibold text-white/85 md:flex">
+          {/* Tablet + desktop: wrapped row on md, single row from xl */}
+          <div className="hidden flex-wrap items-center justify-center gap-x-4 gap-y-2 text-center text-[12px] font-semibold leading-snug text-white/85 md:flex xl:flex-nowrap xl:gap-x-7 xl:leading-none xl:text-[12.5px]">
             {pages.home.proofStrip.map((item, i) => (
-              <span key={item} className="contents">
-                {i > 0 && <span className="text-brand">•</span>}
-                <span>{item}</span>
+              <span key={item} className="inline-flex items-center gap-x-4 xl:shrink-0 xl:gap-x-7">
+                {i > 0 && <span className="hidden text-brand xl:inline" aria-hidden>•</span>}
+                <span className="whitespace-nowrap">{item}</span>
               </span>
             ))}
           </div>
@@ -191,9 +201,13 @@ export default function HomePage() {
             />
           </Reveal>
           <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-5">
-            {selectedProducts.map((p, i) => (
-              <Reveal key={p.slug} delay={i * 50}>
-                <ProductCard product={p} />
+            {selectedItems.map((item, i) => (
+              <Reveal key={item.kind === "grade" ? item.grade.slug : item.product.slug} delay={i * 50}>
+                {item.kind === "grade" ? (
+                  <GradeCard grade={item.grade} />
+                ) : (
+                  <ProductCard product={item.product} />
+                )}
               </Reveal>
             ))}
           </div>

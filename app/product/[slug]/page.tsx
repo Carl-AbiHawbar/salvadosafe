@@ -233,7 +233,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand">
               <ShieldIcon />
             </div>
-            <h3 className="mt-4 font-display text-xl font-bold text-ink">Security Details &amp; Documents</h3>
+            <h3 className="mt-4 font-display text-xl font-bold text-ink">Security Details and Documents</h3>
             <p className="mt-3 text-[14.5px] leading-relaxed text-ink-2">
               {product.specs.grade
                 ? `This model carries: ${product.specs.grade}. Contact Salvado to request the relevant brochure or technical sheet.`
@@ -248,14 +248,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand">
               <TruckIcon />
             </div>
-            <h3 className="mt-4 font-display text-xl font-bold text-ink">Delivery, Installation &amp; After-Sales</h3>
+            <h3 className="mt-4 font-display text-xl font-bold text-ink">Delivery, Installation and After-Sales</h3>
             <p className="mt-3 text-[14.5px] leading-relaxed text-ink-2">
               Salvado provides careful delivery, European-standard installation, and anchoring based on the product and
               your site conditions, followed by dedicated after-sales technical support, lock assistance, and
               maintenance guidance.
             </p>
             <div className="mt-5">
-              <CTA href="/services" variant="ghost">Ask About Delivery &amp; Installation</CTA>
+              <CTA href="/services" variant="ghost">Ask About Delivery and Installation</CTA>
             </div>
           </Reveal>
         </div>

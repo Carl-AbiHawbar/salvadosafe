@@ -10,10 +10,10 @@ import { WhatsAppIcon, PhoneIcon, PinIcon, ChevronDown, MenuIcon, CloseIcon, Arr
 import { waLink, telLink } from "@/lib/site";
 
 const services = [
-  { label: "Consultation, Delivery & Installation", href: "/services#consultation" },
+  { label: "Consultation, Delivery and Installation", href: "/services#consultation" },
   { label: "Master Locksmith Services", href: "/services#locksmith" },
-  { label: "Safe Repair & Maintenance", href: "/services#maintenance" },
-  { label: "Vault Doors & Vault Rooms", href: "/services#vault" },
+  { label: "Safe Repair and Maintenance", href: "/services#maintenance" },
+  { label: "Vault Doors and Vault Rooms", href: "/services#vault" },
   { label: "Safe Relocation", href: "/services#relocation" },
   { label: "After-Sales Technical Support", href: "/services#support" },
 ];

@@ -11,7 +11,7 @@ export default function AdminDashboard() {
   const cards = [
     { href: "/admin/site", title: "Site Settings", desc: "Contact info, phones, social links, maps" },
     { href: "/admin/products", title: "Products", desc: `${productCount} products in catalogue` },
-    { href: "/admin/categories", title: "Categories", desc: `${categoryCount} categories with FAQs & guides` },
+    { href: "/admin/categories", title: "Categories", desc: `${categoryCount} categories with FAQs and guides` },
     { href: "/admin/pages/hero", title: "Hero Slides", desc: `${pages.heroSlides.length} homepage banner slides` },
     { href: "/admin/pages/reviews", title: "Google Reviews", desc: `${pages.reviews.length} review cards` },
     { href: "/admin/pages/instagram", title: "Instagram Posts", desc: `${pages.instagramPosts.length} carousel posts` },
