@@ -4,6 +4,8 @@ import { LeadForm } from "@/components/lead-form";
 import { site, waLink, telLink } from "@/lib/site";
 import { PhoneIcon, WhatsAppIcon, PinIcon, QuoteIcon } from "@/components/icons";
 
+import { getPagesContent } from "@/lib/content";
+
 export const metadata: Metadata = {
   title: "Contact Salvado, Request a Quote",
   description:
@@ -18,11 +20,18 @@ const contactItems = [
 ];
 
 export default function ContactPage() {
+  const contact = getPagesContent().contact;
+
   return (
     <>
       {/* Hero */}
-      <section className="bg-ink">
-        <div className="container-x py-20 md:py-24">
+      <section className="relative overflow-hidden bg-ink">
+        <div className="absolute inset-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={contact.heroImage} alt="" className="h-full w-full object-cover opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
+        </div>
+        <div className="container-x relative py-20 md:py-24">
           <Reveal className="max-w-2xl">
             <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Get in Touch</p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[52px]">
@@ -64,7 +73,11 @@ export default function ContactPage() {
       <section className="bg-surface">
         <div className="container-x grid items-start gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Send a Message</p>
+            <div className="overflow-hidden rounded-3xl border border-line shadow-soft md:hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={contact.showroomImage} alt="Salvado showroom in Zalka" className="aspect-[16/10] w-full object-cover" />
+            </div>
+            <p className="mb-3 mt-8 text-[12px] font-bold uppercase tracking-[0.18em] text-brand md:mt-0">Send a Message</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
               Tell Us How We Can Help
             </h2>
@@ -84,7 +97,11 @@ export default function ContactPage() {
             </div>
           </Reveal>
 
-          <Reveal delay={80}>
+          <Reveal delay={80} className="space-y-6">
+            <div className="hidden overflow-hidden rounded-3xl border border-line shadow-soft md:block">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={contact.showroomImage} alt="Salvado showroom in Zalka" className="aspect-[4/3] w-full object-cover" />
+            </div>
             <LeadForm variant="contact" />
           </Reveal>
         </div>

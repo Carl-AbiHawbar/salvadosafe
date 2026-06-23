@@ -29,7 +29,7 @@ export function productsInCategory(slug: string): Product[] {
 export function categoryImage(c: Category): string {
   if (c.image) return c.image;
   const first = getProducts().find((p) => p.category === c.slug && p.image)?.image;
-  return first || "/images/brand/frontimg.webp";
+  return first || "/images/brand/showroom-1.png";
 }
 
 export function categoryCount(slug: string): number {

@@ -53,6 +53,9 @@ export type PagesContent = {
     stats: Stat[];
     sectors: string[];
     leadPoints: IconPoint[];
+    showroomImage: string;
+    teamImage: string;
+    gallery: { src: string; alt: string }[];
   };
   services: {
     hero: { eyebrow: string; title: string; text: string; image: string };
@@ -60,6 +63,10 @@ export type PagesContent = {
     items: ServiceItem[];
     whyPoints: IconPoint[];
     faqs: Faq[];
+  };
+  contact: {
+    heroImage: string;
+    showroomImage: string;
   };
 };
 

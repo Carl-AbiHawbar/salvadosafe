@@ -10,7 +10,7 @@ import { ShieldIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "About Salvado",
   description:
-    "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions, with the widest safe showroom in Lebanon and a trained technical team.",
+    "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions, with Lebanon's leading safe showroom and a trained technical team.",
 };
 
 export default function AboutPage() {
@@ -63,16 +63,16 @@ export default function AboutPage() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-line shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/brand/frontimg.webp" alt="Salvado showroom" className="h-full w-full object-cover" />
+              <img src={about.showroomImage} alt="Salvado showroom" className="h-full w-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={80}>
             <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Our Showroom</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
-              The Widest Safe Showroom in Lebanon
+              Lebanon&apos;s Leading Safe Showroom
             </h2>
             <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
-              At Salvado, clients can browse the widest range of safes and security products live in our showroom. From
+              At Salvado, clients can browse a wide range of safes and security products live in our showroom. From
               high-security safes and fire-rated safes to vault doors, luxury safes, watch storage, and secure storage
               solutions, our showroom allows clients to compare models, inspect quality, and receive professional
               guidance before making a decision.
@@ -82,6 +82,30 @@ export default function AboutPage() {
               <CallButton />
             </CtaGroup>
           </Reveal>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="border-t border-line bg-surface">
+        <div className="container-x py-12 md:py-16">
+          <Reveal className="max-w-2xl">
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Inside Salvado</p>
+            <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
+              See the Showroom, Products and Team
+            </h2>
+            <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
+              Walk through our Zalka showroom, compare certified safes in person, and speak with specialists who handle
+              consultation, delivery, installation, and after-sales support.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {about.gallery.map((img, i) => (
+              <Reveal key={img.src} delay={i * 60} className="overflow-hidden rounded-2xl border border-line bg-white shadow-card">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={img.src} alt={img.alt} loading="lazy" className="aspect-[4/3] h-full w-full object-cover" />
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -140,8 +164,12 @@ export default function AboutPage() {
 
       {/* Technical capability + CTA */}
       <section className="bg-ink">
-        <div className="container-x py-12 md:py-16">
-          <Reveal className="mx-auto max-w-3xl text-center">
+        <div className="container-x grid items-center gap-10 py-12 md:grid-cols-2 md:py-16">
+          <Reveal className="overflow-hidden rounded-3xl border border-white/10 shadow-soft">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={about.teamImage} alt="Salvado security consultation" className="h-full w-full object-cover" />
+          </Reveal>
+          <Reveal delay={80}>
             <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">More Than a Supplier</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-white md:text-[40px]">
               More Than a Safe Supplier
@@ -154,8 +182,9 @@ export default function AboutPage() {
               commercial, institutional, and private clients.
             </p>
           </Reveal>
-
-          <Reveal delay={80} className="mx-auto mt-10 max-w-3xl text-center md:mt-12">
+        </div>
+        <div className="container-x pb-12 md:pb-16">
+          <Reveal delay={120} className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Visit or speak with our team</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-white md:text-[42px]">
               Visit Salvado or Speak With Our Team

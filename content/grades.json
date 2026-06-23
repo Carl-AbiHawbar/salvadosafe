@@ -19,7 +19,7 @@
     ],
     "cta": "WhatsApp for Grade I / Request Quote / Ask Salvado for the right size",
     "developerNote": "Use one hero image/representative Grade I photo if individual model photos are not available.",
-    "image": "/images/products/AT3LE-FRONT.jpg",
+    "image": "/images/brand/grade-i.png",
     "models": [
       {
         "name": "AT-1LE",
@@ -316,7 +316,7 @@
     ],
     "cta": "WhatsApp for Grade II / Request Quote / Ask Salvado for the right size",
     "developerNote": "Only include confirmed models. AM-10LE included; do not include AM-45/AM-85/AM-95 unless later confirmed.",
-    "image": "/images/products/Untitled-design-6.jpg",
+    "image": "/images/brand/grade-ii.png",
     "models": [
       {
         "name": "AM-1LE",
@@ -612,7 +612,7 @@
     ],
     "cta": "WhatsApp for Grade III / Request Quote / Ask Salvado for the right size",
     "developerNote": "AR-1LE corrected: internal 250 x 340 x 180 mm, 130 kg, 15 L.",
-    "image": "/images/products/AR2LE-FRONT.jpg",
+    "image": "/images/brand/grade-iii.png",
     "models": [
       {
         "name": "AR-1LE",
@@ -824,7 +824,7 @@
     ],
     "cta": "WhatsApp for Grade IV / Request Quote / Ask Salvado for the right size",
     "developerNote": "Use Grade IV page for AP Series table.",
-    "image": "/images/products/AP5E-FRONT.jpg",
+    "image": "/images/brand/grade-iv.png",
     "models": [
       {
         "name": "AP-2LE",
@@ -1026,7 +1026,7 @@
     ],
     "cta": "WhatsApp for Grade V / Request Quote / Ask Salvado for the right size",
     "developerNote": "Grade V should feel premium and technical; one representative AK photo is enough if individual size photos are not available.",
-    "image": "/images/products/safe-1.jpg",
+    "image": "/images/brand/grade-v.png",
     "models": [
       {
         "name": "AK-2LE",
