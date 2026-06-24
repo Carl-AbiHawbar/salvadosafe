@@ -21,7 +21,16 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-ink">
-        <div className="container-x relative grid items-center gap-8 py-14 md:grid-cols-[1fr_auto] md:gap-12 md:py-16 lg:py-20">
+        <div className="absolute inset-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={content.hero.image}
+            alt=""
+            className="h-full w-full object-cover object-[center_40%] opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/90 to-ink/50" />
+        </div>
+        <div className="container-x relative py-16 md:py-24 lg:py-28">
           <Reveal className="max-w-2xl">
             <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{content.hero.eyebrow}</p>
             <h1 className="font-display text-4xl font-bold leading-[1.1] text-white md:text-[48px]">
@@ -39,16 +48,6 @@ export default function ServicesPage() {
               <QuoteButton variant="primaryLight" />
               <CallButton variant="ghostLight" />
             </CtaGroup>
-          </Reveal>
-          <Reveal delay={80} className="mx-auto w-full max-w-[340px] md:max-w-[380px] lg:max-w-[420px]">
-            <div className="overflow-hidden rounded-2xl border border-white/15 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.55)]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={content.hero.image}
-                alt="Salvado vault door installation"
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
           </Reveal>
         </div>
       </section>
@@ -111,7 +110,7 @@ export default function ServicesPage() {
               installation according to product specifications and site requirements.
             </p>
           </Reveal>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {content.installationGallery.map((img, i) => (
               <Reveal key={img.src} delay={i * 60} className="overflow-hidden rounded-2xl border border-line bg-white shadow-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}

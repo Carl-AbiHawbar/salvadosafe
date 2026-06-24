@@ -179,6 +179,7 @@
       "CFC Underfloor Safe"
     ],
     "featured": true,
+    "image": "/images/products/cfc2m_copia_1.jpg",
     "buyingGuide": [
       {
         "title": "Choose the placement",
@@ -225,6 +226,7 @@
       "Viaggio 1"
     ],
     "featured": true,
+    "image": "/images/brand/services-hero.jpg",
     "buyingGuide": [
       {
         "title": "Plan your collection",
@@ -378,6 +380,7 @@
       "Pistol Safes"
     ],
     "featured": false,
+    "image": "/images/products/gs-30-open.jpeg",
     "buyingGuide": [
       {
         "title": "Capacity",

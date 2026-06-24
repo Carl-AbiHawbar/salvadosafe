@@ -1,8 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { StarIcon } from "./icons";
 import type { Review } from "@/lib/content";
+
+const AUTO_INTERVAL_MS = 5000;
 
 export function ReviewsCarousel({
   reviews,
@@ -14,12 +16,30 @@ export function ReviewsCarousel({
   reviewCount: string;
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const indexRef = useRef(0);
 
   const scroll = (dir: number) => {
     const el = trackRef.current;
     if (!el) return;
     el.scrollBy({ left: dir * (el.clientWidth * 0.8), behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const el = trackRef.current;
+    if (!el || reviews.length <= 1) return;
+
+    const tick = () => {
+      const cards = el.querySelectorAll("article");
+      if (!cards.length) return;
+
+      indexRef.current = (indexRef.current + 1) % cards.length;
+      const target = cards[indexRef.current] as HTMLElement;
+      el.scrollTo({ left: target.offsetLeft - el.offsetLeft, behavior: "smooth" });
+    };
+
+    const id = window.setInterval(tick, AUTO_INTERVAL_MS);
+    return () => window.clearInterval(id);
+  }, [reviews.length]);
 
   return (
     <div className="relative">
@@ -74,6 +94,7 @@ export function ReviewsCarousel({
 
       <div className="mt-6 flex justify-center gap-3">
         <button
+          type="button"
           onClick={() => scroll(-1)}
           aria-label="Previous reviews"
           className="flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-ink transition-colors hover:border-brand hover:text-brand"
@@ -81,6 +102,7 @@ export function ReviewsCarousel({
           ‹
         </button>
         <button
+          type="button"
           onClick={() => scroll(1)}
           aria-label="Next reviews"
           className="flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-ink transition-colors hover:border-brand hover:text-brand"

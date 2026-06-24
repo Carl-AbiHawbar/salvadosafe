@@ -165,13 +165,13 @@ export default function HomePage() {
                 delay={i * 70}
                 className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.45)]"
               >
-                <div className="relative aspect-[16/10] overflow-hidden bg-white/5 sm:aspect-[5/3]">
+                <div className="relative aspect-[16/10] overflow-hidden bg-white/5 sm:aspect-[5/3] md:aspect-[16/9]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={s.img}
                     alt={s.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04] ${s.imgClass ?? "object-center"}`}
                   />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
                 </div>

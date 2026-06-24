@@ -10,6 +10,7 @@ import { ProductGallery } from "@/components/product-gallery";
 import { getPublicProducts, getProduct, getCategory, similarProducts, isPublicProduct, type Product } from "@/lib/catalog";
 import { productImages, resolveProductFaqs } from "@/lib/catalog-types";
 import { gradeForProductSub } from "@/lib/grades";
+import { productShareMetadata } from "@/lib/share-metadata";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 
 export function generateStaticParams() {
@@ -20,10 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return { title: "Product" };
-  return {
-    title: product.name,
-    description: product.desc || `${product.name}, premium security solution from Salvado Safe in Lebanon.`,
-  };
+  return productShareMetadata(product);
 }
 
 const SPEC_LABELS: { key: keyof Product["specs"]; label: string }[] = [

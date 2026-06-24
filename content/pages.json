@@ -184,12 +184,14 @@
       "text": "Salvado supports clients before, during, and after the sale, consultation, delivery, installation, repair, maintenance, relocation, and after-sales support.",
       "cards": [
         {
-          "img": "/images/brand/service-vault-door.png",
+          "img": "/images/brand/install-delivery-4.jpg",
+          "imgClass": "scale-[0.88] object-[center_35%]",
           "title": "Vault Door Installation",
           "text": "End-to-end vault door delivery and professional installation, handled by our expert team."
         },
         {
-          "img": "/images/brand/service-maintenance.jpg",
+          "img": "/images/brand/install-delivery-5.jpeg",
+          "imgClass": "scale-[0.9] object-[center_40%]",
           "title": "Safe Repair and Maintenance",
           "text": "Lock replacement, digital upgrades, combination changes, and preventative servicing."
         },
@@ -199,7 +201,8 @@
           "text": "Free, informed guidance to match the right safe or solution to your needs."
         },
         {
-          "img": "/images/brand/service-installation.png",
+          "img": "/images/brand/install-delivery-1.jpeg",
+          "imgClass": "scale-[0.9] object-[center_45%]",
           "title": "Safe Installation and Relocation",
           "text": "Careful transport, planning, and correct setup of your safe at any location."
         }
@@ -211,29 +214,31 @@
       "text": "Browse a wide range of safes and security products live in our showroom. Compare high-security safes, fire-rated safes, vault doors, luxury safes, and watch storage, and receive professional guidance before you decide.",
       "images": [
         {
-          "src": "/images/brand/showroom-1.png",
-          "alt": "Salvado showroom exterior in Zalka",
-          "caption": "Visit Lebanon's leading safe showroom in Zalka and explore solutions in person."
+          "src": "/images/brand/showroom-ferrari.png",
+          "alt": "Salvado showroom exterior with Ferrari at Zalka",
+          "caption": "Visit Lebanon's leading safe showroom in Zalka and explore solutions in person.",
+          "fit": "contain",
+          "imgClass": "scale-[0.92]"
         },
         {
-          "src": "/images/brand/showroom-4.jpg",
-          "alt": "Salvado showroom interior display",
+          "src": "/images/brand/showroom-interior-2.jpg",
+          "alt": "Salvado showroom interior with safes on display",
           "caption": "Compare high-security safes, fire-rated models, and vault solutions on the showroom floor."
         },
         {
-          "src": "/images/brand/showroom-5.jpg",
-          "alt": "Salvado showroom consultation area",
-          "caption": "Speak with our specialists and inspect build quality before you decide."
+          "src": "/images/brand/showroom-interior-3.jpg",
+          "alt": "High-security safes displayed at Salvado",
+          "caption": "Certified safes in multiple sizes, ready to compare in person."
         },
         {
-          "src": "/images/brand/hero-slide-2.png",
-          "alt": "Luxury safe display at Salvado",
-          "caption": "Luxury safes and bespoke watch storage for discerning clients."
+          "src": "/images/brand/showroom-interior-4.jpg",
+          "alt": "Salvado showroom safe collection",
+          "caption": "Walk through our range and speak with specialists before you decide."
         },
         {
-          "src": "/images/brand/service-vault-door.png",
-          "alt": "Vault door installation by Salvado",
-          "caption": "Vault doors and high-security installations you can discuss with our team on site."
+          "src": "/images/brand/showroom-interior-5.jpg",
+          "alt": "Professional vault door installation by Salvado",
+          "caption": "Vault doors and high-security installations handled by our trained team."
         }
       ],
       "features": [
@@ -257,7 +262,7 @@
       "eyebrow": "About Salvado",
       "title": "Lebanon's Reference Point for Security and Secure Storage",
       "text": "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions. With Lebanon's leading safe showroom, certified products, a trained technical team, and a reputation built on transparency and service, Salvado is the reference point for clients who expect the highest level of security, quality, and support.",
-      "image": "/images/brand/about-hero.jpg"
+      "image": "/images/brand/about-hero-v2.jpg"
     },
     "stats": [
       {
@@ -317,19 +322,19 @@
     "teamImage": "/images/brand/about-team.jpg",
     "gallery": [
       {
-        "src": "/images/brand/showroom-1.png",
+        "src": "/images/brand/showroom-ferrari.png",
         "alt": "Salvado showroom in Zalka"
       },
       {
-        "src": "/images/brand/showroom-4.jpg",
+        "src": "/images/brand/showroom-interior-2.jpg",
         "alt": "Safe displays inside the Salvado showroom"
       },
       {
-        "src": "/images/brand/showroom-5.jpg",
-        "alt": "Consultation area at Salvado"
+        "src": "/images/brand/showroom-interior-4.jpg",
+        "alt": "Salvado showroom safe collection"
       },
       {
-        "src": "/images/brand/service-installation.png",
+        "src": "/images/brand/install-delivery-1.jpeg",
         "alt": "Professional safe delivery and installation"
       }
     ]
@@ -339,7 +344,7 @@
       "eyebrow": "Technical Services",
       "title": "Professional Safe and Vault Services",
       "text": "Salvado provides technical services for safes, vault doors, vault rooms, installation, maintenance, relocation, safe opening, and after-sales support for residential, commercial, and institutional clients.",
-      "image": "/images/brand/service-vault-door.png"
+      "image": "/images/brand/services-hero.jpg"
     },
     "overview": {
       "eyebrow": "What We Do",
@@ -353,7 +358,7 @@
         "text": "Site assessment, product recommendation, discreet delivery, professional installation, and technical follow-up after installation.",
         "cta": "Request Consultation",
         "icon": "shield",
-        "image": "/images/brand/service-installation.png"
+        "image": "/images/brand/install-delivery-1.jpeg"
       },
       {
         "id": "locksmith",
@@ -361,7 +366,7 @@
         "text": "Locked out of your safe? Our technicians provide professional safe opening and lock service for verified owners, with careful methods to reduce unnecessary damage whenever possible.",
         "cta": "Request Safe Opening",
         "icon": "tools",
-        "image": "/images/brand/service-maintenance.jpg"
+        "image": "/images/brand/install-delivery-2.jpeg"
       },
       {
         "id": "maintenance",
@@ -369,7 +374,7 @@
         "text": "Lock replacement, digital lock upgrades, combination changes, troubleshooting, and preventative servicing to keep safes operating correctly.",
         "cta": "Request Maintenance",
         "icon": "tools",
-        "image": "/images/brand/service-maintenance.jpg"
+        "image": "/images/brand/install-delivery-5.jpeg"
       },
       {
         "id": "vault",
@@ -377,7 +382,7 @@
         "text": "High-security vault doors and complete vault room systems for bank-level, institutional, commercial, and private security requirements.",
         "cta": "View Vault Services",
         "icon": "shield",
-        "image": "/images/brand/service-vault-door.png"
+        "image": "/images/brand/install-delivery-4.jpg"
       },
       {
         "id": "relocation",
@@ -385,7 +390,7 @@
         "text": "Professional relocation of safes with proper handling, transport planning, and setup at the new location.",
         "cta": "Request Relocation",
         "icon": "truck",
-        "image": "/images/brand/service-installation.png"
+        "image": "/images/brand/install-delivery-3.jpeg"
       },
       {
         "id": "support",
@@ -398,24 +403,34 @@
     ],
     "installationGallery": [
       {
-        "src": "/images/brand/service-installation.png",
+        "src": "/images/brand/install-delivery-1.jpeg",
         "alt": "Salvado safe delivery and installation",
         "caption": "Professional safe delivery and on-site installation"
       },
       {
-        "src": "/images/brand/service-vault-door.png",
+        "src": "/images/brand/install-delivery-2.jpeg",
+        "alt": "Salvado technicians unloading a safe",
+        "caption": "Careful handling and delivery by the Salvado team"
+      },
+      {
+        "src": "/images/brand/install-delivery-3.jpeg",
+        "alt": "Salvado safe installation on site",
+        "caption": "On-site installation according to product specifications"
+      },
+      {
+        "src": "/images/brand/install-delivery-4.jpg",
         "alt": "Salvado vault door installation",
         "caption": "Vault door installation by Salvado technicians"
       },
       {
-        "src": "/images/brand/service-maintenance.jpg",
-        "alt": "Salvado safe repair and maintenance",
+        "src": "/images/brand/install-delivery-5.jpeg",
+        "alt": "Salvado maintenance and service",
         "caption": "Repair, lock service, and preventative maintenance"
       },
       {
-        "src": "/images/brand/service-consultation.png",
-        "alt": "Salvado security consultation",
-        "caption": "On-site consultation and technical guidance"
+        "src": "/images/brand/install-delivery-6.jpg",
+        "alt": "Salvado professional installation team",
+        "caption": "European-standard installation and technical follow-up"
       }
     ],
     "whyPoints": [
@@ -464,7 +479,7 @@
     ]
   },
   "contact": {
-    "heroImage": "/images/brand/contact-hero.jpg",
-    "showroomImage": "/images/brand/contact-showroom.jpg"
+    "heroImage": "/images/brand/contact-hero-v2.jpg",
+    "showroomImage": "/images/brand/contact-hero-v2.jpg"
   }
 }

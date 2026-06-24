@@ -2,7 +2,7 @@ import "server-only";
 import { cache } from "react";
 import { readJson } from "./storage";
 
-export type ShowroomImage = { src: string; alt: string; caption?: string };
+export type ShowroomImage = { src: string; alt: string; caption?: string; fit?: "cover" | "contain"; imgClass?: string };
 export type HeroSlide = { img: string; title: string; sub: string };
 export type Review = { name: string; when: string; text: string; color: string };
 export type InstagramPost = { image: string; caption: string; href: string; alt?: string };
@@ -38,7 +38,7 @@ export type PagesContent = {
       eyebrow: string;
       title: string;
       text: string;
-      cards: { img: string; title: string; text: string }[];
+      cards: { img: string; title: string; text: string; imgClass?: string }[];
     };
     showroom: {
       eyebrow: string;

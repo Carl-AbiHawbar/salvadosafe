@@ -24,7 +24,7 @@ export function CategoryCard({ category, premium = false }: { category: Category
             src={categoryImage(category)}
             alt={category.name}
             loading="lazy"
-            className="h-full w-full object-contain p-5 transition-transform duration-700 group-hover:scale-[1.03] sm:p-7"
+            className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
           {count > 0 && (

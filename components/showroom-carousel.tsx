@@ -57,7 +57,7 @@ export function ShowroomCarousel({ images }: { images: ShowroomImage[] }) {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <div className="relative aspect-[4/3] sm:aspect-[16/10] md:aspect-[21/9]">
+        <div className="relative aspect-[4/3] sm:aspect-[16/10] md:aspect-[18/9] lg:aspect-[2/1]">
           {images.map((img, i) => (
             <div
               key={img.src}
@@ -66,14 +66,20 @@ export function ShowroomCarousel({ images }: { images: ShowroomImage[] }) {
               }`}
               aria-hidden={i !== active}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading={i === 0 ? "eager" : "lazy"}
-                className="h-full w-full object-cover"
+              <div
+                className="h-full w-full"
                 style={i === active ? { transform: `translateX(${dragOffset}px)` } : undefined}
-              />
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading={i === 0 ? "eager" : "lazy"}
+                  className={`h-full w-full bg-ink ${
+                    img.fit === "contain" ? "object-contain object-center" : "object-cover object-center"
+                  } ${img.imgClass ?? ""}`}
+                />
+              </div>
               {img.caption && (
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent px-6 pb-6 pt-20 md:px-8 md:pb-8">
                   <p className="max-w-2xl text-[14px] font-medium leading-relaxed text-white/95 md:text-[15px]">
