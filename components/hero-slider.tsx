@@ -58,7 +58,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
   return (
     <section
       ref={containerRef}
-      className="relative h-[72svh] min-h-[420px] max-h-[620px] w-full overflow-hidden select-none md:h-[88vh] md:min-h-[560px] md:max-h-none"
+      className="relative h-[52svh] min-h-[300px] max-h-[440px] w-full overflow-hidden select-none md:h-[58vh] md:min-h-[360px] md:max-h-[500px]"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -74,18 +74,24 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         {slides.map((s, i) => (
           <div
             key={i}
-            className="relative h-full min-w-full shrink-0 overflow-hidden bg-ink bg-cover bg-center md:bg-center"
-            style={{ backgroundImage: `url(${s.img})` }}
+            className="relative h-full min-w-full shrink-0 overflow-hidden bg-ink"
             role="img"
             aria-label={s.title}
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={s.img}
+              alt=""
+              aria-hidden
+              className="absolute inset-0 h-full w-full object-cover object-center scale-[0.92] md:scale-[0.95]"
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/35" />
           </div>
         ))}
       </div>
 
       {/* Content overlay */}
-      <div className="pointer-events-none absolute inset-0 flex items-center pb-20 md:pb-0">
+      <div className="pointer-events-none absolute inset-0 flex items-center pb-16 md:pb-0">
         <div className="container-x pointer-events-auto">
           <div className="max-w-2xl pr-1 md:pr-0">
             <span className="mb-4 inline-block rounded-full border border-white/30 bg-black/25 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">

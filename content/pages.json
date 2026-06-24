@@ -352,42 +352,70 @@
         "title": "Security Consultation, Delivery and Installation",
         "text": "Site assessment, product recommendation, discreet delivery, professional installation, and technical follow-up after installation.",
         "cta": "Request Consultation",
-        "icon": "shield"
+        "icon": "shield",
+        "image": "/images/brand/service-installation.png"
       },
       {
         "id": "locksmith",
         "title": "Master Locksmith Services",
         "text": "Locked out of your safe? Our technicians provide professional safe opening and lock service for verified owners, with careful methods to reduce unnecessary damage whenever possible.",
         "cta": "Request Safe Opening",
-        "icon": "tools"
+        "icon": "tools",
+        "image": "/images/brand/service-maintenance.jpg"
       },
       {
         "id": "maintenance",
         "title": "Safe Repair and Maintenance",
         "text": "Lock replacement, digital lock upgrades, combination changes, troubleshooting, and preventative servicing to keep safes operating correctly.",
         "cta": "Request Maintenance",
-        "icon": "tools"
+        "icon": "tools",
+        "image": "/images/brand/service-maintenance.jpg"
       },
       {
         "id": "vault",
         "title": "Vault Doors and Vault Rooms",
         "text": "High-security vault doors and complete vault room systems for bank-level, institutional, commercial, and private security requirements.",
         "cta": "View Vault Services",
-        "icon": "shield"
+        "icon": "shield",
+        "image": "/images/brand/service-vault-door.png"
       },
       {
         "id": "relocation",
         "title": "Safe Relocation",
         "text": "Professional relocation of safes with proper handling, transport planning, and setup at the new location.",
         "cta": "Request Relocation",
-        "icon": "truck"
+        "icon": "truck",
+        "image": "/images/brand/service-installation.png"
       },
       {
         "id": "support",
         "title": "After-Sales Technical Support",
         "text": "Specialized technical assistance for Salvado clients, including lock guidance, service coordination, maintenance follow-up, and product support after purchase or installation.",
         "cta": "Contact Technical Support",
-        "icon": "headset"
+        "icon": "headset",
+        "image": "/images/brand/service-consultation.png"
+      }
+    ],
+    "installationGallery": [
+      {
+        "src": "/images/brand/service-installation.png",
+        "alt": "Salvado safe delivery and installation",
+        "caption": "Professional safe delivery and on-site installation"
+      },
+      {
+        "src": "/images/brand/service-vault-door.png",
+        "alt": "Salvado vault door installation",
+        "caption": "Vault door installation by Salvado technicians"
+      },
+      {
+        "src": "/images/brand/service-maintenance.jpg",
+        "alt": "Salvado safe repair and maintenance",
+        "caption": "Repair, lock service, and preventative maintenance"
+      },
+      {
+        "src": "/images/brand/service-consultation.png",
+        "alt": "Salvado security consultation",
+        "caption": "On-site consultation and technical guidance"
       }
     ],
     "whyPoints": [

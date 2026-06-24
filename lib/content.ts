@@ -15,6 +15,7 @@ export type ServiceItem = {
   text: string;
   cta: string;
   icon: string;
+  image?: string;
 };
 
 export type PagesContent = {
@@ -61,6 +62,7 @@ export type PagesContent = {
     hero: { eyebrow: string; title: string; text: string; image: string };
     overview: { eyebrow: string; title: string; text: string };
     items: ServiceItem[];
+    installationGallery: { src: string; alt: string; caption: string }[];
     whyPoints: IconPoint[];
     faqs: Faq[];
   };
