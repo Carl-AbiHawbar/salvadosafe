@@ -23,8 +23,8 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
     [slides.length]
   );
 
-  const arrowCls =
-    "absolute top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/40 p-2 text-white backdrop-blur transition-colors hover:bg-black/55 active:scale-95 md:p-3";
+  const pillBtnCls =
+    "flex shrink-0 items-center justify-center rounded-full p-1.5 text-white transition-colors hover:bg-white/10 active:scale-95";
 
   const next = useCallback(() => goTo(active + 1), [active, goTo]);
   const prev = useCallback(() => goTo(active - 1), [active, goTo]);
@@ -93,7 +93,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
       {/* Content overlay */}
       <div className="pointer-events-none absolute inset-0 flex items-center pb-10 md:pb-0">
         <div className="container-x pointer-events-auto">
-          <div className="w-full min-w-0 max-w-2xl px-9 sm:px-12 xl:px-0">
+          <div className="w-full min-w-0 max-w-2xl pr-6 md:pr-0">
             <span className="mb-3 inline-block rounded-full border border-white/30 bg-black/25 px-3.5 py-1 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-white backdrop-blur md:mb-4 md:px-4 md:py-1.5 md:text-[12px]">
               Lebanon&apos;s Leading Safe Showroom
             </span>
@@ -118,34 +118,28 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         </div>
       </div>
 
-      {/* Side arrows + bottom dots (consistent across mobile and desktop) */}
-      <button
-        type="button"
-        aria-label="Previous slide"
-        onClick={prev}
-        className={`${arrowCls} left-3 md:left-4`}
-      >
-        <ChevronDown className="rotate-90" width={18} height={18} />
-      </button>
-      <button
-        type="button"
-        aria-label="Next slide"
-        onClick={next}
-        className={`${arrowCls} right-3 md:right-4`}
-      >
-        <ChevronDown className="-rotate-90" width={18} height={18} />
-      </button>
-      <div className="absolute bottom-5 left-1/2 z-10 flex -translate-x-1/2 gap-2.5 md:bottom-7">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            aria-label={`Go to slide ${i + 1}`}
-            onClick={() => goTo(i)}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              i === active ? "w-8 bg-brand" : "w-2 bg-white/50 hover:bg-white/80"
-            }`}
-          />
-        ))}
+      {/* Compact bottom control pill — prev, dots, next in one row (all screen sizes) */}
+      <div className="absolute inset-x-0 bottom-4 z-10 flex justify-center px-4 md:bottom-6">
+        <div className="inline-flex items-center gap-1 rounded-full border border-white/20 bg-black/50 px-1.5 py-1 backdrop-blur-sm">
+          <button type="button" aria-label="Previous slide" onClick={prev} className={pillBtnCls}>
+            <ChevronDown className="rotate-90" width={16} height={16} />
+          </button>
+          <div className="flex items-center gap-1.5 px-1">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                aria-label={`Go to slide ${i + 1}`}
+                onClick={() => goTo(i)}
+                className={`rounded-full transition-all duration-300 ${
+                  i === active ? "h-1.5 w-5 bg-brand" : "h-1.5 w-1.5 bg-white/45"
+                }`}
+              />
+            ))}
+          </div>
+          <button type="button" aria-label="Next slide" onClick={next} className={pillBtnCls}>
+            <ChevronDown className="-rotate-90" width={16} height={16} />
+          </button>
+        </div>
       </div>
     </section>
   );
