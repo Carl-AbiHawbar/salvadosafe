@@ -5,8 +5,9 @@ const sections = [
   { slug: "reviews", title: "Google Reviews", desc: "Review cards on homepage" },
   { slug: "instagram", title: "Instagram Posts", desc: "Instagram carousel under reviews" },
   { slug: "home", title: "Homepage Sections", desc: "Proof strip, why Salvado, services, showroom, CTA" },
-  { slug: "about", title: "About Page", desc: "Hero, stats, sectors, leadership" },
-  { slug: "services", title: "Services Page", desc: "Hero, service cards, FAQs" },
+  { slug: "about", title: "About Page", desc: "Hero, stats, sectors, leadership, images" },
+  { slug: "services", title: "Services Page", desc: "Hero, service cards, gallery, FAQs" },
+  { slug: "contact", title: "Contact Page", desc: "Hero and showroom images" },
 ];
 
 export default function AdminPagesIndex() {

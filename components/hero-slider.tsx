@@ -58,7 +58,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
   return (
     <section
       ref={containerRef}
-      className="relative h-[52svh] min-h-[300px] max-h-[440px] w-full overflow-hidden select-none md:h-[58vh] md:min-h-[360px] md:max-h-[500px]"
+      className="relative h-[64svh] min-h-[500px] max-h-[640px] w-full overflow-hidden select-none md:h-[58vh] md:min-h-[420px] md:max-h-[560px]"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
@@ -83,7 +83,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
               src={s.img}
               alt=""
               aria-hidden
-              className="absolute inset-0 h-full w-full object-cover object-center scale-[0.92] md:scale-[0.95]"
+              className="absolute inset-0 h-full w-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/35" />
           </div>
@@ -91,19 +91,19 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
       </div>
 
       {/* Content overlay */}
-      <div className="pointer-events-none absolute inset-0 flex items-center pb-16 md:pb-0">
+      <div className="pointer-events-none absolute inset-0 flex items-center pb-10 md:pb-0">
         <div className="container-x pointer-events-auto">
-          <div className="max-w-2xl pr-1 md:pr-0">
-            <span className="mb-4 inline-block rounded-full border border-white/30 bg-black/25 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">
+          <div className="w-full min-w-0 max-w-2xl pr-6 md:pr-0">
+            <span className="mb-3 inline-block rounded-full border border-white/30 bg-black/25 px-3.5 py-1 text-[10.5px] font-semibold uppercase tracking-[0.12em] text-white backdrop-blur md:mb-4 md:px-4 md:py-1.5 md:text-[12px]">
               Lebanon&apos;s Leading Safe Showroom
             </span>
-            <h1 className="font-display text-4xl font-bold leading-[1.08] text-white drop-shadow-lg md:text-6xl">
+            <h1 className="font-display text-[26px] font-bold leading-[1.15] text-white drop-shadow-lg [text-wrap:balance] sm:text-4xl sm:leading-[1.08] md:text-6xl">
               {slides[active].title}
             </h1>
-            <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/90 md:text-[17px]">
+            <p className="mt-3.5 max-w-xl text-[14px] leading-relaxed text-white/90 sm:mt-5 sm:text-[16px] md:text-[17px]">
               {slides[active].sub}
             </p>
-            <CtaGroup className="mt-6 md:mt-8">
+            <CtaGroup className="mt-5 md:mt-8">
               <CTA href="/products" variant="primaryLight">
                 Explore Solutions <ArrowIcon width={14} height={14} className="md:h-[17px] md:w-[17px]" />
               </CTA>

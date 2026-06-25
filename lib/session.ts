@@ -1,5 +1,5 @@
 export const ADMIN_USER = "salvado";
-export const ADMIN_PASS = "1234";
+export const ADMIN_PASS = "12345";
 export const SESSION_COOKIE = "salvado_admin";
 
 const SECRET = process.env.ADMIN_SECRET || "salvado-admin-dev-secret";

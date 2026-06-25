@@ -7,14 +7,6 @@ const nextConfig: NextConfig = {
   // Vercel must use the default ".next" output directory.
   ...(useLocalCacheDir ? { distDir: "node_modules/.cache/salvado-next" } : {}),
   turbopack: {},
-  async rewrites() {
-    return [
-      {
-        source: "/api/admin/content/:file",
-        destination: "/api/admin/json?file=:file",
-      },
-    ];
-  },
 };
 
 export default nextConfig;

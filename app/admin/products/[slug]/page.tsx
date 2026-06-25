@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { AdminCard, AdminInput, SaveBar, saveContent } from "@/components/admin/admin-shell";
+import { AdminCard, AdminInput, ImageField, ImageListField, SaveBar, saveContent } from "@/components/admin/admin-shell";
 import type { Product, ProductSpecs, Category } from "@/lib/catalog";
 
 const emptyProduct = (): Product => ({
@@ -91,7 +91,7 @@ function ProductEditor({ initial, isNew }: { initial: Product; isNew?: boolean }
             <AdminInput label="Slug" value={product.slug} onChange={(v) => setProduct({ ...product, slug: v })} />
             <AdminInput label="Sub / grade label" value={product.sub || ""} onChange={(v) => setProduct({ ...product, sub: v || null })} />
             <AdminInput label="Description" value={product.desc} onChange={(v) => setProduct({ ...product, desc: v })} rows={5} />
-            <AdminInput label="Image URL" value={product.image || ""} onChange={(v) => setProduct({ ...product, image: v || null })} />
+            <ImageField label="Main image" value={product.image || ""} onChange={(v) => setProduct({ ...product, image: v || null })} />
             <label className="flex items-center gap-2 text-[14px] text-white/80">
               <input type="checkbox" checked={product.isProject} onChange={(e) => setProduct({ ...product, isProject: e.target.checked })} />
               Project-based (custom quotation)
@@ -131,13 +131,15 @@ function ProductEditor({ initial, isNew }: { initial: Product; isNew?: boolean }
             onChange={(v) => setProduct({ ...product, features: v.split("\n").map((s) => s.trim()).filter(Boolean) })}
             rows={8}
           />
+          <div className="mt-4">
+            <ImageListField
+              label="Gallery images"
+              values={product.gallery || []}
+              onChange={(v) => setProduct({ ...product, gallery: v })}
+            />
+          </div>
           <AdminInput
-            label="Gallery URLs (one per line)"
-            value={(product.gallery || []).join("\n")}
-            onChange={(v) => setProduct({ ...product, gallery: v.split("\n").map((s) => s.trim()).filter(Boolean) })}
-            rows={4}
-          />
-          <AdminInput
+            className="mt-4"
             label="Colors (one per line)"
             value={(product.colors || []).join("\n")}
             onChange={(v) => setProduct({ ...product, colors: v.split("\n").map((s) => s.trim()).filter(Boolean) })}
