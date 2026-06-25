@@ -46,12 +46,11 @@ def build() -> None:
     box = shield_bbox(logo)
     shield = logo.crop(box)
 
-    # Square canvas with small transparent padding so the shield breathes in the tab.
+    # Square, fully-transparent canvas sized to the shield so it fills the frame
+    # edge-to-edge (no surrounding padding/disc).
     side = max(shield.size)
-    pad = int(side * 0.12)
-    canvas_side = side + pad * 2
-    canvas = Image.new("RGBA", (canvas_side, canvas_side), (0, 0, 0, 0))
-    offset = ((canvas_side - shield.width) // 2, (canvas_side - shield.height) // 2)
+    canvas = Image.new("RGBA", (side, side), (0, 0, 0, 0))
+    offset = ((side - shield.width) // 2, (side - shield.height) // 2)
     canvas.paste(shield, offset, shield)
 
     targets = {
