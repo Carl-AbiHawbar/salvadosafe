@@ -64,6 +64,11 @@ def build() -> None:
         out.save(path, "PNG", optimize=True)
         print(f"wrote {path.relative_to(ROOT)} ({size}x{size}, {path.stat().st_size // 1024} KB)")
 
+    # Multi-size .ico so the browser /favicon.ico request also serves the shield.
+    ico_path = ROOT / "app" / "favicon.ico"
+    canvas.save(ico_path, format="ICO", sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
+    print(f"wrote {ico_path.relative_to(ROOT)} ({ico_path.stat().st_size // 1024} KB)")
+
 
 if __name__ == "__main__":
     build()

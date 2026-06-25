@@ -38,10 +38,6 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://salvadosafe.com",
   },
-  icons: {
-    icon: [{ url: "/images/brand/shield-logo.png", type: "image/png" }],
-    apple: [{ url: "/images/brand/shield-logo.png", type: "image/png" }],
-  },
 };
 
 export default function RootLayout({
