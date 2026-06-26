@@ -405,7 +405,7 @@ function ContactEditor({ pages, set }: { pages: PagesContent; set: Setter }) {
       </p>
       <div className="grid gap-4 md:grid-cols-2">
         <ImageField label="Hero background image" value={contact.heroImage} onChange={(v) => set({ ...pages, contact: { ...contact, heroImage: v } })} />
-        <ImageField label="Showroom image (next to form)" value={contact.showroomImage} onChange={(v) => set({ ...pages, contact: { ...contact, showroomImage: v } })} />
+        <ImageField label="Showroom image" value={contact.showroomImage} onChange={(v) => set({ ...pages, contact: { ...contact, showroomImage: v } })} />
       </div>
     </AdminCard>
   );

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { SectionHeading, FinalCTA } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
-import { LeadForm } from "@/components/lead-form";
 import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
 import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
@@ -152,13 +151,13 @@ export default function ServicesPage() {
       <section id="request" className="scroll-mt-20 bg-white">
         <div className="container-x grid items-start gap-12 py-20 md:grid-cols-2 md:py-24">
           <Reveal>
-            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Lead Section</p>
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Get in Touch</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
               Request a Service From Salvado
             </h2>
             <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
-              Contact Salvado with the service you need, your location, product type, and any technical details
-              available. Our team will guide you on the next step.
+              Contact Salvado on WhatsApp or by phone with the service you need, your location, product type, and any
+              technical details available. Our team will guide you on the next step.
             </p>
             <ul className="mt-6 space-y-3">
               {["Trained, certified technical team", "Careful, professional methods", "Support across all sectors"].map((f) => (
@@ -167,9 +166,14 @@ export default function ServicesPage() {
                 </li>
               ))}
             </ul>
-          </Reveal>
-          <Reveal delay={80}>
-            <LeadForm variant="service" />
+            <CtaGroup className="mt-8">
+              <WhatsAppButton
+                label="Request on WhatsApp"
+                message="Hi Salvado, I'd like to request a service."
+              />
+              <CallButton />
+              <QuoteButton />
+            </CtaGroup>
           </Reveal>
         </div>
       </section>

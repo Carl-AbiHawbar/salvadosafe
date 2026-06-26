@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { site, waLink, telLink } from "@/lib/site";
 import { onWhatsAppClick } from "@/lib/analytics";
+import { openWhatsApp } from "./whatsapp-anchor";
 import { WhatsAppIcon, PhoneIcon, QuoteIcon, PinIcon, ArrowIcon } from "./icons";
 
 type Variant =
@@ -105,10 +106,21 @@ export function WhatsAppButton({
   variant?: Variant;
   className?: string;
 }) {
+  const href = waLink(message);
   const iconOnDark =
     variant === "outlineLight" || variant === "ghostLight" || variant === "primaryLight";
   return (
-    <CTA href={waLink(message)} external variant={variant} className={className} onClick={() => onWhatsAppClick()}>
+    <CTA
+      href={href}
+      external
+      variant={variant}
+      className={className}
+      onClick={(e) => {
+        e.preventDefault();
+        onWhatsAppClick();
+        openWhatsApp(href);
+      }}
+    >
       <WhatsAppIcon
         width={15}
         height={15}

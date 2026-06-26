@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
-import { LeadForm } from "@/components/lead-form";
 import { ContactCard } from "@/components/contact-card";
+import { WhatsAppButton, CallButton, QuoteButton, CtaGroup } from "@/components/cta";
 import { site, waLink, telLink } from "@/lib/site";
-
 import { getPagesContent } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -41,6 +40,16 @@ export default function ContactPage() {
               Tell us what you need to protect, your location, and intended use. Our team will recommend suitable
               options and guide you on pricing, delivery, and installation.
             </p>
+            <CtaGroup className="mt-8">
+              <WhatsAppButton
+                label="WhatsApp Salvado"
+                shortLabel="WhatsApp"
+                message="Hi Salvado, I'd like to make an inquiry."
+                variant="primaryLight"
+              />
+              <CallButton variant="outlineLight" />
+              <QuoteButton variant="ghostLight" />
+            </CtaGroup>
           </Reveal>
         </div>
       </section>
@@ -56,25 +65,29 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Form + details */}
+      {/* Details + showroom image */}
       <section className="bg-surface">
         <div className="container-x grid items-start gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-line shadow-soft md:hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={contact.showroomImage} alt="Salvado branded delivery vehicle for professional safe installation" className="aspect-[16/10] w-full object-cover object-center" />
-            </div>
-            <p className="mb-3 mt-8 text-[12px] font-bold uppercase tracking-[0.18em] text-brand md:mt-0">Send a Message</p>
+            <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">Contact Salvado</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
               Tell Us How We Can Help
             </h2>
             <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
-              Drop your details in the form, and we&apos;ll shoot over a tailored recommendation and pricing on WhatsApp.
-              If you&apos;d rather talk right now, we&apos;re just a phone call away at {site.phones.landline.label} or a
-              WhatsApp message at {site.phones.whatsapp.label}.
+              Reach us on WhatsApp or by phone for a tailored recommendation, pricing, and next steps. We respond
+              quickly during showroom hours at {site.phones.landline.label} and {site.phones.whatsapp.label}.
             </p>
 
-            <div className="mt-5 rounded-2xl border border-line bg-white p-6">
+            <CtaGroup className="mt-7">
+              <WhatsAppButton
+                label="Message on WhatsApp"
+                message="Hi Salvado, I'd like to make an inquiry."
+              />
+              <CallButton />
+              <QuoteButton />
+            </CtaGroup>
+
+            <div className="mt-8 rounded-2xl border border-line bg-white p-6">
               <h3 className="text-[15px] font-bold text-ink">Showroom Hours</h3>
               <ul className="mt-3 space-y-1.5 text-[14px] text-ink-2">
                 <li>{site.hours.weekdays}</li>
@@ -84,12 +97,15 @@ export default function ContactPage() {
             </div>
           </Reveal>
 
-          <Reveal delay={80} className="space-y-6">
-            <div className="hidden overflow-hidden rounded-3xl border border-line shadow-soft md:block">
+          <Reveal delay={80}>
+            <div className="overflow-hidden rounded-3xl border border-line shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={contact.showroomImage} alt="Salvado branded delivery vehicle for professional safe installation" className="aspect-[4/3] w-full object-cover object-center" />
+              <img
+                src={contact.showroomImage}
+                alt="Salvado branded delivery vehicle for professional safe installation"
+                className="aspect-[4/3] w-full object-cover object-center"
+              />
             </div>
-            <LeadForm variant="contact" />
           </Reveal>
         </div>
       </section>
