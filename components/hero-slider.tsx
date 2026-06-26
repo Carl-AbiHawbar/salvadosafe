@@ -110,7 +110,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
               <WhatsAppButton
                 label="WhatsApp Salvado"
                 shortLabel="WhatsApp"
-                message="Hi Salvado, I'd like a recommendation."
+                message="Hi Salvado, I have a question."
                 variant="outlineLight"
               />
             </CtaGroup>

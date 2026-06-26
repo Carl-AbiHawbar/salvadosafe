@@ -7,8 +7,7 @@ import { useSite } from "./site-provider";
 import type { Category } from "@/lib/catalog";
 import { SiteSearch } from "./site-search";
 import { WhatsAppIcon, PhoneIcon, PinIcon, ChevronDown, MenuIcon, CloseIcon, ArrowIcon, QuoteIcon } from "./icons";
-import { waLink, telLink } from "@/lib/site";
-import { WhatsAppAnchor } from "./whatsapp-anchor";
+import { telLink } from "@/lib/site";
 
 const services = [
   { label: "Consultation, Delivery and Installation", href: "/services#consultation" },
@@ -65,9 +64,9 @@ export function Header({
             <a href={telLink(site.phones.landline.tel)} className="inline-flex items-center gap-1.5 hover:text-white/80">
               <PhoneIcon width={13} height={13} /> {site.phones.landline.label}
             </a>
-            <WhatsAppAnchor href={waLink()} className="inline-flex items-center gap-1.5 hover:text-white/80">
+            <span className="inline-flex items-center gap-1.5 text-white/80">
               <WhatsAppIcon width={13} height={13} className="brightness-0 invert" /> {site.phones.whatsapp.label}
-            </WhatsAppAnchor>
+            </span>
           </div>
           <div className="flex items-center gap-5">
             <span className="inline-flex items-center gap-1.5 text-white/80">
@@ -82,24 +81,29 @@ export function Header({
 
       {/* Main header */}
       <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
-        <div className="container-x flex h-[68px] items-center justify-between gap-4">
-          {/* Mobile burger */}
-          <button
-            className="flex items-center justify-center rounded-lg p-1.5 text-ink md:hidden"
-            aria-label="Open menu"
-            onClick={() => setMobileOpen(true)}
-          >
-            <MenuIcon />
-          </button>
+        <div className="container-x pb-5 md:pb-0">
+          <div className="relative flex h-[56px] items-center gap-4 md:h-[68px] md:justify-between">
+            {/* Mobile burger */}
+            <button
+              className="flex shrink-0 items-center justify-center rounded-lg p-1.5 text-ink md:hidden"
+              aria-label="Open menu"
+              onClick={() => setMobileOpen(true)}
+            >
+              <MenuIcon />
+            </button>
 
-          {/* Logo */}
-          <Link href="/" className="flex items-center" aria-label="Salvado home">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/brand/logo.png" alt="Salvado Safe" className="h-9 w-auto md:h-10" />
-          </Link>
+            {/* Logo — centered on mobile, left on desktop */}
+            <Link
+              href="/"
+              className="absolute left-1/2 flex -translate-x-1/2 items-center md:static md:translate-x-0"
+              aria-label="Salvado home"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/brand/logo.png" alt="Salvado Safe" className="h-9 w-auto md:h-10" />
+            </Link>
 
-          {/* Desktop nav */}
-          <nav className="hidden items-center gap-1 md:flex">
+            {/* Desktop nav */}
+            <nav className="hidden items-center gap-1 md:flex">
             {mainNav.map((item) => (
               <div
                 key={item.label}
@@ -199,17 +203,26 @@ export function Header({
                 )}
               </div>
             ))}
-          </nav>
+            </nav>
 
-          {/* Right actions */}
-          <div className="flex items-center gap-2">
-            <SiteSearch />
-            <Link
-              href="/contact"
-              className="hidden items-center gap-2 rounded-full border border-brand bg-brand px-5 py-2.5 text-[13.5px] font-semibold !text-white transition-colors hover:bg-brand-dark md:inline-flex [&_svg]:stroke-white"
-            >
-              <QuoteIcon width={16} height={16} /> Request a Quote
-            </Link>
+            {/* Desktop actions */}
+            <div className="hidden items-center gap-2 md:flex">
+              <SiteSearch />
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full border border-brand bg-brand px-5 py-2.5 text-[13.5px] font-semibold !text-white transition-colors hover:bg-brand-dark [&_svg]:stroke-white"
+              >
+                <QuoteIcon width={16} height={16} /> Request a Quote
+              </Link>
+            </div>
+
+            {/* Balance burger on mobile so logo stays centered */}
+            <div className="ml-auto w-10 shrink-0 md:hidden" aria-hidden />
+          </div>
+
+          {/* Mobile search — full width under logo */}
+          <div className="mt-3 md:hidden">
+            <SiteSearch fullWidth />
           </div>
         </div>
       </header>

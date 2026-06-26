@@ -238,7 +238,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 : "Certifications and technical documents vary by model. Contact Salvado to confirm the specifications for this product and request the relevant brochure or technical sheet."}
             </p>
             <div className="mt-5">
-              <WhatsAppButton variant="outline" label="Request Documents" message={`Hi Salvado, can you send the documents for the ${product.name}?`} />
+              <CTA href="/contact" variant="ghost">Contact Salvado for Documents</CTA>
             </div>
           </Reveal>
 

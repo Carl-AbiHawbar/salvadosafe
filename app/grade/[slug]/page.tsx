@@ -7,7 +7,7 @@ import { FAQ } from "@/components/faq";
 import { GradeCard } from "@/components/grade-card";
 import { GradeSpecTable } from "@/components/grade-spec-table";
 import { ProductBanner } from "@/components/product-banner";
-import { WhatsAppButton, QuoteButton, CallButton, CtaGroup } from "@/components/cta";
+import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 import { getCategory } from "@/lib/catalog";
 import { getGrade, getGrades } from "@/lib/grades";
@@ -177,11 +177,7 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
               technical sheet, or certification details for {grade.series}.
             </p>
             <div className="mt-5">
-              <WhatsAppButton
-                variant="outline"
-                label="Request Documents"
-                message={`Hi Salvado, can you send the documents for ${grade.grade} high-security safes (${grade.series})?`}
-              />
+              <CTA href="/contact" variant="ghost">Contact Salvado for Documents</CTA>
             </div>
           </Reveal>
 

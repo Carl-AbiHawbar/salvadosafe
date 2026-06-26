@@ -10,7 +10,13 @@ type CatalogData = {
   categories: Pick<Category, "slug" | "name" | "short">[];
 };
 
-export function SiteSearch({ className = "" }: { className?: string }) {
+export function SiteSearch({
+  className = "",
+  fullWidth = false,
+}: {
+  className?: string;
+  fullWidth?: boolean;
+}) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [catalog, setCatalog] = useState<CatalogData | null>(null);
@@ -73,7 +79,9 @@ export function SiteSearch({ className = "" }: { className?: string }) {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Search products"
-        className={`flex items-center gap-2 rounded-full border border-line px-4 py-2 text-[13px] font-semibold text-ink transition-colors hover:border-brand hover:text-brand ${className}`}
+        className={`flex items-center gap-2 border border-line text-[13px] font-semibold text-ink transition-colors hover:border-brand hover:text-brand ${
+          fullWidth ? "w-full justify-start rounded-xl px-4 py-2.5" : "rounded-full px-4 py-2"
+        } ${className}`}
       >
         <SearchIcon width={16} height={16} /> Search
       </button>

@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/sections";
 import { ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
-import { WhatsAppButton, QuoteButton, CtaGroup } from "@/components/cta";
+import { QuoteButton, CallButton, CtaGroup } from "@/components/cta";
 import { FinalCTA } from "@/components/sections";
 import {
   getCategories,
@@ -94,8 +94,8 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
                 Products in this category are available on request. Contact us for current options and pricing.
               </p>
               <CtaGroup className="mt-6 justify-center">
-                <WhatsAppButton label="WhatsApp for Options" message={`Hi Salvado, what options do you have for ${category.name}?`} />
                 <QuoteButton />
+                <CallButton variant="ghost" />
               </CtaGroup>
             </div>
           )}

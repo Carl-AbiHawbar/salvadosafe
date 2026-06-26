@@ -1,8 +1,6 @@
 import Link from "next/link";
 import type { Grade } from "@/lib/grade-types";
-import { waLink } from "@/lib/site";
-import { WhatsAppAnchor } from "./whatsapp-anchor";
-import { ArrowIcon, WhatsAppIcon } from "./icons";
+import { ArrowIcon } from "./icons";
 
 export function GradeCard({ grade }: { grade: Grade }) {
   const href = `/grade/${grade.slug}`;
@@ -36,18 +34,10 @@ export function GradeCard({ grade }: { grade: Grade }) {
         <p className="mt-2 text-center text-[11px] font-medium text-muted sm:text-left">
           {modelCount} sizes in comparison table
         </p>
-        <div className="pointer-events-none relative z-[3] mt-auto flex flex-col gap-2 pt-3 sm:flex-row sm:items-center sm:gap-2">
-          <span className="inline-flex w-full items-center justify-center gap-1 rounded-full border border-line px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors group-hover:border-brand group-hover:text-brand sm:flex-1 sm:px-3 sm:text-[13px]">
+        <div className="mt-auto pt-3">
+          <span className="inline-flex w-full items-center justify-center gap-1 rounded-full border border-line px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors group-hover:border-brand group-hover:text-brand sm:px-3 sm:text-[13px]">
             View Grade <ArrowIcon width={14} height={14} className="sm:h-[15px] sm:w-[15px]" />
           </span>
-          <WhatsAppAnchor
-            href={waLink(`Hi Salvado, I'm interested in ${grade.grade} high-security safes. Can you help me choose the right size?`)}
-            aria-label={`WhatsApp about ${grade.grade}`}
-            className="pointer-events-auto relative z-[3] inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-line bg-white px-2.5 py-2 text-[12px] font-semibold text-ink transition-colors hover:border-brand sm:w-auto sm:px-3"
-          >
-            <WhatsAppIcon width={16} height={16} className="sm:h-[18px] sm:w-[18px]" />
-            <span className="sm:hidden">WhatsApp</span>
-          </WhatsAppAnchor>
         </div>
       </div>
     </article>

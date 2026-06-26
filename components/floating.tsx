@@ -49,12 +49,6 @@ export function Floating() {
         >
           <PhoneIcon width={15} height={15} className="text-brand" /> Call
         </a>
-        <WhatsAppAnchor
-          href={waLink()}
-          className="flex flex-1 flex-row items-center justify-center gap-1 border-r border-line py-2 text-[10px] font-semibold text-ink"
-        >
-          <WhatsAppIcon width={15} height={15} /> WhatsApp
-        </WhatsAppAnchor>
         <Link
           href="/contact"
           className="flex flex-1 flex-row items-center justify-center gap-1 py-2 text-[10px] font-semibold text-ink"

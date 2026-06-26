@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { ContactCard } from "@/components/contact-card";
 import { WhatsAppButton, CallButton, QuoteButton, CtaGroup } from "@/components/cta";
-import { site, waLink, telLink } from "@/lib/site";
+import { site, telLink } from "@/lib/site";
 import { getPagesContent } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 
 const contactItems = [
   { icon: "phone" as const, label: "Call the Showroom", value: site.phones.landline.label, href: telLink(site.phones.landline.tel), external: true },
-  { icon: "whatsapp" as const, label: "WhatsApp Salvado", value: site.phones.whatsapp.label, href: waLink("Hi Salvado, I'd like to make an inquiry."), whatsapp: true },
   { icon: "pin" as const, label: "Visit the Showroom", value: site.location, href: site.maps, external: true },
   { icon: "quote" as const, label: "Email Us", value: site.email, href: `mailto:${site.email}`, external: false },
 ];
@@ -56,7 +55,7 @@ export default function ContactPage() {
 
       {/* Contact cards */}
       <section className="border-b border-line bg-white">
-        <div className="container-x grid gap-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="container-x grid gap-4 py-12 sm:grid-cols-2 lg:grid-cols-3">
           {contactItems.map((c, i) => (
             <Reveal key={c.label} delay={i * 60}>
               <ContactCard {...c} />
@@ -74,18 +73,9 @@ export default function ContactPage() {
               Tell Us How We Can Help
             </h2>
             <p className="mt-4 text-[15.5px] leading-relaxed text-ink-2">
-              Reach us on WhatsApp or by phone for a tailored recommendation, pricing, and next steps. We respond
-              quickly during showroom hours at {site.phones.landline.label} and {site.phones.whatsapp.label}.
+              Reach us on WhatsApp or by phone for pricing and next steps. We respond quickly during showroom hours at{" "}
+              {site.phones.landline.label} and {site.phones.whatsapp.label}.
             </p>
-
-            <CtaGroup className="mt-7">
-              <WhatsAppButton
-                label="Message on WhatsApp"
-                message="Hi Salvado, I'd like to make an inquiry."
-              />
-              <CallButton />
-              <QuoteButton />
-            </CtaGroup>
 
             <div className="mt-8 rounded-2xl border border-line bg-white p-6">
               <h3 className="text-[15px] font-bold text-ink">Showroom Hours</h3>
