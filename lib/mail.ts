@@ -1,29 +1,15 @@
+import type { LeadFormPayload } from "./contact-message";
+import { formatLeadWhatsAppMessage } from "./contact-message";
+
+export type ContactPayload = LeadFormPayload;
+
 const CONTACT_TO = "info@salvadosafe.com";
 
-export type ContactPayload = {
-  variant: "contact" | "service";
-  name: string;
-  phone: string;
-  service?: string;
-  product?: string;
-  location?: string;
-  message?: string;
-};
-
 function formatBody(data: ContactPayload) {
-  const lines = [
-    `New ${data.variant === "service" ? "service request" : "inquiry"} from the Salvado website`,
-    "",
-    `Name: ${data.name}`,
-    `Phone / WhatsApp: ${data.phone}`,
-  ];
-
-  if (data.service) lines.push(`Service needed: ${data.service}`);
-  if (data.product) lines.push(`Product / model: ${data.product}`);
-  if (data.location) lines.push(`Location: ${data.location}`);
-  lines.push(`Message: ${data.message || "-"}`);
-
-  return lines.join("\n");
+  return formatLeadWhatsAppMessage(data).replace(
+    /^Hi Salvado.*\n\n/,
+    `New ${data.variant === "service" ? "service request" : "inquiry"} from the Salvado website\n\n`
+  );
 }
 
 export async function sendContactEmail(data: ContactPayload) {
@@ -50,7 +36,7 @@ export async function sendContactEmail(data: ContactPayload) {
       text: body,
     });
 
-    return { ok: true as const };
+    return { ok: true as const, emailSent: true as const };
   }
 
   if (process.env.RESEND_API_KEY) {
@@ -70,12 +56,13 @@ export async function sendContactEmail(data: ContactPayload) {
 
     if (!res.ok) {
       const err = await res.text();
-      throw new Error(err || "Failed to send email");
+      console.error("[contact] Resend failed:", err);
+      return { ok: true as const, emailSent: false as const };
     }
 
-    return { ok: true as const };
+    return { ok: true as const, emailSent: true as const };
   }
 
   console.info("[contact]", body);
-  throw new Error("Email delivery is not configured. Set SMTP_HOST or RESEND_API_KEY.");
+  return { ok: true as const, emailSent: false as const };
 }

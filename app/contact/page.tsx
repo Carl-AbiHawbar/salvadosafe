@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { LeadForm } from "@/components/lead-form";
+import { ContactCard } from "@/components/contact-card";
 import { site, waLink, telLink } from "@/lib/site";
-import { PhoneIcon, WhatsAppIcon, PinIcon, QuoteIcon } from "@/components/icons";
 
 import { getPagesContent } from "@/lib/content";
 
@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 };
 
 const contactItems = [
-  { icon: PhoneIcon, label: "Call the Showroom", value: site.phones.landline.label, href: telLink(site.phones.landline.tel), external: true },
-  { icon: WhatsAppIcon, label: "WhatsApp Salvado", value: site.phones.whatsapp.label, href: waLink("Hi Salvado, I'd like to make an inquiry."), external: true },
-  { icon: PinIcon, label: "Visit the Showroom", value: site.location, href: site.maps, external: true },
-  { icon: QuoteIcon, label: "Email Us", value: site.email, href: `mailto:${site.email}`, external: false },
+  { icon: "phone" as const, label: "Call the Showroom", value: site.phones.landline.label, href: telLink(site.phones.landline.tel), external: true },
+  { icon: "whatsapp" as const, label: "WhatsApp Salvado", value: site.phones.whatsapp.label, href: waLink("Hi Salvado, I'd like to make an inquiry."), whatsapp: true },
+  { icon: "pin" as const, label: "Visit the Showroom", value: site.location, href: site.maps, external: true },
+  { icon: "quote" as const, label: "Email Us", value: site.email, href: `mailto:${site.email}`, external: false },
 ];
 
 export default function ContactPage() {
@@ -50,20 +50,7 @@ export default function ContactPage() {
         <div className="container-x grid gap-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
           {contactItems.map((c, i) => (
             <Reveal key={c.label} delay={i * 60}>
-              <a
-                href={c.href}
-                target={c.external ? "_blank" : undefined}
-                rel={c.external ? "noopener noreferrer" : undefined}
-                className="flex h-full flex-col gap-3 rounded-2xl border border-line bg-white p-6 shadow-card transition-all hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft"
-              >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand">
-                  <c.icon width={20} height={20} />
-                </div>
-                <div>
-                  <p className="text-[13px] font-semibold text-muted">{c.label}</p>
-                  <p className="mt-0.5 text-[15px] font-bold text-ink">{c.value}</p>
-                </div>
-              </a>
+              <ContactCard {...c} />
             </Reveal>
           ))}
         </div>
@@ -75,7 +62,7 @@ export default function ContactPage() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-line shadow-soft md:hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={contact.showroomImage} alt="Salvado showroom in Zalka" className="aspect-[16/10] w-full object-cover" />
+              <img src={contact.showroomImage} alt="Salvado branded delivery vehicle for professional safe installation" className="aspect-[16/10] w-full object-cover object-center" />
             </div>
             <p className="mb-3 mt-8 text-[12px] font-bold uppercase tracking-[0.18em] text-brand md:mt-0">Send a Message</p>
             <h2 className="font-display text-3xl font-bold leading-tight text-ink md:text-[40px]">
@@ -100,7 +87,7 @@ export default function ContactPage() {
           <Reveal delay={80} className="space-y-6">
             <div className="hidden overflow-hidden rounded-3xl border border-line shadow-soft md:block">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={contact.showroomImage} alt="Salvado showroom in Zalka" className="aspect-[4/3] w-full object-cover" />
+              <img src={contact.showroomImage} alt="Salvado branded delivery vehicle for professional safe installation" className="aspect-[4/3] w-full object-cover object-center" />
             </div>
             <LeadForm variant="contact" />
           </Reveal>

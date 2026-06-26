@@ -75,7 +75,7 @@ export default function ServicesPage() {
                         src={s.image}
                         alt={s.title}
                         loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                        className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
                       />
                     </div>
                   )}
@@ -114,7 +114,7 @@ export default function ServicesPage() {
             {content.installationGallery.map((img, i) => (
               <Reveal key={img.src} delay={i * 60} className="overflow-hidden rounded-2xl border border-line bg-white shadow-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img.src} alt={img.alt} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                <img src={img.src} alt={img.alt} loading="lazy" className="aspect-[4/3] w-full object-cover object-center" />
                 <p className="px-4 py-3 text-[13px] font-medium leading-snug text-ink-2">{img.caption}</p>
               </Reveal>
             ))}

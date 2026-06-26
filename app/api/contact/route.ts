@@ -9,7 +9,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Name and phone are required." }, { status: 400 });
     }
 
-    await sendContactEmail({
+    const result = await sendContactEmail({
       variant: data.variant === "service" ? "service" : "contact",
       name: data.name.trim(),
       phone: data.phone.trim(),
@@ -19,9 +19,9 @@ export async function POST(request: Request) {
       message: data.message?.trim(),
     });
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, emailSent: result.emailSent });
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Unable to send message.";
-    return NextResponse.json({ error: message }, { status: 500 });
+    console.error("[contact]", err);
+    return NextResponse.json({ ok: true, emailSent: false });
   }
 }

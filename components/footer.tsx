@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useSite } from "./site-provider";
 import { waLink, telLink } from "@/lib/site";
+import { WhatsAppAnchor } from "./whatsapp-anchor";
 import type { Category } from "@/lib/catalog";
 import { WhatsAppIcon, PinIcon, ShieldIcon, StarIcon, TruckIcon, CheckIcon } from "./icons";
 
@@ -94,7 +95,7 @@ export function Footer({ featuredCategories }: { featuredCategories: Category[] 
               Phone: <a href={telLink(site.phones.landline.tel)} className="hover:text-white">{site.phones.landline.label}</a>
             </li>
             <li>
-              WhatsApp: <a href={waLink()} target="_blank" rel="noopener noreferrer" className="hover:text-white">{site.phones.whatsapp.label}</a>
+              WhatsApp: <WhatsAppAnchor href={waLink()} className="hover:text-white">{site.phones.whatsapp.label}</WhatsAppAnchor>
             </li>
             <li>{site.hours.weekdays}</li>
             <li>{site.hours.saturday}</li>
@@ -103,9 +104,9 @@ export function Footer({ featuredCategories }: { featuredCategories: Category[] 
             </li>
           </ul>
           <div className="mt-5 flex flex-wrap gap-2">
-            <a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-4 py-2 text-[13px] font-semibold text-white hover:border-white hover:bg-white/10">
+            <WhatsAppAnchor href={waLink()} className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-4 py-2 text-[13px] font-semibold text-white hover:border-white hover:bg-white/10">
               <WhatsAppIcon width={15} height={15} className="brightness-0 invert" /> WhatsApp Salvado
-            </a>
+            </WhatsAppAnchor>
             <a href={site.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-[13px] font-semibold hover:border-white">
               <PinIcon width={15} height={15} /> Google Maps
             </a>

@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/site-shell";
 import { SiteProvider } from "@/components/site-provider";
+import { GoogleTags } from "@/components/google-tags";
 import { getFeaturedCategories, getSecondaryCategories } from "@/lib/catalog";
 import { getSite } from "@/lib/site-server";
 
@@ -51,6 +52,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} h-full`}>
+      <head>
+        <GoogleTags />
+      </head>
       <body className="flex min-h-full flex-col bg-white">
         <SiteProvider site={site}>
           <SiteShell featuredCategories={featuredCategories} secondaryCategories={secondaryCategories}>

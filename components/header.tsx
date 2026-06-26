@@ -8,6 +8,7 @@ import type { Category } from "@/lib/catalog";
 import { SiteSearch } from "./site-search";
 import { WhatsAppIcon, PhoneIcon, PinIcon, ChevronDown, MenuIcon, CloseIcon, ArrowIcon, QuoteIcon } from "./icons";
 import { waLink, telLink } from "@/lib/site";
+import { WhatsAppAnchor } from "./whatsapp-anchor";
 
 const services = [
   { label: "Consultation, Delivery and Installation", href: "/services#consultation" },
@@ -64,9 +65,9 @@ export function Header({
             <a href={telLink(site.phones.landline.tel)} className="inline-flex items-center gap-1.5 hover:text-white/80">
               <PhoneIcon width={13} height={13} /> {site.phones.landline.label}
             </a>
-            <a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-white/80">
+            <WhatsAppAnchor href={waLink()} className="inline-flex items-center gap-1.5 hover:text-white/80">
               <WhatsAppIcon width={13} height={13} className="brightness-0 invert" /> {site.phones.whatsapp.label}
-            </a>
+            </WhatsAppAnchor>
           </div>
           <div className="flex items-center gap-5">
             <span className="inline-flex items-center gap-1.5 text-white/80">

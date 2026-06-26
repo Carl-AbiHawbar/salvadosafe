@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSite } from "./site-provider";
 import { waLink, telLink } from "@/lib/site";
+import { WhatsAppAnchor } from "./whatsapp-anchor";
 import { WhatsAppIcon, PhoneIcon, QuoteIcon } from "./icons";
 
 export function Floating() {
@@ -19,15 +20,13 @@ export function Floating() {
   return (
     <>
       {/* WhatsApp FAB — outline icon, no green fill */}
-      <a
+      <WhatsAppAnchor
         href={waLink("Hi Salvado, I have a question.")}
-        target="_blank"
-        rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
         className="fixed bottom-20 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-white p-3.5 text-ink shadow-soft transition-transform hover:scale-110 hover:border-brand md:bottom-6 md:right-6"
       >
         <WhatsAppIcon width={24} height={24} />
-      </a>
+      </WhatsAppAnchor>
 
       {/* Scroll to top */}
       <button
@@ -50,14 +49,12 @@ export function Floating() {
         >
           <PhoneIcon width={15} height={15} className="text-brand" /> Call
         </a>
-        <a
+        <WhatsAppAnchor
           href={waLink()}
-          target="_blank"
-          rel="noopener noreferrer"
           className="flex flex-1 flex-row items-center justify-center gap-1 border-r border-line py-2 text-[10px] font-semibold text-ink"
         >
           <WhatsAppIcon width={15} height={15} /> WhatsApp
-        </a>
+        </WhatsAppAnchor>
         <Link
           href="/contact"
           className="flex flex-1 flex-row items-center justify-center gap-1 py-2 text-[10px] font-semibold text-ink"

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Category } from "@/lib/catalog-types";
 import { categoryImage, categoryCount } from "@/lib/catalog";
 import { waLink } from "@/lib/site";
+import { WhatsAppAnchor } from "./whatsapp-anchor";
 import { ArrowIcon, WhatsAppIcon } from "./icons";
 
 export { ProductCard } from "./product-card";
@@ -42,15 +43,13 @@ export function CategoryCard({ category, premium = false }: { category: Category
             <span className="inline-flex items-center gap-1.5 rounded-full border border-brand bg-brand px-4 py-2 text-[13px] font-semibold !text-white transition-colors group-hover:bg-brand-dark [&_svg]:stroke-white">
               View Category <ArrowIcon width={15} height={15} />
             </span>
-            <a
+            <WhatsAppAnchor
               href={waLink(`Hi Salvado, I'd like a recommendation for ${category.name}.`)}
-              target="_blank"
-              rel="noopener noreferrer"
               aria-label={`WhatsApp recommendation for ${category.name}`}
               className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-4 py-2 text-[13px] font-semibold text-ink transition-colors hover:border-brand hover:text-brand"
             >
               <WhatsAppIcon width={15} height={15} /> Recommendation
-            </a>
+            </WhatsAppAnchor>
           </div>
         </div>
       </div>

@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { site, waLink, telLink } from "@/lib/site";
+import { onWhatsAppClick } from "@/lib/analytics";
 import { WhatsAppIcon, PhoneIcon, QuoteIcon, PinIcon, ArrowIcon } from "./icons";
 
 type Variant =
@@ -65,17 +68,19 @@ export function CTA({
   children,
   className = "",
   external,
+  onClick,
 }: {
   href: string;
   variant?: Variant;
   children: React.ReactNode;
   className?: string;
   external?: boolean;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }) {
   const cls = `${base} ${variants[variant]} ${className}`;
   if (external) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className={cls} onClick={onClick}>
         {children}
       </a>
     );
@@ -103,7 +108,7 @@ export function WhatsAppButton({
   const iconOnDark =
     variant === "outlineLight" || variant === "ghostLight" || variant === "primaryLight";
   return (
-    <CTA href={waLink(message)} external variant={variant} className={className}>
+    <CTA href={waLink(message)} external variant={variant} className={className} onClick={() => onWhatsAppClick()}>
       <WhatsAppIcon
         width={15}
         height={15}

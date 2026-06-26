@@ -75,9 +75,7 @@ export function ShowroomCarousel({ images }: { images: ShowroomImage[] }) {
                   src={img.src}
                   alt={img.alt}
                   loading={i === 0 ? "eager" : "lazy"}
-                  className={`h-full w-full bg-ink ${
-                    img.fit === "contain" ? "object-contain object-center" : "object-cover object-center"
-                  } ${img.imgClass ?? ""}`}
+                  className={`h-full w-full object-cover object-center ${img.imgClass ?? ""}`}
                 />
               </div>
               {img.caption && (

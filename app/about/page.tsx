@@ -61,9 +61,9 @@ export default function AboutPage() {
       <section className="bg-white">
         <div className="container-x grid items-center gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-line shadow-soft">
+            <div className="aspect-[4/3] overflow-hidden rounded-3xl border border-line shadow-soft">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={about.showroomImage} alt="Salvado showroom" className="h-full w-full object-cover" />
+              <img src={about.showroomImage} alt="Salvado showroom" className="h-full w-full object-cover object-center" />
             </div>
           </Reveal>
           <Reveal delay={80}>
