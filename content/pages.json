@@ -218,17 +218,14 @@
         {
           "src": "/images/brand/showroom-carousel-2.jpg",
           "alt": "Salvado showroom exterior with Ferrari at Zalka",
-          "caption": "Visit Lebanon's leading safe showroom in Zalka and explore solutions in person."
+          "caption": "Visit Lebanon's leading safe showroom in Zalka and explore solutions in person.",
+          "imgClass": "object-[center_32%]",
+          "captionOverlay": false
         },
         {
           "src": "/images/brand/showroom-carousel-3.jpg",
           "alt": "Salvado showroom with branded signage and colorful safe displays",
           "caption": "Browse certified safes in person with guidance from our specialists."
-        },
-        {
-          "src": "/images/brand/showroom-carousel-4.jpg",
-          "alt": "Salvado showroom floor with safes and branded display stands",
-          "caption": "Certified safes in multiple sizes, ready to compare in person."
         },
         {
           "src": "/images/brand/showroom-carousel-5.jpg",

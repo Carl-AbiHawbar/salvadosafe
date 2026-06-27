@@ -75,12 +75,21 @@ export function ShowroomCarousel({ images }: { images: ShowroomImage[] }) {
                   src={img.src}
                   alt={img.alt}
                   loading={i === 0 ? "eager" : "lazy"}
-                  className={`h-full w-full object-cover object-center ${img.imgClass ?? ""}`}
+                  className={`h-full w-full ${
+                    img.fit === "contain" ? "object-contain" : "object-cover"
+                  } object-center ${img.imgClass ?? ""}`}
                 />
               </div>
-              {img.caption && (
+              {img.caption && img.captionOverlay !== false && (
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent px-6 pb-6 pt-20 md:px-8 md:pb-8">
                   <p className="max-w-2xl text-[14px] font-medium leading-relaxed text-white/95 md:text-[15px]">
+                    {img.caption}
+                  </p>
+                </div>
+              )}
+              {img.caption && img.captionOverlay === false && (
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 px-6 pb-6 md:px-8 md:pb-8">
+                  <p className="max-w-2xl rounded-xl bg-white/90 px-4 py-3 text-[14px] font-medium leading-relaxed text-ink shadow-sm backdrop-blur-sm md:text-[15px]">
                     {img.caption}
                   </p>
                 </div>
