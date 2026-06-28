@@ -5,7 +5,6 @@ import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { ProductCard } from "@/components/cards";
 import { SectionHeading } from "@/components/sections";
-import { GetQuoteButton, CTA } from "@/components/cta";
 import { ProductGallery } from "@/components/product-gallery";
 import { getPublicProducts, getProduct, getCategory, similarProducts, isPublicProduct, type Product } from "@/lib/catalog";
 import { productImages, resolveProductFaqs } from "@/lib/catalog-types";
@@ -132,15 +131,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 {product.isProject ? "Custom Quotation by Project" : "Call / WhatsApp for Price"}
               </p>
             </div>
-
-            <GetQuoteButton
-              className="mt-6"
-              message={
-                product.isProject
-                  ? `Hi Salvado, I'd like a quote for ${product.name}.`
-                  : `Hi Salvado, I'd like a quote for the ${product.name}.`
-              }
-            />
           </Reveal>
         </div>
       </section>
@@ -231,9 +221,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 ? `This model carries: ${product.specs.grade}. Contact Salvado to request the relevant brochure or technical sheet.`
                 : "Certifications and technical documents vary by model. Contact Salvado to confirm the specifications for this product and request the relevant brochure or technical sheet."}
             </p>
-            <div className="mt-5">
-              <CTA href="/contact" variant="ghost">Contact Salvado for Documents</CTA>
-            </div>
           </Reveal>
 
           <Reveal delay={80} className="rounded-2xl border border-line bg-white p-8">
@@ -246,9 +233,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               your site conditions, followed by dedicated after-sales technical support, lock assistance, and
               maintenance guidance.
             </p>
-            <div className="mt-5">
-              <CTA href="/services" variant="ghost">Ask About Delivery and Installation</CTA>
-            </div>
           </Reveal>
         </div>
       </section>

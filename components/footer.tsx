@@ -46,14 +46,6 @@ export function Footer({ featuredCategories }: { featuredCategories: Category[] 
           <p className="max-w-xs text-[14px] leading-relaxed text-white/65">
             A name you can trust in safes, vault doors, and secure storage solutions.
           </p>
-          <a
-            href={site.maps}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-[13px] font-semibold transition-colors hover:border-brand hover:bg-brand"
-          >
-            <PinIcon width={16} height={16} /> Visit Showroom
-          </a>
           <div className="mt-5 flex gap-3 text-[13px]">
             <a href={site.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-white/65 hover:text-white">Instagram</a>
             <span className="text-white/25">·</span>
@@ -99,12 +91,12 @@ export function Footer({ featuredCategories }: { featuredCategories: Category[] 
             <li>
               <a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a>
             </li>
+            <li>
+              <a href={site.maps} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Google Maps
+              </a>
+            </li>
           </ul>
-          <div className="mt-5 flex flex-wrap gap-2">
-            <a href={site.maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-[13px] font-semibold hover:border-white">
-              <PinIcon width={15} height={15} /> Google Maps
-            </a>
-          </div>
         </div>
       </div>
 

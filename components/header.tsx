@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useSite } from "./site-provider";
 import type { Category } from "@/lib/catalog";
 import { SiteSearch } from "./site-search";
-import { WhatsAppIcon, PhoneIcon, PinIcon, ChevronDown, MenuIcon, CloseIcon, ArrowIcon, QuoteIcon } from "./icons";
+import { WhatsAppIcon, PhoneIcon, PinIcon, ChevronDown, MenuIcon, CloseIcon } from "./icons";
 import { telLink } from "@/lib/site";
 
 const services = [
@@ -159,13 +159,6 @@ export function Header({
                           ))}
                         </div>
                       </div>
-                      <Link
-                        href="/products"
-                        onClick={() => setDesktopMega(null)}
-                        className="flex items-center justify-between border-t border-line bg-surface px-6 py-3.5 text-[14px] font-semibold text-brand hover:bg-brand-soft"
-                      >
-                        View All Products <ArrowIcon width={16} height={16} />
-                      </Link>
                     </div>
                   </div>
                 )}
@@ -191,13 +184,6 @@ export function Header({
                           </Link>
                         ))}
                       </div>
-                      <Link
-                        href="/contact"
-                        onClick={() => setDesktopMega(null)}
-                        className="flex items-center justify-between border-t border-line bg-surface px-6 py-3.5 text-[14px] font-semibold text-brand hover:bg-brand-soft"
-                      >
-                        Request a Service <ArrowIcon width={16} height={16} />
-                      </Link>
                     </div>
                   </div>
                 )}
@@ -208,12 +194,6 @@ export function Header({
             {/* Desktop actions */}
             <div className="hidden items-center gap-2 md:flex">
               <SiteSearch />
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-full border border-brand bg-brand px-5 py-2.5 text-[13.5px] font-semibold !text-white transition-colors hover:bg-brand-dark [&_svg]:stroke-white"
-              >
-                <QuoteIcon width={16} height={16} /> Request a Quote
-              </Link>
             </div>
 
             {/* Balance burger on mobile so logo stays centered */}
@@ -261,10 +241,6 @@ export function Header({
               <Link href="/blog" className="block rounded-lg px-3 py-3 text-[15px] font-semibold text-ink hover:bg-surface">Blog</Link>
               <Link href="/about" className="block rounded-lg px-3 py-3 text-[15px] font-semibold text-ink hover:bg-surface">About</Link>
               <Link href="/contact" className="block rounded-lg px-3 py-3 text-[15px] font-semibold text-ink hover:bg-surface">Contact</Link>
-
-              <Link href="/contact" className="mt-3 flex items-center justify-center gap-2 rounded-full border border-brand bg-brand px-5 py-3 text-[14px] font-semibold !text-white [&_svg]:stroke-white">
-                <QuoteIcon width={16} height={16} /> Request a Quote
-              </Link>
             </nav>
           </div>
         </div>

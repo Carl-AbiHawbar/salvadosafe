@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
-import { CTA, CallButton, MapButton, WhatsAppButton, QuoteButton, CtaGroup } from "@/components/cta";
 import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { ShieldIcon } from "@/components/icons";
@@ -34,10 +33,6 @@ export default function AboutPage() {
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
               {about.hero.text}
             </p>
-            <CtaGroup className="mt-8">
-              <MapButton variant="primaryLight" />
-              <CTA href="/contact" variant="ghostLight">Speak With Our Team</CTA>
-            </CtaGroup>
           </Reveal>
         </div>
       </section>
@@ -77,10 +72,6 @@ export default function AboutPage() {
               solutions, our showroom allows clients to compare models, inspect quality, and receive professional
               guidance before making a decision.
             </p>
-            <CtaGroup className="mt-7">
-              <MapButton label="Open in Google Maps" shortLabel="Maps" variant="primary" />
-              <CallButton />
-            </CtaGroup>
           </Reveal>
         </div>
       </section>
@@ -162,7 +153,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Technical capability + CTA */}
+      {/* Technical capability */}
       <section className="bg-ink">
         <div className="container-x grid items-center gap-10 py-12 md:grid-cols-2 md:py-16">
           <Reveal className="overflow-hidden rounded-3xl border border-white/10 shadow-soft">
@@ -192,11 +183,6 @@ export default function AboutPage() {
             <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-relaxed text-white/70">
               For showroom visits, product guidance, security consultation, delivery, installation, or after-sales support, contact Salvado directly.
             </p>
-            <CtaGroup center className="mt-8">
-              <WhatsAppButton message="Hi Salvado, I'd like to learn more about your company." label="WhatsApp Salvado" shortLabel="WhatsApp" variant="ghostLight" />
-              <QuoteButton variant="primaryLight" />
-              <CallButton variant="ghostLight" />
-            </CtaGroup>
           </Reveal>
         </div>
       </section>

@@ -1,9 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { WhatsAppButton } from "./cta";
-import { CTA, CtaGroup } from "./cta";
-import { ArrowIcon, ChevronDown } from "./icons";
+import { ChevronDown } from "./icons";
 import type { HeroSlide } from "@/lib/content";
 
 const SWIPE_THRESHOLD = 50;
@@ -103,17 +101,6 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             <p className="mt-3.5 max-w-xl text-[14px] leading-relaxed text-white/90 sm:mt-5 sm:text-[16px] md:text-[17px]">
               {slides[active].sub}
             </p>
-            <CtaGroup className="mt-5 md:mt-8">
-              <CTA href="/products" variant="primaryLight">
-                Explore Solutions <ArrowIcon width={14} height={14} className="md:h-[17px] md:w-[17px]" />
-              </CTA>
-              <WhatsAppButton
-                label="WhatsApp Salvado"
-                shortLabel="WhatsApp"
-                message="Hi Salvado, I have a question."
-                variant="outlineLight"
-              />
-            </CtaGroup>
           </div>
         </div>
       </div>

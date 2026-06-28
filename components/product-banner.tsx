@@ -1,16 +1,14 @@
 import type { ReactNode } from "react";
 import { ProductBannerSearch } from "./product-banner-search";
-import { ArrowIcon } from "./icons";
 
 type ProductBannerProps = {
   eyebrow: string;
   title: string;
   subtitle: string;
   breadcrumb?: ReactNode;
-  catalogLink?: { label: string; href: string };
 };
 
-export function ProductBanner({ eyebrow, title, subtitle, breadcrumb, catalogLink }: ProductBannerProps) {
+export function ProductBanner({ eyebrow, title, subtitle, breadcrumb }: ProductBannerProps) {
   return (
     <section className="product-banner relative overflow-hidden">
       <div className="product-banner-pattern absolute inset-0" aria-hidden />
@@ -35,15 +33,6 @@ export function ProductBanner({ eyebrow, title, subtitle, breadcrumb, catalogLin
             <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-white/75 sm:mt-4 sm:text-[15px] md:text-[16px]">
               {subtitle}
             </p>
-            {catalogLink && (
-              <a
-                href={catalogLink.href}
-                className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 text-[13px] font-semibold text-white backdrop-blur-sm transition-colors hover:border-white/40 hover:bg-white/15 md:mt-6 md:text-[14px]"
-              >
-                {catalogLink.label}
-                <ArrowIcon width={15} height={15} className="stroke-white" />
-              </a>
-            )}
           </div>
 
           <div className="w-full md:max-w-[380px] md:shrink-0 lg:max-w-[420px] xl:w-[460px]">

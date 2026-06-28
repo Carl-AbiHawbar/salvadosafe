@@ -6,13 +6,12 @@ import { ReviewsCarousel } from "@/components/reviews";
 import { InstagramCarousel } from "@/components/instagram-carousel";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
-import { CTA, TextLink } from "@/components/cta";
 import { getCategoriesBySlugs, getProduct } from "@/lib/catalog";
 import { getGrade } from "@/lib/grades";
 import { GradeCard } from "@/components/grade-card";
 import { getPagesContent } from "@/lib/content";
 import { getSite } from "@/lib/site-server";
-import { ShieldIcon, CheckIcon, ArrowIcon } from "@/components/icons";
+import { ShieldIcon, CheckIcon } from "@/components/icons";
 
 import { getIcon } from "@/lib/icon-map";
 
@@ -87,16 +86,13 @@ export default function HomePage() {
       {/* Explore security solutions */}
       <section className="bg-surface">
         <div className="container-x py-20 md:py-24">
-          <Reveal className="flex flex-col items-center justify-between gap-6 md:flex-row md:items-end md:text-left">
+          <Reveal>
             <SectionHeading
               align="left"
               eyebrow={pages.home.catalogSection.eyebrow}
               title={pages.home.catalogSection.title}
               text={pages.home.catalogSection.text}
             />
-            <CTA href="/products" variant="outline" className="shrink-0">
-              View All Products <ArrowIcon width={16} height={16} />
-            </CTA>
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {catalogCategories.map((c, i) => (
@@ -134,14 +130,6 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-            </Reveal>
-            <Reveal delay={120} className="flex flex-wrap gap-3 lg:justify-end">
-              <CTA href="https://www.google.com/maps/search/?api=1&query=Salvado+safes+Zalka" external variant="primary">
-                Open in Google Maps
-              </CTA>
-              <CTA href="/contact" variant="ghost">
-                Contact Our Consultant
-              </CTA>
             </Reveal>
           </div>
         </div>
@@ -181,11 +169,6 @@ export default function HomePage() {
                 </div>
               </Reveal>
             ))}
-          </div>
-          <div className="mt-12 text-center">
-            <CTA href="/services" variant="primaryLight">
-              View All Services <ArrowIcon width={16} height={16} />
-            </CTA>
           </div>
         </div>
       </section>

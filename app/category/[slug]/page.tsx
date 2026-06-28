@@ -5,7 +5,6 @@ import { SectionHeading } from "@/components/sections";
 import { ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
-import { QuoteButton, CallButton, CtaGroup } from "@/components/cta";
 import {
   getCategories,
   getCategory,
@@ -92,10 +91,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               <p className="text-[15px] text-ink-2">
                 Products in this category are available on request. Contact us for current options and pricing.
               </p>
-              <CtaGroup className="mt-6 justify-center">
-                <QuoteButton />
-                <CallButton variant="ghost" />
-              </CtaGroup>
             </div>
           )}
         </div>

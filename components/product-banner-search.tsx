@@ -92,7 +92,7 @@ export function ProductBannerSearch({ className = "" }: { className?: string }) 
         />
         <button
           type="submit"
-          className="shrink-0 rounded-full bg-brand px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-brand-dark sm:px-5 sm:py-2.5 sm:text-[14px]"
+          className="shrink-0 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-white/15 sm:px-5 sm:py-2.5 sm:text-[14px]"
         >
           Search
         </button>

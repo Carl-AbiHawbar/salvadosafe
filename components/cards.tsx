@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Category } from "@/lib/catalog-types";
 import { categoryImage, categoryCount } from "@/lib/catalog";
-import { ArrowIcon } from "./icons";
 
 export { ProductCard } from "./product-card";
 
@@ -11,12 +10,11 @@ export function CategoryCard({ category, premium = false }: { category: Category
 
   return (
     <article
-      className={`group relative overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft ${
+      className={`group overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft ${
         premium ? "" : ""
       }`}
     >
-      <Link href={href} className="absolute inset-0 z-[1] rounded-2xl" aria-label={`View ${category.name}`} />
-      <div className="pointer-events-none relative z-[2]">
+      <Link href={href} className="relative block" aria-label={`View ${category.name}`}>
         <div className="relative aspect-[4/3] overflow-hidden bg-surface">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -35,14 +33,9 @@ export function CategoryCard({ category, premium = false }: { category: Category
             {category.name}
           </h3>
         </div>
-        <div className="p-5">
-          <p className="text-[14px] leading-relaxed text-ink-2">{category.short}</p>
-          <div className="relative z-[3] mt-4 flex justify-center sm:justify-start">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand bg-brand px-4 py-2 text-[13px] font-semibold !text-white transition-colors group-hover:bg-brand-dark [&_svg]:stroke-white">
-              View Category <ArrowIcon width={15} height={15} />
-            </span>
-          </div>
-        </div>
+      </Link>
+      <div className="p-5">
+        <p className="text-[14px] leading-relaxed text-ink-2">{category.short}</p>
       </div>
     </article>
   );

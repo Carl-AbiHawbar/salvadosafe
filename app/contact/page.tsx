@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { ContactCard } from "@/components/contact-card";
-import { WhatsAppButton, CallButton, QuoteButton, CtaGroup } from "@/components/cta";
-import { site, telLink } from "@/lib/site";
+import { site } from "@/lib/site";
 import { getPagesContent } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -12,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const contactItems = [
-  { icon: "phone" as const, label: "Call the Showroom", value: site.phones.landline.label, href: telLink(site.phones.landline.tel), external: true },
-  { icon: "pin" as const, label: "Visit the Showroom", value: site.location, href: site.maps, external: true },
-  { icon: "quote" as const, label: "Email Us", value: site.email, href: `mailto:${site.email}`, external: false },
+  { icon: "phone" as const, label: "Showroom Phone", value: site.phones.landline.label },
+  { icon: "pin" as const, label: "Showroom Location", value: site.location },
+  { icon: "quote" as const, label: "Email", value: site.email },
 ];
 
 export default function ContactPage() {
@@ -39,16 +38,6 @@ export default function ContactPage() {
               Tell us what you need to protect, your location, and intended use. Our team will recommend suitable
               options and guide you on pricing, delivery, and installation.
             </p>
-            <CtaGroup className="mt-8">
-              <WhatsAppButton
-                label="WhatsApp Salvado"
-                shortLabel="WhatsApp"
-                message="Hi Salvado, I'd like to make an inquiry."
-                variant="primaryLight"
-              />
-              <CallButton variant="outlineLight" />
-              <QuoteButton variant="ghostLight" />
-            </CtaGroup>
           </Reveal>
         </div>
       </section>

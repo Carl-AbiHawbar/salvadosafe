@@ -7,7 +7,6 @@ import { FAQ } from "@/components/faq";
 import { GradeCard } from "@/components/grade-card";
 import { GradeSpecTable } from "@/components/grade-spec-table";
 import { ProductBanner } from "@/components/product-banner";
-import { GetQuoteButton, CTA } from "@/components/cta";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 import { getCategory } from "@/lib/catalog";
 import { getGrade, getGrades } from "@/lib/grades";
@@ -104,11 +103,6 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
                 {grade.models.length} models — see comparison table below
               </p>
             </div>
-
-            <GetQuoteButton
-              className="mt-6"
-              message={`Hi Salvado, I'd like a quote for ${grade.grade} high-security safes (${grade.series}).`}
-            />
           </Reveal>
         </div>
       </section>
@@ -172,9 +166,6 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
               {grade.grade} safes are certified under UNE EN-1143-1. Contact Salvado to request the relevant brochure,
               technical sheet, or certification details for {grade.series}.
             </p>
-            <div className="mt-5">
-              <CTA href="/contact" variant="ghost">Contact Salvado for Documents</CTA>
-            </div>
           </Reveal>
 
           <Reveal delay={80} className="rounded-2xl border border-line bg-white p-8">

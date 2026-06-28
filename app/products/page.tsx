@@ -8,8 +8,6 @@ import { getGrades } from "@/lib/grades";
 import { GradeCard } from "@/components/grade-card";
 import { ProductBanner } from "@/components/product-banner";
 import { ProductCatalog } from "@/components/product-catalog";
-import { CatalogShortcut } from "@/components/catalog-shortcut";
-import { CTA } from "@/components/cta";
 import { ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -19,12 +17,12 @@ export const metadata: Metadata = {
 };
 
 const protectCards = [
-  { title: "Jewelry and Watches", text: "For watches, jewelry, collectibles, and private valuables.", slug: "luxury-safes-watch-storage", cta: "View Luxury Solutions" },
-  { title: "Documents and Files", text: "For contracts, passports, records, cash, and important documents requiring fire protection.", slug: "fire-resistant-safes", cta: "View Fire-Resistant Safes" },
-  { title: "High-Value Assets", text: "For serious protection needs in homes, businesses, jewelers, institutions, and private offices.", slug: "high-security-safes", cta: "View High-Security Safes" },
-  { title: "Secure Rooms", text: "For vault doors, private rooms, institutional storage, and high-security projects.", slug: "vault-doors-vault-rooms", cta: "View Vault Solutions" },
-  { title: "Cash Handling", text: "For retailers, offices, exchange businesses, and companies handling cash.", slug: "cash-handling-solutions", cta: "View Cash Handling" },
-  { title: "Discreet Storage", text: "For concealed storage in homes, offices, and private spaces.", slug: "concealed-camouflage-safes", cta: "View Concealed Safes" },
+  { title: "Jewelry and Watches", text: "For watches, jewelry, collectibles, and private valuables.", slug: "luxury-safes-watch-storage" },
+  { title: "Documents and Files", text: "For contracts, passports, records, cash, and important documents requiring fire protection.", slug: "fire-resistant-safes" },
+  { title: "High-Value Assets", text: "For serious protection needs in homes, businesses, jewelers, institutions, and private offices.", slug: "high-security-safes" },
+  { title: "Secure Rooms", text: "For vault doors, private rooms, institutional storage, and high-security projects.", slug: "vault-doors-vault-rooms" },
+  { title: "Cash Handling", text: "For retailers, offices, exchange businesses, and companies handling cash.", slug: "cash-handling-solutions" },
+  { title: "Discreet Storage", text: "For concealed storage in homes, offices, and private spaces.", slug: "concealed-camouflage-safes" },
 ];
 
 // Confirmed selection: Grade V page, 2-hour fire-rated, vault door, luxury safe, money counter
@@ -51,13 +49,10 @@ export default function ProductsPage() {
 
   return (
     <>
-      <CatalogShortcut />
-
       <ProductBanner
         eyebrow="Premium Security Solutions"
         title="Safes and Security Solutions in Lebanon"
         subtitle="Explore Salvado's range of high-security safes, fire-resistant safes, vault doors, smart safes, luxury safes, hotel safes, gun safes, money counters, and secure storage solutions — for homes, businesses, hotels, institutions, and private clients."
-        catalogLink={{ label: "View all products", href: "#full-catalog" }}
       />
 
       <TrustStrip />
@@ -81,9 +76,6 @@ export default function ProductsPage() {
                 >
                   <h3 className="font-display text-xl font-bold text-ink">{card.title}</h3>
                   <p className="mt-3 flex-1 text-[14px] leading-relaxed text-ink-2">{card.text}</p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-[14px] font-semibold text-brand">
-                    {card.cta} <ArrowIcon width={16} height={16} className="transition-transform group-hover:translate-x-1" />
-                  </span>
                 </Link>
               </Reveal>
             ))}
@@ -94,16 +86,13 @@ export default function ProductsPage() {
       {/* Browse categories */}
       <section className="bg-surface">
         <div className="container-x py-20 md:py-24">
-          <Reveal className="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-end sm:text-left">
+          <Reveal>
             <SectionHeading
               align="left"
               eyebrow={`${getTotalProducts()} Products`}
               title="Browse Product Categories"
               text="View Salvado's main product categories, compare available options, and contact our team for pricing, availability, and technical guidance."
             />
-            <CTA href="#full-catalog" variant="outline" className="shrink-0">
-              View all products <ArrowIcon width={16} height={16} />
-            </CTA>
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {getFeaturedCategories().map((c, i) => (
