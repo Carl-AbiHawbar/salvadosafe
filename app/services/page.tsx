@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
+import { GetQuoteButton } from "@/components/cta";
 import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { CheckIcon } from "@/components/icons";
@@ -37,6 +38,11 @@ export default function ServicesPage() {
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
               {content.hero.text}
             </p>
+            <GetQuoteButton
+              variant="primaryLight"
+              className="mt-8"
+              message="Hi Salvado, I'd like to request a service."
+            />
           </Reveal>
         </div>
       </section>
@@ -153,6 +159,10 @@ export default function ServicesPage() {
                 </li>
               ))}
             </ul>
+            <GetQuoteButton
+              className="mt-8"
+              message="Hi Salvado, I'd like to request a service."
+            />
           </Reveal>
         </div>
       </section>

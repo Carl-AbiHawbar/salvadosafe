@@ -2,6 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import { ChevronDown } from "./icons";
+import { GetQuoteButton } from "./cta";
 import type { HeroSlide } from "@/lib/content";
 
 const SWIPE_THRESHOLD = 50;
@@ -101,6 +102,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             <p className="mt-3.5 max-w-xl text-[14px] leading-relaxed text-white/90 sm:mt-5 sm:text-[16px] md:text-[17px]">
               {slides[active].sub}
             </p>
+            <GetQuoteButton variant="primaryLight" className="mt-5 md:mt-8" />
           </div>
         </div>
       </div>

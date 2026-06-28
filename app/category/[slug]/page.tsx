@@ -44,6 +44,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
         eyebrow={isHighSecurity ? "Certified High-Security Safes" : "Premium Security Solutions"}
         title={category.name}
         subtitle={category.intro}
+        quoteMessage={`Hi Salvado, I'd like a quote for ${category.name.toLowerCase()}.`}
         breadcrumb={
           <nav className="flex flex-wrap items-center gap-2 text-[12px] text-white/55 sm:text-[13px]">
             <Link href="/" className="hover:text-white">Home</Link>

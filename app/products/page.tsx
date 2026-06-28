@@ -53,6 +53,7 @@ export default function ProductsPage() {
         eyebrow="Premium Security Solutions"
         title="Safes and Security Solutions in Lebanon"
         subtitle="Explore Salvado's range of high-security safes, fire-resistant safes, vault doors, smart safes, luxury safes, hotel safes, gun safes, money counters, and secure storage solutions — for homes, businesses, hotels, institutions, and private clients."
+        quoteMessage="Hi Salvado, I'd like a quote for a security product."
       />
 
       <TrustStrip />

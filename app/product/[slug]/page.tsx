@@ -6,6 +6,7 @@ import { FAQ } from "@/components/faq";
 import { ProductCard } from "@/components/cards";
 import { SectionHeading } from "@/components/sections";
 import { ProductGallery } from "@/components/product-gallery";
+import { GetQuoteButton } from "@/components/cta";
 import { getPublicProducts, getProduct, getCategory, similarProducts, isPublicProduct, type Product } from "@/lib/catalog";
 import { productImages, resolveProductFaqs } from "@/lib/catalog-types";
 import { gradeForProductSub } from "@/lib/grades";
@@ -128,9 +129,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div className="mt-6 rounded-2xl border border-line bg-surface px-5 py-4">
               <p className="text-[13px] text-muted">{product.isProject ? "Project-Based Solution" : "Pricing"}</p>
               <p className="text-[20px] font-bold text-ink">
-                {product.isProject ? "Custom Quotation by Project" : "Call / WhatsApp for Price"}
+                {product.isProject ? "Custom Quotation by Project" : "Contact us for pricing"}
               </p>
             </div>
+
+            <GetQuoteButton
+              className="mt-6"
+              message={
+                product.isProject
+                  ? `Hi Salvado, I'd like a quote for ${product.name}.`
+                  : `Hi Salvado, I'd like a quote for the ${product.name}.`
+              }
+            />
           </Reveal>
         </div>
       </section>

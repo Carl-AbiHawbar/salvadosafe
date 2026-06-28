@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
+import { GetQuoteButton } from "@/components/cta";
 import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { ShieldIcon } from "@/components/icons";
@@ -33,6 +34,7 @@ export default function AboutPage() {
             <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-white/80">
               {about.hero.text}
             </p>
+            <GetQuoteButton variant="primaryLight" className="mt-8" />
           </Reveal>
         </div>
       </section>

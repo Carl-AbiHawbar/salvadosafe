@@ -7,6 +7,7 @@ import { FAQ } from "@/components/faq";
 import { GradeCard } from "@/components/grade-card";
 import { GradeSpecTable } from "@/components/grade-spec-table";
 import { ProductBanner } from "@/components/product-banner";
+import { GetQuoteButton } from "@/components/cta";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 import { getCategory } from "@/lib/catalog";
 import { getGrade, getGrades } from "@/lib/grades";
@@ -103,6 +104,11 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
                 {grade.models.length} models — see comparison table below
               </p>
             </div>
+
+            <GetQuoteButton
+              className="mt-6"
+              message={`Hi Salvado, I'd like a quote for ${grade.grade} high-security safes (${grade.series}).`}
+            />
           </Reveal>
         </div>
       </section>

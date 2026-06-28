@@ -18,8 +18,8 @@ export function Floating() {
     <>
       {/* WhatsApp FAB — outline icon, no green fill */}
       <WhatsAppAnchor
-        href={waLink("Hi Salvado, I have a question.")}
-        aria-label="Chat on WhatsApp"
+        href={waLink("Hi Salvado, I'd like to get a quote.")}
+        aria-label="Get a Quote on WhatsApp"
         className="fixed bottom-6 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-white p-3.5 text-ink shadow-soft transition-transform hover:scale-110 hover:border-brand md:right-6"
       >
         <WhatsAppIcon width={24} height={24} />

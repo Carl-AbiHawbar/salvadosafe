@@ -1,14 +1,16 @@
 import type { ReactNode } from "react";
 import { ProductBannerSearch } from "./product-banner-search";
+import { GetQuoteButton } from "./cta";
 
 type ProductBannerProps = {
   eyebrow: string;
   title: string;
   subtitle: string;
   breadcrumb?: ReactNode;
+  quoteMessage?: string;
 };
 
-export function ProductBanner({ eyebrow, title, subtitle, breadcrumb }: ProductBannerProps) {
+export function ProductBanner({ eyebrow, title, subtitle, breadcrumb, quoteMessage }: ProductBannerProps) {
   return (
     <section className="product-banner relative overflow-hidden">
       <div className="product-banner-pattern absolute inset-0" aria-hidden />
@@ -33,6 +35,11 @@ export function ProductBanner({ eyebrow, title, subtitle, breadcrumb }: ProductB
             <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-white/75 sm:mt-4 sm:text-[15px] md:text-[16px]">
               {subtitle}
             </p>
+            <GetQuoteButton
+              variant="primaryLight"
+              className="mt-5 md:mt-6"
+              message={quoteMessage}
+            />
           </div>
 
           <div className="w-full md:max-w-[380px] md:shrink-0 lg:max-w-[420px] xl:w-[460px]">

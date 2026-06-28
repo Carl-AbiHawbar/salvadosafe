@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
+import { GetQuoteButton } from "@/components/cta";
 
 export const metadata: Metadata = {
   title: "Blog and Security Guides",
@@ -30,6 +31,7 @@ export default function BlogPage() {
               Practical guides to help you choose, install, and care for safes, vault doors, and secure storage. Full
               articles are on the way. Meanwhile, our team is always available to answer your questions directly.
             </p>
+            <GetQuoteButton variant="primaryLight" className="mt-8" />
           </Reveal>
         </div>
       </section>

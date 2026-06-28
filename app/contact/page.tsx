@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { ContactCard } from "@/components/contact-card";
+import { GetQuoteButton } from "@/components/cta";
 import { site } from "@/lib/site";
 import { getPagesContent } from "@/lib/content";
 
@@ -38,6 +39,7 @@ export default function ContactPage() {
               Tell us what you need to protect, your location, and intended use. Our team will recommend suitable
               options and guide you on pricing, delivery, and installation.
             </p>
+            <GetQuoteButton variant="primaryLight" className="mt-8" />
           </Reveal>
         </div>
       </section>
