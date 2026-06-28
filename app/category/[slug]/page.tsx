@@ -6,7 +6,6 @@ import { ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { QuoteButton, CallButton, CtaGroup } from "@/components/cta";
-import { FinalCTA } from "@/components/sections";
 import {
   getCategories,
   getCategory,
@@ -163,13 +162,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
           </div>
         </div>
       </section>
-
-      <FinalCTA
-        eyebrow="Speak with a security expert"
-        title={`Questions About ${category.name}?`}
-        text="Contact Salvado for pricing, availability, technical specifications, delivery, and installation guidance."
-        waMessage={`Hi Salvado, I have a question about ${category.name}.`}
-      />
     </>
   );
 }

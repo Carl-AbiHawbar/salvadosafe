@@ -108,7 +108,10 @@ export function WhatsAppButton({
 }) {
   const href = waLink(message);
   const iconOnDark =
-    variant === "outlineLight" || variant === "ghostLight" || variant === "primaryLight";
+    variant === "primary" ||
+    variant === "outlineLight" ||
+    variant === "ghostLight" ||
+    variant === "primaryLight";
   return (
     <CTA
       href={href}
@@ -128,6 +131,26 @@ export function WhatsAppButton({
       />
       <ResponsiveLabel label={label} shortLabel={shortLabel} />
     </CTA>
+  );
+}
+
+export function GetQuoteButton({
+  message = "Hi Salvado, I'd like to get a quote.",
+  variant = "primary",
+  className = "",
+}: {
+  message?: string;
+  variant?: Variant;
+  className?: string;
+}) {
+  return (
+    <WhatsAppButton
+      message={message}
+      label="Get a Quote"
+      shortLabel="Get a Quote"
+      variant={variant}
+      className={`w-full md:w-auto ${className}`}
+    />
   );
 }
 

@@ -1,14 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { useSite } from "./site-provider";
-import { waLink, telLink } from "@/lib/site";
+import { waLink } from "@/lib/site";
 import { WhatsAppAnchor } from "./whatsapp-anchor";
-import { WhatsAppIcon, PhoneIcon, QuoteIcon } from "./icons";
+import { WhatsAppIcon } from "./icons";
 
 export function Floating() {
-  const site = useSite();
   const [showTop, setShowTop] = useState(false);
 
   useEffect(() => {
@@ -23,7 +20,7 @@ export function Floating() {
       <WhatsAppAnchor
         href={waLink("Hi Salvado, I have a question.")}
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-20 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-white p-3.5 text-ink shadow-soft transition-transform hover:scale-110 hover:border-brand md:bottom-6 md:right-6"
+        className="fixed bottom-6 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-white p-3.5 text-ink shadow-soft transition-transform hover:scale-110 hover:border-brand md:right-6"
       >
         <WhatsAppIcon width={24} height={24} />
       </WhatsAppAnchor>
@@ -32,7 +29,7 @@ export function Floating() {
       <button
         aria-label="Back to top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`fixed bottom-[136px] right-4 z-40 flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-ink shadow-card transition-all md:bottom-24 md:right-6 ${
+        className={`fixed bottom-24 right-4 z-40 flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-ink shadow-card transition-all md:right-6 ${
           showTop ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
@@ -40,22 +37,6 @@ export function Floating() {
           <path d="M18 15l-6-6-6 6" />
         </svg>
       </button>
-
-      {/* Sticky mobile bottom bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 flex border-t border-line bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.06)] md:hidden">
-        <a
-          href={telLink(site.phones.landline.tel)}
-          className="flex flex-1 flex-row items-center justify-center gap-1 border-r border-line py-2 text-[10px] font-semibold text-ink"
-        >
-          <PhoneIcon width={15} height={15} className="text-brand" /> Call
-        </a>
-        <Link
-          href="/contact"
-          className="flex flex-1 flex-row items-center justify-center gap-1 py-2 text-[10px] font-semibold text-ink"
-        >
-          <QuoteIcon width={15} height={15} className="text-brand" /> Quote
-        </Link>
-      </div>
     </>
   );
 }

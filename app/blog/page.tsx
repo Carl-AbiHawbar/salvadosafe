@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SectionHeading, FinalCTA } from "@/components/sections";
+import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
@@ -50,12 +50,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
-      <FinalCTA
-        title="Have a Question Now?"
-        text="Don't wait for an article, message our team on WhatsApp and we'll guide you directly."
-        waMessage="Hi Salvado, I have a question about choosing a safe."
-      />
     </>
   );
 }

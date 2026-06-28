@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SectionHeading, FinalCTA } from "@/components/sections";
+import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
@@ -182,13 +182,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      <FinalCTA
-        eyebrow="Need technical support?"
-        title="Need Support for a Safe, Vault Door, or Security Product?"
-        text="Contact Salvado for service requests, installation requirements, repair, relocation, safe opening, or technical support."
-        waMessage="Hi Salvado, I need technical support."
-      />
     </>
   );
 }

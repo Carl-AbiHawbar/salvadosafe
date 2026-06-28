@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { HeroSlider } from "@/components/hero-slider";
 import { ShowroomCarousel } from "@/components/showroom-carousel";
-import { TrustStrip, SectionHeading, FinalCTA } from "@/components/sections";
+import { TrustStrip, SectionHeading } from "@/components/sections";
 import { ReviewsCarousel } from "@/components/reviews";
 import { InstagramCarousel } from "@/components/instagram-carousel";
 import { CategoryCard, ProductCard } from "@/components/cards";
@@ -233,14 +233,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Final lead */}
-      <FinalCTA
-        eyebrow={pages.home.finalCta.eyebrow}
-        title={pages.home.finalCta.title}
-        text={pages.home.finalCta.text}
-        waMessage={pages.home.finalCta.waMessage}
-      />
     </>
   );
 }

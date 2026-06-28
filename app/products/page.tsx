@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SectionHeading, TrustStrip, FinalCTA } from "@/components/sections";
+import { SectionHeading, TrustStrip } from "@/components/sections";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { getFeaturedCategories, getSecondaryCategories, getProduct, getPublicProducts, getTotalProducts, getCategories, categoryCount, categorySubs } from "@/lib/catalog";
@@ -181,14 +181,6 @@ export default function ProductsPage() {
           />
         </div>
       </section>
-
-      {/* Not sure */}
-      <FinalCTA
-        eyebrow="Not sure what to choose?"
-        title="Need Help Choosing the Right Safe or Security Solution?"
-        text="Contact Salvado with your requirements, location, and intended use. Our team can recommend suitable options based on security level, size, product type, and installation conditions."
-        waMessage="Hi Salvado, I'm not sure which safe to choose, can you help?"
-      />
     </>
   );
 }

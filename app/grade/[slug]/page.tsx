@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { SectionHeading, FinalCTA } from "@/components/sections";
+import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { GradeCard } from "@/components/grade-card";
 import { GradeSpecTable } from "@/components/grade-spec-table";
 import { ProductBanner } from "@/components/product-banner";
-import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
+import { GetQuoteButton, CTA } from "@/components/cta";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 import { getCategory } from "@/lib/catalog";
 import { getGrade, getGrades } from "@/lib/grades";
@@ -105,14 +105,10 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
               </p>
             </div>
 
-            <CtaGroup className="mt-6">
-              <WhatsAppButton
-                label={`WhatsApp for ${grade.grade}`}
-                message={`Hi Salvado, I'm interested in ${grade.grade} high-security safes (${grade.series}). Can you help me choose the right size and share pricing?`}
-              />
-              <QuoteButton label="Request a Quote" />
-              <CallButton variant="ghost" />
-            </CtaGroup>
+            <GetQuoteButton
+              className="mt-6"
+              message={`Hi Salvado, I'd like a quote for ${grade.grade} high-security safes (${grade.series}).`}
+            />
           </Reveal>
         </div>
       </section>
@@ -221,13 +217,6 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
           </div>
         </div>
       </section>
-
-      <FinalCTA
-        eyebrow="Ask about this grade"
-        title={`Need Help Choosing a ${grade.grade} Size?`}
-        text="Contact Salvado with your space dimensions and what you need to secure. Our team will recommend the right model from the comparison table and provide pricing."
-        waMessage={`Hi Salvado, I'd like help choosing the right ${grade.grade} size from the ${grade.series}.`}
-      />
     </>
   );
 }

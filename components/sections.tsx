@@ -1,5 +1,4 @@
 import { Reveal } from "./reveal";
-import { QuoteButton, CallButton, CtaGroup } from "./cta";
 import { TruckIcon, ShieldIcon, ToolsIcon, HeadsetIcon } from "./icons";
 
 export function SectionHeading({
@@ -52,34 +51,6 @@ export function TrustStrip({ items = defaultTrust }: { items?: { icon: typeof Tr
             <p className="text-[13.5px] leading-relaxed text-muted">{t.text}</p>
           </Reveal>
         ))}
-      </div>
-    </section>
-  );
-}
-
-export function FinalCTA({
-  eyebrow = "Get in touch",
-  title,
-  text,
-  waMessage,
-}: {
-  eyebrow?: string;
-  title: string;
-  text: string;
-  waMessage?: string;
-}) {
-  return (
-    <section className="bg-ink">
-      <div className="container-x py-20">
-        <Reveal className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{eyebrow}</p>
-          <h2 className="font-display text-3xl font-bold leading-tight text-white md:text-[42px]">{title}</h2>
-          <p className="mx-auto mt-4 max-w-xl text-[15.5px] leading-relaxed text-white/70">{text}</p>
-          <CtaGroup center className="mt-8">
-            <QuoteButton variant="primaryLight" />
-            <CallButton variant="ghostLight" />
-          </CtaGroup>
-        </Reveal>
       </div>
     </section>
   );

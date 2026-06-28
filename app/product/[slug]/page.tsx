@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
 import { ProductCard } from "@/components/cards";
-import { SectionHeading, FinalCTA } from "@/components/sections";
-import { WhatsAppButton, QuoteButton, CallButton, CTA, CtaGroup } from "@/components/cta";
+import { SectionHeading } from "@/components/sections";
+import { GetQuoteButton, CTA } from "@/components/cta";
 import { ProductGallery } from "@/components/product-gallery";
 import { getPublicProducts, getProduct, getCategory, similarProducts, isPublicProduct, type Product } from "@/lib/catalog";
 import { productImages, resolveProductFaqs } from "@/lib/catalog-types";
@@ -133,20 +133,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </p>
             </div>
 
-            <CtaGroup className="mt-6">
-              {product.isProject ? (
-                <>
-                  <WhatsAppButton label="Request Private Consultation" shortLabel="Consult" message={`Hi Salvado, I'd like a private consultation about ${product.name}.`} />
-                  <QuoteButton label="Request a Quote" />
-                </>
-              ) : (
-                <>
-                  <WhatsAppButton label="WhatsApp for Price" message={`Hi Salvado, I'm interested in the ${product.name}. Can you share the price and availability?`} />
-                  <QuoteButton label="Request a Quote" />
-                </>
-              )}
-              <CallButton variant="ghost" />
-            </CtaGroup>
+            <GetQuoteButton
+              className="mt-6"
+              message={
+                product.isProject
+                  ? `Hi Salvado, I'd like a quote for ${product.name}.`
+                  : `Hi Salvado, I'd like a quote for the ${product.name}.`
+              }
+            />
           </Reveal>
         </div>
       </section>
@@ -280,13 +274,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
         </section>
       )}
-
-      <FinalCTA
-        eyebrow="Ask about this product"
-        title={`Interested in the ${product.name}?`}
-        text="Contact Salvado for pricing, availability, specifications, and delivery or installation guidance. Our team is ready to help."
-        waMessage={`Hi Salvado, I'd like to ask about the ${product.name}.`}
-      />
     </>
   );
 }
