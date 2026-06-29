@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = "https://salvadosafe.com";
+const SITE_URL = "https://www.salvadosafe.com";
 
 export function absoluteImageUrl(path: string | null | undefined): string | undefined {
   if (!path) return undefined;

@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://salvadosafe.com"),
+  metadataBase: new URL("https://www.salvadosafe.com"),
   title: {
     default: "Salvado Safe Lebanon | Premium Safes, Vaults and Security Solutions",
     template: "%s | Salvado Safe",
@@ -32,12 +32,21 @@ export const metadata: Metadata = {
     "safe Lebanon", "safes Lebanon", "fireproof safe Lebanon", "vault Lebanon",
     "security safe Lebanon", "home safe Lebanon", "luxury safes Lebanon", "Salvado Safe",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "Salvado Safe Lebanon | High-Security Safes and Vault Solutions",
     description:
       "Protect what matters most with Salvado Safe. Premium certified safes, vaults, and security solutions in Lebanon.",
     type: "website",
-    url: "https://salvadosafe.com",
+    url: "https://www.salvadosafe.com",
   },
 };
 

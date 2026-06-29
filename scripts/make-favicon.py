@@ -18,12 +18,10 @@ def shield_bbox(img: Image.Image) -> tuple[int, int, int, int]:
     def column_has_content(x: int) -> bool:
         return any(px[x, y] > threshold for y in range(0, h, 2))
 
-    # Find first opaque column (shield start).
     start = next((x for x in range(w) if column_has_content(x)), None)
     if start is None:
         raise SystemExit("Could not detect shield in logo.")
 
-    # Walk right until a sustained transparent gap marks the end of the shield.
     gap = 0
     end = start
     for x in range(start, w):
@@ -32,7 +30,7 @@ def shield_bbox(img: Image.Image) -> tuple[int, int, int, int]:
             gap = 0
         else:
             gap += 1
-            if gap > int(w * 0.01):  # gap between shield and the "S"
+            if gap > int(w * 0.01):
                 break
 
     region = img.crop((start, 0, end + 1, h))
@@ -41,33 +39,51 @@ def shield_bbox(img: Image.Image) -> tuple[int, int, int, int]:
     return (start, top, end + 1, bottom)
 
 
-def build() -> None:
+def square_shield() -> Image.Image:
     logo = Image.open(LOGO).convert("RGBA")
-    box = shield_bbox(logo)
-    shield = logo.crop(box)
-
-    # Square, fully-transparent canvas sized to the shield so it fills the frame
-    # edge-to-edge (no surrounding padding/disc).
+    shield = logo.crop(shield_bbox(logo))
     side = max(shield.size)
     canvas = Image.new("RGBA", (side, side), (0, 0, 0, 0))
     offset = ((side - shield.width) // 2, (side - shield.height) // 2)
     canvas.paste(shield, offset, shield)
+    return canvas
 
-    targets = {
-        ROOT / "app" / "icon.png": 512,
-        ROOT / "app" / "apple-icon.png": 180,
-        ROOT / "public" / "images" / "brand" / "shield-logo.png": 512,
-        ROOT / "public" / "favicon.png": 64,
-    }
-    for path, size in targets.items():
-        out = canvas.resize((size, size), Image.LANCZOS)
-        out.save(path, "PNG", optimize=True)
-        print(f"wrote {path.relative_to(ROOT)} ({size}x{size}, {path.stat().st_size // 1024} KB)")
 
-    # Multi-size .ico so the browser /favicon.ico request also serves the shield.
-    ico_path = ROOT / "app" / "favicon.ico"
-    canvas.save(ico_path, format="ICO", sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
-    print(f"wrote {ico_path.relative_to(ROOT)} ({ico_path.stat().st_size // 1024} KB)")
+def write_png(canvas: Image.Image, path: Path, size: int) -> None:
+    out = canvas.resize((size, size), Image.LANCZOS)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    out.save(path, "PNG", optimize=True)
+    print(f"wrote {path.relative_to(ROOT)} ({size}x{size}, {path.stat().st_size // 1024} KB)")
+
+
+def write_ico(canvas: Image.Image, path: Path) -> None:
+    """Build a multi-size .ico Google and browsers can fetch reliably."""
+    sizes = (16, 32, 48)
+    frames = [canvas.resize((s, s), Image.LANCZOS) for s in sizes]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    frames[0].save(
+        path,
+        format="ICO",
+        sizes=[(s, s) for s in sizes],
+        append_images=frames[1:],
+    )
+    print(f"wrote {path.relative_to(ROOT)} ({path.stat().st_size} bytes)")
+
+
+def build() -> None:
+    canvas = square_shield()
+
+    write_png(canvas, ROOT / "app" / "icon.png", 512)
+    write_png(canvas, ROOT / "app" / "apple-icon.png", 180)
+    write_png(canvas, ROOT / "public" / "images" / "brand" / "shield-logo.png", 512)
+    write_png(canvas, ROOT / "public" / "favicon.png", 48)
+    write_ico(canvas, ROOT / "public" / "favicon.ico")
+
+    # Next.js app/favicon.ico metadata route can 500 on some hosts; serve static public copy instead.
+    app_ico = ROOT / "app" / "favicon.ico"
+    if app_ico.exists():
+        app_ico.unlink()
+        print(f"removed {app_ico.relative_to(ROOT)} (use public/favicon.ico)")
 
 
 if __name__ == "__main__":
