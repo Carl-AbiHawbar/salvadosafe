@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HeroSlider } from "@/components/hero-slider";
 import { ShowroomCarousel } from "@/components/showroom-carousel";
 import { TrustStrip, SectionHeading } from "@/components/sections";
-import { ReviewsCarousel } from "@/components/reviews";
+import { ReviewsSection } from "@/components/reviews-section";
 import { InstagramCarousel } from "@/components/instagram-carousel";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
@@ -200,11 +200,7 @@ export default function HomePage() {
       {/* Reviews */}
       <section className="bg-surface">
         <div className="container-x py-20 md:py-24">
-          <ReviewsCarousel
-            reviews={pages.reviews}
-            ratingLabel={pages.reviewsMeta.ratingLabel}
-            reviewCount={pages.reviewsMeta.reviewCount}
-          />
+          <ReviewsSection />
           <div className="mt-16 border-t border-line pt-16 md:mt-20 md:pt-20">
             <InstagramCarousel
               posts={pages.instagramPosts}

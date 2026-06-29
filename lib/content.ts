@@ -28,7 +28,7 @@ export type ServiceItem = {
 export type PagesContent = {
   heroSlides: HeroSlide[];
   reviews: Review[];
-  reviewsMeta: { ratingLabel: string; reviewCount: string };
+  reviewsMeta: { ratingValue: string; ratingLabel: string; reviewCount: number | string };
   instagramMeta: { handle: string; title: string; subtitle: string };
   instagramPosts: InstagramPost[];
   home: {
@@ -94,6 +94,7 @@ export type SiteConfig = {
   };
   socials: { instagram: string; facebook: string };
   maps: string;
+  mapsReviews?: string;
   mapsEmbed: string;
 };
 

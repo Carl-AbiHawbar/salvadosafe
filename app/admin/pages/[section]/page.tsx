@@ -483,11 +483,29 @@ export default function AdminPageSection({ params }: { params: Promise<{ section
       {section === "reviews" && (
         <>
           <AdminCard title="Reviews header" className="mt-6">
-            <div className="grid gap-4 md:grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-3">
+              <AdminInput label="Rating (e.g. 5.0)" value={pages.reviewsMeta.ratingValue ?? "5.0"} onChange={(v) => setPages({ ...pages, reviewsMeta: { ...pages.reviewsMeta, ratingValue: v } })} />
               <AdminInput label="Rating label" value={pages.reviewsMeta.ratingLabel} onChange={(v) => setPages({ ...pages, reviewsMeta: { ...pages.reviewsMeta, ratingLabel: v } })} />
-              <AdminInput label="Review count text" value={pages.reviewsMeta.reviewCount} onChange={(v) => setPages({ ...pages, reviewsMeta: { ...pages.reviewsMeta, reviewCount: v } })} />
+              <AdminInput label="Total review count" value={String(pages.reviewsMeta.reviewCount)} onChange={(v) => setPages({ ...pages, reviewsMeta: { ...pages.reviewsMeta, reviewCount: Number(v.replace(/\D/g, "")) || 0 } })} />
             </div>
           </AdminCard>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <button
+              type="button"
+              onClick={() =>
+                setPages({
+                  ...pages,
+                  reviews: [
+                    ...pages.reviews,
+                    { name: "New reviewer", when: "Recently", text: "Review text", color: "bg-slate-600" },
+                  ],
+                })
+              }
+              className="rounded-full border border-white/20 px-4 py-2 text-[13px] font-semibold text-white/80 hover:border-white/40 hover:text-white"
+            >
+              + Add review card
+            </button>
+          </div>
           {pages.reviews.map((r, i) => (
             <AdminCard key={i} title={r.name} className="mt-4">
               <div className="grid gap-4 md:grid-cols-2">
@@ -496,6 +514,13 @@ export default function AdminPageSection({ params }: { params: Promise<{ section
                 <AdminInput label="Avatar color class" value={r.color} onChange={(v) => { const reviews = [...pages.reviews]; reviews[i] = { ...r, color: v }; setPages({ ...pages, reviews }); }} />
                 <AdminInput label="Review text" value={r.text} onChange={(v) => { const reviews = [...pages.reviews]; reviews[i] = { ...r, text: v }; setPages({ ...pages, reviews }); }} rows={3} className="md:col-span-2" />
               </div>
+              <button
+                type="button"
+                onClick={() => setPages({ ...pages, reviews: pages.reviews.filter((_, j) => j !== i) })}
+                className="mt-4 text-[13px] font-semibold text-red-300 hover:text-red-200"
+              >
+                Remove card
+              </button>
             </AdminCard>
           ))}
           <SaveBar onSave={() => save(pages)} saving={saving} message={msg} />
