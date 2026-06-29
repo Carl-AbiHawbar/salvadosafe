@@ -1,6 +1,6 @@
 "use client";
 
-import { onWhatsAppClick } from "@/lib/analytics";
+import { onGetQuoteClick } from "@/lib/analytics";
 
 type WhatsAppAnchorProps = React.ComponentPropsWithoutRef<"a"> & {
   href: string;
@@ -16,12 +16,12 @@ export function handleWhatsAppClick(
   onClick?: React.MouseEventHandler<HTMLAnchorElement>,
 ) {
   e.preventDefault();
-  onWhatsAppClick();
+  onGetQuoteClick();
   onClick?.(e);
   openWhatsApp(href);
 }
 
-/** External WhatsApp link that reports a Google Ads conversion on click. */
+/** External WhatsApp link that reports a Google Ads Request quote conversion on click. */
 export function WhatsAppAnchor({ href, onClick, children, ...props }: WhatsAppAnchorProps) {
   return (
     <a

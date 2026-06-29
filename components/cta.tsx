@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { site, waLink, telLink } from "@/lib/site";
-import { onWhatsAppClick } from "@/lib/analytics";
+import { onGetQuoteClick } from "@/lib/analytics";
 import { openWhatsApp } from "./whatsapp-anchor";
 import { WhatsAppIcon, PhoneIcon, QuoteIcon, PinIcon, ArrowIcon } from "./icons";
 
@@ -120,7 +120,7 @@ export function WhatsAppButton({
       className={className}
       onClick={(e) => {
         e.preventDefault();
-        onWhatsAppClick();
+        onGetQuoteClick();
         openWhatsApp(href);
       }}
     >
