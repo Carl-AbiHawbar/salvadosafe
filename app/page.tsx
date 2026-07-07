@@ -6,6 +6,7 @@ import { ReviewsSection } from "@/components/reviews-section";
 import { InstagramCarousel } from "@/components/instagram-carousel";
 import { CategoryCard, ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
+import { HomeJsonLd } from "@/components/home-json-ld";
 import { getCategoriesBySlugs, getProduct } from "@/lib/catalog";
 import { getGrade } from "@/lib/grades";
 import { GradeCard } from "@/components/grade-card";
@@ -14,6 +15,14 @@ import { getSite } from "@/lib/site-server";
 import { ShieldIcon, CheckIcon } from "@/components/icons";
 
 import { getIcon } from "@/lib/icon-map";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Salvado Safe Lebanon | Premium Safes, Vaults and Security Solutions",
+  description:
+    "Lebanon's leading safe showroom in Zalka. High-security safes, fireproof safes, vault doors, luxury safes, gun safes, and cash-handling solutions with certified installation across Lebanon.",
+  path: "/",
+});
 
 export default function HomePage() {
   const pages = getPagesContent();
@@ -33,6 +42,7 @@ export default function HomePage() {
 
   return (
     <>
+      <HomeJsonLd />
       <HeroSlider slides={pages.heroSlides} />
 
       {/* Proof strip */}

@@ -5,15 +5,12 @@ import { SectionHeading } from "@/components/sections";
 import { ProductCard } from "@/components/cards";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
-import {
-  getCategories,
-  getCategory,
-  productsInCategory,
-  categoryImage,
-} from "@/lib/catalog";
+import { categoryImage, getCategories, getCategory, productsInCategory } from "@/lib/catalog";
 import { getGrades } from "@/lib/grades";
 import { GradeCard } from "@/components/grade-card";
 import { ProductBanner } from "@/components/product-banner";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, categorySeoMeta, faqSchema } from "@/lib/seo";
 export function generateStaticParams() {
   return getCategories().map((c) => ({ slug: c.slug }));
 }
@@ -22,10 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const category = getCategory(slug);
   if (!category) return { title: "Category" };
-  return {
-    title: `${category.name} in Lebanon`,
-    description: category.intro,
-  };
+  return categorySeoMeta({ ...category, image: categoryImage(category) });
 }
 
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -38,8 +32,18 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
   const isHighSecurity = slug === "high-security-safes";
   const grades = isHighSecurity ? getGrades() : [];
 
+  const schema = [
+    breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Products", path: "/products" },
+      { name: category.name, path: `/category/${category.slug}` },
+    ]),
+    category.faqs?.length ? faqSchema(category.faqs) : null,
+  ].filter(Boolean);
+
   return (
     <>
+      <JsonLd data={schema as Record<string, unknown>[]} />
       <ProductBanner
         eyebrow={isHighSecurity ? "Certified High-Security Safes" : "Premium Security Solutions"}
         title={category.name}

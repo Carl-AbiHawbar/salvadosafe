@@ -1,15 +1,18 @@
-import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { ContactCard } from "@/components/contact-card";
 import { GetQuoteButton } from "@/components/cta";
 import { site } from "@/lib/site";
 import { getPagesContent } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "Contact Salvado, Request a Quote",
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Contact Salvado Safe in Zalka, Lebanon",
   description:
-    "Contact Salvado Safe in Zalka, Lebanon. Request a quote, ask about a product, or arrange a showroom visit. Call, WhatsApp, or send us your requirements.",
-};
+    "Contact Salvado Safe in Zalka, Lebanon. Request a quote, ask about a product, or arrange a showroom visit. Call, WhatsApp, or email our security experts.",
+  path: "/contact",
+  keywords: ["contact Salvado Safe", "safe showroom Zalka", "request quote safe Lebanon"],
+});
 
 const contactItems = [
   { icon: "phone" as const, label: "Showroom Phone", value: site.phones.landline.label },

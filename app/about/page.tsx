@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
@@ -7,11 +6,15 @@ import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { ShieldIcon } from "@/components/icons";
 
-export const metadata: Metadata = {
-  title: "About Salvado",
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "About Salvado Safe Lebanon",
   description:
-    "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions, with Lebanon's leading safe showroom and a trained technical team.",
-};
+    "Salvado is Lebanon's leading name in safes, vault doors, secure rooms, and professional security solutions — with Lebanon's leading safe showroom in Zalka and a trained technical team.",
+  path: "/about",
+  keywords: ["about Salvado Safe", "safe company Lebanon", "security experts Lebanon", "Zalka showroom"],
+});
 
 export default function AboutPage() {
   const about = getPagesContent().about;

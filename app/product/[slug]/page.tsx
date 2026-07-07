@@ -11,6 +11,8 @@ import { getPublicProducts, getProduct, getCategory, similarProducts, isPublicPr
 import { productImages, resolveProductFaqs } from "@/lib/catalog-types";
 import { gradeForProductSub } from "@/lib/grades";
 import { productShareMetadata } from "@/lib/share-metadata";
+import { breadcrumbSchema, faqSchema, productSchema } from "@/lib/seo";
+import { JsonLd } from "@/components/json-ld";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 
 export function generateStaticParams() {
@@ -21,7 +23,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return { title: "Product" };
-  return productShareMetadata(product);
+  return productShareMetadata({
+    name: product.name,
+    desc: product.desc,
+    image: product.image,
+    slug: product.slug,
+    category: product.category,
+  });
 }
 
 const SPEC_LABELS: { key: keyof Product["specs"]; label: string }[] = [
@@ -65,8 +73,26 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const images = productImages(product);
   const faqs = resolveProductFaqs(product, category);
 
+  const schema = [
+    productSchema({
+      name: product.name,
+      desc: product.desc,
+      image: product.image,
+      slug: product.slug,
+      categoryName: category?.name,
+    }),
+    breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Products", path: "/products" },
+      ...(category ? [{ name: category.name, path: `/category/${category.slug}` }] : []),
+      { name: product.name, path: `/product/${product.slug}` },
+    ]),
+    faqs.length ? faqSchema(faqs) : null,
+  ].filter(Boolean);
+
   return (
     <>
+      <JsonLd data={schema as Record<string, unknown>[]} />
       {/* Breadcrumb */}
       <div className="border-b border-line bg-surface">
         <div className="container-x flex flex-wrap items-center gap-2 py-3 text-[13px] text-muted">

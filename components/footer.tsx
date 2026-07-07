@@ -105,6 +105,8 @@ export function Footer({ featuredCategories }: { featuredCategories: Category[] 
         <div className="container-x flex flex-col items-center justify-between gap-3 py-5 text-[13px] text-white/55 md:flex-row">
           <span>© 2026 Salvado Safe. All rights reserved.</span>
           <div className="flex items-center gap-5">
+            <Link href="/about" className="hover:text-white">About</Link>
+            <Link href="/blog" className="hover:text-white">Blog</Link>
             <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white">Terms and Conditions</Link>
             <Link href="/sitemap" className="hover:text-white">Sitemap</Link>

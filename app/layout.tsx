@@ -6,6 +6,7 @@ import { SiteProvider } from "@/components/site-provider";
 import { GoogleTags } from "@/components/google-tags";
 import { getFeaturedCategories, getSecondaryCategories } from "@/lib/catalog";
 import { getSite } from "@/lib/site-server";
+import { DEFAULT_KEYWORDS, DEFAULT_OG_IMAGE, SITE_URL, absoluteImageUrl } from "@/lib/seo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,18 +21,22 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const defaultDescription =
+  "Lebanon's leading showroom for high-security safes, fire-rated safes, vault doors, secure rooms, luxury safes, and cash-handling solutions. Certified products, European-standard installation, and premium after-sales support in Zalka, Lebanon.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.salvadosafe.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Salvado Safe Lebanon | Premium Safes, Vaults and Security Solutions",
     template: "%s | Salvado Safe",
   },
-  description:
-    "Lebanon's leading showroom for high-security safes, fire-rated safes, vault doors, secure rooms, luxury safes, and cash-handling solutions. Certified products, European-standard installation, and premium after-sales support.",
-  keywords: [
-    "safe Lebanon", "safes Lebanon", "fireproof safe Lebanon", "vault Lebanon",
-    "security safe Lebanon", "home safe Lebanon", "luxury safes Lebanon", "Salvado Safe",
-  ],
+  description: defaultDescription,
+  keywords: DEFAULT_KEYWORDS,
+  authors: [{ name: "Salvado Safe", url: SITE_URL }],
+  creator: "Salvado Safe",
+  publisher: "Salvado Safe",
+  alternates: { canonical: `${SITE_URL}/` },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -43,10 +48,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Salvado Safe Lebanon | High-Security Safes and Vault Solutions",
-    description:
-      "Protect what matters most with Salvado Safe. Premium certified safes, vaults, and security solutions in Lebanon.",
+    description: defaultDescription,
     type: "website",
-    url: "https://www.salvadosafe.com",
+    url: SITE_URL,
+    siteName: "Salvado Safe",
+    locale: "en_LB",
+    images: [{ url: absoluteImageUrl(DEFAULT_OG_IMAGE)!, width: 1200, height: 630, alt: "Salvado Safe showroom in Zalka, Lebanon" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salvado Safe Lebanon | Premium Safes and Vaults",
+    description: defaultDescription,
+    images: [absoluteImageUrl(DEFAULT_OG_IMAGE)!],
   },
 };
 

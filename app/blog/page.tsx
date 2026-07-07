@@ -1,12 +1,15 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { GetQuoteButton } from "@/components/cta";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Blog and Security Guides",
-  description: "Guides and answers on choosing safes, vault doors, fire ratings, security grades, and secure storage from Salvado Safe in Lebanon.",
-};
+export const metadata = pageMetadata({
+  title: "Safe and Security Guides | Salvado Blog",
+  description:
+    "Expert guides on choosing safes, fire ratings, security grades, vault doors, and secure storage in Lebanon from Salvado Safe.",
+  path: "/blog",
+  keywords: ["safe buying guide Lebanon", "fire rating guide", "security grade guide", "vault door guide"],
+});
 
 const topics = [
   { title: "How to Choose the Right Safe", text: "Understand security grades, fire ratings, size, and lock types before you buy." },

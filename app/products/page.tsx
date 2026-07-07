@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { SectionHeading, TrustStrip } from "@/components/sections";
 import { CategoryCard, ProductCard } from "@/components/cards";
@@ -10,11 +9,15 @@ import { ProductBanner } from "@/components/product-banner";
 import { ProductCatalog } from "@/components/product-catalog";
 import { ArrowIcon } from "@/components/icons";
 
-export const metadata: Metadata = {
-  title: "Products, Premium Safes, Vault Doors and Security Solutions",
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Safes and Security Products in Lebanon",
   description:
-    "Explore Salvado's range of high-security safes, fire-rated safes, vault doors, secure rooms, camouflage safes, luxury safes, and cash-handling solutions in Lebanon.",
-};
+    "Browse high-security safes, fireproof safes, vault doors, luxury safes, gun safes, and cash-handling solutions from Salvado Safe — Lebanon's leading security showroom in Zalka.",
+  path: "/products",
+  keywords: ["safes Lebanon", "security products Lebanon", "buy safe Lebanon", "Salvado Safe catalog"],
+});
 
 const protectCards = [
   { title: "Jewelry and Watches", text: "For watches, jewelry, collectibles, and private valuables.", slug: "luxury-safes-watch-storage" },

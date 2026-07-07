@@ -52,6 +52,7 @@ export function ReviewsCarousel({
 
   return (
     <div className="relative">
+      <h2 className="sr-only">Google Reviews</h2>
       <div className="mb-8 flex flex-col items-center text-center">
         <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-emerald-600">{ratingLabel}</p>
         <p className="mt-1 text-[40px] font-bold leading-none tracking-tight text-ink md:text-[44px]">{ratingValue}</p>

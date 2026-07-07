@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { SectionHeading } from "@/components/sections";
 import { Reveal } from "@/components/reveal";
 import { FAQ } from "@/components/faq";
@@ -7,17 +6,23 @@ import { getPagesContent } from "@/lib/content";
 import { getIcon } from "@/lib/icon-map";
 import { CheckIcon } from "@/components/icons";
 
-export const metadata: Metadata = {
-  title: "Professional Safe and Vault Services",
+import { pageMetadata, faqSchema } from "@/lib/seo";
+import { JsonLd } from "@/components/json-ld";
+
+export const metadata = pageMetadata({
+  title: "Safe Installation and Vault Services in Lebanon",
   description:
-    "Salvado provides technical services for safes, vault doors, vault rooms, installation, maintenance, relocation, safe opening, and after-sales support for residential, commercial, and institutional clients.",
-};
+    "Professional safe installation, vault door delivery, locksmith services, maintenance, relocation, and after-sales support across Lebanon from Salvado's certified technical team.",
+  path: "/services",
+  keywords: ["safe installation Lebanon", "vault door installation Lebanon", "safe repair Lebanon", "locksmith Lebanon"],
+});
 
 export default function ServicesPage() {
   const content = getPagesContent().services;
 
   return (
     <>
+      {content.faqs?.length ? <JsonLd data={faqSchema(content.faqs)!} /> : null}
       {/* Hero */}
       <section className="relative overflow-hidden bg-ink">
         <div className="absolute inset-0">

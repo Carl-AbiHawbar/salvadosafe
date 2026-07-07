@@ -11,6 +11,8 @@ import { GetQuoteButton } from "@/components/cta";
 import { CheckIcon, ShieldIcon, TruckIcon } from "@/components/icons";
 import { getCategory } from "@/lib/catalog";
 import { getGrade, getGrades } from "@/lib/grades";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, faqSchema, gradeSeoMeta } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getGrades().map((g) => ({ slug: g.slug }));
@@ -20,11 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const grade = getGrade(slug);
   if (!grade) return { title: "Grade" };
-  return {
-    title: `${grade.h1} in Lebanon`,
-    description: grade.desc,
-    keywords: grade.seoFocus.split(";").map((s) => s.trim()).filter(Boolean),
-  };
+  return gradeSeoMeta(grade);
 }
 
 export default async function GradePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -51,8 +49,19 @@ export default async function GradePage({ params }: { params: Promise<{ slug: st
     ...(category ? category.faqs.slice(0, 1) : []),
   ];
 
+  const schema = [
+    breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Products", path: "/products" },
+      ...(category ? [{ name: category.name, path: `/category/${category.slug}` }] : []),
+      { name: grade.h1, path: `/grade/${grade.slug}` },
+    ]),
+    faqSchema(faqs),
+  ].filter(Boolean);
+
   return (
     <>
+      <JsonLd data={schema as Record<string, unknown>[]} />
       <ProductBanner
         eyebrow={grade.series}
         title={grade.h1}
