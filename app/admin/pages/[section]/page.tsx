@@ -417,6 +417,7 @@ export default function AdminPageSection({ params }: { params: Promise<{ section
   const [section, setSection] = useState<string>("");
   const [pages, setPages] = useState<PagesContent | null>(null);
   const [saving, setSaving] = useState(false);
+  const [syncing, setSyncing] = useState(false);
   const [msg, setMsg] = useState("");
 
   useEffect(() => {
@@ -488,6 +489,47 @@ export default function AdminPageSection({ params }: { params: Promise<{ section
               <AdminInput label="Rating label" value={pages.reviewsMeta.ratingLabel} onChange={(v) => setPages({ ...pages, reviewsMeta: { ...pages.reviewsMeta, ratingLabel: v } })} />
               <AdminInput label="Total review count" value={String(pages.reviewsMeta.reviewCount)} onChange={(v) => setPages({ ...pages, reviewsMeta: { ...pages.reviewsMeta, reviewCount: Number(v.replace(/\D/g, "")) || 0 } })} />
             </div>
+            <p className="mt-3 text-[13px] text-white/55">
+              Live Google rating and count refresh automatically every hour when{" "}
+              <code className="text-white/80">GOOGLE_PLACES_API_KEY</code> is set on Vercel. Use Sync to pull now.
+            </p>
+            <button
+              type="button"
+              disabled={syncing}
+              onClick={async () => {
+                setSyncing(true);
+                setMsg("");
+                try {
+                  const res = await fetch("/api/admin/sync-reviews", { method: "POST" });
+                  const data = await res.json();
+                  if (!res.ok) throw new Error(data.error || "Sync failed");
+                  const colors = ["bg-slate-600", "bg-indigo-600", "bg-rose-600", "bg-emerald-600", "bg-amber-600", "bg-teal-600"];
+                  const googleCards = (data.reviews as { name: string; when: string; text: string }[]).map((r, i) => ({
+                    ...r,
+                    color: colors[i % colors.length],
+                  }));
+                  const existingNames = new Set(googleCards.map((r) => r.name.toLowerCase()));
+                  const kept = pages.reviews.filter((r) => !existingNames.has(r.name.toLowerCase()));
+                  setPages({
+                    ...pages,
+                    reviewsMeta: {
+                      ...pages.reviewsMeta,
+                      ratingValue: Number(data.rating).toFixed(1),
+                      reviewCount: data.reviewCount,
+                    },
+                    reviews: [...googleCards, ...kept],
+                  });
+                  setMsg(`Synced from Google: ${data.rating}★ · ${data.reviewCount} reviews · ${data.reviewCards} cards. Click Save to keep.`);
+                } catch (e) {
+                  setMsg(e instanceof Error ? e.message : "Sync failed");
+                } finally {
+                  setSyncing(false);
+                }
+              }}
+              className="mt-4 rounded-full border border-white/20 px-4 py-2 text-[13px] font-semibold text-white/80 hover:border-white/40 hover:text-white disabled:opacity-50"
+            >
+              {syncing ? "Syncing…" : "↻ Sync from Google now"}
+            </button>
           </AdminCard>
           <div className="mt-4 flex flex-wrap gap-3">
             <button

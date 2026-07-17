@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { getLegacyRedirects } from "./lib/legacy-redirects";
 
 const useLocalCacheDir = !process.env.VERCEL;
 
@@ -7,6 +8,9 @@ const nextConfig: NextConfig = {
   // Vercel must use the default ".next" output directory.
   ...(useLocalCacheDir ? { distDir: "node_modules/.cache/salvado-next" } : {}),
   turbopack: {},
+  async redirects() {
+    return getLegacyRedirects();
+  },
 };
 
 export default nextConfig;

@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/json-ld";
 import { getPagesContent } from "@/lib/content";
+import { fetchGoogleReviewsSnapshot } from "@/lib/google-reviews";
 import {
   localBusinessSchema,
   organizationSchema,
@@ -13,11 +14,14 @@ function parseReviewCount(value: string | number): number {
   return match ? Number(match[0].replace(/,/g, "")) : 0;
 }
 
-export function HomeJsonLd() {
+export async function HomeJsonLd() {
   const site = getSite();
   const pages = getPagesContent();
   const meta = pages.reviewsMeta;
-  const reviewCount = parseReviewCount(meta.reviewCount);
+  const google = await fetchGoogleReviewsSnapshot();
+
+  const ratingValue = google ? google.rating.toFixed(1) : meta.ratingValue ?? "5.0";
+  const reviewCount = google?.reviewCount ?? parseReviewCount(meta.reviewCount);
 
   const description =
     "Lebanon's leading showroom for high-security safes, fire-rated safes, vault doors, secure rooms, luxury safes, and cash-handling solutions.";
@@ -41,7 +45,7 @@ export function HomeJsonLd() {
           email: site.email,
           phone: site.phones.landline.tel,
           mapsUrl: site.maps,
-          ratingValue: meta.ratingValue ?? "5.0",
+          ratingValue,
           reviewCount,
         }),
       ]}

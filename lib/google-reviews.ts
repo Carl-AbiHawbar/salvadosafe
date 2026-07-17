@@ -2,6 +2,10 @@ import "server-only";
 
 const PLACE_ID = "ChIJa5L8Zes9HxUR_AvNpwcSnR0";
 
+/** Refresh Google reviews at least once per hour. */
+export const GOOGLE_REVIEWS_REVALIDATE_SECONDS = 60 * 60;
+export const GOOGLE_REVIEWS_CACHE_TAG = "google-reviews";
+
 type GoogleReview = {
   author_name: string;
   relative_time_description: string;
@@ -10,6 +14,7 @@ type GoogleReview = {
 };
 
 type GooglePlaceDetails = {
+  name?: string;
   rating?: number;
   user_ratings_total?: number;
   reviews?: GoogleReview[];
@@ -19,36 +24,52 @@ export type GoogleReviewsSnapshot = {
   rating: number;
   reviewCount: number;
   reviews: { name: string; when: string; text: string }[];
+  fetchedAt: string;
+  placeName?: string;
 };
 
-const REVALIDATE_SECONDS = 60 * 60 * 6;
-
-export async function fetchGoogleReviewsSnapshot(): Promise<GoogleReviewsSnapshot | null> {
+export async function fetchGoogleReviewsSnapshot(options?: {
+  force?: boolean;
+}): Promise<GoogleReviewsSnapshot | null> {
   const key = process.env.GOOGLE_PLACES_API_KEY;
   if (!key) return null;
 
   const placeId = process.env.GOOGLE_PLACE_ID ?? PLACE_ID;
   const url = new URL("https://maps.googleapis.com/maps/api/place/details/json");
   url.searchParams.set("place_id", placeId);
-  url.searchParams.set(
-    "fields",
-    "rating,user_ratings_total,reviews.author_name,reviews.relative_time_description,reviews.rating,reviews.text",
-  );
+  url.searchParams.set("fields", "name,rating,user_ratings_total,reviews");
+  url.searchParams.set("language", "en");
+  url.searchParams.set("reviews_sort", "newest");
   url.searchParams.set("key", key);
 
   try {
-    const res = await fetch(url, { next: { revalidate: REVALIDATE_SECONDS } });
+    const res = await fetch(url.toString(), {
+      ...(options?.force
+        ? { cache: "no-store" as const }
+        : {
+            next: {
+              revalidate: GOOGLE_REVIEWS_REVALIDATE_SECONDS,
+              tags: [GOOGLE_REVIEWS_CACHE_TAG],
+            },
+          }),
+    });
     if (!res.ok) return null;
 
-    const data = (await res.json()) as { result?: GooglePlaceDetails; status?: string };
+    const data = (await res.json()) as {
+      result?: GooglePlaceDetails;
+      status?: string;
+      error_message?: string;
+    };
     if (data.status !== "OK" || !data.result) return null;
 
-    const { rating, user_ratings_total, reviews = [] } = data.result;
+    const { name, rating, user_ratings_total, reviews = [] } = data.result;
     if (rating == null || user_ratings_total == null) return null;
 
     return {
       rating,
       reviewCount: user_ratings_total,
+      placeName: name,
+      fetchedAt: new Date().toISOString(),
       reviews: reviews
         .filter((r) => r.text?.trim() && r.rating >= 4)
         .map((r) => ({

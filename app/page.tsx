@@ -16,6 +16,10 @@ import { ShieldIcon, CheckIcon } from "@/components/icons";
 
 import { getIcon } from "@/lib/icon-map";
 import { pageMetadata } from "@/lib/seo";
+import { GOOGLE_REVIEWS_REVALIDATE_SECONDS } from "@/lib/google-reviews";
+
+/** Rebuild homepage (incl. Google reviews) at least hourly. */
+export const revalidate = GOOGLE_REVIEWS_REVALIDATE_SECONDS;
 
 export const metadata = pageMetadata({
   title: "Salvado Safe Lebanon | Premium Safes, Vaults and Security Solutions",
