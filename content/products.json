@@ -2086,6 +2086,20 @@
       "emergency key access",
       "compact home/office design. Body: 2 mm",
       "Door: 2 mm."
+    ],
+    "gallery": [
+      "/images/products/sa1601e.png",
+      "/images/products/sa1601e-02.webp",
+      "/images/products/sa1601e-03.webp",
+      "/images/products/sa1601e-04.webp",
+      "/images/products/sa1601e-05.webp",
+      "/images/products/sa1601e-06.webp",
+      "/images/products/sa1601e-07.webp",
+      "/images/products/sa1601e-08.jpg",
+      "/images/products/sa1601e-09.webp",
+      "/images/products/sa1601e-10.webp",
+      "/images/products/sa1601e-11.webp",
+      "/images/products/sa1601e-12.webp"
     ]
   },
   {
@@ -2116,6 +2130,20 @@
       "emergency key access",
       "compact home/office design. Body: 2 mm",
       "Door: 2 mm."
+    ],
+    "gallery": [
+      "/images/products/sa1602e.png",
+      "/images/products/sa1602e-02.webp",
+      "/images/products/sa1602e-03.webp",
+      "/images/products/sa1602e-04.webp",
+      "/images/products/sa1602e-05.webp",
+      "/images/products/sa1602e-06.webp",
+      "/images/products/sa1602e-07.webp",
+      "/images/products/sa1602e-08.webp",
+      "/images/products/sa1602e-09.webp",
+      "/images/products/sa1602e-10.webp",
+      "/images/products/sa1602e-11.webp",
+      "/images/products/sa1602e-12.webp"
     ]
   },
   {
@@ -2146,6 +2174,18 @@
       "emergency key access",
       "compact home/office design. Body: 2 mm",
       "Door: 2 mm."
+    ],
+    "gallery": [
+      "/images/products/sa1603e.png",
+      "/images/products/sa1603e-02.webp",
+      "/images/products/sa1603e-03.webp",
+      "/images/products/sa1603e-04.webp",
+      "/images/products/sa1603e-05.webp",
+      "/images/products/sa1603e-06.webp",
+      "/images/products/sa1603e-07.webp",
+      "/images/products/sa1603e-08.webp",
+      "/images/products/sa1603e-09.webp",
+      "/images/products/sa1603e-10.webp"
     ]
   },
   {
@@ -2153,7 +2193,7 @@
     "name": "SA2601",
     "sub": "SA2600 Series",
     "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
-    "image": "/images/products/sa2601.jpg",
+    "image": "/images/products/sa2601-01.jpg",
     "category": "fire-resistant-safes",
     "categories": [
       "fire-resistant-safes"
@@ -2178,6 +2218,16 @@
       "fingerprint access for at least 30 fingerprints",
       "emergency key opening with 2 emergency keys",
       "adjustable shelf."
+    ],
+    "gallery": [
+      "/images/products/sa2601-01.jpg",
+      "/images/products/sa2601-02.jpg",
+      "/images/products/sa2601-03.jpg",
+      "/images/products/sa2601.jpg",
+      "/images/products/sa2601-05.jpg",
+      "/images/products/sa2601-06.jpg",
+      "/images/products/sa2601-07.jpg",
+      "/images/products/sa2601-08.jpg"
     ]
   },
   {
@@ -2185,7 +2235,7 @@
     "name": "SA2602",
     "sub": "SA2600 Series",
     "desc": "Heavy-duty fire-rated safe with fingerprint, digital code and emergency key access for home, office and private storage.",
-    "image": "/images/products/sa2602.jpg",
+    "image": "/images/products/sa2602-01.jpg",
     "category": "fire-resistant-safes",
     "categories": [
       "fire-resistant-safes"
@@ -2210,6 +2260,15 @@
       "fingerprint access for at least 30 fingerprints",
       "emergency key opening with 2 emergency keys",
       "adjustable shelf."
+    ],
+    "gallery": [
+      "/images/products/sa2602-01.jpg",
+      "/images/products/sa2602-02.jpg",
+      "/images/products/sa2602-03.jpg",
+      "/images/products/sa2602.jpg",
+      "/images/products/sa2602-05.jpg",
+      "/images/products/sa2602-06.jpg",
+      "/images/products/sa2602-07.jpg"
     ]
   },
   {
@@ -2242,6 +2301,15 @@
       "fingerprint access for at least 30 fingerprints",
       "emergency key opening with 2 emergency keys",
       "adjustable shelf."
+    ],
+    "gallery": [
+      "/images/products/sa2603.jpg",
+      "/images/products/sa2603-02.jpg",
+      "/images/products/sa2603-03.jpg",
+      "/images/products/sa2603-04.jpg",
+      "/images/products/sa2603-05.jpg",
+      "/images/products/sa2603-06.jpg",
+      "/images/products/sa2603-07.jpg"
     ]
   },
   {
@@ -3271,6 +3339,10 @@
     "features": [
       "Toledo leather",
       "made in Italy."
+    ],
+    "gallery": [
+      "/images/products/220510_Pochette_Noir-Bleu_Closed__31708.jpeg",
+      "/images/products/pochette-4-black-tiffany-blue-02.jpg"
     ]
   },
   {
@@ -3294,6 +3366,10 @@
     "features": [
       "Toledo leather",
       "made in Italy."
+    ],
+    "gallery": [
+      "/images/products/220510_Pochette_Bleu-Blanc_Closed__72135.jpeg",
+      "/images/products/pochette-4-blue-off-white-02.jpg"
     ]
   },
   {
@@ -3340,6 +3416,10 @@
     "features": [
       "Toledo leather",
       "made in Italy."
+    ],
+    "gallery": [
+      "/images/products/220510_Pochette_Gris-Orange_Closed__93227.jpeg",
+      "/images/products/pochette-4-grey-orange-02.jpg"
     ]
   },
   {
@@ -3589,6 +3669,10 @@
       "Toledo leather",
       "individual compartments",
       "made in Italy."
+    ],
+    "gallery": [
+      "/images/products/Valigetta_4_Black_1__83833.webp",
+      "/images/products/valigetta-4-black-02.jpg"
     ]
   },
   {
@@ -3613,6 +3697,10 @@
       "Toledo leather",
       "individual compartments",
       "made in Italy."
+    ],
+    "gallery": [
+      "/images/products/220510_Valigetta4_Noir-Bleu_Closed__02128.jpeg",
+      "/images/products/valigetta-4-black-tiffany-blue-02.jpg"
     ]
   },
   {
@@ -3637,6 +3725,10 @@
       "Toledo leather",
       "individual compartments",
       "made in Italy."
+    ],
+    "gallery": [
+      "/images/products/220510_Valigetta4_Bleu-Blanc_Closed__48115.jpeg",
+      "/images/products/valigetta-4-blue-off-white-02.jpg"
     ]
   },
   {
@@ -3954,7 +4046,7 @@
     "name": "H0402M",
     "sub": "Hotel Safes",
     "desc": "Premium in-room hotel safe designed especially for hotel guests, furnished apartments and hospitality projects.",
-    "image": "/images/products/h0402m.jpeg",
+    "image": "/images/products/WhatsApp-Image-2023-12-02-at-12.15.07.jpeg",
     "category": "hotel-safes",
     "categories": [
       "hotel-safes"
@@ -3979,6 +4071,13 @@
       "4 AA batteries",
       "door 4 mm",
       "body 1.5 mm."
+    ],
+    "gallery": [
+      "/images/products/WhatsApp-Image-2023-12-02-at-12.15.07.jpeg",
+      "/images/products/h0402m.jpeg",
+      "/images/products/h0402m-03.jpg",
+      "/images/products/h0402m-04.jpg",
+      "/images/products/h0402m-05.jpg"
     ]
   },
   {
@@ -4372,6 +4471,11 @@
       "2 mm steel body",
       "Ø20 mm revolving bolts",
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
+    ],
+    "gallery": [
+      "/images/products/s601e.png",
+      "/images/products/s601e-02.webp",
+      "/images/products/s601e-03.webp"
     ]
   },
   {
@@ -4399,6 +4503,11 @@
       "2 mm steel body",
       "Ø20 mm revolving bolts",
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
+    ],
+    "gallery": [
+      "/images/products/s602el.png",
+      "/images/products/s602el-02.webp",
+      "/images/products/s602el-03.webp"
     ]
   },
   {
@@ -4426,6 +4535,11 @@
       "2 mm steel body",
       "Ø20 mm revolving bolts",
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
+    ],
+    "gallery": [
+      "/images/products/s603el.png",
+      "/images/products/s603el-02.webp",
+      "/images/products/s603el-03.webp"
     ]
   },
   {
@@ -4453,6 +4567,11 @@
       "3 mm steel body",
       "Ø20 mm revolving bolts",
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
+    ],
+    "gallery": [
+      "/images/products/s801le.png",
+      "/images/products/s801le-02.webp",
+      "/images/products/s801le-03.webp"
     ]
   },
   {
@@ -4480,6 +4599,12 @@
       "3 mm steel body",
       "Ø20 mm revolving bolts",
       "floor and wall anchoring holes. No Bluetooth/app mention for key-lock-only model."
+    ],
+    "gallery": [
+      "/images/products/s802l.png",
+      "/images/products/s802l-02.webp",
+      "/images/products/s802l-03.webp",
+      "/images/products/s802l-04.webp"
     ]
   },
   {
@@ -4507,6 +4632,12 @@
       "3 mm steel body",
       "Ø20 mm revolving bolts",
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
+    ],
+    "gallery": [
+      "/images/products/s803e.png",
+      "/images/products/s803e-02.webp",
+      "/images/products/s803e-03.webp",
+      "/images/products/s803e-04.webp"
     ]
   },
   {
@@ -4537,7 +4668,8 @@
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ],
     "gallery": [
-      "/images/products/s1002le.png"
+      "/images/products/s1002le.png",
+      "/images/products/s1002le-02.webp"
     ]
   },
   {
@@ -4568,7 +4700,9 @@
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ],
     "gallery": [
-      "/images/products/s1003le.png"
+      "/images/products/s1003le.png",
+      "/images/products/s1003le-02.webp",
+      "/images/products/s1003le-03.webp"
     ]
   },
   {
@@ -4599,7 +4733,9 @@
       "floor and wall anchoring holes. Ocluc Bluetooth app/audit log support for electronic models."
     ],
     "gallery": [
-      "/images/products/s1005le.png"
+      "/images/products/s1005le.png",
+      "/images/products/s1005le-02.webp",
+      "/images/products/s1005le-03.webp"
     ]
   },
   {
@@ -4607,7 +4743,7 @@
     "name": "BCS-160 Money Counter",
     "sub": "Money Counters",
     "desc": "Professional two-pocket banknote counter and sorter with reject pocket, built for businesses that need fast, accurate cash handling.",
-    "image": "/images/products/bcs-160-3.jpeg",
+    "image": "/images/products/bcs-160-01.jpg",
     "category": "cash-handling-solutions",
     "categories": [
       "cash-handling-solutions"
@@ -4625,9 +4761,19 @@
       "suitable for retail, exchange, and office cash rooms."
     ],
     "gallery": [
-      "/images/products/bcs-160.webp",
+      "/images/products/bcs-160-01.jpg",
+      "/images/products/bcs-160-3.jpeg",
+      "/images/products/bcs-160-03.jpg",
+      "/images/products/bcs-160-04.jpg",
+      "/images/products/bcs-160-05.jpg",
+      "/images/products/bcs-160-06.jpg",
+      "/images/products/bcs-160-07.jpg",
       "/images/products/bcs-160-2.webp",
-      "/images/products/bcs-160-3.jpeg"
+      "/images/products/bcs-160.webp",
+      "/images/products/bcs-160-10.jpg",
+      "/images/products/bcs-160-11.jpg",
+      "/images/products/bcs-160-12.jpg",
+      "/images/products/bcs-160-13.jpg"
     ]
   }
 ]
