@@ -1,0 +1,10 @@
+# Local asset drops. These are the raw client photo/document hand-offs that
+# scripts/import-*.py read from; the processed results live in public/images.
+# Several gigabytes that must never be uploaded to a deployment.
+_*-import/
+_import/
+_tmp-check/
+
+# Scratch output from the review/maps scraping scripts.
+scripts/*.json
+scripts/maps-page.html
