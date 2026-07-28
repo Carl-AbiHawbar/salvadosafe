@@ -1,10 +1,13 @@
 import Link from "next/link";
 import type { Product } from "@/lib/catalog-types";
-import { productCategoryLabel } from "@/lib/catalog-types";
+import { productCategoryLabel, productImages } from "@/lib/catalog-types";
 
 export function ProductCard({ product }: { product: Product }) {
   const categoryLabel = productCategoryLabel(product);
   const href = `/product/${product.slug}`;
+  // Cross-fade to the next gallery shot on hover. Only products with a gallery
+  // get the second image, so the rest of the grid loads exactly as before.
+  const [image, hoverImage] = productImages(product);
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-soft">
@@ -13,14 +16,28 @@ export function ProductCard({ product }: { product: Product }) {
         className="relative block aspect-square overflow-hidden bg-surface"
         aria-label={`View ${product.name}`}
       >
-        {product.image ? (
-          /* eslint-disable-next-line @next/next/no-img-element */
-          <img
-            src={product.image}
-            alt={product.name}
-            loading="lazy"
-            className="h-full w-full object-contain p-3 transition-transform duration-500 group-hover:scale-105 sm:p-5"
-          />
+        {image ? (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={image}
+              alt={product.name}
+              loading="lazy"
+              className={`h-full w-full object-contain p-3 transition-[scale,opacity] duration-500 group-hover:scale-105 sm:p-5${
+                hoverImage ? " group-hover:opacity-0" : ""
+              }`}
+            />
+            {hoverImage && (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src={hoverImage}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-contain p-3 opacity-0 transition-[scale,opacity] duration-500 group-hover:scale-105 group-hover:opacity-100 sm:p-5"
+              />
+            )}
+          </>
         ) : (
           <span className="flex h-full w-full items-center justify-center px-3 text-center text-[11px] font-semibold leading-snug text-muted sm:text-[12.5px]">
             Photo on request

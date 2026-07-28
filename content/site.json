@@ -6,8 +6,8 @@
   "location": "Zalka, Lebanon",
   "address": "Salvado Safes, Zalka 690, Zalka, Lebanon",
   "hours": {
-    "weekdays": "Mon – Fri: 9:30 – 17:30",
-    "saturday": "Sat: 9:30 – 14:00"
+    "weekdays": "Mon – Fri: 9:00 – 17:30",
+    "saturday": "Sat: 9:00 – 14:00"
   },
   "phones": {
     "landline": { "label": "01 899 212", "tel": "+96101899212" },
