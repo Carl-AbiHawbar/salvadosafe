@@ -29,7 +29,7 @@ const protectCards = [
 ];
 
 // Confirmed selection: Grade V page, 2-hour fire-rated, vault door, luxury safe, money counter
-const selectedSlugs = ["s-59", "vault-doors", "custom-luxury-safe", "plus-p30-money-counter"];
+const selectedSlugs = ["s-59", "vault-doors", "custom-luxury-safe", "bcs-160"];
 
 export default function ProductsPage() {
   const selected = selectedSlugs.map((s) => getProduct(s)).filter(Boolean);

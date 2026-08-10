@@ -2720,7 +2720,7 @@
     "name": "PLUS P30 Money Counter",
     "sub": "Money Counters",
     "desc": "Compact two-pocket currency discriminator with value counting, sorting, counterfeit detection and touchscreen display.",
-    "image": "/images/products/bcs-160-3.jpeg",
+    "image": null,
     "category": "cash-handling-solutions",
     "categories": [
       "cash-handling-solutions"
@@ -2742,40 +2742,6 @@
       "USB/RS-232C",
       "optional customer display/printer",
       "1000-1500 notes/min."
-    ]
-  },
-  {
-    "slug": "salvado-heavy-duty-money-counter",
-    "name": "Salvado Heavy-Duty Money Counter",
-    "sub": "Money Counters",
-    "desc": "Professional heavy-duty money counter with counterfeit detection, serial number collection, 20-currency support and reject pocket.",
-    "image": "/images/products/bcs-160.webp",
-    "category": "cash-handling-solutions",
-    "categories": [
-      "cash-handling-solutions"
-    ],
-    "isProject": false,
-    "specs": {
-      "external": "340 x 330 x 330",
-      "weight": "13",
-      "volume": "Hopper 500 notes; stacker 200 notes; reject pocket 100 notes",
-      "lock": "Cash counting / counterfeit detection",
-      "grade": "ECBS / CE / Waltek shown on product sheet",
-      "warranty": "1 year + 1 year free maintenance/support"
-    },
-    "features": [
-      "UV, MG, MT, IR, CIS and serial number detection",
-      "up to 20 currencies",
-      "3.5-inch screen",
-      "optional printer/display",
-      "USB/LAN",
-      "serial number collection",
-      "speeds 800/1000/1200 notes/min",
-      "Mix/SDC/CNT",
-      "batch by quantity/amount",
-      "bill sorting",
-      "USB updates",
-      "dust-proof cover."
     ]
   },
   {
@@ -4742,7 +4708,7 @@
     "slug": "bcs-160",
     "name": "BCS-160 Money Counter",
     "sub": "Money Counters",
-    "desc": "Professional two-pocket banknote counter and sorter with reject pocket, built for businesses that need fast, accurate cash handling.",
+    "desc": "Professional heavy-duty money counter with counterfeit detection, serial number collection, 20-currency support and reject pocket.",
     "image": "/images/products/bcs-160-01.jpg",
     "category": "cash-handling-solutions",
     "categories": [
@@ -4750,15 +4716,26 @@
     ],
     "isProject": false,
     "specs": {
-      "external": "Professional desk unit",
-      "volume": "High-speed counting with sort and reject pockets",
-      "lock": "Counterfeit detection / value counting"
+      "external": "340 x 330 x 330",
+      "weight": "13",
+      "volume": "Hopper 500 notes; stacker 200 notes; reject pocket 100 notes",
+      "lock": "Cash counting / counterfeit detection",
+      "grade": "ECBS / CE / Waltek shown on product sheet",
+      "warranty": "1 year + 1 year free maintenance/support"
     },
     "features": [
-      "Two-pocket sorting",
-      "reject pocket for suspect notes",
-      "high-speed banknote processing",
-      "suitable for retail, exchange, and office cash rooms."
+      "UV, MG, MT, IR, CIS and serial number detection",
+      "up to 20 currencies",
+      "3.5-inch screen",
+      "optional printer/display",
+      "USB/LAN",
+      "serial number collection",
+      "speeds 800/1000/1200 notes/min",
+      "Mix/SDC/CNT",
+      "batch by quantity/amount",
+      "bill sorting",
+      "USB updates",
+      "dust-proof cover."
     ],
     "gallery": [
       "/images/products/bcs-160-01.jpg",

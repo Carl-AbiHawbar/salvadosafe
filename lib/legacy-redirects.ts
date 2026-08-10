@@ -142,6 +142,15 @@ const NESTED_CATEGORY_MAP: Record<string, string> = {
   "watch-winders/page/3": "/category/luxury-safes-watch-storage",
 };
 
+/**
+ * Products removed from the catalogue because they duplicated another listing.
+ * Their URLs stay alive so existing links and search results do not 404.
+ */
+const MERGED_PRODUCT_MAP: Record<string, string> = {
+  // Same machine as the BCS-160, listed twice under a generic name.
+  "salvado-heavy-duty-money-counter": "/product/bcs-160",
+};
+
 function withSlashVariants(source: string, destination: string): LegacyRedirect[] {
   const base = source.replace(/\/$/, "");
   return [
@@ -159,6 +168,10 @@ export function getLegacyRedirects(): LegacyRedirect[] {
 
   for (const [slug, dest] of Object.entries(NESTED_CATEGORY_MAP)) {
     redirects.push(...withSlashVariants(`/product-category/${slug}`, dest));
+  }
+
+  for (const [slug, dest] of Object.entries(MERGED_PRODUCT_MAP)) {
+    redirects.push(...withSlashVariants(`/product/${slug}`, dest));
   }
 
   // Catch-all for any remaining / unknown WP category paths
