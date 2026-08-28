@@ -59,7 +59,7 @@ export function ProductGallery({ images, alt }: { images: string[]; alt: string 
     "absolute top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-line bg-white/95 text-lg text-ink shadow-soft transition-colors hover:border-brand hover:text-brand active:scale-95";
 
   return (
-    <div>
+    <div className="min-w-0">
       <div
         className="relative overflow-hidden rounded-3xl border border-line bg-surface"
         onTouchStart={onTouchStart}

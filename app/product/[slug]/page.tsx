@@ -113,7 +113,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       {/* Product hero */}
       <section className="bg-white">
         <div className="container-x grid items-start gap-10 py-12 md:grid-cols-2 md:py-16">
-          <Reveal>
+          <Reveal className="min-w-0">
             <ProductGallery images={images} alt={product.name} />
           </Reveal>
 
