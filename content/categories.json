@@ -85,6 +85,45 @@
     ]
   },
   {
+    "slug": "heavy-duty-fire-resistant-safes",
+    "name": "Heavy-Duty Fire-Resistant Safes",
+    "short": "Two-hour fire protection in a heavy, thick-walled body.",
+    "intro": "Heavy-duty fire-resistant safes from the Cobra Series, built with 55 mm door and body construction, UL-certified SECURAM electronic locking and gear-driven boltwork for premises that need two-hour fire protection alongside serious physical security.",
+    "protect": "For businesses, offices, and homes storing documents, cash, jewellery, and valuables that need both fire protection and a heavy, attack-resistant body.",
+    "subs": [
+      "Cobra Series"
+    ],
+    "featured": true,
+    "buyingGuide": [
+      {
+        "title": "Start with the fire rating",
+        "body": "Every Cobra model is rated for two hours at 1010°C, so choose on capacity and placement rather than fire performance."
+      },
+      {
+        "title": "Plan for the weight",
+        "body": "These safes run from 210 kg to 785 kg. Access routes, floor loading, and anchoring all need checking before delivery."
+      },
+      {
+        "title": "Match the interior to the contents",
+        "body": "Shelving rises from one shelf on the SSTC-48 to four on the SSTC-152, and every model adds a lockable drawer and a hidden inner compartment."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How is this different from a standard fire-resistant safe?",
+        "a": "Cobra models combine the same two-hour fire rating with a far heavier 55 mm body and door, gear-driven boltwork, and an anti-drill glass-plate relocking system."
+      },
+      {
+        "q": "What does the glass-plate relocking system do?",
+        "a": "If the safe is attacked by drilling, a tempered glass plate breaks and releases independent relocking bolts, locking the door shut permanently until it is serviced."
+      },
+      {
+        "q": "Do you deliver and install them?",
+        "a": "Yes. These safes are heavy and benefit from professional handling, placement, and anchoring. Salvado handles delivery and installation across Lebanon."
+      }
+    ]
+  },
+  {
     "slug": "vault-doors-vault-rooms",
     "name": "Vault Doors and Vault Rooms",
     "short": "Bank-level vault doors and complete secure rooms.",

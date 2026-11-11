@@ -46,6 +46,7 @@ export type Category = {
 const CATEGORY_SHORT: Record<string, string> = {
   "high-security-safes": "High Security",
   "fire-resistant-safes": "Fire Rated",
+  "heavy-duty-fire-resistant-safes": "Heavy-Duty Fire Rated",
   "vault-doors-vault-rooms": "Vault Doors",
   "cash-handling-solutions": "Cash Handling",
   "concealed-camouflage-safes": "Concealed Safes",

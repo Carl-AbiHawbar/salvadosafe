@@ -1517,6 +1517,35 @@
     ]
   },
   {
+    "slug": "s-30",
+    "name": "S-30",
+    "sub": "S Series",
+    "desc": "The Salvado S-30 is a compact fire-resistant safe for passports, documents, cash and personal valuables. It combines digital code and key access with a backlit keypad, LCD screen and active and fixed locking bolts to help resist prying. An upper internal organiser drawer keeps smaller items accessible. With 2-hour fire resistance at 1010°C, three keys and a 5-year warranty, it is a practical choice for home or office storage. Contact Salvado for selection advice, professional installation and after-sales support in Lebanon.",
+    "image": "/images/products/s-30.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "320 x 400 x 360",
+      "weight": "45",
+      "lock": "Digital code + mechanical key",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "digital code + mechanical key",
+      "3 main keys supplied",
+      "backlit digital keypad",
+      "LCD screen",
+      "active and fixed locking bolts to help resist prying",
+      "upper internal organiser drawer",
+      "5-year warranty"
+    ]
+  },
+  {
     "slug": "s-31",
     "name": "S-31",
     "sub": "S Series",
@@ -1543,6 +1572,35 @@
       "3 keys included",
       "dead and locking bolts to deter prying attacks",
       "5-year warranty. Upper internal organizer drawer"
+    ]
+  },
+  {
+    "slug": "s-35",
+    "name": "S-35",
+    "sub": "S Series",
+    "desc": "The Salvado S-35 provides fire-resistant storage for documents, cash and personal valuables in a compact home or office format. Its digital code and key access, backlit keypad and LCD screen make everyday operation straightforward. Active and fixed locking bolts help resist prying, while an upper internal organiser drawer separates smaller items. The S-35 offers 2-hour fire resistance at 1010°C, includes three keys and carries a 5-year warranty. Salvado provides product advice, delivery, professional installation and ongoing after-sales support across Lebanon.",
+    "image": "/images/products/s-35.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "370 x 470 x 380",
+      "weight": "55",
+      "lock": "Digital code + mechanical key",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "digital code + mechanical key",
+      "3 main keys supplied",
+      "backlit digital keypad",
+      "LCD screen",
+      "active and fixed locking bolts to help resist prying",
+      "upper internal organiser drawer",
+      "5-year warranty"
     ]
   },
   {
@@ -1792,6 +1850,41 @@
       "internal metal lockable compartment with 2 keys",
       "key holders on door",
       "mechanical relocking system"
+    ]
+  },
+  {
+    "slug": "s-69",
+    "name": "S-69",
+    "sub": "S Series",
+    "desc": "The Salvado S-69 offers organised fire-resistant storage for documents, cash, records and valuables in homes and businesses. It combines digital code and key access with a backlit keypad, LCD screen, active and fixed locking bolts and a mechanical relocking system. A height-adjustable metal shelf, an internal lockable metal compartment with two keys and door-mounted key holders keep contents organised. A stainless steel handle supports everyday use. The safe offers 2-hour fire resistance at 1010°C, includes three main keys and carries a 5-year warranty.",
+    "image": "/images/products/s-69.jpg",
+    "category": "fire-resistant-safes",
+    "categories": [
+      "fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "690 x 480 x 500",
+      "weight": "140",
+      "shelves": "1 height-adjustable metal shelf",
+      "lock": "Digital code + mechanical key",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "digital code + mechanical key",
+      "3 main keys supplied",
+      "2 compartment keys supplied",
+      "backlit digital keypad",
+      "LCD screen",
+      "active and fixed locking bolts to help resist prying",
+      "stainless steel handle",
+      "key holders on the door",
+      "mechanical relocking system",
+      "1 height-adjustable metal shelf",
+      "1 internal lockable metal compartment",
+      "5-year warranty"
     ]
   },
   {
@@ -4751,6 +4844,204 @@
       "/images/products/bcs-160-11.jpg",
       "/images/products/bcs-160-12.jpg",
       "/images/products/bcs-160-13.jpg"
+    ]
+  },
+  {
+    "slug": "cobra-sstc-48",
+    "name": "Cobra SSTC-48",
+    "sub": "Cobra Series",
+    "desc": "The Salvado Cobra SSTC-48 combines fire protection with secure storage for documents, cash, jewellery and important valuables. Its UL-certified SECURAM electronic lock and mechanical key lock work with gear-driven boltwork and an anti-drill glass-plate relocking system. Inside, a height-adjustable metal shelf provides flexible organisation, complemented by a lockable metal drawer and a hidden inner compartment. The safe offers 2-hour fire resistance at 1010°C and a 5-year warranty. Contact Salvado for advice, delivery, installation and after-sales support in Lebanon.",
+    "image": "/images/products/cobra-sstc-48.jpg",
+    "category": "heavy-duty-fire-resistant-safes",
+    "categories": [
+      "heavy-duty-fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "480 x 480 x 500",
+      "weight": "210",
+      "shelves": "1 height-adjustable metal shelf",
+      "lock": "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "2 main keys supplied",
+      "55 mm door and 55 mm body",
+      "anti-drill glass-plate relocking system",
+      "gear-driven boltwork",
+      "1 height-adjustable metal shelf",
+      "1 lockable metal drawer",
+      "hidden inner compartment",
+      "exterior depth excludes the handle",
+      "5-year warranty"
+    ]
+  },
+  {
+    "slug": "cobra-sstc-57",
+    "name": "Cobra SSTC-57",
+    "sub": "Cobra Series",
+    "desc": "The Salvado Cobra SSTC-57 combines fire protection with secure storage for documents, cash, jewellery and important valuables. Its UL-certified SECURAM electronic lock and mechanical key lock work with gear-driven boltwork and an anti-drill glass-plate relocking system. Inside, a height-adjustable metal shelf provides flexible organisation, complemented by a lockable metal drawer and a hidden inner compartment. The safe offers 2-hour fire resistance at 1010°C and a 5-year warranty. Contact Salvado for advice, delivery, installation and after-sales support in Lebanon.",
+    "image": "/images/products/cobra-sstc-57.jpg",
+    "category": "heavy-duty-fire-resistant-safes",
+    "categories": [
+      "heavy-duty-fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "570 x 550 x 500",
+      "weight": "250",
+      "shelves": "1 height-adjustable metal shelf",
+      "lock": "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "2 main keys supplied",
+      "55 mm door and 55 mm body",
+      "anti-drill glass-plate relocking system",
+      "gear-driven boltwork",
+      "1 height-adjustable metal shelf",
+      "1 lockable metal drawer",
+      "hidden inner compartment",
+      "exterior depth excludes the handle (5 cm projection)",
+      "5-year warranty"
+    ]
+  },
+  {
+    "slug": "cobra-sstc-67",
+    "name": "Cobra SSTC-67",
+    "sub": "Cobra Series",
+    "desc": "The Salvado Cobra SSTC-67 combines fire protection with secure storage for documents, cash, jewellery and important valuables. Its UL-certified SECURAM electronic lock and mechanical key lock work with gear-driven boltwork and an anti-drill glass-plate relocking system. Inside, a height-adjustable metal shelf provides flexible organisation, complemented by a lockable metal drawer and a hidden inner compartment. The safe offers 2-hour fire resistance at 1010°C and a 5-year warranty. Contact Salvado for advice, delivery, installation and after-sales support in Lebanon.",
+    "image": "/images/products/cobra-sstc-67.jpg",
+    "category": "heavy-duty-fire-resistant-safes",
+    "categories": [
+      "heavy-duty-fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "670 x 570 x 520",
+      "weight": "320",
+      "shelves": "1 height-adjustable metal shelf",
+      "lock": "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "2 main keys supplied",
+      "55 mm door and 55 mm body",
+      "anti-drill glass-plate relocking system",
+      "gear-driven boltwork",
+      "1 height-adjustable metal shelf",
+      "1 lockable metal drawer",
+      "hidden inner compartment",
+      "exterior depth excludes the handle (5 cm projection)",
+      "5-year warranty"
+    ]
+  },
+  {
+    "slug": "cobra-sstc-97",
+    "name": "Cobra SSTC-97",
+    "sub": "Cobra Series",
+    "desc": "The Salvado Cobra SSTC-97 combines fire protection with secure storage for documents, cash, jewellery and important valuables. Its UL-certified SECURAM electronic lock and mechanical key lock work with gear-driven boltwork and an anti-drill glass-plate relocking system. Inside, 2 height-adjustable metal shelves provide flexible organisation, complemented by a lockable metal drawer and a hidden inner compartment. The safe offers 2-hour fire resistance at 1010°C and a 5-year warranty. Contact Salvado for advice, delivery, installation and after-sales support in Lebanon.",
+    "image": "/images/products/cobra-sstc-97.jpg",
+    "category": "heavy-duty-fire-resistant-safes",
+    "categories": [
+      "heavy-duty-fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1000 x 570 x 520",
+      "weight": "420",
+      "shelves": "2 height-adjustable metal shelves",
+      "lock": "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "2 main keys supplied",
+      "55 mm door and 55 mm body",
+      "anti-drill glass-plate relocking system",
+      "gear-driven boltwork",
+      "2 height-adjustable metal shelves",
+      "1 lockable metal drawer",
+      "hidden inner compartment",
+      "exterior depth excludes the handle",
+      "5-year warranty"
+    ]
+  },
+  {
+    "slug": "cobra-sstc-122",
+    "name": "Cobra SSTC-122",
+    "sub": "Cobra Series",
+    "desc": "The Salvado Cobra SSTC-122 combines fire protection with secure storage for documents, cash, jewellery and important valuables. Its UL-certified SECURAM electronic lock and mechanical key lock work with gear-driven boltwork and an anti-drill glass-plate relocking system. Inside, 3 height-adjustable metal shelves provide flexible organisation, complemented by a lockable metal drawer and a hidden inner compartment. The safe offers 2-hour fire resistance at 1010°C and a 5-year warranty. Contact Salvado for advice, delivery, installation and after-sales support in Lebanon.",
+    "image": "/images/products/cobra-sstc-122.jpg",
+    "category": "heavy-duty-fire-resistant-safes",
+    "categories": [
+      "heavy-duty-fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1220 x 620 x 550",
+      "weight": "520",
+      "shelves": "3 height-adjustable metal shelves",
+      "lock": "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "2 main keys supplied",
+      "55 mm door and 55 mm body",
+      "anti-drill glass-plate relocking system",
+      "gear-driven boltwork",
+      "3 height-adjustable metal shelves",
+      "1 lockable metal drawer",
+      "hidden inner compartment",
+      "exterior depth excludes the handle",
+      "5-year warranty"
+    ]
+  },
+  {
+    "slug": "cobra-sstc-152",
+    "name": "Cobra SSTC-152",
+    "sub": "Cobra Series",
+    "desc": "The Salvado Cobra SSTC-152 combines fire protection with secure storage for documents, cash, jewellery and important valuables. Its UL-certified SECURAM electronic lock and mechanical key lock work with gear-driven boltwork and an anti-drill glass-plate relocking system. Inside, 4 height-adjustable metal shelves provide flexible organisation, complemented by a lockable metal drawer and a hidden inner compartment. The safe offers 2-hour fire resistance at 1010°C and a 5-year warranty. Contact Salvado for advice, delivery, installation and after-sales support in Lebanon.",
+    "image": "/images/products/cobra-sstc-152.jpg",
+    "category": "heavy-duty-fire-resistant-safes",
+    "categories": [
+      "heavy-duty-fire-resistant-safes"
+    ],
+    "isProject": false,
+    "specs": {
+      "external": "1530 x 760 x 620",
+      "weight": "785",
+      "shelves": "4 height-adjustable metal shelves",
+      "lock": "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "fireRating": "2 hours at 1010°C",
+      "warranty": "5 years"
+    },
+    "features": [
+      "2-hour fire rating at 1010°C",
+      "UL-certified SECURAM electronic lock + strong mechanical key lock",
+      "2 main keys supplied",
+      "55 mm door and 55 mm body",
+      "anti-drill glass-plate relocking system",
+      "gear-driven boltwork",
+      "4 height-adjustable metal shelves",
+      "1 lockable metal drawer",
+      "hidden inner compartment",
+      "exterior depth excludes the handle",
+      "5-year warranty"
     ]
   }
 ]
