@@ -31,6 +31,10 @@ const CATEGORY_SEO: Record<string, { title: string; keywords: string[] }> = {
     title: "Fireproof Safes in Lebanon",
     keywords: ["fireproof safe Lebanon", "fire rated safe Lebanon", "fire resistant safe Lebanon"],
   },
+  "heavy-duty-fire-resistant-safes": {
+    title: "Heavy-Duty Fire-Resistant Safes in Lebanon",
+    keywords: ["heavy duty safe Lebanon", "2 hour fire safe Lebanon", "Cobra safe Lebanon"],
+  },
   "vault-doors-vault-rooms": {
     title: "Vault Doors in Lebanon",
     keywords: ["vault doors Lebanon", "vault room Lebanon", "bank vault door Lebanon"],
@@ -51,7 +55,7 @@ const CATEGORY_SEO: Record<string, { title: string; keywords: string[] }> = {
     title: "Concealed and Camouflage Safes in Lebanon",
     keywords: ["hidden safe Lebanon", "camouflage safe Lebanon", "concealed safe Lebanon"],
   },
-  "home-office-safes": {
+  "home-safes": {
     title: "Home and Office Safes in Lebanon",
     keywords: ["home safe Lebanon", "office safe Lebanon", "document safe Lebanon"],
   },
@@ -59,7 +63,7 @@ const CATEGORY_SEO: Record<string, { title: string; keywords: string[] }> = {
     title: "Hotel Safes in Lebanon",
     keywords: ["hotel safe Lebanon", "hospitality safe Lebanon"],
   },
-  "key-cabinets": {
+  "cash-boxes-key-cabinets": {
     title: "Key Cabinets in Lebanon",
     keywords: ["key cabinet Lebanon", "key storage Lebanon"],
   },
