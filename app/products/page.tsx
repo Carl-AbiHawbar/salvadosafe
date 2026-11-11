@@ -22,6 +22,7 @@ export const metadata = pageMetadata({
 const protectCards = [
   { title: "Jewelry and Watches", text: "For watches, jewelry, collectibles, and private valuables.", slug: "luxury-safes-watch-storage" },
   { title: "Documents and Files", text: "For contracts, passports, records, cash, and important documents requiring fire protection.", slug: "fire-resistant-safes" },
+  { title: "Heavy-Duty Protection", text: "For documents, cash, and valuables needing two-hour fire protection in a thick-walled, attack-resistant body.", slug: "heavy-duty-fire-resistant-safes" },
   { title: "High-Value Assets", text: "For serious protection needs in homes, businesses, jewelers, institutions, and private offices.", slug: "high-security-safes" },
   { title: "Secure Rooms", text: "For vault doors, private rooms, institutional storage, and high-security projects.", slug: "vault-doors-vault-rooms" },
   { title: "Cash Handling", text: "For retailers, offices, exchange businesses, and companies handling cash.", slug: "cash-handling-solutions" },
